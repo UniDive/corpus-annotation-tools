@@ -8,11 +8,11 @@ const toggleCellSelection = (item, group, feature, value) => {
 
 	item.classList.add('highlight')
 
-	console.log(activeTools)
+	// console.log(activeTools)
 	const filteredTools = []
 	activeTools.forEach(tool => {
 		const toolvalue = tool[`${group}::${feature}`]
-		console.log(toolvalue)
+		// console.log(toolvalue)
 		if (Array.isArray(toolvalue)){
 
 			if (toolvalue.includes(value)){
@@ -20,13 +20,13 @@ const toggleCellSelection = (item, group, feature, value) => {
 			}
 
 		} else {
-			console.log(value == toolvalue)
+			// console.log(value == toolvalue)
 			if (value == toolvalue) {
 				filteredTools.push(tool)
 			}
 		}
     });
-	console.log(filteredTools)
+	// console.log(filteredTools)
 
 	updateTableCounts(filteredTools);
 
@@ -35,10 +35,10 @@ const toggleCellSelection = (item, group, feature, value) => {
 // Function to update counts for the table
 const updateTableCounts = (toolslist) => {
 
-    const pivotTableBody = document.querySelector('.pivot-table tbody');
+    // const pivotTableBody = document.querySelector('.pivot-table tbody');
 
     const groups = {};
-    toolslist.forEach(tool => {
+    activeTools.forEach(tool => {
         Object.keys(tool).forEach(key => {
             const [group, feature] = key.split('::');
             if (!groups[group]) groups[group] = [];
@@ -47,10 +47,9 @@ const updateTableCounts = (toolslist) => {
     });
 
     Object.keys(groups).forEach(group => {
-        if (group === "Tool ID") return;
-
+        // if (group === "Tool ID") return;
         groups[group].forEach(feature => {
-            const valueCounts = {};
+			const valueCounts = {};
             toolslist.forEach(tool => {
                 const values = Array.isArray(tool[`${group}::${feature}`]) ? tool[`${group}::${feature}`] : [tool[`${group}::${feature}`]];
                 values.forEach(value => {
@@ -58,44 +57,78 @@ const updateTableCounts = (toolslist) => {
                 });
             });
 
-            const featureRows = Array.from(pivotTableBody.querySelectorAll('tr'));
+			countCells = document.querySelectorAll(`[data-feature="${feature}"][data-type='count']`)
+			console.log(countCells)
 
-            featureRows.forEach(row => {
-                const featureCell = row.querySelector('td:first-child');
-                if (featureCell && featureCell.textContent === feature) {
-                    const valueCell = row.querySelector('td:last-child');
-                    const cellContent = document.createElement('table');
+			countCells.forEach(countCell => {
+				cellvalue = countCell.getAttribute("data-value");
+				if (cellvalue in valueCounts){
+					countCell.textContent = `(${valueCounts[cellvalue]})`
+				} else {
+					countCell.textContent = `(0)`
+				}
+			});
 
-                    Object.entries(valueCounts).forEach(([value, count]) => {
-                        const itemRow = document.createElement('tr');
-                        const itemCell = document.createElement('td');
-                        const countCell = document.createElement('td');
-						itemCell.setAttribute("data-category", group)
-						itemCell.setAttribute("data-feature", feature)
-						itemCell.setAttribute("data-value", value)
+			// Object.keys(valueCounts).forEach(value => {
+			// 	// itemCell = document.querySelectorAll(`[data-feature="${feature}"][data-value="${value}"][data-type='value']`)
+			// 	countCell = document.querySelectorAll(`[data-feature="${feature}"][data-value="${value}"][data-type='count']`)
+			// 	console.log(countCell)
 
-                        itemCell.textContent = value;
-                        countCell.textContent = `(${count})`;
+			// });
 
-                        if (selectedCells.has(value)) {
-                            itemCell.classList.add('selected');
-                        }
+			console.log(valueCounts)
+		});
+	});
 
-                        itemCell.addEventListener('click', () => {
-                            toggleCellSelection(itemCell, group, feature, value);
-                        });
 
-                        itemRow.appendChild(itemCell);
-                        itemRow.appendChild(countCell);
-                        cellContent.appendChild(itemRow);
-                    });
 
-                    valueCell.innerHTML = '';
-                    valueCell.appendChild(cellContent);
-                }
-            });
-        });
-    });
+
+
+            // const featureRows = Array.from(pivotTableBody.querySelectorAll('tr'));
+
+            // featureRows.forEach(row => {
+            //     const featureCell = row.querySelector('td:first-child');
+            //     if (featureCell && featureCell.textContent === feature) {
+            //         const valueCell = row.querySelector('td:last-child');
+            //         const cellContent = document.createElement('table');
+
+            //         Object.entries(valueCounts).forEach(([value, count]) => {
+            //             const itemRow = document.createElement('tr');
+            //             const itemCell = document.createElement('td');
+            //             const countCell = document.createElement('td');
+
+			// 			itemCell.setAttribute("data-category", group)
+			// 			itemCell.setAttribute("data-feature", feature)
+			// 			itemCell.setAttribute("data-value", value)
+			// 			itemCell.setAttribute("data-type", "value")
+
+			// 			countCell.setAttribute("data-category", group)
+			// 			countCell.setAttribute("data-feature", feature)
+			// 			countCell.setAttribute("data-value", value)
+			// 			countCell.setAttribute("data-type", "count")
+
+            //             itemCell.textContent = value;
+            //             countCell.textContent = `(${count})`;
+
+            //             if (selectedCells.has(value)) {
+            //                 itemCell.classList.add('selected');
+            //             }
+
+            //             itemCell.addEventListener('click', () => {
+            //                 toggleCellSelection(itemCell, group, feature, value);
+            //             });
+
+            //             itemRow.appendChild(itemCell);
+            //             itemRow.appendChild(countCell);
+            //             cellContent.appendChild(itemRow);
+            //         });
+
+            //         valueCell.innerHTML = '';
+            //         valueCell.appendChild(cellContent);
+            //     }
+            // });
+
+
 };
 
 
@@ -164,18 +197,18 @@ document.addEventListener("DOMContentLoaded", () => {
             Object.entries(tool).forEach(([key, value]) => {
 				const [curr_group, curr_feature] = key.split('::');
                 if (Array.isArray(value)) {
-					console.log(value)
+					// console.log(value)
                     value.forEach(val => {
-                        document.querySelectorAll(`[data-feature="${curr_feature}"][data-value="${val}"]`).forEach(cell => {
-							console.log(cell)
+                        document.querySelectorAll(`[data-feature="${curr_feature}"][data-value="${val}"][data-type='value']`).forEach(cell => {
+							// console.log(cell)
                             if (cell.textContent.trim() === val) {
                                 cell.classList.add('highlight');
                             }
                         });
                     });
                 } else {
-                    document.querySelectorAll(`[data-feature="${curr_feature}"][data-value="${value}"]`).forEach(cell => {
-						console.log(cell)
+                    document.querySelectorAll(`[data-feature="${curr_feature}"][data-value="${value}"][data-type='value']`).forEach(cell => {
+						// console.log(cell)
 						if (cell.textContent.trim() === value) {
 							cell.classList.add('highlight');
 						}
@@ -235,7 +268,7 @@ document.addEventListener("DOMContentLoaded", () => {
             pivotTableBody.appendChild(groupRow);
 
             groups[group].forEach(feature => {
-				console.log(feature)
+				// console.log(feature)
                 const featureRow = document.createElement('tr');
                 const featureCell = document.createElement('td');
                 const valueCell = document.createElement('td');
@@ -245,8 +278,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 const valueCounts = {};
                 activeTools.forEach(tool => {
                     const values = Array.isArray(tool[`${group}::${feature}`]) ? tool[`${group}::${feature}`] : [tool[`${group}::${feature}`]];
-					console.log(tool)
-					console.log(values)
+					// console.log(tool)
+					// console.log(values)
                     values.forEach(value => {
                         if (value) valueCounts[value] = (valueCounts[value] || 0) + 1;
                     });
@@ -264,6 +297,12 @@ document.addEventListener("DOMContentLoaded", () => {
 					itemCell.setAttribute("data-category", group)
 					itemCell.setAttribute("data-feature", feature)
 					itemCell.setAttribute("data-value", value)
+					itemCell.setAttribute("data-type", "value")
+
+					countCell.setAttribute("data-category", group)
+					countCell.setAttribute("data-feature", feature)
+					countCell.setAttribute("data-value", value)
+					countCell.setAttribute("data-type", "count")
                     itemCell.textContent = value;
                     countCell.textContent = `(${count})`;
                     row.appendChild(itemCell);
