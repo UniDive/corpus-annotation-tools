@@ -186,7 +186,7 @@
   },
   {
     "Tool ID::Tool name": "brat",
-    "Tool ID::Logo": "https://encrypted-tbn2.gstatic.com/favicon-tbn?q=tbn%3AANd9GcS8n34Ju-qkADxKmzkjBAMr5h2R1CXIw1dHidOlnuf7xM1bg0reAFr5_RjKcej-dP6M7OXxREru4Io37gRKfGLuX0wn_MG1maiw",
+    "Tool ID::Logo": "",
     "Tool ID::Short description": "brat rapid annotation tool: online environment for collaborative text annotation",
     "Tool ID::Website": "http://brat.nlplab.org/",
     "Tool ID::Other useful links": "",
@@ -463,7 +463,7 @@
   },
   {
     "Tool ID::Tool name": "ELAN",
-    "Tool ID::Logo": "https://archive.mpi.nl/tla/system/files/TLA-logo-with-text.png",
+    "Tool ID::Logo": "https://archive.mpi.nl/forums/uploads/default/original/1X/b9a095d7450d269ba707171fe5571f248dc99665.svg",
     "Tool ID::Short description": "ELAN is a professional tool for the creation, annotation, and analysis of complex multimedia data, enabling time-aligned transcription and linguistic analysis.",
     "Tool ID::Website": "https://archive.mpi.nl/tla/elan",
     "Tool ID::Other useful links": "[Forum] https://archive.mpi.nl/forums/",
@@ -668,7 +668,7 @@
   },
   {
     "Tool ID::Tool name": "FLAT: FoLiA Linguistic Annotation Tool",
-    "Tool ID::Logo": "https://archive.mpi.nl/tla/system/files/TLA-logo-with-text.png",
+    "Tool ID::Logo": "http://proycon.github.io/folia/style/icon.png",
     "Tool ID::Short description": " Flat is a web-based linguistic annotation environment based around the FoLiA format (http://proycon.github.io/folia), a rich XML-based format for linguistic annotation.",
     "Tool ID::Website": "https://github.com/proycon/flat",
     "Tool ID::Other useful links": "[Companion Tools] http://proycon.github.io/folia/",
@@ -856,7 +856,7 @@
   },
   {
     "Tool ID::Tool name": "GitDox",
-    "Tool ID::Logo": "https://software.sil.org/wp/wp-content/themes/web-productsites/images/sil_logo_glyph.png",
+    "Tool ID::Logo": "",
     "Tool ID::Short description": "A version controlled annotation interace for XML and spreadsheet data, as well as nested NER",
     "Tool ID::Website": "https://gucorpling.org/gitdox/",
     "Tool ID::Other useful links": "",
@@ -1423,7 +1423,7 @@
   },
   {
     "Tool ID::Tool name": "Q-CAT",
-    "Tool ID::Logo": "https://www.clarin.si/info/wp-content/uploads/2014/08/Clarin-SI-logo.png",
+    "Tool ID::Logo": "",
     "Tool ID::Short description": "A tool for manual linguistic annotation of corpora, which also enables advanced queries on top of these annotations.",
     "Tool ID::Website": "http://hdl.handle.net/11356/1844",
     "Tool ID::Other useful links": "",
@@ -1676,7 +1676,7 @@
   },
   {
     "Tool ID::Tool name": "TrEd",
-    "Tool ID::Logo": "https://encrypted-tbn2.gstatic.com/favicon-tbn?q=tbn%3AANd9GcQxDLYZYy8Polda_-isFhmeJaIme9AAQq3KcaCjKx0ejBrhhAhXJrJyxPuzzOrl8kDm5TX6TmVMRocQHO1C5SHUAvydi-wjO2fsoFE",
+    "Tool ID::Logo": "",
     "Tool ID::Short description": "A fully customizable and programmable graphical editor and viewer for tree-like structures.",
     "Tool ID::Website": "https://ufal.mff.cuni.cz/tred",
     "Tool ID::Other useful links": "https://ufal.mff.cuni.cz/tred/documentation/ar01-toc.html",
