@@ -1,0 +1,15 @@
+Software::Operating system
+Data support::Input format
+Data support::Integration of other resources
+Data support::Data export
+Diversity features::Diversity features
+Diversity features::Language of the interface
+Annotation::Segmentation
+Annotation::Annotation types
+Annotation::Annotation scope
+User Experience::Annotation mode
+User Experience::Annotation display
+User Experience::Collaborative annotation
+UD/PARSEME specifics::UD-specific annotations
+UD/PARSEME specifics::Other annotation layers
+UD/PARSEME specifics::PARSEME-specific annotations
