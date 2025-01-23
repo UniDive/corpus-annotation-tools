@@ -7,7 +7,7 @@
     "Tool ID::Other useful links": "https://arborator.github.io/arborator-documentation/#/",
     "Tool ID::Respondent involved in development": "Yes",
     "Software::License": "AGPL-3.0",
-    "Software::Code repository": "https://github.com/Arborator",
+    "Tool ID::Code repository": "https://github.com/Arborator",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
     "Software::Operating system": [
@@ -100,7 +100,7 @@
     "Tool ID::Other useful links": "https://youtu.be/BtRVqgtxK8c?si=eXcfjmy-t2D431u5&t=509",
     "Tool ID::Respondent involved in development": "Yes",
     "Software::License": "MIT",
-    "Software::Code repository": "https://github.com/furkanakkurt1335/boat",
+    "Tool ID::Code repository": "https://github.com/furkanakkurt1335/boat",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
     "Software::Operating system": [
@@ -192,7 +192,7 @@
     "Tool ID::Other useful links": "",
     "Tool ID::Respondent involved in development": "No",
     "Software::License": "MIT",
-    "Software::Code repository": "https://github.com/nlplab/brat",
+    "Tool ID::Code repository": "https://github.com/nlplab/brat",
     "Software::Active maintenance": "No",
     "Software::Software type": "Web-based application",
     "Software::Operating system": [
@@ -290,7 +290,7 @@
     "Tool ID::Other useful links": "",
     "Tool ID::Respondent involved in development": "Yes",
     "Software::License": "BSD 3-Clause",
-    "Software::Code repository": "https://github.com/Orange-Opensource/conllueditor",
+    "Tool ID::Code repository": "https://github.com/Orange-Opensource/conllueditor",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
     "Software::Operating system": [
@@ -387,7 +387,7 @@
     "Tool ID::Other useful links": "",
     "Tool ID::Respondent involved in development": "No",
     "Software::License": "not specified",
-    "Software::Code repository": "https://github.com/attardi/DgAnnotator",
+    "Tool ID::Code repository": "https://github.com/attardi/DgAnnotator",
     "Software::Active maintenance": "No",
     "Software::Software type": "Desktop-based application",
     "Software::Operating system": [
@@ -469,7 +469,7 @@
     "Tool ID::Other useful links": "[Forum] https://archive.mpi.nl/forums/",
     "Tool ID::Respondent involved in development": "No",
     "Software::License": "GPL-3.0",
-    "Software::Code repository": "https://archive.mpi.nl/tla/elan/download",
+    "Tool ID::Code repository": "https://archive.mpi.nl/tla/elan/download",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Desktop-based application",
     "Software::Operating system": [
@@ -584,7 +584,7 @@
     "Tool ID::Other useful links": "",
     "Tool ID::Respondent involved in development": "Yes",
     "Software::License": "GPL-2.0",
-    "Software::Code repository": "https://github.com/Exmaralda-Org/exmaralda",
+    "Tool ID::Code repository": "https://github.com/Exmaralda-Org/exmaralda",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Desktop-based application",
     "Software::Operating system": [
@@ -674,7 +674,7 @@
     "Tool ID::Other useful links": "[Companion Tools] http://proycon.github.io/folia/",
     "Tool ID::Respondent involved in development": "Yes",
     "Software::License": "GPL-3.0",
-    "Software::Code repository": "https://github.com/proycon/flat",
+    "Tool ID::Code repository": "https://github.com/proycon/flat",
     "Software::Active maintenance": "Legacy",
     "Software::Software type": "Web-based application",
     "Software::Operating system": [
@@ -769,7 +769,7 @@
     "Tool ID::Other useful links": "[Training] https://vimeo.com/showcase/3123523",
     "Tool ID::Respondent involved in development": "No",
     "Software::License": "GNU LGPL",
-    "Software::Code repository": "https://github.com/sillsdev/FieldWorks",
+    "Tool ID::Code repository": "https://github.com/sillsdev/FieldWorks",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Desktop-based application",
     "Software::Operating system": [
@@ -862,7 +862,7 @@
     "Tool ID::Other useful links": "",
     "Tool ID::Respondent involved in development": "Yes",
     "Software::License": "Apache-2.0",
-    "Software::Code repository": "https://github.com/gucorpling/gitdox",
+    "Tool ID::Code repository": "https://github.com/gucorpling/gitdox",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
     "Software::Operating system": [
@@ -959,7 +959,7 @@
     "Tool ID::Other useful links": "",
     "Tool ID::Respondent involved in development": "Yes",
     "Software::License": "Apache-2.0",
-    "Software::Code repository": "https://github.com/inception-project/inception",
+    "Tool ID::Code repository": "https://github.com/inception-project/inception",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
     "Software::Operating system": [
@@ -1062,7 +1062,7 @@
     "Tool ID::Other useful links": "[Paper] https://arxiv.org/abs/2208.01483",
     "Tool ID::Respondent involved in development": "No",
     "Software::License": "Apache-2.0",
-    "Software::Code repository": "https://github.com/label-sleuth/label-sleuth",
+    "Tool ID::Code repository": "https://github.com/label-sleuth/label-sleuth",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
     "Software::Operating system": [
@@ -1145,7 +1145,7 @@
     "Tool ID::Other useful links": "",
     "Tool ID::Respondent involved in development": "No",
     "Software::License": "Apache-2.0",
-    "Software::Code repository": "",
+    "Tool ID::Code repository": "",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
     "Software::Operating system": [
@@ -1253,7 +1253,7 @@
     "Tool ID::Other useful links": "https://camel-lab.github.io/palmyra/about.html",
     "Tool ID::Respondent involved in development": "Yes",
     "Software::License": "MIT",
-    "Software::Code repository": "https://github.com/CAMeL-Lab/palmyra",
+    "Tool ID::Code repository": "https://github.com/CAMeL-Lab/palmyra",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
     "Software::Operating system": [
@@ -1340,7 +1340,7 @@
     "Tool ID::Other useful links": "",
     "Tool ID::Respondent involved in development": "Yes",
     "Software::License": "CC_BY",
-    "Software::Code repository": "https://github.com/parameshkrishnaa/PLURAL-conllu-annotator",
+    "Tool ID::Code repository": "https://github.com/parameshkrishnaa/PLURAL-conllu-annotator",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
     "Software::Operating system": [
@@ -1429,7 +1429,7 @@
     "Tool ID::Other useful links": "",
     "Tool ID::Respondent involved in development": "Yes",
     "Software::License": "Apache-2.0",
-    "Software::Code repository": "",
+    "Tool ID::Code repository": "",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Desktop-based application",
     "Software::Operating system": [
@@ -1513,7 +1513,7 @@
     "Tool ID::Other useful links": "For example, the UNER project uses https://annotate.universalner.org/",
     "Tool ID::Respondent involved in development": "No",
     "Software::License": "other",
-    "Software::Code repository": "https://github.com/CogComp/talen",
+    "Tool ID::Code repository": "https://github.com/CogComp/talen",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
     "Software::Operating system": [
@@ -1599,7 +1599,7 @@
     "Tool ID::Other useful links": "http://www.fieldlinguiststoolbox.org/?i=1",
     "Tool ID::Respondent involved in development": "No",
     "Software::License": "other",
-    "Software::Code repository": "",
+    "Tool ID::Code repository": "",
     "Software::Active maintenance": "No",
     "Software::Software type": "Desktop-based application",
     "Software::Operating system": [
@@ -1682,7 +1682,7 @@
     "Tool ID::Other useful links": "https://ufal.mff.cuni.cz/tred/documentation/ar01-toc.html",
     "Tool ID::Respondent involved in development": "Yes",
     "Software::License": "GPL-2.0",
-    "Software::Code repository": "https://github.com/ufal/TrEd",
+    "Tool ID::Code repository": "https://github.com/ufal/TrEd",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Desktop-based application",
     "Software::Operating system": [
@@ -1776,7 +1776,7 @@
     "Tool ID::Other useful links": "[Paper] https://aclanthology.org/W17-7604",
     "Tool ID::Respondent involved in development": "No",
     "Software::License": "GPL-3.0",
-    "Software::Code repository": "https://github.com/jonorthwash/ud-annotatrix",
+    "Tool ID::Code repository": "https://github.com/jonorthwash/ud-annotatrix",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
     "Software::Operating system": [
@@ -1872,7 +1872,7 @@
     "Tool ID::Other useful links": "",
     "Tool ID::Respondent involved in development": "No",
     "Software::License": "Apache 2.0",
-    "Software::Code repository": "https://github.com/webanno/webanno",
+    "Tool ID::Code repository": "https://github.com/webanno/webanno",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
     "Software::Operating system": [
