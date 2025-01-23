@@ -4,23 +4,41 @@ let activeTools = [];
 let selectedCells = new Map(); // Map to track selected cells and their elements
 
 // Helper function to toggle selection
-const toggleCellSelection = (cell, value) => {
-    if (selectedCells.has(value)) {
-        selectedCells.get(value).classList.remove('selected');
-        selectedCells.delete(value);
-    } else {
-        cell.classList.add('selected');
-        selectedCells.set(value, cell);
-    }
-    updateTableCounts();
+const toggleCellSelection = (item, group, feature, value) => {
+
+	item.classList.add('highlight')
+
+	console.log(activeTools)
+	const filteredTools = []
+	activeTools.forEach(tool => {
+		const toolvalue = tool[`${group}::${feature}`]
+		console.log(toolvalue)
+		if (Array.isArray(toolvalue)){
+
+			if (toolvalue.includes(value)){
+				filteredTools.push(tool)
+			}
+
+		} else {
+			console.log(value == toolvalue)
+			if (value == toolvalue) {
+				filteredTools.push(tool)
+			}
+		}
+    });
+	console.log(filteredTools)
+
+	updateTableCounts(filteredTools);
+
 };
 
 // Function to update counts for the table
-const updateTableCounts = () => {
+const updateTableCounts = (toolslist) => {
+
     const pivotTableBody = document.querySelector('.pivot-table tbody');
 
     const groups = {};
-    activeTools.forEach(tool => {
+    toolslist.forEach(tool => {
         Object.keys(tool).forEach(key => {
             const [group, feature] = key.split('::');
             if (!groups[group]) groups[group] = [];
@@ -33,7 +51,7 @@ const updateTableCounts = () => {
 
         groups[group].forEach(feature => {
             const valueCounts = {};
-            activeTools.forEach(tool => {
+            toolslist.forEach(tool => {
                 const values = Array.isArray(tool[`${group}::${feature}`]) ? tool[`${group}::${feature}`] : [tool[`${group}::${feature}`]];
                 values.forEach(value => {
                     if (value) valueCounts[value] = (valueCounts[value] || 0) + 1;
@@ -52,6 +70,9 @@ const updateTableCounts = () => {
                         const itemRow = document.createElement('tr');
                         const itemCell = document.createElement('td');
                         const countCell = document.createElement('td');
+						itemCell.setAttribute("data-category", group)
+						itemCell.setAttribute("data-feature", feature)
+						itemCell.setAttribute("data-value", value)
 
                         itemCell.textContent = value;
                         countCell.textContent = `(${count})`;
@@ -61,7 +82,7 @@ const updateTableCounts = () => {
                         }
 
                         itemCell.addEventListener('click', () => {
-                            toggleCellSelection(itemCell, value);
+                            toggleCellSelection(itemCell, group, feature, value);
                         });
 
                         itemRow.appendChild(itemCell);
@@ -253,7 +274,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     }
 
                     itemCell.addEventListener('click', () => {
-                        toggleCellSelection(itemCell, value);
+                        toggleCellSelection(itemCell, group, feature, value);
                     });
                 });
 
