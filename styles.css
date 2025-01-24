@@ -16,6 +16,10 @@ body {
     color: var(--space-cadet);
 }
 
+.card:hover {
+    background-color: white;
+}
+
 /* Sidebar */
 .sidebar {
     width: 25%;
@@ -87,8 +91,9 @@ body {
     color: var(--antiflash-white);
 }
 .card img {
-    max-width: 100%;
-    height: auto;
+    width: 30%;
+    height: 20%;
+    object-fit: scale-down;
     border-radius: 3px;
 }
 .card h3 {
@@ -144,4 +149,8 @@ body {
     font-size: 14px;
     margin-top: 10px;
     color: var(--antiflash-white);
+}
+
+.value:hover {
+    background-color: azure;
 }
