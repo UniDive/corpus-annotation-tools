@@ -1,30 +1,67 @@
 const jsonUrl = 'https://raw.githubusercontent.com/UniDive/corpus-annotation-tools/main/data/latest_export.json';
 
 let activeTools = [];
-let selectedTools = [];
+let filteredTools = [];
 
-let selectedCells = new Map(); // Map to track selected cells and their elements
+let selectedCells = []; // Map to track selected cells and their elements
+// let selectedCells = new Map(); // Map to track selected cells and their elements
 
 // Helper function to toggle selection
 const toggleCellSelection = (item, group, feature, value) => {
 
+    filteredTools = [];
+
 	item.classList.add('highlight')
+    selectedCells.push([`${group}::${feature}`, value])
+    console.log(selectedCells);
 
-	const filteredTools = []
 	activeTools.forEach(tool => {
-		const toolvalue = tool[`${group}::${feature}`]
-		if (Array.isArray(toolvalue)){
+		// const toolvalue = tool[`${group}::${feature}`]
 
-			if (toolvalue.includes(value)){
-				filteredTools.push(tool)
-			}
+        let includetool = true;
 
-		} else {
-			if (value == toolvalue) {
-				filteredTools.push(tool)
-			}
-		}
+        selectedCells.forEach(([feat, val]) => {
+            toolvalue = tool[feat];
+            console.log(feat)
+            console.log(toolvalue)
+            if (Array.isArray(toolvalue)){
+                if (!toolvalue.includes(val)) includetool = false;
+            } else {
+                if (toolvalue!=val) includetool = false
+            }
+        });
+
+        if (includetool) {
+            filteredTools.push(tool);
+        } else {
+            console.log(tool["Tool ID::Tool name"])
+            tooldiv = document.querySelectorAll(`[data-value="${tool["Tool ID::Tool name"]}"`)[0]
+            tooldiv.classList.add("grayed-out")
+        }
     });
+
+    //     if (Array.isArray(toolvalue)){
+
+    //         const allIncluded = selectedCells.every(feat, val => {
+    //             if (feat===feature) toolvalue.includes(val);
+    //             });
+
+	// 		if (allIncluded){
+	// 			filteredTools.push(tool)
+	// 		}
+
+	// 	} else {
+    //         const allIncluded = selectedCells.every(feat, val => (feat === )
+    //             if (feat===feature) toolvalue==val);
+    //             });
+
+	// 		if (value == toolvalue) {
+	// 			filteredTools.push(tool)
+	// 		}
+	// 	}
+    // });
+    console.log(filteredTools)
+
 	updateTableCounts(filteredTools);
 };
 
@@ -34,7 +71,6 @@ const toggleCardSelection = (card_id, card_index) => {
     resetPage();
 
     card = document.querySelectorAll(`[data-value="${card_id}"]`)[0]
-    // console.log(card)
     card.classList.add("highlight")
 
     othercards = document.querySelectorAll("div.card")
@@ -42,7 +78,6 @@ const toggleCardSelection = (card_id, card_index) => {
     othercards.forEach(othercard => {
 
         if (othercard.getAttribute("data-value") != card_id) {
-            // console.log(othercard)
             othercard.classList.add("grayed-out")
         }
     });
@@ -86,7 +121,6 @@ const updateTableCounts = (toolslist) => {
     });
 
     Object.keys(groups).forEach(group => {
-        // if (group === "Tool ID") return;
         groups[group].forEach(feature => {
 			const valueCounts = {};
             toolslist.forEach(tool => {
@@ -97,13 +131,17 @@ const updateTableCounts = (toolslist) => {
             });
 
 			countCells = document.querySelectorAll(`[data-feature="${feature}"][data-type='count']`)
-			console.log(countCells)
+            // itemCells =
 
 			countCells.forEach(countCell => {
 				cellvalue = countCell.getAttribute("data-value");
-				if (cellvalue in valueCounts){
+
+                if (cellvalue in valueCounts){
 					countCell.textContent = `(${valueCounts[cellvalue]})`
 				} else {
+                    itemCell = document.querySelectorAll(`[data-feature="${feature}"][data-value="${cellvalue}"][data-type='value']`)[0]
+                    countCell.classList.add("grayed-out");
+                    itemCell.classList.add("grayed-out");
 					countCell.textContent = `(0)`
 				}
 			});
@@ -113,8 +151,10 @@ const updateTableCounts = (toolslist) => {
 };
 
 const resetPage = () => {
-    selectedCells.forEach((cell) => cell.classList.remove('selected'));
-    selectedCells.clear();
+    filteredTools = [];
+    selectedCells = [];
+    // selectedCells.forEach((cell) => cell.classList.remove('selected'));
+    // selectedCells;
     renderSidebar();
     renderTable();
 };
@@ -216,8 +256,6 @@ const renderSidebar = (highlightedValues = []) => {
                     const detail = document.createElement('p');
                     detail.innerHTML = `Data provided by tool developers`;
                     details.appendChild(detail);
-                    //  detail.innerHTML = `<strong>${key.replace('Tool ID::', '')}:</strong> ${tool[key]}`;
-                    //  details.appendChild(detail);
                     additionalInfo = true;
                 }
 
@@ -226,7 +264,6 @@ const renderSidebar = (highlightedValues = []) => {
                     const link = document.createElement('a');
                     link.href = tool[key];
                     link.textContent = "Code repository";
-                    // link.style.textDecoration = 'none';
                     link.style.color = 'inherit';
                     detail.appendChild(link);
                     details.appendChild(detail);
@@ -280,7 +317,6 @@ const renderTable = () => {
         pivotTableBody.appendChild(groupRow);
 
         groups[group].forEach(feature => {
-            // console.log(feature)
             const featureRow = document.createElement('tr');
             const featureCell = document.createElement('td');
             const valueCell = document.createElement('td');
@@ -319,9 +355,9 @@ const renderTable = () => {
                 row.appendChild(itemCell);
                 row.appendChild(countCell);
 
-                if (selectedCells.has(value)) {
-                    itemCell.classList.add('selected');
-                }
+                // if (selectedCells.has(value)) {
+                //     itemCell.classList.add('selected');
+                // }
 
                 itemCell.addEventListener('click', () => {
                     toggleCellSelection(itemCell, group, feature, value);
