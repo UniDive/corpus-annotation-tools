@@ -104,8 +104,9 @@ body {
     font-size: 14px;
     color: var(--antiflash-white);
 }
-.card.grayed-out {
+.grayed-out {
     opacity: 0.5;
+    pointer-events: none;
 }
 .card .highlight-btn {
     display: block;
@@ -124,7 +125,7 @@ body {
 }
 
 .highlight{
-    color:yellow
+    background-color:yellow
 }
 
 .card .plus {

@@ -43,7 +43,7 @@ const toggleCardSelection = (card_id, card_index) => {
 
         if (othercard.getAttribute("data-value") != card_id) {
             // console.log(othercard)
-            othercard.classList.add("greyed-out")
+            othercard.classList.add("grayed-out")
         }
     });
 
@@ -164,7 +164,8 @@ const renderSidebar = (highlightedValues = []) => {
         highlightBtn.className = 'highlight-btn';
         highlightBtn.textContent = 'Highlight in Table';
         highlightBtn.dataset.index = index;
-        highlightBtn.addEventListener('click', () => {
+        highlightBtn.addEventListener('click', (event) => {
+            event.stopPropagation();
             const index = highlightBtn.dataset.index;
         const tool = activeTools[index];
 
@@ -195,7 +196,8 @@ const renderSidebar = (highlightedValues = []) => {
         plus.className = 'plus';
         plus.setAttribute('aria-label', 'Expand details');
         plus.textContent = '+';
-        plus.addEventListener('click', () => {
+        plus.addEventListener('click', (event) => {
+            event.stopPropagation();
             const details = card.querySelector('.details');
             details.style.display = details.style.display === 'none' ? 'block' : 'none';
         });
@@ -247,7 +249,8 @@ const renderSidebar = (highlightedValues = []) => {
         card.appendChild(details);
         sidebar.appendChild(card);
 
-        card.addEventListener("click", () => {
+        card.addEventListener("click", (event) => {
+            event.stopPropagation();
             toggleCardSelection(tool["Tool ID::Tool name"], index);
         });
 
