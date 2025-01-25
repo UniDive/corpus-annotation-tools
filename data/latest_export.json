@@ -1871,7 +1871,7 @@
     "Tool ID::Website": "https://webanno.github.io/webanno/",
     "Tool ID::Other useful links": "",
     "Tool ID::Respondent involved in development": "No",
-    "Software::License": "Apache 2.0",
+    "Software::License": "Apache-2.0",
     "Tool ID::Code repository": "https://github.com/webanno/webanno",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
