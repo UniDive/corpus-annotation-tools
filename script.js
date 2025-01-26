@@ -208,37 +208,37 @@ const renderSidebar = (highlightedValues = []) => {
         description.textContent = tool["Tool ID::Short description"];
         card.appendChild(description);
 
-        const highlightBtn = document.createElement('button');
-        highlightBtn.className = 'highlight-btn';
-        highlightBtn.textContent = 'Highlight in Table';
-        highlightBtn.dataset.index = index;
-        highlightBtn.addEventListener('click', (event) => {
-            event.stopPropagation();
-            const index = highlightBtn.dataset.index;
-        const tool = activeTools[index];
+        // const highlightBtn = document.createElement('button');
+        // highlightBtn.className = 'highlight-btn';
+        // highlightBtn.textContent = 'Highlight in Table';
+        // highlightBtn.dataset.index = index;
+        // highlightBtn.addEventListener('click', (event) => {
+        //     event.stopPropagation();
+        //     const index = highlightBtn.dataset.index;
+        // const tool = activeTools[index];
 
-        document.querySelectorAll('.highlight').forEach(cell => cell.classList.remove('highlight'));
+        // document.querySelectorAll('.highlight').forEach(cell => cell.classList.remove('highlight'));
 
-        Object.entries(tool).forEach(([key, value]) => {
-            const [curr_group, curr_feature] = key.split('::');
-            if (Array.isArray(value)) {
-                value.forEach(val => {
-                    document.querySelectorAll(`[data-feature="${curr_feature}"][data-value="${val}"][data-type='value']`).forEach(cell => {
-                        if (cell.textContent.trim() === val) {
-                            cell.classList.add('highlight');
-                        }
-                    });
-                });
-            } else {
-                document.querySelectorAll(`[data-feature="${curr_feature}"][data-value="${value}"][data-type='value']`).forEach(cell => {
-                    if (cell.textContent.trim() === value) {
-                        cell.classList.add('highlight');
-                    }
-                });
-            }
-        });
-        });
-        card.appendChild(highlightBtn);
+        // Object.entries(tool).forEach(([key, value]) => {
+        //     const [curr_group, curr_feature] = key.split('::');
+        //     if (Array.isArray(value)) {
+        //         value.forEach(val => {
+        //             document.querySelectorAll(`[data-feature="${curr_feature}"][data-value="${val}"][data-type='value']`).forEach(cell => {
+        //                 if (cell.textContent.trim() === val) {
+        //                     cell.classList.add('highlight');
+        //                 }
+        //             });
+        //         });
+        //     } else {
+        //         document.querySelectorAll(`[data-feature="${curr_feature}"][data-value="${value}"][data-type='value']`).forEach(cell => {
+        //             if (cell.textContent.trim() === value) {
+        //                 cell.classList.add('highlight');
+        //             }
+        //         });
+        //     }
+        // });
+        // });
+        // card.appendChild(highlightBtn);
 
         const plus = document.createElement('button');
         plus.className = 'plus';
@@ -319,6 +319,8 @@ const renderTable = () => {
         const groupRow = document.createElement('tr');
         groupRow.className = 'group';
         const groupCell = document.createElement('td');
+        groupCell.classList.add("group-title");
+        groupCell.setAttribute("data-value", group)
         groupCell.colSpan = 2;
         groupCell.textContent = group;
         groupRow.appendChild(groupCell);
@@ -341,7 +343,12 @@ const renderTable = () => {
 
             const cellContent = document.createElement('table');
             let row = null;
-            Object.entries(valueCounts).forEach(([value, count], index) => {
+
+            const sortedByValue = Object.entries(valueCounts).sort((a, b) => b[1] - a[1]);
+            const sortedObjByValue = Object.fromEntries(sortedByValue);
+
+            Object.entries(sortedObjByValue).forEach(([value, count], index) => {
+            // Object.entries(valueCounts).forEach(([value, count], index) => {
                 if (index % 2 === 0) {
                     row = document.createElement('tr');
                     cellContent.appendChild(row);
