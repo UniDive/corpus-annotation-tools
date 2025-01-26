@@ -162,6 +162,14 @@ const resetPage = () => {
 const renderSidebar = (highlightedValues = []) => {
     sidebar.innerHTML = '';
 
+
+    const sidebar_title = document.createElement('h2');
+    sidebar_title.classList.add("surveyed-tools-title");
+    sidebar_title.textContent = "Surveyed tools";
+
+    sidebar.appendChild(sidebar_title);
+
+
     activeTools.forEach((tool, index) => {
         const card = document.createElement('div');
         card.className = 'card';
