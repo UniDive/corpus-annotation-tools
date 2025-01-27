@@ -22,20 +22,33 @@ body {
 }
 
 /* Sidebar */
-.sidebar {
+
+    div.sidebar {
     width: 25%;
-    background-color: var(--rich-black);
-    padding: 10px;
+    background-color: rgba(0, 148, 126, 0.897);
+    padding: 30px;
     border-right: 1px solid var(--space-cadet);
     overflow-y: auto;
     height: 100vh;
-    color: var(--white);
+    color: white;
 }
+
+/* Title Above Cards */
+
+.surveyed-tools-title {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: white;
+}
+
+
+
 
 /* Content */
 .content {
     width: 75%;
-    padding: 10px;
+    padding: 30px;
     overflow-y: auto;
     height: 100vh;
 }
@@ -44,14 +57,14 @@ body {
 .pivot-table table {
     width: 100%;
     /* border-collapse: collapse; */
-    border-spacing: 0;
-    margin-top: 20px;
-    background: var(--antiflash-white);
+    border-spacing: 10px;
+    margin-top: 10px;
+    background: white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border: 0px solid var(--prussian-blue);
+    border: 0px solid #333;
 }
 .pivot-table th, .pivot-table td {
-    border: 1px solid var(--prussian-blue);
+    border: 0.5px solid #333;
     /* border-radius: 5px; */
     padding: 8px;
     text-align: left;
@@ -62,14 +75,9 @@ body {
 } */
 
 .pivot-table td table tr td {
-    border: 2px solid var(--prussian-blue);
+    border: 1px solid #333;
     border-radius: 5px;
 }
-
-/* .pivot-table td table tr td:last-child {
-    border: 2px solid green;
-    border-radius: 10px;
-} */
 
 .pivot-table th {
     background-color: var(--dark-cyan);
@@ -83,43 +91,111 @@ body {
 
 /* Reset Button */
 .reset-btn {
-    background-color: var(--dark-cyan);
-    color: var(--antiflash-white);
-    padding: 5px 10px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 14px;
-    margin-left: 20px;
-    transition: background-color 0.3s;
+    background-color: rgba(0, 148, 126, 0.897);
+    color: white; /* White text */
+    padding: 10px 20px; /* Adjust padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center vertically */
+    gap: 10px; /* Space between icon and text */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Text size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
 }
+
 .reset-btn:hover {
-    background-color: var(--process-cyan);
+    background-color: rgba(0, 98, 80, 0.897); /* Darker green on hover */
+}
+
+.reset-btn img {
+    width: 20px; /* Set image width */
+    height: 20px; /* Set image height */
+    object-fit: contain; /* Keep image proportions */
 }
 
 /* Card Styling */
 .card {
-    background-color: var(--prussian-blue);
-    /* border: 1px solid var(--white); */
+    background-color: #403939;
     border-radius: 10px;
     margin-bottom: 10px;
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
     color: var(--antiflash-white);
+
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center all elements */
+    gap: 10px; /* Adds spacing between elements */
+
+    transition: all 0.3s ease;
 }
+
+.card:hover {
+    background-color: white; /* Change background to white */
+    color: rgba(0, 148, 126, 0.897); /* Change text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a raised shadow effect */
+    transform: translateY(-5px); /* Slightly lift the card */
+}
+
+.card:hover p {
+    color: #333; /* Change paragraph text color to black on hover */
+}
+
+
+.card .plus:hover {
+    color: white; /* Change plus sign to white on hover */
+    background-color: rgba(0, 118, 96, 0.897); /* Optional darker background */
+}
+
+
+/* Uniform Image Styling */
 .card img {
-    width: 30%;
-    height: 20%;
-    object-fit: scale-down;
-    border-radius: 3px;
+    width: 80px; /* Set a fixed width */
+    height: 80px; /* Set a fixed height */
+    object-fit: contain; /* Ensure the image covers the space without distortion */
+    border-radius: 50%; /* Make the image circular */
+    border: 2px solid white; /* Optional border for styling */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    margin: 10px auto; /* Center the image in its container */
+    background-color: rgb(216, 216, 216); /* Ensure the image background is always white */
+
+    /* Effetto grayscale */
+    filter: grayscale(100%);
+    transition: filter 0.3s ease; /* Transizione per rendere più fluido l'effetto hover */
 }
+
+/* Image Container Styling */
+.image-container {
+    width: 100px; /* Define container width */
+    height: 100px; /* Define container height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Container background is always white */
+    border-radius: 50%; /* Ensure the container is circular */
+    overflow: hidden; /* Crop any excess image outside the container */
+}
+
+.image-container img {
+    width: 100%; /* Image takes full width */
+    height: 100%; /* Image takes full height */
+    object-fit: contain; /* Ensure the image is scaled properly */
+}
+
 .card h3 {
     margin: 10px 0 5px;
-    font-size: 18px;
+    font-size: 22px;
+    font-family: 'Manrope';
+    font-weight: 800;
+    text-align: center;
 }
 .card p {
+    margin-top: 10px;
     font-size: 14px;
+    text-align: center;
     color: var(--antiflash-white);
 }
 .grayed-out {
@@ -130,20 +206,20 @@ body {
     display: block;
     margin-bottom: 10px;
     padding: 5px 10px;
-    background-color: var(--process-cyan);
-    color: var(--antiflash-white);
+    background-color: rgba(0, 148, 126, 0.897);
+    color: white;
     border: none;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
     transition: background-color 0.3s;
 }
-.card .highlight-btn:hover {
+/*.card .highlight-btn:hover {
     background-color: var(--dark-cyan);
-}
+}*/
 
 .highlight{
-    background-color: var(--cerulean);
+    background-color: rgba(0, 148, 126, 0.897);
     color: var(--white);
 }
 
@@ -153,7 +229,7 @@ body {
     right: 10px;
     width: 20px;
     height: 20px;
-    background-color: var(--dark-cyan);
+    background-color: rgba(0, 148, 126, 0.897);
     color: var(--antiflash-white);
     border-radius: 50%;
     display: flex;
@@ -161,6 +237,11 @@ body {
     justify-content: center;
     cursor: pointer;
     font-size: 14px;
+}
+
+/* Prevent button + from changing color on card hover */
+.card:hover .plus {
+    color: white !important; /* Mantiene il colore bianco */
 }
 
 /* Details */
@@ -173,5 +254,116 @@ body {
 
 .value:hover {
     background-color: var(--white);
-    color: var(--prussian-blue);
+    color: (0, 148, 126, 0.897);
 }
+
+
+/* Link Styling in Cards */
+.card a {
+    color: rgba(0, 118, 96, 0.897); /* Verde acqua come lo sfondo */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    font-weight: bold; /* Evidenziazione */
+}
+
+.card a:hover {
+    text-decoration: underline; /* Sottolineatura al passaggio del mouse */
+    color: rgba(0, 98, 80, 0.897); /* Verde più scuro al hover */
+}
+
+/* Pivot Table Title */
+.pivot-table h2 {
+    font-size: 42px; /* Larger font size for the title */
+    color: rgba(0, 118, 96, 0.897); /* Custom color for the title */
+    font-weight: bold; /* Bold font weight */
+    margin-bottom: 20px; /* Space below the title */
+    font-family: manrope;
+    font-weight: 100;
+}
+
+/* Pivot Table Customizations */
+.pivot-table table {
+    width: 100%;
+    border-spacing: 20;
+    margin-top: 10px;
+    background: var(--antiflash-white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 0px solid #333;
+}
+
+.pivot-table th, .pivot-table td {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Convert bold text in table to small caps */
+.pivot-table td b {
+    font-variant: small-caps;
+    font-weight: bold;
+    color: var(--dark-cyan);
+}
+
+/* Apply small caps to headers */
+.pivot-table th {
+    font-variant: small-caps;
+    font-weight: bold;
+    text-transform: lowercase;
+    font-size: 20px;
+}
+
+/* Apply diagonal lines pattern to left column with custom color */
+.pivot-table > table > tbody > tr > td:first-child {
+    background-image: linear-gradient(45deg, rgba(185, 218, 212, 0.45) 25%, transparent 25%, transparent 50%, rgba(185, 218, 212, 0.45) 50%, rgba(185, 218, 212, 0.45) 75%, transparent 75%, transparent);
+    background-size: 15px 15px; /* Dimensione del pattern */
+    background-color: white; /* Sfondo di base */
+    font-variant: small-caps;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+/* Apply star pattern to right column */
+.pivot-table td:last-child {
+    background-image: radial-gradient(circle, rgba(227, 227, 227, 0.8) 1px, transparent 1px);
+    background-size: 15px 15px; /* Size of the pattern */
+    background-color: white; /* Base background color */
+}
+
+/* Apply diagonal lines pattern to "Feature" column header */
+.pivot-table th:first-child {
+    background-image: linear-gradient(45deg, rgba(185, 218, 212, 0.45) 25%, transparent 25%, transparent 50%, rgba(185, 218, 212, 0.45) 50%, rgba(185, 218, 212, 0.45) 75%, transparent 75%, transparent);
+    background-size: 15px 15px; /* Dimensione del pattern */
+    background-color: white; /* Sfondo di base */
+}
+
+/* Apply star pattern to "Details" column header */
+.pivot-table th:last-child {
+    background-image: radial-gradient(circle, rgba(227, 227, 227, 0.8) 1px, transparent 1px);
+    background-size: 15px 15px; /* Dimensione del pattern */
+    background-color: white; /* Sfondo di base */
+}
+
+/*blocco nero*/
+.pivot-table td[data-value="Software"],
+.pivot-table td[data-value="Data support"],
+.pivot-table td[data-value="Diversity features"],
+.pivot-table td[data-value="Annotation"],
+.pivot-table td[data-value="User Experience"],
+.pivot-table td[data-value="UD/PARSEME specifics"] {
+    background-color: #333 !important; /* Sfondo nero */
+    color: white !important; /* Testo bianco */
+    font-weight: bold; /* Grassetto */
+    background-image: none !important; /* Rimuove il pattern */
+}
+
+/* Highlight row on hover in pivot table */
+.pivot-table tbody tr:hover {
+    background-color: rgba(0, 118, 96, 0.1); /* Colore di sfondo leggero per evidenziare l'intera riga */
+    transition: background-color 0.3s ease; /* Transizione fluida */
+}
+
+/* Ensure row hover effect spans full row */
+.pivot-table tbody tr {
+    display: table-row; /* Assicura che l'intera riga sia trattata come una sezione */
+}
+
+
