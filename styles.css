@@ -223,6 +223,8 @@ body {
     color: var(--white);
 }
 
+.card
+
 .card .plus {
     position: absolute;
     bottom: 10px;
@@ -355,15 +357,22 @@ body {
     background-image: none !important; /* Rimuove il pattern */
 }
 
-/* Highlight row on hover in pivot table */
+/* Highlight row on hover in pivot table
 .pivot-table tbody tr:hover {
     background-color: rgba(0, 118, 96, 0.1); /* Colore di sfondo leggero per evidenziare l'intera riga */
-    transition: background-color 0.3s ease; /* Transizione fluida */
-}
+    /* transition: background-color 0.3s ease; Transizione fluida */
+/* } */ */
 
 /* Ensure row hover effect spans full row */
-.pivot-table tbody tr {
-    display: table-row; /* Assicura che l'intera riga sia trattata come una sezione */
+/* .pivot-table tbody tr { */
+    /* display: table-row; Assicura che l'intera riga sia trattata come una sezione */
+/* } */
+
+.value {
+    background-color: black;
 }
 
-
+.pivot-table td.value:hover {
+    background-color: rgba(0, 118, 96, 0.1);
+    transition: background-color 0.3s ease;
+}
