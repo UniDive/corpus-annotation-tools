@@ -13,7 +13,10 @@ with open('data/results_230125.tsv', newline='') as csvfile:
 
 		for field in row:
 			if field in list_type_fields:
-				row[field] = [x.strip() for x in row[field].split(",")]
+				if row[field]:
+					row[field] = [x.strip() for x in row[field].split(",")]
+				else:
+					row[field] = [""]
 
 		data.append(row)
 

@@ -1,378 +1,502 @@
 /* Root Variables */
 :root {
-    --white: #ffffffff;
---rich-black: #00171fff;
---prussian-blue: #003459ff;
---cerulean: #007ea7ff;
---picton-blue: #00a8e8ff;
+    --white: #FFFFFFff;
+    --french-gray: #BFCBD9ff;
+    --air-superiority-blue: #789FB3ff;
+    --yinmn-blue: #3A567Fff;
+    --sandy-brown: #FFA346ff;
+    --pumpkin: #FF853Fff;
 }
 
 /* General Styling */
 body {
-    display: flex;
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    background-color: var(--antiflash-white);
-    color: var(--space-cadet);
+    background-color: var(--french-gray);
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
-.card:hover {
-    background-color: var(--cerulean);
-    color: var(--white);
+
+/* Instructions */
+
+.instructions {
+    position: fixed; /* Make it float above everything */
+    top: 0;
+    left: 0;
+    /* width: 100vw; */
+    z-index: 1000;
+    background: var(--white );
+    color: var(--yinmn-blue);
+    border-bottom: 1px solid var(--french-gray);
+    padding: 1rem 2rem 0.5rem 2rem;
+    font-size: 1.1rem;
+    transition: max-height 0.3s, opacity 0.3s, min-width 0.3s;
+    max-height: 300px;
+    overflow: hidden;
+    opacity: 1;
+    box-sizing: border-box;
+}
+
+.instructions.collapsed {
+    background: var(--white );
+    color: var(--yinmn-blue);
+    border-bottom: 1px solid var(--french-gray);
+    max-height: 40px;
+    opacity: 1;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    /* align-items: center; */
+    /* min-width: 60px; */
+    /* width: 60px; */
+}
+
+.instructions.collapsed .instructions-title,
+.instructions.collapsed .instructions-content {
+    display: none;
+}
+
+.instructions-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+#collapse-instructions {
+    background-color: var(--white);
+    /* background: var(--yinmn-blue); */
+    color: var(--yinmn-blue);
+    border: none;
+    /* border-radius: 50%; */
+    /* width: 32px; */
+    /* height: 32px; */
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+#collapse-instructions:hover {
+    background-color: var(--sandy-brown);
+    border-radius: 50%;
+}
+
+
+/* CONTAINER */
+.container {
+    position: absolute;
+    display: flex;
+    height: calc(100vh - 40px); /* Adjust for instructions bar height */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 40px; /* Height of collapsed instructions bar */
+    box-sizing: border-box;
 }
 
 /* Sidebar */
-
-    div.sidebar {
-    width: 25%;
-    background-color: rgba(0, 148, 126, 0.897);
-    padding: 30px;
-    border-right: 1px solid var(--space-cadet);
+.sidebar {
+    /* flex: 1 1 50%; */
+    min-width: 20vw;
+    max-width: 80vw;
+    height: 100%;
     overflow-y: auto;
-    height: 100vh;
-    color: white;
-}
-
-/* Title Above Cards */
-
-.surveyed-tools-title {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    color: white;
-}
-
-
-
-
-/* Content */
-.content {
-    width: 75%;
+    background-color: var(--french-gray);
     padding: 30px;
-    overflow-y: auto;
-    height: 100vh;
+    border-right: 2px solid var(--yinmn-blue);
+    color: var(--yinmn-blue);
 }
 
-/* Pivot Table */
-.pivot-table table {
-    width: 100%;
-    /* border-collapse: collapse; */
-    border-spacing: 10px;
-    margin-top: 10px;
-    background: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border: 0px solid #333;
-}
-.pivot-table th, .pivot-table td {
-    border: 0.5px solid #333;
-    /* border-radius: 5px; */
-    padding: 8px;
-    text-align: left;
-}
-
-/* .pivot-table td table {
-    border-radius: 5px;
-} */
-
-.pivot-table td table tr td {
-    border: 1px solid #333;
-    border-radius: 5px;
-}
-
-.pivot-table th {
-    background-color: var(--dark-cyan);
-    color: var(--antiflash-white);
-}
-.pivot-table .group {
-    background-color: var(--process-cyan);
-    font-weight: bold;
-    color: var(--antiflash-white);
+.sidebar h2 {
+    display: inline-block;
+    vertical-align: middle;
 }
 
 /* Reset Button */
 .reset-btn {
-    background-color: rgba(0, 148, 126, 0.897);
-    color: white; /* White text */
+    background-color: var(--pumpkin);
+    color: var(--yinmn-blue); /* White text */
     padding: 10px 20px; /* Adjust padding */
     border: none; /* Remove border */
     border-radius: 5px; /* Rounded corners */
-    display: flex; /* Flexbox for alignment */
+    box-shadow: 0 2px 4px var(--yinmn-blue);
     align-items: center; /* Center vertically */
     gap: 10px; /* Space between icon and text */
     cursor: pointer; /* Pointer cursor */
     font-size: 16px; /* Text size */
     font-weight: bold; /* Bold text */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+    transition: background-color 0.5s ease; /* Smooth hover effect */
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .reset-btn:hover {
-    background-color: rgba(0, 98, 80, 0.897); /* Darker green on hover */
+    background-color: var(--sandy-brown);
 }
 
-.reset-btn img {
-    width: 20px; /* Set image width */
-    height: 20px; /* Set image height */
-    object-fit: contain; /* Keep image proportions */
+
+/* Resizer */
+.resizer {
+    width: 20px;
+    background: var(--french-gray);
+    cursor: ew-resize;
+    position: relative;
+    z-index: 2;
+}
+
+/* Content */
+.content {
+    /* flex: 1 1 50%; */
+    min-width: 20vw;
+    max-width: 80vw;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+/* Features table */
+.features-table {
+    background-color: var(--white);
+    flex: 1 1 auto;
+    overflow-y: auto;
+    padding: 1rem;
+    height: 100%;
+}
+
+
+/* Tools */
+
+.tools {
+    background-color: var(--white);
+    margin-top: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* space between cards */
+    justify-content: center;
 }
 
 /* Card Styling */
 .card {
-    background-color: #403939;
+    background-color: var(--pumpkin);
     border-radius: 10px;
-    margin-bottom: 10px;
     padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
-    color: var(--antiflash-white);
-
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center all elements */
-    gap: 10px; /* Adds spacing between elements */
-
-    transition: all 0.3s ease;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px var(--yinmn-blue);
+    color: var(--yinmn-blue);
+    text-align: left;
+    flex: 0 1 220px;         /* Cards are flexible, min width 220px */
+    min-width: 180px;        /* Minimum width for small screens */
+    word-break: break-word;  /* Prevent overflow for long names */
+        transition:
+        background 0.3s,
+        box-shadow 0.3s,
+        padding 0.3s,
+        max-width 0.3s;
 }
 
 .card:hover {
-    background-color: white; /* Change background to white */
-    color: rgba(0, 148, 126, 0.897); /* Change text color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a raised shadow effect */
+    background-color: var(--sandy-brown); /* Change background to white */
+    box-shadow: 0 4px 8px var(--french-gray); /* Add a raised shadow effect */
     transform: translateY(-5px); /* Slightly lift the card */
 }
 
-.card:hover p {
-    color: #333; /* Change paragraph text color to black on hover */
+.card .plus,
+.card .minus {
+    background: var(--yinmn-blue);
+    color: var(--white);
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
 }
 
-
-.card .plus:hover {
-    color: white; /* Change plus sign to white on hover */
-    background-color: rgba(0, 118, 96, 0.897); /* Optional darker background */
+.card .minus {
+    display: none;
+}
+.card.expanded .plus {
+    display: none;
+}
+.card.expanded .minus {
+    display: inline-flex;
 }
 
+.card .plus:hover,
+.card .minus:hover {
+    color: var(--yinmn-blue); /* Change plus sign to white on hover */
+    background-color: var(--white); /* Optional darker background */
+}
 
-/* Uniform Image Styling */
+.card h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    display: block;
+    color: var(--white);
+    float: left;
+}
+
+.card h3:hover {
+    color: var(--air-superiority-blue);
+}
+
+.card.expanded h3 {
+    float: none;
+}
+
+.card .details {
+    transition: opacity 0.3s, max-height 0.3s;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
 .card img {
+    display: none;
     width: 80px; /* Set a fixed width */
     height: 80px; /* Set a fixed height */
     object-fit: contain; /* Ensure the image covers the space without distortion */
     border-radius: 50%; /* Make the image circular */
-    border: 2px solid white; /* Optional border for styling */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+    border: 2px solid var(--french-gray); /* Optional border for styling */
+    box-shadow: 0 2px 4px var(--white); /* Add a subtle shadow for depth */
     margin: 10px auto; /* Center the image in its container */
-    background-color: rgb(216, 216, 216); /* Ensure the image background is always white */
-
+    background-color: var(--white); /* Ensure the image background is always white */
     /* Effetto grayscale */
     filter: grayscale(100%);
     transition: filter 0.3s ease; /* Transizione per rendere più fluido l'effetto hover */
 }
 
-/* Image Container Styling */
-.image-container {
-    width: 100px; /* Define container width */
-    height: 100px; /* Define container height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white; /* Container background is always white */
-    border-radius: 50%; /* Ensure the container is circular */
-    overflow: hidden; /* Crop any excess image outside the container */
-}
-
-.image-container img {
-    width: 100%; /* Image takes full width */
-    height: 100%; /* Image takes full height */
-    object-fit: contain; /* Ensure the image is scaled properly */
-}
-
-.card h3 {
-    margin: 10px 0 5px;
-    font-size: 22px;
-    font-family: 'Manrope';
-    font-weight: 800;
-    text-align: center;
-}
 .card p {
-    margin-top: 10px;
+    margin: 0 0 0.5rem 0;
+    display: inline-block;
     font-size: 14px;
     text-align: center;
-    color: var(--antiflash-white);
+    color: var(--yinmn-blue);
+    max-inline-size: var(--title-width);
+    overflow-wrap: anywhere;
+    text-align: left;
+    float: none;
 }
-.grayed-out {
-    opacity: 0.2;
-    pointer-events: none;
+
+.card.expanded {
+    flex: 1 1 100%;       /* take full sidebar width */
+    max-width: 100%;
+    min-width: 100%;
 }
-.card .highlight-btn {
-    display: block;
-    margin-bottom: 10px;
-    padding: 5px 10px;
-    background-color: rgba(0, 148, 126, 0.897);
-    color: white;
-    border: none;
-    border-radius: 5px;
+
+.card.expanded .details {
+    /* display: block !important; */
+    /* margin-top: 0.5rem; */
+    color: var(--yinmn-blue);
+    background: var(--air-superiority-blue);
+    border-radius: 8px;
+    padding: 10px;
+    opacity: 1;
+    max-height: 500px; /* or a value that fits your content */
+    transition: opacity 0.3s, max-height 0.3s;
+}
+
+
+.card.disabled {
+    opacity: 0.4;
+    /* pointer-events: none; */
+}
+
+.card.disabled .plus,
+.card.disabled .minus {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    filter: none !important;
+}
+
+
+/* Feature sections */
+
+.feature-section {
+    background: var(--french-gray);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px var(--yinmn-blue);
+    margin-bottom: 1.5rem;
+    padding: 1rem 1.5rem;
+    transition: box-shadow 0.2s;
+    position: relative;
+}
+
+.feature-section:hover {
+    transform: translateY(-5px); /* Slightly lift the card */
+}
+
+.feature-section.collapsed .feature-question {
+    display: none;
+}
+
+.feature-section h3 {
+    font-size: 1.3rem;
+    color: var(--yinmn-blue);
+    margin: 0;
     cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s;
-}
-/*.card .highlight-btn:hover {
-    background-color: var(--dark-cyan);
-}*/
-
-.highlight{
-    background-color: rgba(0, 148, 126, 0.897);
-    color: var(--white);
-}
-
-.card
-
-.card .plus {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    width: 20px;
-    height: 20px;
-    background-color: rgba(0, 148, 126, 0.897);
-    color: var(--antiflash-white);
-    border-radius: 50%;
+    user-select: none;
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 0.5rem;
+}
+
+.feature-section.collapsed .toggle-arrow {
+    transform: rotate(-90deg);
+}
+
+.feature-section .toggle-arrow {
+    font-size: 1.2rem;
+    transition: transform 0.5s ease-in-out;
+}
+
+.feature-question h4 {
+    color: var(--white);           /* Distinct color for question title */
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0.3rem 0 0.3rem 0;
+    letter-spacing: 0.5px;
+}
+
+/* Feature-value pairs */
+.feature-question .value {
+    display: inline-block;
+    background: var(--pumpkin);
+    color: var(--white);
+    border-radius: 5px 0 0 5px;
+    padding: 4px 10px;
+    margin-right: 2px;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.feature-question .count {
+    display: inline-block;
+    background: var(--white);
+    color: var(--yinmn-blue);
+    border-radius: 0 5px 5px 0;
+    padding: 4px 10px;
+    margin-right: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-left: 2px solid var(--pumpkin);
+}
+
+.feature-question .value {
+    transition: background 0.2s, color 0.2s;
+}
+.feature-question .value:hover {
     cursor: pointer;
-    font-size: 14px;
+    text-decoration: underline;
+    background: var(--yinmn-blue);
 }
 
-/* Prevent button + from changing color on card hover */
-.card:hover .plus {
-    color: white !important; /* Mantiene il colore bianco */
-}
-
-/* Details */
-.details {
-    display: none;
-    font-size: 14px;
-    margin-top: 10px;
-    color: var(--antiflash-white);
-}
-
-.value:hover {
-    background-color: var(--white);
-    color: (0, 148, 126, 0.897);
-}
-
-
-/* Link Styling in Cards */
-.card a {
-    color: rgba(0, 118, 96, 0.897); /* Verde acqua come lo sfondo */
-    text-decoration: none; /* Rimuove la sottolineatura */
-    font-weight: bold; /* Evidenziazione */
-}
-
-.card a:hover {
-    text-decoration: underline; /* Sottolineatura al passaggio del mouse */
-    color: rgba(0, 98, 80, 0.897); /* Verde più scuro al hover */
-}
-
-/* Pivot Table Title */
-.pivot-table h2 {
-    font-size: 42px; /* Larger font size for the title */
-    color: rgba(0, 118, 96, 0.897); /* Custom color for the title */
-    font-weight: bold; /* Bold font weight */
-    margin-bottom: 20px; /* Space below the title */
-    font-family: manrope;
-    font-weight: 100;
-}
-
-/* Pivot Table Customizations */
-.pivot-table table {
-    width: 100%;
-    border-spacing: 20;
-    margin-top: 10px;
-    background: var(--antiflash-white);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border: 0px solid #333;
-}
-
-.pivot-table th, .pivot-table td {
-    border: 1px solid #333;
-    padding: 8px;
-    text-align: left;
-}
-
-/* Convert bold text in table to small caps */
-.pivot-table td b {
-    font-variant: small-caps;
-    font-weight: bold;
-    color: var(--dark-cyan);
-}
-
-/* Apply small caps to headers */
-.pivot-table th {
-    font-variant: small-caps;
-    font-weight: bold;
-    text-transform: lowercase;
-    font-size: 20px;
-}
-
-/* Apply diagonal lines pattern to left column with custom color */
-.pivot-table > table > tbody > tr > td:first-child {
-    background-image: linear-gradient(45deg, rgba(185, 218, 212, 0.45) 25%, transparent 25%, transparent 50%, rgba(185, 218, 212, 0.45) 50%, rgba(185, 218, 212, 0.45) 75%, transparent 75%, transparent);
-    background-size: 15px 15px; /* Dimensione del pattern */
-    background-color: white; /* Sfondo di base */
-    font-variant: small-caps;
-    font-weight: bold;
-    text-transform: lowercase;
-}
-
-/* Apply star pattern to right column */
-.pivot-table td:last-child {
-    background-image: radial-gradient(circle, rgba(227, 227, 227, 0.8) 1px, transparent 1px);
-    background-size: 15px 15px; /* Size of the pattern */
-    background-color: white; /* Base background color */
-}
-
-/* Apply diagonal lines pattern to "Feature" column header */
-.pivot-table th:first-child {
-    background-image: linear-gradient(45deg, rgba(185, 218, 212, 0.45) 25%, transparent 25%, transparent 50%, rgba(185, 218, 212, 0.45) 50%, rgba(185, 218, 212, 0.45) 75%, transparent 75%, transparent);
-    background-size: 15px 15px; /* Dimensione del pattern */
-    background-color: white; /* Sfondo di base */
-}
-
-/* Apply star pattern to "Details" column header */
-.pivot-table th:last-child {
-    background-image: radial-gradient(circle, rgba(227, 227, 227, 0.8) 1px, transparent 1px);
-    background-size: 15px 15px; /* Dimensione del pattern */
-    background-color: white; /* Sfondo di base */
-}
-
-/*blocco nero*/
-.pivot-table td[data-value="Software"],
-.pivot-table td[data-value="Data support"],
-.pivot-table td[data-value="Diversity features"],
-.pivot-table td[data-value="Annotation"],
-.pivot-table td[data-value="User Experience"],
-.pivot-table td[data-value="UD/PARSEME specifics"] {
-    background-color: #333 !important; /* Sfondo nero */
-    color: white !important; /* Testo bianco */
-    font-weight: bold; /* Grassetto */
-    background-image: none !important; /* Rimuove il pattern */
-}
-
-/* Highlight row on hover in pivot table
-.pivot-table tbody tr:hover {
-    background-color: rgba(0, 118, 96, 0.1); /* Colore di sfondo leggero per evidenziare l'intera riga */
-    /* transition: background-color 0.3s ease; Transizione fluida */
-/* } */ */
-
-/* Ensure row hover effect spans full row */
-/* .pivot-table tbody tr { */
-    /* display: table-row; Assicura che l'intera riga sia trattata come una sezione */
-/* } */
 
 .value {
-    background-color: black;
+    color: #aaa;
+    background: var(--pumpkin);
+    cursor: pointer;
+    opacity: 0.7;
+    transition: background 0.2s, color 0.2s, text-decoration 0.2s;
 }
 
-.pivot-table td.value:hover {
-    background-color: rgba(0, 118, 96, 0.1);
-    transition: background-color 0.3s ease;
+.value.selected {
+    background: var(--pumpkin);
+    color: var(--white);
+    font-weight: bold;
+    /* border: 2px solid var(--yinmn-blue); */
+    opacity: 1;
+}
+
+.value.disabled {
+    color: #aaa !important;
+    background: var(--white);
+    opacity: 0.7;
+    cursor: pointer !important;
+    text-decoration: none !important;
+}
+
+
+.value:hover,
+.value.disabled:hover,
+.value.selected:hover {
+    background: var(--yinmn-blue);
+    color: var(--white);
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.value.card-highlight {
+    border: 2px solid var(--yinmn-blue);
+    box-shadow: 0 0 4px var(--yinmn-blue);
+}
+
+/* .value.selected {
+    background: var(--pumpkin);
+    color: var(--white);
+    font-weight: bold;
+    /* border: 2px solid var(--yinmn-blue); */
+/* } */
+
+/* .value.disabled { */
+    /* color: #aaa !important; */
+    /* background: #f2f2f2 !important; */
+    /* cursor: pointer !important; */
+    /* opacity: 0.7; */
+    /* pointer-events: auto; */
+/* }  */
+
+/* .value.disabled {
+    color: #aaa !important;
+    background: #f2f2f2 !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    opacity: 0.7;
+    /* Do NOT use pointer-events: none */
+/* }  */
+
+/* .value.disabled:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    background: var(--yinmn-blue);
+} */
+
+.info-box {
+    background: var(--mint-cream);
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 0.95rem;
+    box-shadow: 0 1px 4px var(--white);
+    margin-top: 1rem;
+    max-width: 320px;
+    float: left;
+    overflow-y: auto;
+}
+
+.features-box {
+    background: var(--mint-cream);
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 0.95rem;
+    box-shadow: 0 1px 4px var(--white);
+    margin-top: 1rem;
+    max-width: 320px;
+    float: right;
+    overflow-y: auto;
 }
