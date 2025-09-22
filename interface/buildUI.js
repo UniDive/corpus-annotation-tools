@@ -3,7 +3,7 @@ let tools = [];
 let tools_dict = {};
 let current_selection = {};
 
-let excluded_filters = [];
+let excluded_filters = ["Other annotation layers"];
 
 function filterTools (){
     // Find matching tools
