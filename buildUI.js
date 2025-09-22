@@ -1,42 +1,39 @@
-const jsonUrl = 'https://raw.githubusercontent.com/UniDive/corpus-annotation-tools/main/data/latest_export.json';
+const jsonUrl = 'https://raw.githubusercontent.com/UniDive/corpus-annotation-tools/refs/heads/refactoring/data/latest_export.json';
 let tools = [];
 let tools_dict = {};
 let current_selection = {};
 
 function filterTools (){
-
-	console.log(current_selection);
     // Find matching tools
     const matchingTools = tools.filter(tool => {
+        let match = true;
+        Object.entries(current_selection).forEach(([feature, questionDict]) => {
+            Object.entries(questionDict).forEach(([question, values]) => {
+                // Collect all selected values for this question
+                const selectedValues = Object.entries(values)
+                    .filter(([_, isSelected]) => isSelected)
+                    .map(([value]) => value);
 
-		match = true;
-
-		Object.entries(current_selection).forEach(([feature, questionDict]) => {
-			Object.entries(questionDict).forEach(([question, values]) => {
-				Object.entries(values).forEach(([value, boolean]) => {
-					if (boolean) {
-						const key = `${feature}::${question}`;
-						console.log(key);
-						console.log(tool[key]);
-						if (Array.isArray(tool[key])) {
-							if (!tool[key].includes(value)){
-								match=false;
-							}
-						} else if (tool[key] !== value){
-							match = false;
-						}
+				if (selectedValues.length > 0) {
+					const key = `${feature}::${question}`;
+					let toolValues = [];
+					if (Array.isArray(tool[key])) {
+						toolValues = tool[key];
+					} else if (tool[key]) {
+						toolValues = [tool[key]];
 					}
-				});
-			});
-		});
+					// Tool matches if it has ANY of the selected values
+					const hasAny = selectedValues.some(val => toolValues.includes(val));
+					if (!hasAny) {
+						match = false;
+					}
+				}
+            });
+        });
+        return match;
+    });
 
-		console.log(tool);
-		console.log(match);
-
-		return match
-	});
-
-	    // Reorder cards: matching first, others after
+    // Reorder cards: matching first, others after
     const toolsContainer = document.querySelector('.tools');
     const allCards = Array.from(toolsContainer.querySelectorAll('.card'));
     allCards.forEach(card => {
@@ -58,11 +55,15 @@ function filterTools (){
             card.classList.remove('filtered');
             card.style.order = 1;
             card.style.opacity = '0.4';
-            card.style.pointerEvents = 'none';
+            // card.style.pointerEvents = 'none';
         }
     });
+    return matchingTools;
+}
 
-    // Update counts for all values in the UI
+function updateFeatures(matchingTools) {
+
+    // Update counts and value states
     document.querySelectorAll('.feature-question').forEach(featureQuestion => {
         const featureCat = featureQuestion.querySelector('.value')?.getAttribute('data-category');
         const questionName = featureQuestion.querySelector('.value')?.getAttribute('data-feature');
@@ -91,32 +92,93 @@ function filterTools (){
             const countElem = pairSpan.querySelector('.count');
             if (!valueElem || !countElem) return;
             const val = valueElem.getAttribute('data-value');
-            const count = valueCounts[val] || 0;
-            countElem.textContent = count;
-            if (count === 0) {
-                valueElem.classList.add('disabled');
-                valueElem.style.pointerEvents = 'none';
-                pairSpan.style.opacity = '0.5';
-            } else {
-                valueElem.classList.remove('disabled');
-                valueElem.style.pointerEvents = 'auto';
-                pairSpan.style.opacity = '1';
-            }
+            const overall_count = valueElem.getAttribute('overall-count');
+            const current_count = valueCounts[val] || 0;
+
+            valueElem.setAttribute('current-count', current_count);
+            countElem.textContent = `${current_count}/${overall_count}`;
+
+			// console.log(featureCat, questionName, val, current_selection[featureCat][questionName][val]);
+			if (current_selection[featureCat][questionName][val]) {
+				valueElem.classList.add('selected');
+				valueElem.classList.remove('disabled');
+			} else {
+				valueElem.classList.add('disabled');
+                valueElem.classList.remove('selected');
+			}
+
+			// if (current_count === 0) {
+            //     valueElem.classList.add('disabled');
+            //     valueElem.classList.remove('selected');
+            // }
+
+            // Set selected/disabled classes
+            // if (
+            //     current_selection[featureCat] &&
+            //     current_selection[featureCat][questionName] &&
+            //     current_selection[featureCat][questionName][val]
+            // ) {
+            //     valueElem.classList.add('selected');
+            //     valueElem.classList.remove('disabled');
+            // } else {
+            //     valueElem.classList.add('disabled');
+			// 	valueElem.classList.remove('selected');
+            // }
+
+            // If current count is 0, keep grey but still clickable
+            // if (current_count === 0) {
+            //     valueElem.classList.add('disabled');
+            // }
         });
     });
 
+	// document.querySelectorAll('.feature-question .value').forEach(function(valueElem) {
+	// 	valueElem.addEventListener('click', function() {
+	// 		if (valueElem.classList.contains('disabled')) return;
+	// 		const feature = valueElem.getAttribute('data-category');
+	// 		const question = valueElem.getAttribute('data-feature');
+	// 		const value = valueElem.getAttribute('data-value');
+	// 		filterToolsByValue(feature, question, value);
+	// 	});
+	// });
 }
 
-function filterToolsByValue(feature, question, value) {
-	console.log(feature, question, value);
-	console.log(current_selection[feature][question][value]);
-	current_selection[feature][question][value] = !current_selection[feature][question][value]
-	console.log(current_selection[feature][question][value]);
-	filterTools();
+function highlightCardFeatures(toolName) {
+    // Remove previous highlights
+    document.querySelectorAll('.feature-question .value').forEach(valueElem => {
+        valueElem.classList.remove('card-highlight');
+    });
+
+    // Find the tool object
+    const tool = tools.find(t => t["Tool ID::Tool name"] === toolName);
+    if (!tool) return;
+
+    Object.entries(tool).forEach(([key, value]) => {
+        if (!key.startsWith('Tool ID::')) {
+            const [prefix, question] = key.split('::');
+            let values = Array.isArray(value) ? value : [value];
+            values.forEach(val => {
+                if (val && val.trim() !== "") {
+                    // Highlight the relevant value
+                    document.querySelectorAll(
+                        `.feature-question .value[data-category="${prefix}"][data-feature="${question}"][data-value="${val}"]`
+                    ).forEach(elem => {
+                        elem.classList.add('card-highlight');
+                    });
+                }
+            });
+        }
+    });
+}
+
+function removeCardHighlights() {
+    document.querySelectorAll('.feature-question .value').forEach(valueElem => {
+        valueElem.classList.remove('card-highlight');
+    });
 }
 
 function highlightFeatures() {
-	expandAllFeatureSections();
+    expandAllFeatureSections();
     const expandedCard = document.querySelector('.card.expanded');
     if (!expandedCard) return;
 
@@ -124,32 +186,20 @@ function highlightFeatures() {
     const tool = tools.find(t => t["Tool ID::Tool name"] === toolName);
     if (!tool) return;
 
-    document.querySelectorAll('.feature-question').forEach(featureQuestion => {
-        const firstValue = featureQuestion.querySelector('.value');
-        if (!firstValue) return;
-        const feature = firstValue.getAttribute('data-category');
-        const question = firstValue.getAttribute('data-feature');
-        const key = `${feature}::${question}`;
-
-        let relevantValues = [];
-        if (Array.isArray(tool[key])) {
-            relevantValues = tool[key].map(v => v && v.trim()).filter(Boolean);
-        } else if (tool[key] && tool[key].trim() !== "") {
-            relevantValues = [tool[key].trim()];
+    Object.entries(tool).forEach(([key, value]) => {
+        if (!key.startsWith('Tool ID::')) {
+            const [prefix, question] = key.split('::');
+            let values = Array.isArray(value) ? value : [value];
+            values.forEach(val => {
+                if (val && val.trim() !== "") {
+                    current_selection[prefix][question][val] = true;
+                }
+            });
         }
-
-        // Show only relevant value/count pairs
-        featureQuestion.querySelectorAll('span').forEach(pairSpan => {
-            const valueElem = pairSpan.querySelector('.value');
-            if (!valueElem) return;
-            const value = valueElem.getAttribute('data-value');
-            if (relevantValues.includes(value)) {
-                pairSpan.style.display = 'inline-flex';
-            } else {
-                pairSpan.style.display = 'none';
-            }
-        });
     });
+
+    let matchingTools = filterTools();
+    updateFeatures(matchingTools);
 }
 
 function expandAllFeatureSections() {
@@ -159,7 +209,6 @@ function expandAllFeatureSections() {
 }
 
 function collapse() {
-	console.log("now here");
     document.querySelectorAll('.card.expanded').forEach(card => {
         card.classList.remove('expanded');
         // Hide image and details
@@ -169,9 +218,7 @@ function collapse() {
         if (details) details.style.display = 'none';
     });
 
-	console.log("collapsing");
 	document.querySelectorAll('.feature-question span').forEach(pairSpan => {
-		// console.log(pairSpan);
         pairSpan.style.display = 'inline-flex';
     });
 }
@@ -189,15 +236,6 @@ function buildTools() {
         // Card header
         const header = document.createElement('div');
         header.className = 'card-header';
-
-        // Logo
-        if (tool["Tool ID::Logo"]) {
-            const img = document.createElement('img');
-            img.src = tool["Tool ID::Logo"];
-            img.alt = `${tool["Tool ID::Tool name"]} Logo`;
-            img.style.display = 'none';
-            header.appendChild(img);
-        }
 
         // Title
         const h3 = document.createElement('h3');
@@ -226,7 +264,7 @@ function buildTools() {
 			e.stopPropagation();
 			collapse();
 			card.classList.add('expanded');
-			highlightFeatures();
+			highlightCardFeatures(card.dataset.value); // highlight relevant features
 			// Show image and details
 			const img = card.querySelector('img');
 			if (img) img.style.display = 'block';
@@ -237,6 +275,7 @@ function buildTools() {
 		minus.addEventListener('click', function(e) {
 			e.stopPropagation();
 			card.classList.remove('expanded');
+			removeCardHighlights(); // remove highlights
 			// Hide image and details
 			const img = card.querySelector('img');
 			if (img) img.style.display = 'none';
@@ -244,6 +283,14 @@ function buildTools() {
 			if (details) details.style.display = 'none';
 		});
 
+        // Logo
+        if (tool["Tool ID::Logo"]) {
+            const img = document.createElement('img');
+            img.src = tool["Tool ID::Logo"];
+            img.alt = `${tool["Tool ID::Tool name"]} Logo`;
+            img.style.display = 'none';
+            header.appendChild(img);
+        }
         card.appendChild(header);
 
         // Card preview
@@ -256,10 +303,116 @@ function buildTools() {
         const details = document.createElement('div');
         details.className = 'details';
         details.style.display = 'none';
-        details.innerHTML = `
-            <p><a href="${tool["Tool ID::Code repository"] || '#'}" style="color: inherit;">Code repository</a></p>
-            <p>${tool["Tool ID::Additional features"] || ''}</p>
-        `;
+
+		const infoBox = document.createElement('div');
+		infoBox.className = 'info-box';
+		if (tool['Tool ID::Code repository'] !== '') {
+			const form = document.createElement('form');
+			form.action = tool['Tool ID::Code repository'];
+			form.method = "get";
+			form.target = "_blank";
+			const repository = document.createElement('button');
+			repository.className = 'repo';
+			repository.setAttribute('aria-label', 'Code repository');
+			repository.textContent = "Code repository"
+			form.appendChild(repository)
+			infoBox.appendChild(form);
+		}
+
+		const add_features = document.createElement("p");
+		if (tool["Tool ID::Information provider"] == 'Developer') {
+			add_features.innerHTML = `${tool["Tool ID::Additional features"] || ""}. Information provided by tool developer.`;
+		} else {
+			add_features.innerHTML = `${tool["Tool ID::Additional features"] || ""}.`
+		}
+		infoBox.appendChild(add_features);
+
+		// Useful links
+		if (tool["Tool ID::Other useful links"] && Array.isArray(tool["Tool ID::Other useful links"])) {
+			const linksSection = document.createElement('div');
+			linksSection.className = 'useful-links';
+			linksSection.innerHTML = '<h4>Useful Links</h4>';
+			tool["Tool ID::Other useful links"].forEach(link => {
+				const [linkName, linkTarget] = link.split('::');
+				const linkElem = document.createElement('a');
+				linkElem.href = linkTarget;
+				linkElem.textContent = linkName;
+				linkElem.target = '_blank';
+				linkElem.style.display = 'block';
+				linksSection.appendChild(linkElem);
+			});
+			infoBox.appendChild(linksSection);
+		}
+
+		// Example projects
+		if (tool["Tool ID::Example projects"] && Array.isArray(tool["Tool ID::Example projects"])) {
+			const projectsSection = document.createElement('div');
+			projectsSection.className = 'example-projects';
+			projectsSection.innerHTML = '<h4>Example projects</h4>';
+			tool["Tool ID::Example projects"].forEach(link => {
+				const [linkName, linkTarget] = link.split('::');
+				const linkElem = document.createElement('a');
+				linkElem.href = linkTarget;
+				linkElem.textContent = linkName;
+				linkElem.target = '_blank';
+				linkElem.style.display = 'block';
+				projectsSection.appendChild(linkElem);
+			});
+			infoBox.appendChild(projectsSection);
+		}
+
+		// Info box with features (right side of card)
+        const featuresBox = document.createElement('div');
+        featuresBox.className = 'features-box';
+        // infoBox.style.display = 'flex';
+        featuresBox.style.flexDirection = 'column';
+        featuresBox.style.alignItems = 'flex-end';
+        featuresBox.style.marginLeft = 'auto';
+		featuresBox.style.overflowY = 'auto';
+
+        Object.entries(tool).forEach(([key, value]) => {
+            if (!key.startsWith('Tool ID::')) {
+                const [prefix, question] = key.split('::');
+                if (!question) return;
+                // Create a container for value/count pairs
+                const featureRow = document.createElement('div');
+                featureRow.style.display = 'flex';
+                featureRow.style.flexWrap = 'wrap';
+                featureRow.style.marginBottom = '4px';
+
+                // Handle array or single value
+                let values = Array.isArray(value) ? value : [value];
+                values.forEach(val => {
+                    if (val && val.trim() !== "") {
+                        const pairSpan = document.createElement('span');
+                        pairSpan.style.display = 'inline-flex';
+                        pairSpan.style.alignItems = 'center';
+                        pairSpan.style.marginRight = '8px';
+
+                        const valueP = document.createElement('p');
+                        valueP.className = 'value';
+                        valueP.textContent = val;
+
+                        pairSpan.appendChild(valueP);
+                        // pairSpan.appendChild(countP);
+                        featureRow.appendChild(pairSpan);
+                    }
+                });
+
+                // Add question label and values
+                if (featureRow.childNodes.length > 0) {
+                    const label = document.createElement('span');
+                    label.textContent = `${question}: `;
+                    label.style.fontWeight = 'bold';
+                    label.style.marginRight = '6px';
+                    featureRow.insertBefore(label, featureRow.firstChild);
+                    featuresBox.appendChild(featureRow);
+                }
+            }
+        });
+		details.appendChild(featuresBox);
+        details.appendChild(infoBox);
+
         card.appendChild(details);
 
         toolsContainer.appendChild(card);
@@ -267,8 +420,6 @@ function buildTools() {
 }
 
 function buildSelections() {
-	// const featurePrefixes = new Set();
-	// const featureQuestions = {}; // { prefix: Set of questions }
 	const questionValues = {};   // { prefix: { question: Set of values } }
 	const questionValues_counts = {};
 
@@ -276,12 +427,6 @@ function buildSelections() {
 		Object.entries(tool).forEach(([key, value]) => {
 			const [prefix, question] = key.split('::');
 			if (prefix !== 'Tool ID' && question) {
-
-				// featurePrefixes.add(prefix);
-
-				// Collect questions for each prefix
-				// if (!featureQuestions[prefix]) featureQuestions[prefix] = new Set();
-				// featureQuestions[prefix].add(question);
 
 				// Collect values for each question
 				if (!questionValues[prefix]){
@@ -320,27 +465,22 @@ function buildSelections() {
 		});
 	});
 
-	// console.log(questionValues_counts);
     const featuresTable = document.querySelector('.features-table');
     featuresTable.innerHTML = '';
 
 	Object.entries(questionValues_counts).forEach(([feature, ValueSet])=> {
-		// console.log(`Building ${feature}`);
 
 		const featureSection = document.createElement('div');
 		featureSection.className = 'feature-section';
+		featureSection.classList.add('collapsed');
 		featureSection.innerHTML = `<h3>${feature || '#'} <span class="toggle-arrow">&#9662;</span></h3>`;
 
 		Object.entries(ValueSet).forEach(([question, values]) => {
-			// console.log(`Building ${question}`);
-
 			const featureQuestion = document.createElement('div');
 			featureQuestion.className = 'feature-question';
 			featureQuestion.innerHTML = `<h4>${question}</h4>`;
 
 			Object.entries(values).forEach(([value, count]) => {
-				// console.log(`Building ${value}-${count}`);
-
 				const pairSpan = document.createElement('span');
 				pairSpan.style.display = 'inline-flex';
 				pairSpan.style.alignItems = 'center';
@@ -352,7 +492,10 @@ function buildSelections() {
 				valueP.setAttribute('data-feature', question);
 				valueP.setAttribute('data-value', value);
 				valueP.setAttribute('data-type', 'value');
+				valueP.setAttribute('overall-count', count);
+				valueP.setAttribute('current-count', count);
 				valueP.textContent = value;
+				valueP.classList.add('disabled')
 
 				const countP = document.createElement('p');
 				countP.className = 'count';
@@ -365,15 +508,10 @@ function buildSelections() {
 				pairSpan.appendChild(valueP);
 				pairSpan.appendChild(countP);
 				featureQuestion.appendChild(pairSpan);
-				// console.log(`Adding ${value}-${count} to ${featureQuestion}`);
-
 			});
 			featureSection.appendChild(featureQuestion);
-			// console.log(`Adding ${featureQuestion} to ${featureSection}`);
-
 		});
 		featuresTable.appendChild(featureSection);
-		// console.log(`Adding ${featureSection} to ${featuresTable}`);
 	});
 
 	document.querySelectorAll('.feature-section h3').forEach(header => {
@@ -383,34 +521,66 @@ function buildSelections() {
 		});
 	});
 
+
 	document.querySelectorAll('.feature-question .value').forEach(function(valueElem) {
 		valueElem.addEventListener('click', function() {
-			if (valueElem.classList.contains('disabled')) return;
 			const feature = valueElem.getAttribute('data-category');
 			const question = valueElem.getAttribute('data-feature');
 			const value = valueElem.getAttribute('data-value');
-			filterToolsByValue(feature, question, value);
+
+			// Toggle selection regardless of current state
+			current_selection[feature][question][value] = !current_selection[feature][question][value];
+			console.log(current_selection[feature][question][value]);
+
+			let matchingTools = filterTools();
+			updateFeatures(matchingTools);
 		});
 	});
 
-	document.querySelectorAll('.feature-question .value').forEach(function(valueElem) {
+	// document.querySelectorAll('.feature-question .value').forEach(function(valueElem) {
+	// 	// console.log(valueElem);
+	// 	valueElem.addEventListener('click', function() {
+	// 		console.log(valueElem);
+	// 		// if (valueElem.classList.contains('disabled')) return;
+	// 		const feature = valueElem.getAttribute('data-category');
+	// 		const question = valueElem.getAttribute('data-feature');
+	// 		const value = valueElem.getAttribute('data-value');
+	// 		current_selection[feature][question][value] = !current_selection[feature][question][value]
+	// 		// filterToolsByValue(feature, question, value);
+	// 		let matchingTools = filterTools();
+	// 		updateFeatures(matchingTools);
+	// 	});
+	// });
+
+	// document.querySelectorAll('.feature-question .value').forEach(function(valueElem) {
+	// 	valueElem.addEventListener('click', function() {
+	// 		if (valueElem.classList.contains('disabled')) return;
+	// 		const feature = valueElem.getAttribute('data-category');
+	// 		const question = valueElem.getAttribute('data-feature');
+	// 		const value = valueElem.getAttribute('data-value');
+	// 		filterToolsByValue(feature, question, value);
+	// 	});
+	// });
+
+	// document.querySelectorAll('.feature-question .value').forEach(function(valueElem) {
 		// Find the next sibling count element
-		const countElem = valueElem.nextElementSibling;
-		if (countElem && countElem.classList.contains('count')) {
-			const count = parseInt(countElem.textContent, 10);
-			if (count === 0) {
-				valueElem.classList.add('disabled');
-			} else {
-				valueElem.addEventListener('click', function() {
-					if (valueElem.classList.contains('disabled')) return;
-					const feature = valueElem.getAttribute('data-category');
-					const question = valueElem.getAttribute('data-feature');
-					const value = valueElem.getAttribute('data-value');
-					// filterToolsByValue(feature, question, value);
-				});
-			}
-		}
-	});
+		// const countElem = valueElem.nextElementSibling;
+		// if (countElem && countElem.classList.contains('count')) {
+		// const count = parseInt(valueElem.getAttribute('current-count'), 10);
+		// if (count === 0) {
+			// valueElem.classList.add('disabled');
+		// }
+			// else {
+		// valueElem.addEventListener('click', function() {
+		// 	if (valueElem.classList.contains('disabled')) return;
+		// 	const feature = valueElem.getAttribute('data-category');
+		// 	const question = valueElem.getAttribute('data-feature');
+		// 	const value = valueElem.getAttribute('data-value');
+		// 	// filterToolsByValue(feature, question, value);
+		// });
+			// }
+		// }
+	// });
 }
 
 async function buildUI() {
@@ -430,11 +600,11 @@ document.addEventListener("DOMContentLoaded", () => {
 	document.querySelectorAll(".sidebar")[0].addEventListener('click', function(e) {
 		const expandedCard = document.querySelector('.card.expanded');
 		if (expandedCard && !expandedCard.contains(e.target)) {
-			// console.log("here");
-			// e.stopPropagation();
 			collapse();
 		}
 	});
+
+
 
 	document.querySelector('.reset-btn').addEventListener('click', buildUI);
 
