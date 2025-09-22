@@ -10,10 +10,11 @@ ToolID:
     - Paper: https://doi.org/10.18653/v1/2021.eacl-demo.23
   Developer: 'Yes'
   Example-projects:
-    - https://universaldependencies.org/
-    - https://example.org/corpus
+    - Masakhane-Igbo: https://arboratorgrew.elizia.net/#/projects/Masakhane-Igbo
   Additional-features: |
-    Integrated search with Grew; REST API.
+    ArboratorGrew can be used also to teach syntax. It has a mode when users can create exercises with different levels of complexity and export students results by the end
+    Users can also generate lexicons from your annotated data
+    And to ensure effective collaboration, ArboratorGrew provides a tag system
 
 Software:
   License: AGPL-3.0
