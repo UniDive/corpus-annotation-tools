@@ -10,10 +10,10 @@ ToolID:
     - UD_Welsh: https://github.com/UniversalDependencies/UD_Welsh-CCG
   Additional-features: |
     git-support (automatic gid add/git commit; automatic generation of transliteration of non-Latin scripts into Latin-script (Translit= fields in MISC and trainsliteration of the entire sentence; statistics (number/percentage of UPOSes, deprels, etc). The tool can be used as a frontend to an parser which returns the result in CoNLL-U format
+  Code-repository: https://github.com/Orange-Opensource/conllueditor
 
 Software:
   License: BSD 3-Clause
-  Code-repository: https://github.com/Orange-Opensource/conllueditor
   Active-maintenance: 'Yes'
   Software-type: Web-based application
   Operating-system:

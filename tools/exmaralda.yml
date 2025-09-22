@@ -7,10 +7,10 @@ ToolID:
   Developer: 'Yes'
   Example-projects:
     - TODO: https://exmaralda.org/en/projects/
-
+  Code-repository: https://github.com/Exmaralda-Org/exmaralda
+  
 Software:
   License: GPL-2.0
-  Code-repository: https://github.com/Exmaralda-Org/exmaralda
   Active-maintenance: 'Yes'
   Software-type: Desktop-based application
   Operating-system:
@@ -67,7 +67,7 @@ User-Experience:
     - Musical score visualisation
   Automatic-pre-annotation: 'No'
   Automatic-recommendation: 'No'
-  Collaborative-annotation: 
+  Collaborative-annotation:
   Project-management: 'No'
   User-roles: 'No'
   Comparison-of-annotations: 'No'

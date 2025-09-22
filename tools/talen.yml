@@ -6,10 +6,10 @@ ToolID:
   Other-useful-links:
     - UNER project: https://annotate.universalner.org/
   Developer: 'No'
+  Code-repository: https://github.com/CogComp/talen
 
 Software:
   License: other
-  Code-repository: https://github.com/CogComp/talen
   Active-maintenance: 'Yes'
   Software-type: Web-based application
   Operating-system:

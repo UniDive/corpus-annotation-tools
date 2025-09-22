@@ -8,10 +8,10 @@ ToolID:
   Developer: 'Yes'
   Example-projects:
     - PARSEME: https://aclanthology.org/2024.lrec-main.184/
-
+  Code-repository: https://github.com/proycon/flat
+  
 Software:
   License: GPL-3.0
-  Code-repository: https://github.com/proycon/flat
   Active-maintenance: Legacy
   Software-type: Web-based application
   Operating-system:

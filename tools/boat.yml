@@ -9,10 +9,10 @@ ToolID:
   Example-projects:
     - UD_Turkish-BOUN: https://github.com/UniversalDependencies/UD_Turkish-BOUN
   Additional-features:
+  Code-repository: https://github.com/furkanakkurt1335/boat
 
 Software:
   License: MIT
-  Code-repository: https://github.com/furkanakkurt1335/boat
   Active-maintenance: 'Yes'
   Software-type: Web-based application
   Operating-system:

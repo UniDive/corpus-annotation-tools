@@ -11,10 +11,10 @@ ToolID:
     - TODO::https://archive.mpi.nl/tla/islandora/object/lat%3A1839_00_0000_0000_0000_0000_4
   Additional-features: |
     Multimedia synchronization; customizable annotation workflow; metadata management and support like IMDI and CMDI
-
+  Code-repository: https://archive.mpi.nl/tla/elan/download
+  
 Software:
   License: GPL-3.0
-  Code-repository: https://archive.mpi.nl/tla/elan/download
   Active-maintenance: 'Yes'
   Software-type: Desktop-based application
   Operating-system:

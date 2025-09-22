@@ -5,10 +5,10 @@ ToolID:
   Website: http://medialab.di.unipi.it/Project/QA/Parser/DgAnnotator/
   Other-useful-links:
   Developer: 'No'
-
+  Code-repository: https://github.com/attardi/DgAnnotator
+  
 Software:
   License: not specified
-  Code-repository: https://github.com/attardi/DgAnnotator
   Active-maintenance: 'No'
   Software-type: Desktop-based application
   Operating-system:

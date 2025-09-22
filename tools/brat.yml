@@ -7,10 +7,10 @@ ToolID:
     - Examples: https://brat.nlplab.org/examples.html
   Developer: 'No'
   Additional-features: Export of visualisations (images)
+  Code-repository: https://github.com/nlplab/brat
 
 Software:
   License: MIT
-  Code-repository: https://github.com/nlplab/brat
   Active-maintenance: 'No'
   Software-type: Web-based application
   Operating-system:

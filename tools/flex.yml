@@ -6,10 +6,10 @@ ToolID:
   Other-useful-links:
     - Training: https://vimeo.com/showcase/3123523
   Developer: 'No'
-
+  Code-repository: https://github.com/sillsdev/FieldWorks
+  
 Software:
   License: GNU LGPL
-  Code-repository: https://github.com/sillsdev/FieldWorks
   Active-maintenance: 'Yes'
   Software-type: Desktop-based application
   Operating-system:
@@ -69,7 +69,7 @@ User-Experience:
     - Raw format (e.g. CONLL-U)
   Automatic-pre-annotation: partial
   Automatic-recommendation: 'No'
-  Collaborative-annotation: 
+  Collaborative-annotation:
   Project-management: partial
   User-roles: 'No'
   Comparison-of-annotations: partial

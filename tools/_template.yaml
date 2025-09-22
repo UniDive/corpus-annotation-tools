@@ -20,6 +20,7 @@ ToolID:
   Logo: ""                          # Direct link to a logo image (SVG or PNG). Leave "" if none.
   Short-description: ""             # A one-line summary of what the tool does.
   Website: ""                       # Main website, starting with https://
+  Code-repository: ""               # Link to GitHub/GitLab repo, or "" if closed-source
   Other-useful-links:               # Additional resources (docs, papers, demos, etc.)
     - Documentation: ""             # Replace "" with URL (https://…)
     - Paper: ""                     # Replace "" with URL (https://…)
@@ -31,7 +32,6 @@ ToolID:
 # === SOFTWARE INFORMATION ===
 Software:
   License: ""                       # License type, e.g. "MIT", "GPL-3.0", "Proprietary"
-  Code-repository: ""               # Link to GitHub/GitLab repo, or "" if closed-source
   Active-maintenance: ""            # Is it actively maintained? ("Yes"/"No"/"partial")
   Software-type: ""                 # What type of tool? e.g. "Annotation tool", "Converter"
   Operating-system:                 # Which OSes does it support? Mark "Yes" or "No"

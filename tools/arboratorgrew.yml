@@ -4,6 +4,7 @@ ToolID:
   Short-description: |
     Collaborative UD treebank annotation and search tool.
   Website: https://arboratorgrew.elda.org/
+  Code-repository: https://github.com/grew-nlp/arborator-frontend
   Other-useful-links:
     - Documentation: https://arboratorgrew.readthedocs.io/
     - Paper: https://doi.org/10.18653/v1/2021.eacl-demo.23
@@ -16,7 +17,6 @@ ToolID:
 
 Software:
   License: AGPL-3.0
-  Code-repository: https://github.com/grew-nlp/arborator-frontend
   Active-maintenance: 'Yes'
   Software-type: Annotation tool
   Operating-system:

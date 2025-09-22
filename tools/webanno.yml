@@ -8,10 +8,10 @@ ToolID:
   Developer: 'No'
   Additional-features: |
     WebAnno supports a rich set of features including customizable annotation layers, integration with external data sources, support for multiple annotators, and visualization of annotated data. It also supports automatic pre-annotation and inter-annotator agreement calculation
-
+  Code-repository: https://github.com/webanno/webanno
+  
 Software:
   License: Apache-2.0
-  Code-repository: https://github.com/webanno/webanno
   Active-maintenance: 'Yes'
   Software-type: Web-based application
   Operating-system:
