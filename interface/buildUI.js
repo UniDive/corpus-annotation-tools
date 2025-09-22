@@ -3,6 +3,8 @@ let tools = [];
 let tools_dict = {};
 let current_selection = {};
 
+let excluded_filters = [];
+
 function filterTools (){
     // Find matching tools
     const matchingTools = tools.filter(tool => {
@@ -430,7 +432,7 @@ function buildSelections() {
 	tools.forEach(tool => {
 		Object.entries(tool).forEach(([key, value]) => {
 			const [prefix, question] = key.split('::');
-			if (prefix !== 'Tool ID' && question) {
+			if (prefix !== 'Tool ID' && question && !excluded_filters.includes(question)) {
 
 				// Collect values for each question
 				if (!questionValues[prefix]){

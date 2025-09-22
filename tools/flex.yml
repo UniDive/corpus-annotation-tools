@@ -1,27 +1,26 @@
-ToolID:
-  Tool-name: FLeX
+Tool ID:
+  Tool name: FLeX
   Logo: https://software.sil.org/wp/wp-content/themes/web-productsites/images/sil_logo_glyph.png
-  Short-description: A comprehensive linguistic software tool designed for documenting, analyzing, and managing lexical and textual data, particularly for under-documented languages.
+  Short description: A comprehensive linguistic software tool designed for documenting, analyzing, and managing lexical and textual data, particularly for under-documented languages.
   Website: https://software.sil.org/fieldworks/
-  Other-useful-links:
+  Other useful links:
     - Training: https://vimeo.com/showcase/3123523
   Developer: 'No'
-  Code-repository: https://github.com/sillsdev/FieldWorks
-  
+  Code repository: https://github.com/sillsdev/FieldWorks
+
 Software:
   License: GNU LGPL
-  Active-maintenance: 'Yes'
-  Software-type: Desktop-based application
-  Operating-system:
-    Windows: 'No'
-    macOS: 'No'
-    Linux: 'No'
-  Software-availability:
+  Active maintenance: 'Yes'
+  Software type: Desktop-based application
+  Operating system:
+    - Windows
+    - Linux
+  Software availability:
     - The software should be run by the user (local machine or own server)
-  Offline-usage-webapps: 'Yes'
+  Offline usage: 'Yes'
 
-Data-support:
-  Input-format:
+Data support:
+  Input format:
     - Raw text
     - XML
     - SFM
@@ -33,53 +32,53 @@ Data-support:
     - Image
     - PDF
     - External databases (e.g. dictionaries)
-  Data-export:
+  Data export:
     - The data can be exported.
-Diversity-features:
-  Diversity-features:
+Diversity features:
+  Diversity features:
     - Language-independence
     - Writing script support
     - LTR
     - RTL
     - unicode support
-  Language-of-the-interface:
+  Language of the interface:
     - English
 
 Annotation:
   Segmentation:
     - word-level
     - sentence-level
-  Annotation-types:
+  Annotation types:
     - Tokens (e.g. part-of-speech tag morphological features)
     - Spans (e.g. names entities)
     - Multi-tokens (e.g. multi-word expressions)
-  Annotation-scope:
+  Annotation scope:
     - Annotation inside sentences
     - Annotation across sentences
     - Annotation of full sentences/paragraphs/documents
   Tagset-customization: 'Yes'
 
-User-Experience:
-  Annotation-mode:
+User Experience:
+  Annotation mode:
     - Keyboard
     - Mouse (e.g. drag & drop)
-  Keyboard-shortcuts: 'Yes'
-  Annotation-display:
+  Keyboard shortcuts: 'Yes'
+  Annotation display:
     - Table
     - Raw format (e.g. CONLL-U)
-  Automatic-pre-annotation: partial
-  Automatic-recommendation: 'No'
-  Collaborative-annotation:
-  Project-management: partial
-  User-roles: 'No'
-  Comparison-of-annotations: partial
-  Agreement-calculation: 'No'
+  Automatic pre-annotation: partial
+  Automatic recommendation: 'No'
+  Collaborative annotation:
+  Project management: partial
+  User roles: 'No'
+  Comparison of annotations: partial
+  Agreement calculation: 'No'
   Querying: 'Yes'
-  Mass-editing: 'Yes'
+  Mass editing: 'Yes'
 
-UD-PARSEME-specifics:
-  UD-specific-annotations: Metadata
-  UD-validation: 'No'
-  Other-annotation-layers:
-  PARSEME-specific-annotations:
-  Consistency-check: 'No'
+UD/PARSEME specifics:
+  UD specific annotations: Metadata
+  UD validation: 'No'
+  Other annotation layers:
+  PARSEME specific annotations:
+  Consistency check: 'No'

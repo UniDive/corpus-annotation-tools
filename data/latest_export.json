@@ -15,13 +15,15 @@
     "Software::License": "GPL-2.0",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Desktop-based application",
-    "Software::Operating system::Windows": "No",
-    "Software::Operating system::Mac OS": "No",
-    "Software::Operating system::Linux": "No",
+    "Software::Operating system": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
     "Software::Software availability": [
       "The software is freely available online (with sign up option and/or social logins)"
     ],
-    "Software::Offline usage webapps": "Yes",
+    "Software::Offline usage": "Yes",
     "Data support::Input format": [
       "Raw text",
       "XML",
@@ -78,11 +80,11 @@
     "User Experience::Agreement calculation": "No",
     "User Experience::Querying": "Yes",
     "User Experience::Mass editing": "Yes",
-    "UD PARSEME specifics::UD specific annotations": "",
-    "UD PARSEME specifics::UD validation": "No",
-    "UD PARSEME specifics::Other annotation layers": "",
-    "UD PARSEME specifics::PARSEME specific annotations": "",
-    "UD PARSEME specifics::Consistency check": "No"
+    "UD/PARSEME specifics::UD specific annotations": "",
+    "UD/PARSEME specifics::UD validation": "No",
+    "UD/PARSEME specifics::Other annotation layers": "",
+    "UD/PARSEME specifics::PARSEME specific annotations": "",
+    "UD/PARSEME specifics::Consistency check": "No"
   },
   {
     "Tool ID::Tool name": "INCEpTION",
@@ -96,14 +98,16 @@
     "Software::License": "Apache-2.0",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
-    "Software::Operating system::Windows": "No",
-    "Software::Operating system::Mac OS": "No",
-    "Software::Operating system::Linux": "No",
+    "Software::Operating system": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
     "Software::Software availability": [
       "The software should be run by the user (local machine or own server)",
       "some public instances available"
     ],
-    "Software::Offline usage webapps": "No",
+    "Software::Offline usage": "No",
     "Data support::Input format": [
       "Raw text",
       "PDF",
@@ -164,7 +168,7 @@
     "User Experience::Agreement calculation": "Yes",
     "User Experience::Querying": "Yes",
     "User Experience::Mass editing": "Yes",
-    "UD PARSEME specifics::UD specific annotations": [
+    "UD/PARSEME specifics::UD specific annotations": [
       "Lemmas",
       "UPOS",
       "FEATS",
@@ -173,17 +177,17 @@
       "Basic dependencies",
       "Enhanced dependencies"
     ],
-    "UD PARSEME specifics::UD validation": "No",
-    "UD PARSEME specifics::Other annotation layers": [
+    "UD/PARSEME specifics::UD validation": "No",
+    "UD/PARSEME specifics::Other annotation layers": [
       "relation between spans",
       "chains",
       "document-level"
     ],
-    "UD PARSEME specifics::PARSEME specific annotations": [
+    "UD/PARSEME specifics::PARSEME specific annotations": [
       "Nested expressions",
       "Overlapping expressions"
     ],
-    "UD PARSEME specifics::Consistency check": "partial"
+    "UD/PARSEME specifics::Consistency check": "partial"
   },
   {
     "Tool ID::Tool name": "Label Studio",
@@ -195,13 +199,15 @@
     "Software::License": "Apache-2.0",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
-    "Software::Operating system::Windows": "No",
-    "Software::Operating system::Mac OS": "No",
-    "Software::Operating system::Linux": "No",
+    "Software::Operating system": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
     "Software::Software availability": [
       "The software should be run by the user (local machine or own server)"
     ],
-    "Software::Offline usage webapps": "Yes",
+    "Software::Offline usage": "Yes",
     "Data support::Input format": [
       "Raw text",
       "PDF",
@@ -269,7 +275,7 @@
     "User Experience::Agreement calculation": "No",
     "User Experience::Querying": "Yes",
     "User Experience::Mass editing": "Yes",
-    "UD PARSEME specifics::UD specific annotations": [
+    "UD/PARSEME specifics::UD specific annotations": [
       "Lemmas",
       "UPOS",
       "FEATS",
@@ -278,17 +284,17 @@
       "Basic dependencies",
       "Metadata"
     ],
-    "UD PARSEME specifics::UD validation": "No",
-    "UD PARSEME specifics::Other annotation layers": [
+    "UD/PARSEME specifics::UD validation": "No",
+    "UD/PARSEME specifics::Other annotation layers": [
       "Text classification",
       "NER"
     ],
-    "UD PARSEME specifics::PARSEME specific annotations": [
+    "UD/PARSEME specifics::PARSEME specific annotations": [
       "Discontinuous expressions",
       "Nested expressions",
       "Overlapping expressions"
     ],
-    "UD PARSEME specifics::Consistency check": "No"
+    "UD/PARSEME specifics::Consistency check": "No"
   },
   {
     "Tool ID::Tool name": "PLURAL-conllu-annotator",
@@ -298,20 +304,26 @@
     "Tool ID::Other useful links": "",
     "Tool ID::Developer": "Yes",
     "Tool ID::Example projects": [
-      "TAMIL_UD::Tamil UD",
-      "TELUGU_UD::Telugu UD"
+      {
+        "TAMIL_UD": "Tamil UD"
+      },
+      {
+        "TELUGU_UD": "Telugu UD"
+      }
     ],
     "Tool ID::Code repository": "https://github.com/parameshkrishnaa/PLURAL-conllu-annotator",
     "Software::License": "CC_BY",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
-    "Software::Operating system::Windows": "No",
-    "Software::Operating system::Mac OS": "No",
-    "Software::Operating system::Linux": "No",
+    "Software::Operating system": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
     "Software::Software availability": [
       "The software is freely available online (without sign up option )"
     ],
-    "Software::Offline usage webapps": "Yes",
+    "Software::Offline usage": "Yes",
     "Data support::Input format": [
       "CONLL-U"
     ],
@@ -357,7 +369,7 @@
     "User Experience::Agreement calculation": "No",
     "User Experience::Querying": "No",
     "User Experience::Mass editing": "No",
-    "UD PARSEME specifics::UD specific annotations": [
+    "UD/PARSEME specifics::UD specific annotations": [
       "Lemmas",
       "UPOS",
       "FEATS",
@@ -368,12 +380,12 @@
       "Empty nodes",
       "Metadata"
     ],
-    "UD PARSEME specifics::UD validation": "Yes",
-    "UD PARSEME specifics::Other annotation layers": [
+    "UD/PARSEME specifics::UD validation": "Yes",
+    "UD/PARSEME specifics::Other annotation layers": [
       "NIL"
     ],
-    "UD PARSEME specifics::PARSEME specific annotations": "",
-    "UD PARSEME specifics::Consistency check": "No"
+    "UD/PARSEME specifics::PARSEME specific annotations": "",
+    "UD/PARSEME specifics::Consistency check": "No"
   },
   {
     "Tool ID::Tool name": "TrEd",
@@ -396,13 +408,14 @@
     "Software::License": "GPL-2.0",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Desktop-based application",
-    "Software::Operating system::Windows": "No",
-    "Software::Operating system::Mac OS": "No",
-    "Software::Operating system::Linux": "No",
+    "Software::Operating system": [
+      "Windows",
+      "Linux"
+    ],
     "Software::Software availability": [
       "The software should be run by the user (local machine or own server)"
     ],
-    "Software::Offline usage webapps": "Yes",
+    "Software::Offline usage": "Yes",
     "Data support::Input format": [
       "Raw text",
       "CONLL-U",
@@ -454,7 +467,7 @@
     "User Experience::Agreement calculation": "No",
     "User Experience::Querying": "Yes",
     "User Experience::Mass editing": "Yes",
-    "UD PARSEME specifics::UD specific annotations": [
+    "UD/PARSEME specifics::UD specific annotations": [
       "Lemmas",
       "UPOS",
       "FEATS",
@@ -464,10 +477,10 @@
       "Enhanced dependencies",
       "Empty nodes"
     ],
-    "UD PARSEME specifics::UD validation": "No",
-    "UD PARSEME specifics::Other annotation layers": "",
-    "UD PARSEME specifics::PARSEME specific annotations": "",
-    "UD PARSEME specifics::Consistency check": "No"
+    "UD/PARSEME specifics::UD validation": "No",
+    "UD/PARSEME specifics::Other annotation layers": "",
+    "UD/PARSEME specifics::PARSEME specific annotations": "",
+    "UD/PARSEME specifics::Consistency check": "No"
   },
   {
     "Tool ID::Tool name": "Palmyra",
@@ -493,13 +506,15 @@
     "Software::License": "MIT",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
-    "Software::Operating system::Windows": "No",
-    "Software::Operating system::Mac OS": "No",
-    "Software::Operating system::Linux": "No",
+    "Software::Operating system": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
     "Software::Software availability": [
       "The software is freely available online (with sign up option and/or social logins)"
     ],
-    "Software::Offline usage webapps": "Yes",
+    "Software::Offline usage": "Yes",
     "Data support::Input format": [
       "CONLL-U"
     ],
@@ -546,7 +561,7 @@
     "User Experience::Agreement calculation": "No",
     "User Experience::Querying": "No",
     "User Experience::Mass editing": "No",
-    "UD PARSEME specifics::UD specific annotations": [
+    "UD/PARSEME specifics::UD specific annotations": [
       "UPOS",
       "FEATS",
       "XPOS",
@@ -554,10 +569,10 @@
       "Empty nodes",
       "Metadata"
     ],
-    "UD PARSEME specifics::UD validation": "No",
-    "UD PARSEME specifics::Other annotation layers": "",
-    "UD PARSEME specifics::PARSEME specific annotations": "",
-    "UD PARSEME specifics::Consistency check": "No"
+    "UD/PARSEME specifics::UD validation": "No",
+    "UD/PARSEME specifics::Other annotation layers": "",
+    "UD/PARSEME specifics::PARSEME specific annotations": "",
+    "UD/PARSEME specifics::Consistency check": "No"
   },
   {
     "Tool ID::Tool name": "DgAnnotator",
@@ -570,13 +585,15 @@
     "Software::License": "not specified",
     "Software::Active maintenance": "No",
     "Software::Software type": "Desktop-based application",
-    "Software::Operating system::Windows": "No",
-    "Software::Operating system::Mac OS": "No",
-    "Software::Operating system::Linux": "No",
+    "Software::Operating system": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
     "Software::Software availability": [
       "The software should be run by the user (local machine or own server)"
     ],
-    "Software::Offline usage webapps": "Yes",
+    "Software::Offline usage": "Yes",
     "Data support::Input format": [
       "XML",
       "CONLL-X"
@@ -619,15 +636,15 @@
     "User Experience::Agreement calculation": "No",
     "User Experience::Querying": "No",
     "User Experience::Mass editing": "No",
-    "UD PARSEME specifics::UD specific annotations": [
+    "UD/PARSEME specifics::UD specific annotations": [
       "Lemmas",
       "UPOS",
       "Basic dependencies"
     ],
-    "UD PARSEME specifics::UD validation": "No",
-    "UD PARSEME specifics::Other annotation layers": "",
-    "UD PARSEME specifics::PARSEME specific annotations": "",
-    "UD PARSEME specifics::Consistency check": "No"
+    "UD/PARSEME specifics::UD validation": "No",
+    "UD/PARSEME specifics::Other annotation layers": "",
+    "UD/PARSEME specifics::PARSEME specific annotations": "",
+    "UD/PARSEME specifics::Consistency check": "No"
   },
   {
     "Tool ID::Tool name": "",
@@ -649,11 +666,13 @@
     "Software::License": "",
     "Software::Active maintenance": "",
     "Software::Software type": "",
-    "Software::Operating system::Windows": "",
-    "Software::Operating system::Mac OS": "",
-    "Software::Operating system::Linux": "",
+    "Software::Operating system": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
     "Software::Software availability": [],
-    "Software::Offline usage webapps": "",
+    "Software::Offline usage": "",
     "Data support::Input format": [],
     "Data support::Integration of other resources": [],
     "Data support::Data export": [],
@@ -675,11 +694,11 @@
     "User Experience::Agreement calculation": "",
     "User Experience::Querying": "",
     "User Experience::Mass editing": "",
-    "UD PARSEME specifics::UD specific annotations": "",
-    "UD PARSEME specifics::UD validation": "",
-    "UD PARSEME specifics::Other annotation layers": "",
-    "UD PARSEME specifics::PARSEME specific annotations": "",
-    "UD PARSEME specifics::Consistency check": ""
+    "UD/PARSEME specifics::UD specific annotations": "",
+    "UD/PARSEME specifics::UD validation": "",
+    "UD/PARSEME specifics::Other annotation layers": "",
+    "UD/PARSEME specifics::PARSEME specific annotations": "",
+    "UD/PARSEME specifics::Consistency check": ""
   },
   {
     "Tool ID::Tool name": "GitDox",
@@ -704,13 +723,15 @@
     "Software::License": "Apache-2.0",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
-    "Software::Operating system::Windows": "No",
-    "Software::Operating system::Mac OS": "No",
-    "Software::Operating system::Linux": "No",
+    "Software::Operating system": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
     "Software::Software availability": [
       "The software should be run by the user (local machine or own server)"
     ],
-    "Software::Offline usage webapps": "No",
+    "Software::Offline usage": "No",
     "Data support::Input format": [
       "Raw text",
       "XML",
@@ -767,24 +788,24 @@
     "User Experience::Agreement calculation": "No",
     "User Experience::Querying": "No",
     "User Experience::Mass editing": "No",
-    "UD PARSEME specifics::UD specific annotations": [
+    "UD/PARSEME specifics::UD specific annotations": [
       "Lemmas",
       "UPOS",
       "FEATS",
       "XPOS",
       "Metadata"
     ],
-    "UD PARSEME specifics::UD validation": "No",
-    "UD PARSEME specifics::Other annotation layers": [
+    "UD/PARSEME specifics::UD validation": "No",
+    "UD/PARSEME specifics::Other annotation layers": [
       "concurrent/conflicting span annotations",
       "nested NER",
       "entity linking"
     ],
-    "UD PARSEME specifics::PARSEME specific annotations": [
+    "UD/PARSEME specifics::PARSEME specific annotations": [
       "Nested expressions",
       "Overlapping expressions"
     ],
-    "UD PARSEME specifics::Consistency check": "No"
+    "UD/PARSEME specifics::Consistency check": "No"
   },
   {
     "Tool ID::Tool name": "FLeX",
@@ -801,13 +822,14 @@
     "Software::License": "GNU LGPL",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Desktop-based application",
-    "Software::Operating system::Windows": "No",
-    "Software::Operating system::Mac OS": "No",
-    "Software::Operating system::Linux": "No",
+    "Software::Operating system": [
+      "Windows",
+      "Linux"
+    ],
     "Software::Software availability": [
       "The software should be run by the user (local machine or own server)"
     ],
-    "Software::Offline usage webapps": "Yes",
+    "Software::Offline usage": "Yes",
     "Data support::Input format": [
       "Raw text",
       "XML",
@@ -868,11 +890,11 @@
     "User Experience::Agreement calculation": "No",
     "User Experience::Querying": "Yes",
     "User Experience::Mass editing": "Yes",
-    "UD PARSEME specifics::UD specific annotations": "Metadata",
-    "UD PARSEME specifics::UD validation": "No",
-    "UD PARSEME specifics::Other annotation layers": "",
-    "UD PARSEME specifics::PARSEME specific annotations": "",
-    "UD PARSEME specifics::Consistency check": "No"
+    "UD/PARSEME specifics::UD specific annotations": "Metadata",
+    "UD/PARSEME specifics::UD validation": "No",
+    "UD/PARSEME specifics::Other annotation layers": "",
+    "UD/PARSEME specifics::PARSEME specific annotations": "",
+    "UD/PARSEME specifics::Consistency check": "No"
   },
   {
     "Tool ID::Tool name": "Label Sleuth",
@@ -889,13 +911,15 @@
     "Software::License": "Apache-2.0",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
-    "Software::Operating system::Windows": "No",
-    "Software::Operating system::Mac OS": "No",
-    "Software::Operating system::Linux": "No",
+    "Software::Operating system": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
     "Software::Software availability": [
       "The software should be run by the user (local machine or own server)"
     ],
-    "Software::Offline usage webapps": "Yes",
+    "Software::Offline usage": "Yes",
     "Data support::Input format": [
       "Raw text",
       "CONLL-U",
@@ -943,11 +967,11 @@
     "User Experience::Agreement calculation": "No",
     "User Experience::Querying": "Yes",
     "User Experience::Mass editing": "Yes",
-    "UD PARSEME specifics::UD specific annotations": "Metadata",
-    "UD PARSEME specifics::UD validation": "No",
-    "UD PARSEME specifics::Other annotation layers": "",
-    "UD PARSEME specifics::PARSEME specific annotations": "",
-    "UD PARSEME specifics::Consistency check": "No"
+    "UD/PARSEME specifics::UD specific annotations": "Metadata",
+    "UD/PARSEME specifics::UD validation": "No",
+    "UD/PARSEME specifics::Other annotation layers": "",
+    "UD/PARSEME specifics::PARSEME specific annotations": "",
+    "UD/PARSEME specifics::Consistency check": "No"
   },
   {
     "Tool ID::Tool name": "CoNLLU-Editor",
@@ -966,13 +990,15 @@
     "Software::License": "BSD 3-Clause",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
-    "Software::Operating system::Windows": "No",
-    "Software::Operating system::Mac OS": "No",
-    "Software::Operating system::Linux": "No",
+    "Software::Operating system": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
     "Software::Software availability": [
       "The software should be run by the user (local machine or own server)"
     ],
-    "Software::Offline usage webapps": "No",
+    "Software::Offline usage": "No",
     "Data support::Input format": [
       "CONLL-U",
       "CoNLL-U plus"
@@ -1028,7 +1054,7 @@
     "User Experience::Agreement calculation": "No",
     "User Experience::Querying": "Yes",
     "User Experience::Mass editing": "Yes",
-    "UD PARSEME specifics::UD specific annotations": [
+    "UD/PARSEME specifics::UD specific annotations": [
       "Lemmas",
       "UPOS",
       "FEATS",
@@ -1039,12 +1065,12 @@
       "Empty nodes",
       "Metadata"
     ],
-    "UD PARSEME specifics::UD validation": "Yes",
-    "UD PARSEME specifics::Other annotation layers": [
+    "UD/PARSEME specifics::UD validation": "Yes",
+    "UD/PARSEME specifics::Other annotation layers": [
       "BIO-like annotations"
     ],
-    "UD PARSEME specifics::PARSEME specific annotations": "",
-    "UD PARSEME specifics::Consistency check": "No"
+    "UD/PARSEME specifics::PARSEME specific annotations": "",
+    "UD/PARSEME specifics::Consistency check": "No"
   },
   {
     "Tool ID::Tool name": "TALEN",
@@ -1061,13 +1087,15 @@
     "Software::License": "other",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
-    "Software::Operating system::Windows": "No",
-    "Software::Operating system::Mac OS": "No",
-    "Software::Operating system::Linux": "No",
+    "Software::Operating system": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
     "Software::Software availability": [
       "The software should be run by the user (local machine or own server)"
     ],
-    "Software::Offline usage webapps": "No",
+    "Software::Offline usage": "No",
     "Data support::Input format": [
       "Raw text",
       "CONLL-U"
@@ -1114,16 +1142,16 @@
     "User Experience::Agreement calculation": "No",
     "User Experience::Querying": "No",
     "User Experience::Mass editing": "Yes",
-    "UD PARSEME specifics::UD specific annotations": [
+    "UD/PARSEME specifics::UD specific annotations": [
       "UPOS",
       "XPOS",
       "Multi-word tokens",
       "Metadata"
     ],
-    "UD PARSEME specifics::UD validation": "No",
-    "UD PARSEME specifics::Other annotation layers": "NER",
-    "UD PARSEME specifics::PARSEME specific annotations": "",
-    "UD PARSEME specifics::Consistency check": "partial"
+    "UD/PARSEME specifics::UD validation": "No",
+    "UD/PARSEME specifics::Other annotation layers": "NER",
+    "UD/PARSEME specifics::PARSEME specific annotations": "",
+    "UD/PARSEME specifics::Consistency check": "partial"
   },
   {
     "Tool ID::Tool name": "ToolBox",
@@ -1136,17 +1164,16 @@
       }
     ],
     "Tool ID::Developer": "No",
-    "Tool ID::Code repository": "",
     "Software::License": "other",
     "Software::Active maintenance": "No",
     "Software::Software type": "Desktop-based application",
-    "Software::Operating system::Windows": "Yes",
-    "Software::Operating system::Mac OS": "No",
-    "Software::Operating system::Linux": "No",
+    "Software::Operating system": [
+      "Windows"
+    ],
     "Software::Software availability": [
       "The software should be run by the user (local machine or own server)"
     ],
-    "Software::Offline usage webapps": "Yes",
+    "Software::Offline usage": "Yes",
     "Data support::Input format": [
       "Raw text"
     ],
@@ -1196,11 +1223,11 @@
     "User Experience::Agreement calculation": "No",
     "User Experience::Querying": "Yes",
     "User Experience::Mass editing": "Yes",
-    "UD PARSEME specifics::UD specific annotations": "Metadata",
-    "UD PARSEME specifics::UD validation": "No",
-    "UD PARSEME specifics::Other annotation layers": "",
-    "UD PARSEME specifics::PARSEME specific annotations": "xs",
-    "UD PARSEME specifics::Consistency check": "No"
+    "UD/PARSEME specifics::UD specific annotations": "Metadata",
+    "UD/PARSEME specifics::UD validation": "No",
+    "UD/PARSEME specifics::Other annotation layers": "",
+    "UD/PARSEME specifics::PARSEME specific annotations": "xs",
+    "UD/PARSEME specifics::Consistency check": "No"
   },
   {
     "Tool ID::Tool name": "ELAN",
@@ -1221,13 +1248,15 @@
     "Software::License": "GPL-3.0",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Desktop-based application",
-    "Software::Operating system::Windows": "No",
-    "Software::Operating system::Mac OS": "No",
-    "Software::Operating system::Linux": "No",
+    "Software::Operating system": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
     "Software::Software availability": [
       "The software should be run by the user (local machine or own server)"
     ],
-    "Software::Offline usage webapps": "Yes",
+    "Software::Offline usage": "Yes",
     "Data support::Input format": [
       "Raw text",
       "XML",
@@ -1293,7 +1322,7 @@
     "User Experience::Agreement calculation": "No",
     "User Experience::Querying": "Yes",
     "User Experience::Mass editing": "Yes",
-    "UD PARSEME specifics::UD specific annotations": [
+    "UD/PARSEME specifics::UD specific annotations": [
       "Lemmas",
       "UPOS",
       "FEATS",
@@ -1302,17 +1331,17 @@
       "Basic dependencies",
       "Metadata"
     ],
-    "UD PARSEME specifics::UD validation": "No",
-    "UD PARSEME specifics::Other annotation layers": [
+    "UD/PARSEME specifics::UD validation": "No",
+    "UD/PARSEME specifics::Other annotation layers": [
       "Time-aligned annotations",
       "multimodal annotations"
     ],
-    "UD PARSEME specifics::PARSEME specific annotations": [
+    "UD/PARSEME specifics::PARSEME specific annotations": [
       "Discontinuous expressions",
       "Nested expressions",
       "Overlapping expressions"
     ],
-    "UD PARSEME specifics::Consistency check": "No"
+    "UD/PARSEME specifics::Consistency check": "No"
   },
   {
     "Tool ID::Tool name": "BoAT (Boğaziçi University Annotation Tool)",
@@ -1335,13 +1364,15 @@
     "Software::License": "MIT",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
-    "Software::Operating system::Windows": "No",
-    "Software::Operating system::Mac OS": "No",
-    "Software::Operating system::Linux": "No",
+    "Software::Operating system": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
     "Software::Software availability": [
       "The software should be run by the user (local machine or own server)"
     ],
-    "Software::Offline usage webapps": "No",
+    "Software::Offline usage": "No",
     "Data support::Input format": [
       "Raw text",
       "CONLL-U"
@@ -1392,7 +1423,7 @@
     "User Experience::Agreement calculation": "partial",
     "User Experience::Querying": "Yes",
     "User Experience::Mass editing": "No",
-    "UD PARSEME specifics::UD specific annotations": [
+    "UD/PARSEME specifics::UD specific annotations": [
       "Lemmas",
       "UPOS",
       "FEATS",
@@ -1402,10 +1433,10 @@
       "Empty nodes",
       "Metadata"
     ],
-    "UD PARSEME specifics::UD validation": "Yes",
-    "UD PARSEME specifics::Other annotation layers": "",
-    "UD PARSEME specifics::PARSEME specific annotations": "",
-    "UD PARSEME specifics::Consistency check": "No"
+    "UD/PARSEME specifics::UD validation": "Yes",
+    "UD/PARSEME specifics::Other annotation layers": "",
+    "UD/PARSEME specifics::PARSEME specific annotations": "",
+    "UD/PARSEME specifics::Consistency check": "No"
   },
   {
     "Tool ID::Tool name": "Q-CAT",
@@ -1415,16 +1446,15 @@
     "Tool ID::Other useful links": "",
     "Tool ID::Developer": "Yes",
     "Software::License": "Apache-2.0",
-    "Software::Code repository": "",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Desktop-based application",
-    "Software::Operating system::Windows": "Yes",
-    "Software::Operating system::Mac OS": "No",
-    "Software::Operating system::Linux": "No",
+    "Software::Operating system": [
+      "Windows"
+    ],
     "Software::Software availability": [
       "The software should be run by the user (local machine or own server)"
     ],
-    "Software::Offline usage webapps": "Yes",
+    "Software::Offline usage": "Yes",
     "Data support::Input format": [
       "CONLL-U",
       "XML"
@@ -1472,16 +1502,16 @@
     "User Experience::Agreement calculation": "No",
     "User Experience::Querying": "Yes",
     "User Experience::Mass editing": "No",
-    "UD PARSEME specifics::UD specific annotations": [
+    "UD/PARSEME specifics::UD specific annotations": [
       "Lemmas",
       "UPOS",
       "Multi-word tokens",
       "Basic dependencies"
     ],
-    "UD PARSEME specifics::UD validation": "No",
-    "UD PARSEME specifics::Other annotation layers": "",
-    "UD PARSEME specifics::PARSEME specific annotations": "",
-    "UD PARSEME specifics::Consistency check": "No"
+    "UD/PARSEME specifics::UD validation": "No",
+    "UD/PARSEME specifics::Other annotation layers": "",
+    "UD/PARSEME specifics::PARSEME specific annotations": "",
+    "UD/PARSEME specifics::Consistency check": "No"
   },
   {
     "Tool ID::Tool name": "FLAT: FoLiA Linguistic Annotation Tool",
@@ -1503,13 +1533,15 @@
     "Software::License": "GPL-3.0",
     "Software::Active maintenance": "Legacy",
     "Software::Software type": "Web-based application",
-    "Software::Operating system::Windows": "No",
-    "Software::Operating system::Mac OS": "No",
-    "Software::Operating system::Linux": "No",
+    "Software::Operating system": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
     "Software::Software availability": [
       "The software should be run by the user (local machine or own server)"
     ],
-    "Software::Offline usage webapps": "No",
+    "Software::Offline usage": "No",
     "Data support::Input format": [
       "Raw text",
       "CONLL-U",
@@ -1562,7 +1594,7 @@
     "User Experience::Agreement calculation": "No",
     "User Experience::Querying": "Yes",
     "User Experience::Mass editing": "Yes",
-    "UD PARSEME specifics::UD specific annotations": [
+    "UD/PARSEME specifics::UD specific annotations": [
       "Lemmas",
       "UPOS",
       "FEATS",
@@ -1570,14 +1602,14 @@
       "Multi-word tokens",
       "Basic dependencies"
     ],
-    "UD PARSEME specifics::UD validation": "No",
-    "UD PARSEME specifics::Other annotation layers": "",
-    "UD PARSEME specifics::PARSEME specific annotations": [
+    "UD/PARSEME specifics::UD validation": "No",
+    "UD/PARSEME specifics::Other annotation layers": "",
+    "UD/PARSEME specifics::PARSEME specific annotations": [
       "Discontinuous expressions",
       "Nested expressions",
       "Overlapping expressions"
     ],
-    "UD PARSEME specifics::Consistency check": "No"
+    "UD/PARSEME specifics::Consistency check": "No"
   },
   {
     "Tool ID::Tool name": "brat rapid annotation tool",
@@ -1595,13 +1627,15 @@
     "Software::License": "MIT",
     "Software::Active maintenance": "No",
     "Software::Software type": "Web-based application",
-    "Software::Operating system::Windows": "No",
-    "Software::Operating system::Mac OS": "No",
-    "Software::Operating system::Linux": "No",
+    "Software::Operating system": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
     "Software::Software availability": [
       "The software should be run by the user (local machine or own server)"
     ],
-    "Software::Offline usage webapps": "No",
+    "Software::Offline usage": "No",
     "Data support::Input format": [
       "Raw text",
       ".txt+.ann"
@@ -1655,7 +1689,7 @@
     "User Experience::Agreement calculation": "No",
     "User Experience::Querying": "Yes",
     "User Experience::Mass editing": "No",
-    "UD PARSEME specifics::UD specific annotations": [
+    "UD/PARSEME specifics::UD specific annotations": [
       "Lemmas",
       "UPOS",
       "FEATS",
@@ -1663,20 +1697,20 @@
       "Basic dependencies",
       "Empty nodes"
     ],
-    "UD PARSEME specifics::UD validation": "No",
-    "UD PARSEME specifics::Other annotation layers": [
+    "UD/PARSEME specifics::UD validation": "No",
+    "UD/PARSEME specifics::Other annotation layers": [
       "events",
       "relations",
       "chains",
       "attributes",
       "normalization"
     ],
-    "UD PARSEME specifics::PARSEME specific annotations": [
+    "UD/PARSEME specifics::PARSEME specific annotations": [
       "Discontinuous expressions",
       "Nested expressions",
       "Overlapping expressions"
     ],
-    "UD PARSEME specifics::Consistency check": "No"
+    "UD/PARSEME specifics::Consistency check": "No"
   },
   {
     "Tool ID::Tool name": "WebAnno",
@@ -1690,13 +1724,15 @@
     "Software::License": "Apache-2.0",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
-    "Software::Operating system::Windows": "No",
-    "Software::Operating system::Mac OS": "No",
-    "Software::Operating system::Linux": "No",
+    "Software::Operating system": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
     "Software::Software availability": [
       "The software is available upon request (the user should ask to get an account)"
     ],
-    "Software::Offline usage webapps": "No",
+    "Software::Offline usage": "No",
     "Data support::Input format": [
       "Raw text",
       "CONLL-U",
@@ -1758,7 +1794,7 @@
     "User Experience::Agreement calculation": "Yes",
     "User Experience::Querying": "Yes",
     "User Experience::Mass editing": "No",
-    "UD PARSEME specifics::UD specific annotations": [
+    "UD/PARSEME specifics::UD specific annotations": [
       "Lemmas",
       "UPOS",
       "FEATS",
@@ -1769,18 +1805,18 @@
       "Empty nodes",
       "Metadata"
     ],
-    "UD PARSEME specifics::UD validation": "Yes",
-    "UD PARSEME specifics::Other annotation layers": [
+    "UD/PARSEME specifics::UD validation": "Yes",
+    "UD/PARSEME specifics::Other annotation layers": [
       "NER",
       "coreference",
       "MWE"
     ],
-    "UD PARSEME specifics::PARSEME specific annotations": [
+    "UD/PARSEME specifics::PARSEME specific annotations": [
       "Discontinuous expressions",
       "Nested expressions",
       "Overlapping expressions"
     ],
-    "UD PARSEME specifics::Consistency check": "Yes"
+    "UD/PARSEME specifics::Consistency check": "Yes"
   },
   {
     "Tool ID::Tool name": "ArboratorGrew",
@@ -1806,13 +1842,15 @@
     "Software::License": "AGPL-3.0",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
-    "Software::Operating system::Windows": "Yes",
-    "Software::Operating system::Mac OS": "Yes",
-    "Software::Operating system::Linux": "Yes",
+    "Software::Operating system": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
     "Software::Software availability": [
       "The software is freely available online (with sign up option and/or social logins)"
     ],
-    "Software::Offline usage webapps": "No",
+    "Software::Offline usage": "No",
     "Data support::Input format": [
       "Raw text",
       "CoNLL-U"
@@ -1862,7 +1900,7 @@
     "User Experience::Agreement calculation": "Yes",
     "User Experience::Querying": "Yes",
     "User Experience::Mass editing": "partial",
-    "UD PARSEME specifics::UD specific annotations": [
+    "UD/PARSEME specifics::UD specific annotations": [
       "Lemmas",
       "UPOS",
       "FEATS",
@@ -1871,10 +1909,10 @@
       "Multiword tokens",
       "Metadata"
     ],
-    "UD PARSEME specifics::UD validation": "Yes",
-    "UD PARSEME specifics::Other annotation layers": "",
-    "UD PARSEME specifics::PARSEME specific annotations": "",
-    "UD PARSEME specifics::Consistency check": "Yes"
+    "UD/PARSEME specifics::UD validation": "Yes",
+    "UD/PARSEME specifics::Other annotation layers": "",
+    "UD/PARSEME specifics::PARSEME specific annotations": "",
+    "UD/PARSEME specifics::Consistency check": "Yes"
   },
   {
     "Tool ID::Tool name": "UD Annotatrix",
@@ -1891,13 +1929,15 @@
     "Software::License": "GPL-3.0",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
-    "Software::Operating system::Windows": "No",
-    "Software::Operating system::Mac OS": "No",
-    "Software::Operating system::Linux": "No",
+    "Software::Operating system": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
     "Software::Software availability": [
       "The software is freely available online (with sign up option and/or social logins)"
     ],
-    "Software::Offline usage webapps": "Yes",
+    "Software::Offline usage": "Yes",
     "Data support::Input format": [
       "Raw text",
       "CONLL-U",
@@ -1950,7 +1990,7 @@
     "User Experience::Agreement calculation": "No",
     "User Experience::Querying": "No",
     "User Experience::Mass editing": "No",
-    "UD PARSEME specifics::UD specific annotations": [
+    "UD/PARSEME specifics::UD specific annotations": [
       "Lemmas",
       "UPOS",
       "FEATS",
@@ -1960,9 +2000,9 @@
       "Enhanced dependencies",
       "Empty nodes"
     ],
-    "UD PARSEME specifics::UD validation": "No",
-    "UD PARSEME specifics::Other annotation layers": "",
-    "UD PARSEME specifics::PARSEME specific annotations": "",
-    "UD PARSEME specifics::Consistency check": "No"
+    "UD/PARSEME specifics::UD validation": "No",
+    "UD/PARSEME specifics::Other annotation layers": "",
+    "UD/PARSEME specifics::PARSEME specific annotations": "",
+    "UD/PARSEME specifics::Consistency check": "No"
   }
 ]

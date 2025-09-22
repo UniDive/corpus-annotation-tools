@@ -1,86 +1,86 @@
-ToolID:
-  Tool-name: WebAnno
+Tool ID:
+  Tool name: WebAnno
   Logo: https://webanno.github.io/webanno/assets/img/logo.png
-  Short-description: |
+  Short description: |
     A web-based collaborative tool for linguistic annotation that supports various annotation tasks, including POS tagging, dependency parsing, and coreference resolution. It provides collaborative features and works well with formats like CoNLL-U.
   Website: https://webanno.github.io/webanno/
-  Other-useful-links:
+  Other useful links:
   Developer: 'No'
-  Additional-features: |
+  Additional features: |
     WebAnno supports a rich set of features including customizable annotation layers, integration with external data sources, support for multiple annotators, and visualization of annotated data. It also supports automatic pre-annotation and inter-annotator agreement calculation
-  Code-repository: https://github.com/webanno/webanno
-  
+  Code repository: https://github.com/webanno/webanno
+
 Software:
   License: Apache-2.0
-  Active-maintenance: 'Yes'
-  Software-type: Web-based application
-  Operating-system:
-    Windows: 'No'
-    macOS: 'No'
-    Linux: 'No'
-  Software-availability:
+  Active maintenance: 'Yes'
+  Software type: Web-based application
+  Operating system:
+    - Windows
+    - macOS
+    - Linux
+  Software availability:
     - The software is available upon request (the user should ask to get an account)
-  Offline-usage-webapps: 'No'
+  Offline usage: 'No'
 
-Data-support:
-  Input-format:
+Data support:
+  Input format:
     - Raw text
     - CONLL-U
     - XML
     - TSV
   Integration-of-other-resources:
     - External databases (e.g. dictionaries)
-  Data-export:
+  Data export:
     - The data can be exported.
     - The data can be stored with a third party storage platform (e.g. Git repository)
 
-Diversity-features:
-  Diversity-features:
+Diversity features:
+  Diversity features:
     - Language-independence
     - Writing script support
     - LTR
     - RTL
     - unicode support
-  Language-of-the-interface:
+  Language of the interface:
     - English
 
 Annotation:
   Segmentation:
     - word-level
     - sentence-level
-  Annotation-types:
+  Annotation types:
     - Tokens (e.g. part-of-speech tag morphological features)
     - Spans (e.g. names entities)
     - Multi-tokens (e.g. multi-word expressions) - Relations (e.g. dependencies)
     - Chainsc(e.g. coreferences)
-  Annotation-scope:
+  Annotation scope:
     - Annotation inside sentences
     - Annotation across sentences
     - Annotation of full sentences/paragraphs/ documents
   Tagset-customization: 'Yes'
 
-User-Experience:
-  Annotation-mode:
+User Experience:
+  Annotation mode:
     - Keyboard
     - Mouse (e.g. drag & drop)
-  Keyboard-shortcuts: 'Yes'
-  Annotation-display:
+  Keyboard shortcuts: 'Yes'
+  Annotation display:
     - Image (e.g. a graph or coloured text)
     - Table
     - Raw format (e.g. CONLL-U)
-  Automatic-pre-annotation: 'Yes'
-  Automatic-recommendation: 'Yes'
-  Collaborative-annotation:
+  Automatic pre-annotation: 'Yes'
+  Automatic recommendation: 'Yes'
+  Collaborative annotation:
     - annotators working independently on their own annotations of the same data
     - annotators working together on the same shared annotation of the data.
-  Project-management: 'Yes'
-  User-roles: 'Yes'
-  Comparison-of-annotations: 'Yes'
-  Agreement-calculation: 'Yes'
+  Project management: 'Yes'
+  User roles: 'Yes'
+  Comparison of annotations: 'Yes'
+  Agreement calculation: 'Yes'
   Querying: 'Yes'
-  Mass-editing: 'No'
-UD-PARSEME-specifics:
-  UD-specific-annotations:
+  Mass editing: 'No'
+UD/PARSEME specifics:
+  UD specific annotations:
     - Lemmas
     - UPOS
     - FEATS
@@ -90,13 +90,13 @@ UD-PARSEME-specifics:
     - Enhanced dependencies
     - Empty nodes
     - Metadata
-  UD-validation: 'Yes'
-  Other-annotation-layers:
+  UD validation: 'Yes'
+  Other annotation layers:
     - NER
     - coreference
     - MWE
-  PARSEME-specific-annotations:
+  PARSEME specific annotations:
     - Discontinuous expressions
     - Nested expressions
     - Overlapping expressions
-  Consistency-check: 'Yes'
+  Consistency check: 'Yes'

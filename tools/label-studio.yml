@@ -1,27 +1,27 @@
-ToolID:
-  Tool-name: Label Studio
+Tool ID:
+  Tool name: Label Studio
   Logo: https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcRwv-OYeU-1T_7Yh_DPJd2QIx9jTJkrafAwiik7kpU4t3poAI0yEAUPceAbfbukMrvbM8W4-XhObr1VMmOc_8puMjiC60CN6w
-  Short-description: |
+  Short description: |
     Data labeling tool for all data types (computer vision, natural
     language processing, speech, voice, and video models)
   Website: https://labelstud.io/
-  Other-useful-links:
+  Other useful links:
   Developer: 'No'
 
 Software:
   License: Apache-2.0
-  Active-maintenance: 'Yes'
-  Software-type: Web-based application
-  Operating-system:
-    Windows: 'No'
-    macOS: 'No'
-    Linux: 'No'
-  Software-availability:
+  Active maintenance: 'Yes'
+  Software type: Web-based application
+  Operating system:
+    - Windows
+    - macOS
+    - Linux
+  Software availability:
     - The software should be run by the user (local machine or own server)
-  Offline-usage-webapps: 'Yes'
+  Offline usage: 'Yes'
 
-Data-support:
-  Input-format:
+Data support:
+  Input format:
     - Raw text
     - PDF
     - CONLL-U
@@ -32,60 +32,60 @@ Data-support:
     - Video
     - Image
     - PDF
-  Data-export:
+  Data export:
     - The data can be exported.
     - The data can be stored with a third party storage platform (e.g. Git repository)
 
-Diversity-features:
-  Diversity-features:
+Diversity features:
+  Diversity features:
     - Language-independence
     - Writing script support
     - LTR
     - RTL
     - unicode support
-  Language-of-the-interface:
+  Language of the interface:
     - English
 
 Annotation:
   Segmentation:
     - word-level
     - sentence-level
-  Annotation-types:
+  Annotation types:
     - Tokens (e.g. part-of-speech tag morphological features)
     - Spans (e.g. names entities)
     - Multi-tokens (e.g. multi-word expressions)
     - Relations (e.g. dependencies)
     - Chains (e.g. coreferences)
-  Annotation-scope:
+  Annotation scope:
     - Annotation inside sentences
     - Annotation across sentences
     - Annotation of full sentences/paragraphs/documents
   Tagset-customization: 'Yes'
 
-User-Experience:
-  Annotation-mode:
+User Experience:
+  Annotation mode:
     - Keyboard
     - Mouse (e.g. drag & drop)
     - Touchscreen
-  Keyboard-shortcuts: 'Yes'
-  Annotation-display:
+  Keyboard shortcuts: 'Yes'
+  Annotation display:
     - Image (e.g. a graph or coloured text)
     - Table
     - Raw format (e.g. CONLL-U)
-  Automatic-pre-annotation: 'No'
-  Automatic-recommendation: 'Yes'
-  Collaborative-annotation:
+  Automatic pre-annotation: 'No'
+  Automatic recommendation: 'Yes'
+  Collaborative annotation:
     - annotators working independently on their own annotations of the same data
     - annotators working together on the same shared annotation of the data.
-  Project-management: 'Yes'
-  User-roles: 'Yes'
-  Comparison-of-annotations: 'No'
-  Agreement-calculation: 'No'
+  Project management: 'Yes'
+  User roles: 'Yes'
+  Comparison of annotations: 'No'
+  Agreement calculation: 'No'
   Querying: 'Yes'
-  Mass-editing: 'Yes'
+  Mass editing: 'Yes'
 
-UD-PARSEME-specifics:
-  UD-specific-annotations:
+UD/PARSEME specifics:
+  UD specific annotations:
     - Lemmas
     - UPOS
     - FEATS
@@ -93,13 +93,13 @@ UD-PARSEME-specifics:
     - Multi-word tokens
     - Basic dependencies
     - Metadata
-  UD-validation: 'No'
-  Other-annotation-layers:
+  UD validation: 'No'
+  Other annotation layers:
     - Text classification
     - NER
-  PARSEME-specific-annotations:
+  PARSEME specific annotations:
     - Discontinuous expressions
     - Nested expressions
     - Overlapping expressions
-  Consistency-check: 'No'
+  Consistency check: 'No'
 
