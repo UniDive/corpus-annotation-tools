@@ -91,7 +91,9 @@
       ""
     ],
     "UD/PARSEME specifics::Consistency check": "No",
-    "Tool ID::Example projects": "https://arboratorgrew.elizia.net/#/projects/Masakhane-Igbo",
+    "Tool ID::Example projects": [
+      "Masakhane-Igbo::https://arboratorgrew.elizia.net/#/projects/Masakhane-Igbo"
+    ],
     "Tool ID::Additional features": "ArboratorGrew can be used also to teach syntax. It has a mode when users can create exercises with different levels of complexity and export students results by the end  Users can also generate lexicons from your annotated data  And to ensure effective collaboration, ArboratorGrew provides a tag system"
   },
   {
@@ -185,7 +187,9 @@
       ""
     ],
     "UD/PARSEME specifics::Consistency check": "No",
-    "Tool ID::Example projects": "https://github.com/UniversalDependencies/UD_Turkish-BOUN",
+    "Tool ID::Example projects": [
+      "UD_Turkish-BOUN::https://github.com/UniversalDependencies/UD_Turkish-BOUN"
+    ],
     "Tool ID::Additional features": null
   },
   {
@@ -285,7 +289,9 @@
       "Overlapping expressions"
     ],
     "UD/PARSEME specifics::Consistency check": "No",
-    "Tool ID::Example projects": "https://brat.nlplab.org/examples.html",
+    "Tool ID::Example projects": [
+      "Examples::https://brat.nlplab.org/examples.html"
+    ],
     "Tool ID::Additional features": "Export of visualisations (images)"
   },
   {
@@ -384,7 +390,9 @@
       ""
     ],
     "UD/PARSEME specifics::Consistency check": "No",
-    "Tool ID::Example projects": "UD_Welsh",
+    "Tool ID::Example projects": [
+      "UD_Welsh::https://github.com/UniversalDependencies/UD_Welsh-CCG"
+    ],
     "Tool ID::Additional features": "git-support (automatic gid add/git commit; automatic generation of transliteration of non-Latin scripts into Latin-script (Translit= fields in MISC and trainsliteration of the entire sentence; statistics (number/percentage of UPOSes, deprels, etc). The tool can be used as a frontend to an parser which returns the result in CoNLL-U format"
   },
   {
@@ -468,7 +476,9 @@
       ""
     ],
     "UD/PARSEME specifics::Consistency check": "No",
-    "Tool ID::Example projects": null,
+    "Tool ID::Example projects": [
+      ""
+    ],
     "Tool ID::Additional features": null
   },
   {
@@ -585,7 +595,9 @@
       "Overlapping expressions"
     ],
     "UD/PARSEME specifics::Consistency check": "No",
-    "Tool ID::Example projects": "https://archive.mpi.nl/tla/islandora/object/lat%3A1839_00_0000_0000_0000_0000_4",
+    "Tool ID::Example projects": [
+      "TODO::https://archive.mpi.nl/tla/islandora/object/lat%3A1839_00_0000_0000_0000_0000_4"
+    ],
     "Tool ID::Additional features": "Multimedia synchronization; customizable annotation workflow; metadata management and support like IMDI and CMDI"
   },
   {
@@ -677,7 +689,9 @@
       ""
     ],
     "UD/PARSEME specifics::Consistency check": "No",
-    "Tool ID::Example projects": "https://exmaralda.org/en/projects/",
+    "Tool ID::Example projects": [
+      "TODO::https://exmaralda.org/en/projects/"
+    ],
     "Tool ID::Additional features": null
   },
   {
@@ -774,7 +788,9 @@
       "Overlapping expressions"
     ],
     "UD/PARSEME specifics::Consistency check": "No",
-    "Tool ID::Example projects": "- PARSEME (and some derived projects) - Piroska Lenvdai et al. \"Workflow for HTR-Postprocessing, Labeling and Classifying Diachronic and Regional Variation in Pre-Modern Slavic Texts\" - LREC 2024 - https://aclanthology.org/2024.lrec-main.184/",
+    "Tool ID::Example projects": [
+      "PARSEME::https://aclanthology.org/2024.lrec-main.184/"
+    ],
     "Tool ID::Additional features": null
   },
   {
@@ -869,7 +885,9 @@
       ""
     ],
     "UD/PARSEME specifics::Consistency check": "No",
-    "Tool ID::Example projects": null,
+    "Tool ID::Example projects": [
+      ""
+    ],
     "Tool ID::Additional features": null
   },
   {
@@ -968,7 +986,10 @@
       "Overlapping expressions"
     ],
     "UD/PARSEME specifics::Consistency check": "No",
-    "Tool ID::Example projects": "https://gucorpling.org/gum/, https://data.copticscriptorium.org/",
+    "Tool ID::Example projects": [
+      "GUM::https://gucorpling.org/gum/",
+      "COPTIC::https://data.copticscriptorium.org/"
+    ],
     "Tool ID::Additional features": "There's a demo of the coref interface here: https://gucorpling.org/gitdox/spannotator.html"
   },
   {
@@ -1073,7 +1094,9 @@
       "Overlapping expressions"
     ],
     "UD/PARSEME specifics::Consistency check": "partial",
-    "Tool ID::Example projects": "You can find many more by searching for INCEpTION on Google Scholar although note that not all papers that cite INCEpTION actually used it. E.g. they may also refer to it as related work (e.g. papers of other annotation editor tools) or have eventually chosen another tool to use.",
+    "Tool ID::Example projects": [
+      "TODO::You can find many more by searching for INCEpTION on Google Scholar although note that not all papers that cite INCEpTION actually used it. E.g. they may also refer to it as related work (e.g. papers of other annotation editor tools) or have eventually chosen another tool to use."
+    ],
     "Tool ID::Additional features": "INCEpTION caters to a wide range of individual users who find different aspects of the tool useful. I would say that probably the ability to link to knowledge bases, the ability to work on sensitive data, the ability to use ML/AI to support the annotation process, the multi-user capabilities, curation support, agreement calculation support, and the range of supported data formats are among the most attractive features.  INCEpTION also caters to institutional users who need to integrate the tool into their existing infrastructure by supporting e.g. single-sign-on mechanisms, docker-based deployment, a remote API, etc."
   },
   {
@@ -1158,7 +1181,9 @@
       ""
     ],
     "UD/PARSEME specifics::Consistency check": "No",
-    "Tool ID::Example projects": "",
+    "Tool ID::Example projects": [
+      ""
+    ],
     "Tool ID::Additional features": "Machine-learned automatic tagging suggestions"
   },
   {
@@ -1268,7 +1293,9 @@
       "Overlapping expressions"
     ],
     "UD/PARSEME specifics::Consistency check": "No",
-    "Tool ID::Example projects": null,
+    "Tool ID::Example projects": [
+      ""
+    ],
     "Tool ID::Additional features": null
   },
   {
@@ -1357,7 +1384,10 @@
       ""
     ],
     "UD/PARSEME specifics::Consistency check": "No",
-    "Tool ID::Example projects": "http://treebank.camel-lab.com/ ; http://www.lrec-conf.org/proceedings/lrec2022/pdf/2022.lrec-1.286.pdf",
+    "Tool ID::Example projects": [
+      "CAMELLAB::http://treebank.camel-lab.com/",
+      "LREC::http://www.lrec-conf.org/proceedings/lrec2022/pdf/2022.lrec-1.286.pdf"
+    ],
     "Tool ID::Additional features": "We recently added an Undo/Redo functionality and also the ability to synchonize files on google Drive https://aclanthology.org/2024.lrec-main.1101.pdf"
   },
   {
@@ -1448,7 +1478,10 @@
       ""
     ],
     "UD/PARSEME specifics::Consistency check": "No",
-    "Tool ID::Example projects": "Tamil UD, Telugu UD",
+    "Tool ID::Example projects": [
+      "TAMIL_UD::Tamil UD",
+      "TELUGU_UD::Telugu UD"
+    ],
     "Tool ID::Additional features": null
   },
   {
@@ -1534,7 +1567,9 @@
       ""
     ],
     "UD/PARSEME specifics::Consistency check": "No",
-    "Tool ID::Example projects": null,
+    "Tool ID::Example projects": [
+      ""
+    ],
     "Tool ID::Additional features": null
   },
   {
@@ -1622,7 +1657,9 @@
       ""
     ],
     "UD/PARSEME specifics::Consistency check": "partial",
-    "Tool ID::Example projects": null,
+    "Tool ID::Example projects": [
+      ""
+    ],
     "Tool ID::Additional features": null
   },
   {
@@ -1707,7 +1744,9 @@
       ""
     ],
     "UD/PARSEME specifics::Consistency check": "No",
-    "Tool ID::Example projects": null,
+    "Tool ID::Example projects": [
+      ""
+    ],
     "Tool ID::Additional features": null
   },
   {
@@ -1803,7 +1842,9 @@
       ""
     ],
     "UD/PARSEME specifics::Consistency check": "No",
-    "Tool ID::Example projects": "Prague Dependency Treebank (PDT)",
+    "Tool ID::Example projects": [
+      "PDT::Prague Dependency Treebank (PDT)"
+    ],
     "Tool ID::Additional features": "Custom stylesheets"
   },
   {
@@ -1901,7 +1942,9 @@
       ""
     ],
     "UD/PARSEME specifics::Consistency check": "No",
-    "Tool ID::Example projects": null,
+    "Tool ID::Example projects": [
+      ""
+    ],
     "Tool ID::Additional features": null
   },
   {
@@ -2009,7 +2052,9 @@
       "Overlapping expressions"
     ],
     "UD/PARSEME specifics::Consistency check": "Yes",
-    "Tool ID::Example projects": "",
+    "Tool ID::Example projects": [
+      ""
+    ],
     "Tool ID::Additional features": "WebAnno supports a rich set of features including customizable annotation layers, integration with external data sources, support for multiple annotators, and visualization of annotated data. It also supports automatic pre-annotation and inter-annotator agreement calculation"
   }
 ]
