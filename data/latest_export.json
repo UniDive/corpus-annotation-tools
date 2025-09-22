@@ -1786,11 +1786,11 @@
     "Tool ID::Tool name": "ArboratorGrew",
     "Tool ID::Logo": "https://arboratorgrew.elda.org/static/images/logo.svg",
     "Tool ID::Short description": "Collaborative UD treebank annotation and search tool.\n",
-    "Tool ID::Website": "https://arboratorgrew.elda.org/",
-    "Tool ID::Code repository": "https://github.com/grew-nlp/arborator-frontend",
+    "Tool ID::Website": "https://arborator.github.io",
+    "Tool ID::Code repository": "https://github.com/Arborator",
     "Tool ID::Other useful links": [
       {
-        "Documentation": "https://arboratorgrew.readthedocs.io/"
+        "Documentation": "https://arborator.github.io/arborator-documentation/#/"
       },
       {
         "Paper": "https://doi.org/10.18653/v1/2021.eacl-demo.23"
@@ -1804,24 +1804,22 @@
     "Tool ID::Additional features": "Integrated search with Grew; REST API.\n",
     "Software::License": "AGPL-3.0",
     "Software::Active maintenance": "Yes",
-    "Software::Software type": "Annotation tool",
+    "Software::Software type": "Web-based application",
     "Software::Operating system::Windows": "Yes",
     "Software::Operating system::Mac OS": "Yes",
     "Software::Operating system::Linux": "Yes",
     "Software::Software availability": [
-      "Web"
+      "The software is freely available online (with sign up option and/or social logins)"
     ],
     "Software::Offline usage webapps": "No",
     "Data support::Input format": [
+      "Raw text",
       "CoNLL-U"
     ],
-    "Data support::Integration of other resources": [
-      "UDPipe",
-      "Stanza"
-    ],
+    "Data support::Integration of other resources": "",
     "Data support::Data export": [
-      "CoNLL-U",
-      "CSV"
+      "The data can be exported.",
+      "The data can be stored with a third party storage platform (e.g. Git repository)"
     ],
     "Diversity features::Diversity features": [
       "Accessibility"
@@ -1831,41 +1829,50 @@
       "French"
     ],
     "Annotation::Segmentation": [
-      "Token",
-      "Sentence"
+      "word segmentation",
+      "Sentence segmentation"
     ],
     "Annotation::Annotation types": [
-      "POS",
-      "LEMMA",
-      "DEP",
-      "MWE"
+      "Tokens (e.g. part-of-speech tag, morphological features)",
+      "Multi-tokens (e.g. multi-word expressions)",
+      "Relations (e.g. dependencies)"
     ],
     "Annotation::Annotation scope": [
-      "Text"
+      "Annotation inside sentences"
     ],
     "Annotation::Tagset customization": "Import custom",
     "User Experience::Annotation mode": [
-      "Keyboard",
       "Mouse (e.g. drag & drop)"
     ],
     "User Experience::Keyboard shortcuts": "Yes",
     "User Experience::Annotation display": [
-      "Graphical representation of a tree",
+      "Image (e.g. a graph or coloured text)",
+      "Table",
       "Raw format (e.g. CONLL-U)"
     ],
     "User Experience::Automatic pre annotation": "partial",
     "User Experience::Automatic recommendation": "No",
-    "User Experience::Collaborative annotation": "Yes",
+    "User Experience::Collaborative annotation": [
+      "multiple annotators working independently on their own annotations of the same data."
+    ],
     "User Experience::Project management": "Yes",
     "User Experience::User roles": "Yes",
     "User Experience::Comparison of annotations": "Yes",
     "User Experience::Agreement calculation": "Yes",
     "User Experience::Querying": "Yes",
     "User Experience::Mass editing": "partial",
-    "UD PARSEME specifics::UD specific annotations": "Yes",
+    "UD PARSEME specifics::UD specific annotations": [
+      "Lemmas",
+      "UPOS",
+      "FEATS",
+      "XPOS",
+      "Basic dependencies",
+      "Multiword tokens",
+      "Metadata"
+    ],
     "UD PARSEME specifics::UD validation": "Yes",
     "UD PARSEME specifics::Other annotation layers": "",
-    "UD PARSEME specifics::PARSEME specific annotations": "No",
+    "UD PARSEME specifics::PARSEME specific annotations": "",
     "UD PARSEME specifics::Consistency check": "Yes"
   },
   {
