@@ -11,8 +11,8 @@
         "TODO": "https://exmaralda.org/en/projects/"
       }
     ],
+    "Tool ID::Code repository": "https://github.com/Exmaralda-Org/exmaralda",
     "Software::License": "GPL-2.0",
-    "Software::Code repository": "https://github.com/Exmaralda-Org/exmaralda",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Desktop-based application",
     "Software::Operating system::Windows": "No",
@@ -92,8 +92,8 @@
     "Tool ID::Other useful links": "",
     "Tool ID::Developer": "Yes",
     "Tool ID::Additional features": "INCEpTION caters to a wide range of individual users who find different aspects of the tool useful. I would say that probably the ability to link to knowledge bases the ability to work on sensitive data the ability to use ML/AI to support the annotation process the multi-user capabilities curation support agreement calculation support and the range of supported data formats are among the most attractive features. INCEpTION also caters to institutional users who need to integrate the tool into their existing infrastructure by supporting e.g. single-sign-on mechanisms docker-based deployment a remote API etc.\n",
+    "Tool ID::Code repository": "https://github.com/inception-project/inception",
     "Software::License": "Apache-2.0",
-    "Software::Code repository": "https://github.com/inception-project/inception",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
     "Software::Operating system::Windows": "No",
@@ -193,7 +193,6 @@
     "Tool ID::Other useful links": "",
     "Tool ID::Developer": "No",
     "Software::License": "Apache-2.0",
-    "Software::Code repository": "",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
     "Software::Operating system::Windows": "No",
@@ -302,8 +301,8 @@
       "TAMIL_UD::Tamil UD",
       "TELUGU_UD::Telugu UD"
     ],
+    "Tool ID::Code repository": "https://github.com/parameshkrishnaa/PLURAL-conllu-annotator",
     "Software::License": "CC_BY",
-    "Software::Code repository": "https://github.com/parameshkrishnaa/PLURAL-conllu-annotator",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
     "Software::Operating system::Windows": "No",
@@ -490,8 +489,8 @@
       }
     ],
     "Tool ID::Additional features": "We recently added an Undo/Redo functionality and also the ability\nto synchonize files on google Drive https://aclanthology.org/2024.lrec-main.1101.pdf\n",
+    "Tool ID::Code repository": "https://github.com/CAMeL-Lab/palmyra",
     "Software::License": "MIT",
-    "Software::Code repository": "https://github.com/CAMeL-Lab/palmyra",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
     "Software::Operating system::Windows": "No",
@@ -567,8 +566,8 @@
     "Tool ID::Website": "http://medialab.di.unipi.it/Project/QA/Parser/DgAnnotator/",
     "Tool ID::Other useful links": "",
     "Tool ID::Developer": "No",
+    "Tool ID::Code repository": "https://github.com/attardi/DgAnnotator",
     "Software::License": "not specified",
-    "Software::Code repository": "https://github.com/attardi/DgAnnotator",
     "Software::Active maintenance": "No",
     "Software::Software type": "Desktop-based application",
     "Software::Operating system::Windows": "No",
@@ -635,6 +634,7 @@
     "Tool ID::Logo": "",
     "Tool ID::Short description": "",
     "Tool ID::Website": "",
+    "Tool ID::Code repository": "",
     "Tool ID::Other useful links": [
       {
         "Documentation": ""
@@ -645,7 +645,6 @@
     ],
     "Tool ID::Developer": "",
     "Software::License": "",
-    "Software::Code repository": "",
     "Software::Active maintenance": "",
     "Software::Software type": "",
     "Software::Operating system::Windows": "",
@@ -701,8 +700,8 @@
         "Coptic": "https://data.copticscriptorium.org/"
       }
     ],
+    "Tool ID::Code repository": "https://github.com/gucorpling/gitdox",
     "Software::License": "Apache-2.0",
-    "Software::Code repository": "https://github.com/gucorpling/gitdox",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
     "Software::Operating system::Windows": "No",
@@ -799,8 +798,8 @@
       }
     ],
     "Tool ID::Developer": "No",
+    "Tool ID::Code repository": "https://github.com/sillsdev/FieldWorks",
     "Software::License": "GNU LGPL",
-    "Software::Code repository": "https://github.com/sillsdev/FieldWorks",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Desktop-based application",
     "Software::Operating system::Windows": "No",
@@ -887,8 +886,8 @@
       }
     ],
     "Tool ID::Developer": "No",
+    "Tool ID::Code repository": "https://github.com/label-sleuth/label-sleuth",
     "Software::License": "Apache-2.0",
-    "Software::Code repository": "https://github.com/label-sleuth/label-sleuth",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
     "Software::Operating system::Windows": "No",
@@ -964,8 +963,8 @@
       }
     ],
     "Tool ID::Additional features": "git-support (automatic gid add/git commit; automatic generation of transliteration of non-Latin scripts into Latin-script (Translit= fields in MISC and trainsliteration of the entire sentence; statistics (number/percentage of UPOSes, deprels, etc). The tool can be used as a frontend to an parser which returns the result in CoNLL-U format\n",
+    "Tool ID::Code repository": "https://github.com/Orange-Opensource/conllueditor",
     "Software::License": "BSD 3-Clause",
-    "Software::Code repository": "https://github.com/Orange-Opensource/conllueditor",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
     "Software::Operating system::Windows": "No",
@@ -1059,8 +1058,8 @@
       }
     ],
     "Tool ID::Developer": "No",
+    "Tool ID::Code repository": "https://github.com/CogComp/talen",
     "Software::License": "other",
-    "Software::Code repository": "https://github.com/CogComp/talen",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
     "Software::Operating system::Windows": "No",
@@ -1138,8 +1137,8 @@
       }
     ],
     "Tool ID::Developer": "No",
+    "Tool ID::Code repository": "",
     "Software::License": "other",
-    "Software::Code repository": "",
     "Software::Active maintenance": "No",
     "Software::Software type": "Desktop-based application",
     "Software::Operating system::Windows": "Yes",
@@ -1219,8 +1218,8 @@
       "TODO::https://archive.mpi.nl/tla/islandora/object/lat%3A1839_00_0000_0000_0000_0000_4"
     ],
     "Tool ID::Additional features": "Multimedia synchronization; customizable annotation workflow; metadata management and support like IMDI and CMDI\n",
+    "Tool ID::Code repository": "https://archive.mpi.nl/tla/elan/download",
     "Software::License": "GPL-3.0",
-    "Software::Code repository": "https://archive.mpi.nl/tla/elan/download",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Desktop-based application",
     "Software::Operating system::Windows": "No",
@@ -1333,8 +1332,8 @@
       }
     ],
     "Tool ID::Additional features": "",
+    "Tool ID::Code repository": "https://github.com/furkanakkurt1335/boat",
     "Software::License": "MIT",
-    "Software::Code repository": "https://github.com/furkanakkurt1335/boat",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
     "Software::Operating system::Windows": "No",
@@ -1501,8 +1500,8 @@
         "PARSEME": "https://aclanthology.org/2024.lrec-main.184/"
       }
     ],
+    "Tool ID::Code repository": "https://github.com/proycon/flat",
     "Software::License": "GPL-3.0",
-    "Software::Code repository": "https://github.com/proycon/flat",
     "Software::Active maintenance": "Legacy",
     "Software::Software type": "Web-based application",
     "Software::Operating system::Windows": "No",
@@ -1593,8 +1592,8 @@
     ],
     "Tool ID::Developer": "No",
     "Tool ID::Additional features": "Export of visualisations (images)",
+    "Tool ID::Code repository": "https://github.com/nlplab/brat",
     "Software::License": "MIT",
-    "Software::Code repository": "https://github.com/nlplab/brat",
     "Software::Active maintenance": "No",
     "Software::Software type": "Web-based application",
     "Software::Operating system::Windows": "No",
@@ -1688,8 +1687,8 @@
     "Tool ID::Other useful links": "",
     "Tool ID::Developer": "No",
     "Tool ID::Additional features": "WebAnno supports a rich set of features including customizable annotation layers, integration with external data sources, support for multiple annotators, and visualization of annotated data. It also supports automatic pre-annotation and inter-annotator agreement calculation\n",
+    "Tool ID::Code repository": "https://github.com/webanno/webanno",
     "Software::License": "Apache-2.0",
-    "Software::Code repository": "https://github.com/webanno/webanno",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
     "Software::Operating system::Windows": "No",
@@ -1789,6 +1788,7 @@
     "Tool ID::Logo": "https://arboratorgrew.elda.org/static/images/logo.svg",
     "Tool ID::Short description": "Collaborative UD treebank annotation and search tool.\n",
     "Tool ID::Website": "https://arboratorgrew.elda.org/",
+    "Tool ID::Code repository": "https://github.com/grew-nlp/arborator-frontend",
     "Tool ID::Other useful links": [
       {
         "Documentation": "https://arboratorgrew.readthedocs.io/"
@@ -1804,7 +1804,6 @@
     ],
     "Tool ID::Additional features": "Integrated search with Grew; REST API.\n",
     "Software::License": "AGPL-3.0",
-    "Software::Code repository": "https://github.com/grew-nlp/arborator-frontend",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Annotation tool",
     "Software::Operating system::Windows": "Yes",
@@ -1881,8 +1880,8 @@
       }
     ],
     "Tool ID::Developer": "No",
+    "Tool ID::Code repository": "https://github.com/jonorthwash/ud-annotatrix",
     "Software::License": "GPL-3.0",
-    "Software::Code repository": "https://github.com/jonorthwash/ud-annotatrix",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Web-based application",
     "Software::Operating system::Windows": "No",
