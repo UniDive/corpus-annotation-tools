@@ -296,38 +296,74 @@ function buildTools() {
 		infoBox.appendChild(add_features);
 
 		// Useful links
-		if (tool["Tool ID::Other useful links"] && Array.isArray(tool["Tool ID::Other useful links"])) {
-			const linksSection = document.createElement('div');
-			linksSection.className = 'useful-links';
-			linksSection.innerHTML = '<h4>Useful Links</h4>';
-			tool["Tool ID::Other useful links"].forEach(link => {
-				const [linkName, linkTarget] = link.split('::');
-				const linkElem = document.createElement('a');
-				linkElem.href = linkTarget;
-				linkElem.textContent = linkName;
-				linkElem.target = '_blank';
-				linkElem.style.display = 'block';
-				linksSection.appendChild(linkElem);
-			});
-			infoBox.appendChild(linksSection);
-		}
+
+        if (tool["Tool ID::Other useful links"] && Array.isArray(tool["Tool ID::Other useful links"])) {
+    const projectsSection = document.createElement('div');
+    projectsSection.className = 'example-projects';
+    projectsSection.innerHTML = '<h4>Other useful links</h4>';
+    tool["Tool ID::Other useful links"].forEach(link => {
+        const linkElem = document.createElement('a');
+        linkElem.href = link;
+        linkElem.textContent = link;
+        linkElem.target = '_blank';
+        linkElem.style.display = 'block';
+        projectsSection.appendChild(linkElem);
+    });
+    infoBox.appendChild(projectsSection);
+} else if (tool["Tool ID::Other useful links"] && typeof tool["Tool ID::Other useful links"] === "string") {
+    const projectsSection = document.createElement('div');
+    projectsSection.className = 'example-projects';
+    projectsSection.innerHTML = '<h4>Other useful links</h4>';
+    const linkElem = document.createElement('a');
+    linkElem.href = tool["Tool ID::Other useful links"];
+    linkElem.textContent = tool["Tool ID::Other useful links"];
+    linkElem.target = '_blank';
+    linkElem.style.display = 'block';
+    projectsSection.appendChild(linkElem);
+    infoBox.appendChild(projectsSection);
+}
+		// if (tool["Tool ID::Other useful links"] && Array.isArray(tool["Tool ID::Other useful links"])) {
+		// 	const linksSection = document.createElement('div');
+		// 	linksSection.className = 'useful-links';
+		// 	linksSection.innerHTML = '<h4>Useful Links</h4>';
+		// 	tool["Tool ID::Other useful links"].forEach(link => {
+		// 		const [linkName, linkTarget] = link.split('::');
+		// 		const linkElem = document.createElement('a');
+		// 		linkElem.href = linkTarget;
+		// 		linkElem.textContent = linkName;
+		// 		linkElem.target = '_blank';
+		// 		linkElem.style.display = 'block';
+		// 		linksSection.appendChild(linkElem);
+		// 	});
+		// 	infoBox.appendChild(linksSection);
+		// }
 
 		// Example projects
-		if (tool["Tool ID::Example projects"] && Array.isArray(tool["Tool ID::Example projects"])) {
-			const projectsSection = document.createElement('div');
-			projectsSection.className = 'example-projects';
-			projectsSection.innerHTML = '<h4>Example projects</h4>';
-			tool["Tool ID::Example projects"].forEach(link => {
-				const [linkName, linkTarget] = link.split('::');
-				const linkElem = document.createElement('a');
-				linkElem.href = linkTarget;
-				linkElem.textContent = linkName;
-				linkElem.target = '_blank';
-				linkElem.style.display = 'block';
-				projectsSection.appendChild(linkElem);
-			});
-			infoBox.appendChild(projectsSection);
-		}
+if (tool["Tool ID::Example projects"] && Array.isArray(tool["Tool ID::Example projects"])) {
+    const projectsSection = document.createElement('div');
+    projectsSection.className = 'example-projects';
+    projectsSection.innerHTML = '<h4>Example projects</h4>';
+    tool["Tool ID::Example projects"].forEach(link => {
+        const linkElem = document.createElement('a');
+        linkElem.href = link;
+        linkElem.textContent = link;
+        linkElem.target = '_blank';
+        linkElem.style.display = 'block';
+        projectsSection.appendChild(linkElem);
+    });
+    infoBox.appendChild(projectsSection);
+} else if (tool["Tool ID::Example projects"] && typeof tool["Tool ID::Example projects"] === "string") {
+    const projectsSection = document.createElement('div');
+    projectsSection.className = 'example-projects';
+    projectsSection.innerHTML = '<h4>Example projects</h4>';
+    const linkElem = document.createElement('a');
+    linkElem.href = tool["Tool ID::Example projects"];
+    linkElem.textContent = tool["Tool ID::Example projects"];
+    linkElem.target = '_blank';
+    linkElem.style.display = 'block';
+    projectsSection.appendChild(linkElem);
+    infoBox.appendChild(projectsSection);
+}
 
 		// Info box with features (right side of card)
         const featuresBox = document.createElement('div');
@@ -528,8 +564,6 @@ document.addEventListener("DOMContentLoaded", () => {
 			collapse();
 		}
 	});
-
-
 
 	document.querySelector('.reset-btn').addEventListener('click', buildUI);
 
