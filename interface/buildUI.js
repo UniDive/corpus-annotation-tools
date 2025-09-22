@@ -98,7 +98,6 @@ function updateFeatures(matchingTools) {
             valueElem.setAttribute('current-count', current_count);
             countElem.textContent = `${current_count}/${overall_count}`;
 
-			// console.log(featureCat, questionName, val, current_selection[featureCat][questionName][val]);
 			if (current_selection[featureCat][questionName][val]) {
 				valueElem.classList.add('selected');
 				valueElem.classList.remove('disabled');
@@ -106,41 +105,10 @@ function updateFeatures(matchingTools) {
 				valueElem.classList.add('disabled');
                 valueElem.classList.remove('selected');
 			}
-
-			// if (current_count === 0) {
-            //     valueElem.classList.add('disabled');
-            //     valueElem.classList.remove('selected');
-            // }
-
-            // Set selected/disabled classes
-            // if (
-            //     current_selection[featureCat] &&
-            //     current_selection[featureCat][questionName] &&
-            //     current_selection[featureCat][questionName][val]
-            // ) {
-            //     valueElem.classList.add('selected');
-            //     valueElem.classList.remove('disabled');
-            // } else {
-            //     valueElem.classList.add('disabled');
-			// 	valueElem.classList.remove('selected');
-            // }
-
-            // If current count is 0, keep grey but still clickable
-            // if (current_count === 0) {
-            //     valueElem.classList.add('disabled');
-            // }
         });
     });
 
-	// document.querySelectorAll('.feature-question .value').forEach(function(valueElem) {
-	// 	valueElem.addEventListener('click', function() {
-	// 		if (valueElem.classList.contains('disabled')) return;
-	// 		const feature = valueElem.getAttribute('data-category');
-	// 		const question = valueElem.getAttribute('data-feature');
-	// 		const value = valueElem.getAttribute('data-value');
-	// 		filterToolsByValue(feature, question, value);
-	// 	});
-	// });
+
 }
 
 function highlightCardFeatures(toolName) {
@@ -537,50 +505,7 @@ function buildSelections() {
 		});
 	});
 
-	// document.querySelectorAll('.feature-question .value').forEach(function(valueElem) {
-	// 	// console.log(valueElem);
-	// 	valueElem.addEventListener('click', function() {
-	// 		console.log(valueElem);
-	// 		// if (valueElem.classList.contains('disabled')) return;
-	// 		const feature = valueElem.getAttribute('data-category');
-	// 		const question = valueElem.getAttribute('data-feature');
-	// 		const value = valueElem.getAttribute('data-value');
-	// 		current_selection[feature][question][value] = !current_selection[feature][question][value]
-	// 		// filterToolsByValue(feature, question, value);
-	// 		let matchingTools = filterTools();
-	// 		updateFeatures(matchingTools);
-	// 	});
-	// });
 
-	// document.querySelectorAll('.feature-question .value').forEach(function(valueElem) {
-	// 	valueElem.addEventListener('click', function() {
-	// 		if (valueElem.classList.contains('disabled')) return;
-	// 		const feature = valueElem.getAttribute('data-category');
-	// 		const question = valueElem.getAttribute('data-feature');
-	// 		const value = valueElem.getAttribute('data-value');
-	// 		filterToolsByValue(feature, question, value);
-	// 	});
-	// });
-
-	// document.querySelectorAll('.feature-question .value').forEach(function(valueElem) {
-		// Find the next sibling count element
-		// const countElem = valueElem.nextElementSibling;
-		// if (countElem && countElem.classList.contains('count')) {
-		// const count = parseInt(valueElem.getAttribute('current-count'), 10);
-		// if (count === 0) {
-			// valueElem.classList.add('disabled');
-		// }
-			// else {
-		// valueElem.addEventListener('click', function() {
-		// 	if (valueElem.classList.contains('disabled')) return;
-		// 	const feature = valueElem.getAttribute('data-category');
-		// 	const question = valueElem.getAttribute('data-feature');
-		// 	const value = valueElem.getAttribute('data-value');
-		// 	// filterToolsByValue(feature, question, value);
-		// });
-			// }
-		// }
-	// });
 }
 
 async function buildUI() {
