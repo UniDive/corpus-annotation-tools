@@ -1,0 +1,88 @@
+# ============================================================
+# TEMPLATE for adding a NEW TOOL
+# ============================================================
+# Please fill in ALL fields you know.
+# If something is not applicable or unknown:
+#   - leave as "" (empty string) for text
+#   - leave as [] (empty list) for lists
+#   - keep the key but don’t delete it
+#
+# For fields with choices:
+#   - Use exactly: "Yes", "No", or "partial"
+# Lists are written as:
+#   - Item1
+#   - Item2
+# ============================================================
+
+# === REQUIRED IDENTIFICATION ===
+ToolID:
+  Tool-name: ""                     # The name of the tool (e.g., "ArboratorGrew").
+  Logo: ""                          # Direct link to a logo image (SVG or PNG). Leave "" if none.
+  Short-description: ""             # A one-line summary of what the tool does.
+  Website: ""                       # Main website, starting with https://
+  Other-useful-links:               # Additional resources (docs, papers, demos, etc.)
+    - Documentation: ""             # Replace "" with URL (https://…)
+    - Paper: ""                     # Replace "" with URL (https://…)
+    # You can add more, e.g.:
+    # - Demo: "https://..."
+    # - Tutorial: "https://..."
+  Developer: ""                     # Was this filled by a developer of the tool? ("Yes"/"No")
+
+# === SOFTWARE INFORMATION ===
+Software:
+  License: ""                       # License type, e.g. "MIT", "GPL-3.0", "Proprietary"
+  Code-repository: ""               # Link to GitHub/GitLab repo, or "" if closed-source
+  Active-maintenance: ""            # Is it actively maintained? ("Yes"/"No"/"partial")
+  Software-type: ""                 # What type of tool? e.g. "Annotation tool", "Converter"
+  Operating-system:                 # Which OSes does it support? Mark "Yes" or "No"
+    Windows: ""                     # "Yes"/"No"
+    macOS: ""                       # "Yes"/"No"
+    Linux: ""                       # "Yes"/"No"
+  Software-availability: []         # Platforms: choose one or more: ["Web","Desktop","CLI"]
+  Offline-usage-webapps: ""         # For webapps: can it run offline? ("Yes"/"No"/"partial")
+
+# === DATA SUPPORT ===
+Data-support:
+  Input-format: []                  # Input file formats, e.g. ["CoNLL-U","ELAN","JSON"]
+  Integration-of-other-resources: []# External resources integrated, e.g. ["UDPipe","Stanza"]
+  Data-export: []                   # Export formats, e.g. ["CoNLL-U","TEI","CSV"]
+
+# === DIVERSITY FEATURES ===
+Diversity-features:
+  Diversity-features: []            # Tags like ["Accessibility","Low-resource","Multilingual"]
+  Language-of-the-interface: []     # UI languages, e.g. ["en","it","fr"]
+
+# === ANNOTATION ===
+Annotation:
+  Segmentation: []                  # Types of segmentation: ["Token","Sentence","Speaker turns"]
+  Annotation-types: []              # Supported annotation layers: ["POS","LEMMA","DEP","MWE","SRL"]
+  Annotation-scope: []              # Scope: ["Text","Audio","Multimodal"]
+  Tagset-customization: ""          # Can users customize tagsets? ("Yes"/"No"/"Import custom"/free text)
+
+# === USER EXPERIENCE ===
+User-Experience:
+  Annotation-mode: []               # Ways to annotate: ["Keyboard","Mouse (e.g. drag & drop)","Touchscreen"]
+  Keyboard-shortcuts: ""            # Does it support shortcuts? ("Yes"/"No")
+  Annotation-display: []            # Display options: ["Table","Image (coloured text)","Raw format (CONLL-U)","Graphical tree"]
+  Automatic-pre-annotation: ""      # Pre-annotation features? ("Yes"/"No"/"partial"/describe)
+  Automatic-recommendation: ""      # Suggestions/recommendations? ("Yes"/"No"/"partial")
+  Collaborative-annotation: ""      # Supports teamwork? ("Yes"/"No"/"partial"/describe briefly)
+  Project-management: ""            # Built-in project management? ("Yes"/"No"/"partial")
+  User-roles: ""                    # Role differentiation (admin, annotator, etc.)? ("Yes"/"No"/"partial")
+  Comparison-of-annotations: ""     # Compare multiple annotations? ("Yes"/"No"/"partial")
+  Agreement-calculation: ""         # Computes inter-annotator agreement? ("Yes"/"No"/"partial")
+  Querying: ""                      # Search/query functionality? ("Yes"/"No"/"partial")
+  Mass-editing: ""                  # Can you edit many annotations at once? ("Yes"/"No"/"partial")
+
+# === UD / PARSEME SPECIFICS ===
+UD-PARSEME-specifics:
+  UD-specific-annotations: ""       # Supports UD-specific annotations? ("Yes"/"No"/"partial")
+  UD-validation: ""                 # Validates UD structures? ("Yes"/"No"/"partial")
+  Other-annotation-layers: ""       # Any other special layers? (free text)
+  PARSEME-specific-annotations: ""  # Supports PARSEME-specific annotation? ("Yes"/"No"/"partial")
+  Consistency-check: ""             # Consistency checks available? ("Yes"/"No"/"partial")
+
+# === EXTRAS ===
+Extras:
+  Example-projects: []              # Links to example projects/datasets using this tool
+  Additional-features: ""           # Any other special features (free text)

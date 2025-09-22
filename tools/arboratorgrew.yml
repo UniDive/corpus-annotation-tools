@@ -1,0 +1,83 @@
+ToolID:
+  Tool-name: ArboratorGrew
+  Logo: https://arboratorgrew.elda.org/static/images/logo.svg
+  Short-description: |
+    Collaborative UD treebank annotation and search tool.
+  Website: https://arboratorgrew.elda.org/
+  Other-useful-links:
+    - Documentation: https://arboratorgrew.readthedocs.io/
+    - Paper: https://doi.org/10.18653/v1/2021.eacl-demo.23
+  Developer: 'Yes'
+  Example-projects:
+    - https://universaldependencies.org/
+    - https://example.org/corpus
+  Additional-features: |
+    Integrated search with Grew; REST API.
+
+Software:
+  License: AGPL-3.0
+  Code-repository: https://github.com/grew-nlp/arborator-frontend
+  Active-maintenance: 'Yes'
+  Software-type: Annotation tool
+  Operating-system:
+    Windows: 'Yes'
+    macOS: 'Yes'
+    Linux: 'Yes'
+  Software-availability:
+    - Web
+  Offline-usage-webapps: 'No'
+
+Data-support:
+  Input-format:
+    - CoNLL-U
+  Integration-of-other-resources:
+    - UDPipe
+    - Stanza
+  Data-export:
+    - CoNLL-U
+    - CSV
+Diversity-features:
+  Diversity-features:
+    - Accessibility
+  Language-of-the-interface:
+    - en
+    - fr
+Annotation:
+  Segmentation:
+    - Token
+    - Sentence
+  Annotation-types:
+    - POS
+    - LEMMA
+    - DEP
+    - MWE
+  Annotation-scope:
+    - Text
+  Tagset-customization: Import custom
+
+User-Experience:
+  Annotation-mode:
+    - Keyboard
+    - Mouse (e.g. drag & drop)
+  Keyboard-shortcuts: 'Yes'
+  Annotation-display:
+    - Graphical representation of a tree
+    - Raw format (e.g. CONLL-U)
+  Automatic-pre-annotation: partial
+  Automatic-recommendation: 'No'
+  Collaborative-annotation: 'Yes'
+  Project-management: 'Yes'
+  User-roles: 'Yes'
+  Comparison-of-annotations: 'Yes'
+  Agreement-calculation: 'Yes'
+  Querying: 'Yes'
+  Mass-editing: partial
+
+UD-PARSEME-specifics:
+  UD-specific-annotations: 'Yes'
+  UD-validation: 'Yes'
+  Other-annotation-layers: ''
+  PARSEME-specific-annotations: 'No'
+  Consistency-check: 'Yes'
+
+

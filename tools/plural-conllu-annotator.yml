@@ -1,0 +1,65 @@
+ToolID:
+  Tool-name: PLURAL-conllu-annotator
+  Logo: https://plural.iiit.ac.in/conllu-assets/static/media/IIITH.3e6a0240528e48ab6511.png
+  Short-description: Annotate linguistic rich data
+  Website: https://plural.iiit.ac.in/conllu-annotator
+  Other-useful-links: 
+  Developer: 'Yes'
+Software:
+  License: CC_BY
+  Code-repository: https://github.com/parameshkrishnaa/PLURAL-conllu-annotator
+  Active-maintenance: 'Yes'
+  Software-type: Web-based application
+  Operating-system:
+    Windows: 'No'
+    macOS: 'No'
+    Linux: 'No'
+  Software-availability:
+  - The software is freely available online (without sign up option )
+  Offline-usage-webapps: 'Yes'
+Data-support:
+  Input-format:
+  - CONLL-U
+  Integration-of-other-resources:
+  Data-export:
+  - The data can be exported.
+Diversity-features:
+  Diversity-features:
+  - Language-independence,Writing script support,LTR,unicode support
+  Language-of-the-interface:
+  - English
+Annotation:
+  Segmentation:
+  - word-level
+  Annotation-types:
+  - Tokens (e.g. part-of-speech tag morphological features), Multi-tokens (e.g. multi-word
+    expressions), Relations (e.g. dependencies)
+  Annotation-scope:
+  - Annotation inside sentences
+  Tagset-customization: 'Yes'
+User-Experience:
+  Annotation-mode:
+  - Keyboard
+  Keyboard-shortcuts: 'Yes'
+  Annotation-display:
+  - Image (e.g. a graph or coloured text), Raw format (e.g. CONLL-U)
+  Automatic-pre-annotation: 'No'
+  Automatic-recommendation: 'Yes'
+  Collaborative-annotation:
+  Project-management: 'No'
+  User-roles: 'No'
+  Comparison-of-annotations: 'No'
+  Agreement-calculation: 'No'
+  Querying: 'No'
+  Mass-editing: 'No'
+UD-PARSEME-specifics:
+  UD-specific-annotations: Lemmas,UPOS,FEATS,XPOS,Multi-word tokens,Basic dependencies,Enhanced
+    dependencies,Empty nodes,Metadata
+  UD-validation: 'Yes'
+  Other-annotation-layers: NIL
+  PARSEME-specific-annotations: ''
+  Consistency-check: 'No'
+Extras:
+  Example-projects:
+  - TAMIL_UD::Tamil UD, TELUGU_UD::Telugu UD
+  Additional-features: ''

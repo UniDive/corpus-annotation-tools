@@ -1,0 +1,77 @@
+ToolID:
+  Tool-name: TALEN
+  Logo: ''
+  Short-description: NER annotation
+  Website: https://github.com/CogComp/talen
+  Other-useful-links:
+    - UNER project: https://annotate.universalner.org/
+  Developer: 'No'
+
+Software:
+  License: other
+  Code-repository: https://github.com/CogComp/talen
+  Active-maintenance: 'Yes'
+  Software-type: Web-based application
+  Operating-system:
+    Windows: 'No'
+    macOS: 'No'
+    Linux: 'No'
+  Software-availability:
+    - The software should be run by the user (local machine or own server)
+  Offline-usage-webapps: 'No'
+
+Data-support:
+  Input-format:
+    - Raw text
+    - CONLL-U
+  Integration-of-other-resources:
+  Data-export:
+    - The data can be exported.
+
+Diversity-features:
+  Diversity-features:
+    - Language-independence
+    - Writing script support
+    - LTR
+    - RTL
+  Language-of-the-interface:
+    - English
+
+Annotation:
+  Segmentation:
+  Annotation-types:
+    - Tokens (e.g. part-of-speech tag morphological features)
+    - Spans (e.g. names entities)
+    - Multi-tokens (e.g. multi-word expressions)
+  Annotation-scope:
+    - Annotation inside sentences
+  Tagset-customization: 'No'
+
+User-Experience:
+  Annotation-mode:
+    - Mouse (e.g. drag & drop)
+    - Touchscreen
+  Keyboard-shortcuts: 'No'
+  Annotation-display:
+    - Image (e.g. a graph or coloured text)
+  Automatic-pre-annotation: 'Yes'
+  Automatic-recommendation: 'No'
+  Collaborative-annotation:
+    - annotators working independently on their own annotations of the same data.
+  Project-management: 'No'
+  User-roles: 'Yes'
+  Comparison-of-annotations: 'No'
+  Agreement-calculation: 'No'
+  Querying: 'No'
+  Mass-editing: 'Yes'
+
+UD-PARSEME-specifics:
+  UD-specific-annotations:
+    - UPOS
+    - XPOS
+    - Multi-word tokens
+    - Metadata
+  UD-validation: 'No'
+  Other-annotation-layers: NER
+  PARSEME-specific-annotations:
+  Consistency-check: partial
