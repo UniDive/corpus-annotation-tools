@@ -17,8 +17,8 @@
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": "The software is freely available online (with sign up option and/or social logins)",
-    "Software::Offline usage (for web-based applications)": "No",
+    "Software::Software availability": "Freely available online (with sign up option)",
+    "Software::Offline usage": "No",
     "Data support::Input format": [
       "Raw text",
       "CONLL-U"
@@ -28,7 +28,7 @@
     ],
     "Data support::Data export": [
       "The data can be exported.",
-      "The data can be stored with a third party storage platform (e.g. Git repository)"
+      "The data can be stored with a third party storage platform"
     ],
     "Diversity features::Diversity features": [
       "Language-independence",
@@ -46,9 +46,9 @@
       "sentence-level"
     ],
     "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Multi-tokens (e.g. multi-word expressions)",
-      "Relations (e.g. dependencies)"
+      "Tokens",
+      "Multi-tokens",
+      "Relations"
     ],
     "Annotation::Annotation scope": [
       "Annotation inside sentences"
@@ -97,9 +97,9 @@
     "Tool ID::Additional features": "ArboratorGrew can be used also to teach syntax. It has a mode when users can create exercises with different levels of complexity and export students results by the end  Users can also generate lexicons from your annotated data  And to ensure effective collaboration, ArboratorGrew provides a tag system"
   },
   {
-    "Tool ID::Tool name": "BoAT (Bo\u011fazi\u00e7i University Annotation Tool)",
+    "Tool ID::Tool name": "BoAT ",
     "Tool ID::Logo": "",
-    "Tool ID::Short description": "BoAT is a collaborative grammatical annotation tool.",
+    "Tool ID::Short description": "BoAT (Bo\u011fazi\u00e7i University Annotation Tool) is a collaborative grammatical annotation tool.",
     "Tool ID::Website": "https://github.com/furkanakkurt1335/boat",
     "Tool ID::Other useful links": [
       "Tutorial::https://youtu.be/BtRVqgtxK8c?si=eXcfjmy-t2D431u5&t=509"
@@ -114,8 +114,8 @@
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": "The software should be run by the user (local machine or own server)",
-    "Software::Offline usage (for web-based applications)": "No",
+    "Software::Software availability": "Has to be run by the user (local machine or own server)",
+    "Software::Offline usage": "No",
     "Data support::Input format": [
       "Raw text",
       "CONLL-U"
@@ -140,10 +140,10 @@
       "word-level"
     ],
     "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)",
-      "Relations (e.g. dependencies)",
-      "Chains (e.g. coreferences)"
+      "Tokens",
+      "Spans",
+      "Relations",
+      "Chains"
     ],
     "Annotation::Annotation scope": [
       "Annotation inside sentences"
@@ -210,14 +210,14 @@
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": "The software should be run by the user (local machine or own server)",
-    "Software::Offline usage (for web-based applications)": "No",
+    "Software::Software availability": "Has to be run by the user (local machine or own server)",
+    "Software::Offline usage": "No",
     "Data support::Input format": [
       "Raw text",
       ".txt+.ann"
     ],
     "Data support::Integration of other resources": [
-      "External databases (e.g. dictionaries)"
+      "External databases"
     ],
     "Data support::Data export": [
       "The data can be exported."
@@ -236,11 +236,11 @@
       ""
     ],
     "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)",
-      "Multi-tokens (e.g. multi-word expressions)",
-      "Relations (e.g. dependencies)",
-      "Chains (e.g. coreferences)"
+      "Tokens",
+      "Spans",
+      "Multi-tokens",
+      "Relations",
+      "Chains"
     ],
     "Annotation::Annotation scope": [
       "Annotation inside sentences",
@@ -312,8 +312,8 @@
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": "The software should be run by the user (local machine or own server)",
-    "Software::Offline usage (for web-based applications)": "No",
+    "Software::Software availability": "Has to be run by the user (local machine or own server)",
+    "Software::Offline usage": "No",
     "Data support::Input format": [
       "CONLL-U",
       "CoNLL-U plus"
@@ -339,10 +339,10 @@
       "sentence-level"
     ],
     "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)",
-      "Multi-tokens (e.g. multi-word expressions)",
-      "Relations (e.g. dependencies)"
+      "Tokens",
+      "Spans",
+      "Multi-tokens",
+      "Relations"
     ],
     "Annotation::Annotation scope": [
       "Annotation inside sentences"
@@ -413,8 +413,8 @@
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": "The software should be run by the user (local machine or own server)",
-    "Software::Offline usage (for web-based applications)": "Yes",
+    "Software::Software availability": "Has to be run by the user (local machine or own server)",
+    "Software::Offline usage": "Yes",
     "Data support::Input format": [
       "XML",
       "CONLL-X"
@@ -438,8 +438,8 @@
       ""
     ],
     "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Relations (e.g. dependencies)"
+      "Tokens",
+      "Relations"
     ],
     "Annotation::Annotation scope": [
       "Annotation inside sentences"
@@ -499,8 +499,8 @@
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": "The software should be run by the user (local machine or own server)",
-    "Software::Offline usage (for web-based applications)": "Yes",
+    "Software::Software availability": "Has to be run by the user (local machine or own server)",
+    "Software::Offline usage": "Yes",
     "Data support::Input format": [
       "Raw text",
       "XML",
@@ -542,10 +542,10 @@
       "sentence-level"
     ],
     "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)",
-      "Multi-tokens (e.g. multi-word expressions)",
-      "Relations (e.g. dependencies)"
+      "Tokens",
+      "Spans",
+      "Multi-tokens",
+      "Relations"
     ],
     "Annotation::Annotation scope": [
       "Annotation inside sentences",
@@ -618,8 +618,8 @@
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": "The software is freely available online (with sign up option and/or social logins)",
-    "Software::Offline usage (for web-based applications)": "Yes",
+    "Software::Software availability": "Freely available online (with sign up option)",
+    "Software::Offline usage": "Yes",
     "Data support::Input format": [
       "Raw text",
       "XML",
@@ -650,8 +650,8 @@
       "sentence-level"
     ],
     "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)"
+      "Tokens",
+      "Spans"
     ],
     "Annotation::Annotation scope": [
       "Free span annotation",
@@ -695,7 +695,7 @@
     "Tool ID::Additional features": null
   },
   {
-    "Tool ID::Tool name": "FLAT: FoLiA Linguistic Annotation Tool",
+    "Tool ID::Tool name": "FLAT",
     "Tool ID::Logo": "http://proycon.github.io/folia/style/icon.png",
     "Tool ID::Short description": "Flat is a web-based linguistic annotation environment based around the FoLiA format (http://proycon.github.io/folia), a rich XML-based format for linguistic annotation.",
     "Tool ID::Website": "https://github.com/proycon/flat",
@@ -712,8 +712,8 @@
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": "The software should be run by the user (local machine or own server)",
-    "Software::Offline usage (for web-based applications)": "No",
+    "Software::Software availability": "Has to be run by the user (local machine or own server)",
+    "Software::Offline usage": "No",
     "Data support::Input format": [
       "Raw text",
       "CONLL-U",
@@ -726,7 +726,7 @@
     ],
     "Data support::Data export": [
       "The data can be exported.",
-      "The data can be stored with a third party storage platform (e.g. Git repository)"
+      "The data can be stored with a third party storage platform"
     ],
     "Diversity features::Diversity features": [
       "Language-independence",
@@ -742,11 +742,11 @@
       "word-level"
     ],
     "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)",
-      "Multi-tokens (e.g. multi-word expressions)",
-      "Relations (e.g. dependencies)",
-      "Chains (e.g. coreferences)"
+      "Tokens",
+      "Spans",
+      "Multi-tokens",
+      "Relations",
+      "Chains"
     ],
     "Annotation::Annotation scope": [
       "Annotation inside sentences"
@@ -810,8 +810,8 @@
       "Windows",
       "Linux"
     ],
-    "Software::Software availability": "The software should be run by the user (local machine or own server)",
-    "Software::Offline usage (for web-based applications)": "Yes",
+    "Software::Software availability": "Has to be run by the user (local machine or own server)",
+    "Software::Offline usage": "Yes",
     "Data support::Input format": [
       "Raw text",
       "XML",
@@ -824,7 +824,7 @@
       "Video",
       "Image",
       "PDF",
-      "External databases (e.g. dictionaries)"
+      "External databases"
     ],
     "Data support::Data export": [
       "The data can be exported."
@@ -844,9 +844,9 @@
       "sentence-level"
     ],
     "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)",
-      "Multi-tokens (e.g. multi-word expressions)"
+      "Tokens",
+      "Spans",
+      "Multi-tokens"
     ],
     "Annotation::Annotation scope": [
       "Annotation inside sentences",
@@ -908,8 +908,8 @@
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": "The software should be run by the user (local machine or own server)",
-    "Software::Offline usage (for web-based applications)": "No",
+    "Software::Software availability": "Has to be run by the user (local machine or own server)",
+    "Software::Offline usage": "No",
     "Data support::Input format": [
       "Raw text",
       "XML",
@@ -936,9 +936,9 @@
       "sentence-level"
     ],
     "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)",
-      "Chains (e.g. coreferences)"
+      "Tokens",
+      "Spans",
+      "Chains"
     ],
     "Annotation::Annotation scope": [
       "Annotation inside sentences",
@@ -1010,8 +1010,8 @@
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": "The software should be run by the user (local machine or own server), some public instances available",
-    "Software::Offline usage (for web-based applications)": "No",
+    "Software::Software availability": "Has to be run by the user (local machine or own server), Freely available online (with sign up option)",
+    "Software::Offline usage": "No",
     "Data support::Input format": [
       "Raw text",
       "PDF",
@@ -1024,7 +1024,7 @@
       "Video",
       "Image",
       "PDF",
-      "External databases (e.g. dictionaries)"
+      "External databases"
     ],
     "Data support::Data export": [
       "The data can be exported."
@@ -1043,11 +1043,11 @@
       ""
     ],
     "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)",
-      "Multi-tokens (e.g. multi-word expressions)",
-      "Relations (e.g. dependencies)",
-      "Chains (e.g. coreferences)"
+      "Tokens",
+      "Spans",
+      "Multi-tokens",
+      "Relations",
+      "Chains"
     ],
     "Annotation::Annotation scope": [
       "Annotation inside sentences",
@@ -1117,8 +1117,8 @@
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": "The software should be run by the user (local machine or own server)",
-    "Software::Offline usage (for web-based applications)": "Yes",
+    "Software::Software availability": "Has to be run by the user (local machine or own server)",
+    "Software::Offline usage": "Yes",
     "Data support::Input format": [
       "Raw text",
       "CONLL-U",
@@ -1145,7 +1145,7 @@
       ""
     ],
     "Annotation::Annotation types": [
-      "Spans (e.g. names entities)"
+      "Spans"
     ],
     "Annotation::Annotation scope": [
       "Annotation of full sentences / paragraphs / documents"
@@ -1204,8 +1204,8 @@
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": "The software should be run by the user (local machine or own server)",
-    "Software::Offline usage (for web-based applications)": "Yes",
+    "Software::Software availability": "Has to be run by the user (local machine or own server)",
+    "Software::Offline usage": "Yes",
     "Data support::Input format": [
       "Raw text",
       "PDF",
@@ -1221,7 +1221,7 @@
     ],
     "Data support::Data export": [
       "The data can be exported.",
-      "The data can be stored with a third party storage platform (e.g. Git repository)"
+      "The data can be stored with a third party storage platform"
     ],
     "Diversity features::Diversity features": [
       "Language-independence",
@@ -1238,11 +1238,11 @@
       "sentence-level"
     ],
     "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)",
-      "Multi-tokens (e.g. multi-word expressions)",
-      "Relations (e.g. dependencies)",
-      "Chains (e.g. coreferences)"
+      "Tokens",
+      "Spans",
+      "Multi-tokens",
+      "Relations",
+      "Chains"
     ],
     "Annotation::Annotation scope": [
       "Annotation inside sentences",
@@ -1316,8 +1316,8 @@
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": "The software is freely available online (with sign up option and/or social logins)",
-    "Software::Offline usage (for web-based applications)": "Yes",
+    "Software::Software availability": "Freely available online (with sign up option)",
+    "Software::Offline usage": "Yes",
     "Data support::Input format": [
       "CONLL-U"
     ],
@@ -1341,8 +1341,8 @@
       "word-level"
     ],
     "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Relations (e.g. dependencies)"
+      "Tokens",
+      "Relations"
     ],
     "Annotation::Annotation scope": [
       "Annotation inside sentences"
@@ -1408,8 +1408,8 @@
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": "The software is freely available online (without sign up option )",
-    "Software::Offline usage (for web-based applications)": "Yes",
+    "Software::Software availability": "Freely available online (without sign up option)",
+    "Software::Offline usage": "Yes",
     "Data support::Input format": [
       "CONLL-U"
     ],
@@ -1432,9 +1432,9 @@
       "word-level"
     ],
     "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Multi-tokens (e.g. multi-word expressions)",
-      "Relations (e.g. dependencies)"
+      "Tokens",
+      "Multi-tokens",
+      "Relations"
     ],
     "Annotation::Annotation scope": [
       "Annotation inside sentences"
@@ -1500,8 +1500,8 @@
     "Software::Operating system": [
       "Windows"
     ],
-    "Software::Software availability": "The software should be run by the user (local machine or own server)",
-    "Software::Offline usage (for web-based applications)": "Yes",
+    "Software::Software availability": "Has to be run by the user (local machine or own server)",
+    "Software::Offline usage": "Yes",
     "Data support::Input format": [
       "CONLL-U",
       "XML"
@@ -1525,10 +1525,10 @@
       ""
     ],
     "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)",
-      "Multi-tokens (e.g. multi-word expressions)",
-      "Relations (e.g. dependencies)"
+      "Tokens",
+      "Spans",
+      "Multi-tokens",
+      "Relations"
     ],
     "Annotation::Annotation scope": [
       "Annotation inside sentences"
@@ -1590,8 +1590,8 @@
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": "The software should be run by the user (local machine or own server)",
-    "Software::Offline usage (for web-based applications)": "No",
+    "Software::Software availability": "Has to be run by the user (local machine or own server)",
+    "Software::Offline usage": "No",
     "Data support::Input format": [
       "Raw text",
       "CONLL-U"
@@ -1616,9 +1616,9 @@
       ""
     ],
     "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)",
-      "Multi-tokens (e.g. multi-word expressions)"
+      "Tokens",
+      "Spans",
+      "Multi-tokens"
     ],
     "Annotation::Annotation scope": [
       "Annotation inside sentences"
@@ -1678,8 +1678,8 @@
     "Software::Operating system": [
       "Windows"
     ],
-    "Software::Software availability": "The software should be run by the user (local machine or own server)",
-    "Software::Offline usage (for web-based applications)": "Yes",
+    "Software::Software availability": "Has to be run by the user (local machine or own server)",
+    "Software::Offline usage": "Yes",
     "Data support::Input format": [
       "Raw text"
     ],
@@ -1704,9 +1704,9 @@
       "sentence-level"
     ],
     "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)",
-      "Multi-tokens (e.g. multi-word expressions)",
+      "Tokens",
+      "Spans",
+      "Multi-tokens",
       "Interlinear glossed text annotations"
     ],
     "Annotation::Annotation scope": [
@@ -1766,15 +1766,15 @@
       "Windows",
       "Linux"
     ],
-    "Software::Software availability": "The software should be run by the user (local machine or own server)",
-    "Software::Offline usage (for web-based applications)": "Yes",
+    "Software::Software availability": "Has to be run by the user (local machine or own server)",
+    "Software::Offline usage": "Yes",
     "Data support::Input format": [
       "Raw text",
       "CONLL-U",
       "XML"
     ],
     "Data support::Integration of other resources": [
-      "External databases (e.g. dictionaries)"
+      "External databases"
     ],
     "Data support::Data export": [
       "The data can be exported."
@@ -1793,11 +1793,11 @@
       ""
     ],
     "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)",
-      "Multi-tokens (e.g. multi-word expressions)",
-      "Relations (e.g. dependencies)",
-      "Chains (e.g. coreferences)"
+      "Tokens",
+      "Spans",
+      "Multi-tokens",
+      "Relations",
+      "Chains"
     ],
     "Annotation::Annotation scope": [
       "Annotation inside sentences",
@@ -1865,8 +1865,8 @@
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": "The software is freely available online (with sign up option and/or social logins)",
-    "Software::Offline usage (for web-based applications)": "Yes",
+    "Software::Software availability": "Freely available online (with sign up option)",
+    "Software::Offline usage": "Yes",
     "Data support::Input format": [
       "Raw text",
       "CONLL-U",
@@ -1894,9 +1894,9 @@
       ""
     ],
     "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Multi-tokens (e.g. multi-word expressions)",
-      "Relations (e.g. dependencies)"
+      "Tokens",
+      "Multi-tokens",
+      "Relations"
     ],
     "Annotation::Annotation scope": [
       "Annotation inside sentences"
@@ -1965,8 +1965,8 @@
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": "The software is available upon request (the user should ask to get an account)",
-    "Software::Offline usage (for web-based applications)": "No",
+    "Software::Software availability": "Available upon request (the user should ask to get an account)",
+    "Software::Offline usage": "No",
     "Data support::Input format": [
       "Raw text",
       "CONLL-U",
@@ -1974,11 +1974,11 @@
       "TSV"
     ],
     "Data support::Integration of other resources": [
-      "External databases (e.g. dictionaries)"
+      "External databases"
     ],
     "Data support::Data export": [
       "The data can be exported.",
-      "The data can be stored with a third party storage platform (e.g. Git repository)"
+      "The data can be stored with a third party storage platform"
     ],
     "Diversity features::Diversity features": [
       "Language-independence",
@@ -1995,11 +1995,11 @@
       "sentence-level"
     ],
     "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)",
-      "Multi-tokens (e.g. multi-word expressions)",
-      "Relations (e.g. dependencies)",
-      "Chains (e.g. coreferences)"
+      "Tokens",
+      "Spans",
+      "Multi-tokens",
+      "Relations",
+      "Chains"
     ],
     "Annotation::Annotation scope": [
       "Annotation inside sentences",
