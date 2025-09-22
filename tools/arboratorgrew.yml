@@ -40,8 +40,8 @@ Diversity-features:
   Diversity-features:
     - Accessibility
   Language-of-the-interface:
-    - en
-    - fr
+    - English
+    - French
 Annotation:
   Segmentation:
     - Token

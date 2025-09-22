@@ -28,6 +28,8 @@ ToolID:
     # - Demo: "https://..."
     # - Tutorial: "https://..."
   Developer: ""                     # Was this filled by a developer of the tool? ("Yes"/"No")
+  Example-projects: []              # Links to example projects/datasets using this tool
+  Additional-features: ""           # Any other special features (free text)
 
 # === SOFTWARE INFORMATION ===
 Software:
@@ -81,8 +83,3 @@ UD-PARSEME-specifics:
   Other-annotation-layers: ""       # Any other special layers? (free text)
   PARSEME-specific-annotations: ""  # Supports PARSEME-specific annotation? ("Yes"/"No"/"partial")
   Consistency-check: ""             # Consistency checks available? ("Yes"/"No"/"partial")
-
-# === EXTRAS ===
-Extras:
-  Example-projects: []              # Links to example projects/datasets using this tool
-  Additional-features: ""           # Any other special features (free text)

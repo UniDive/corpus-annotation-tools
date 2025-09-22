@@ -392,8 +392,8 @@
       }
     ],
     "Tool ID::Additional features": "Supports custom stylesheets\n",
+    "Tool ID::Code repository": "https://github.com/ufal/TrEd",
     "Software::License": "GPL-2.0",
-    "Software::Code repository": "https://github.com/ufal/TrEd",
     "Software::Active maintenance": "Yes",
     "Software::Software type": "Desktop-based application",
     "Software::Operating system::Windows": "No",
@@ -644,6 +644,8 @@
       }
     ],
     "Tool ID::Developer": "",
+    "Tool ID::Example projects": [],
+    "Tool ID::Additional features": "",
     "Software::License": "",
     "Software::Active maintenance": "",
     "Software::Software type": "",
@@ -677,9 +679,7 @@
     "UD PARSEME specifics::UD validation": "",
     "UD PARSEME specifics::Other annotation layers": "",
     "UD PARSEME specifics::PARSEME specific annotations": "",
-    "UD PARSEME specifics::Consistency check": "",
-    "Extras::Example projects": [],
-    "Extras::Additional features": ""
+    "UD PARSEME specifics::Consistency check": ""
   },
   {
     "Tool ID::Tool name": "GitDox",
@@ -784,8 +784,7 @@
       "Nested expressions",
       "Overlapping expressions"
     ],
-    "UD PARSEME specifics::Consistency check": "No",
-    "Extras": ""
+    "UD PARSEME specifics::Consistency check": "No"
   },
   {
     "Tool ID::Tool name": "FLeX",
@@ -1828,8 +1827,8 @@
       "Accessibility"
     ],
     "Diversity features::Language of the interface": [
-      "en",
-      "fr"
+      "English",
+      "French"
     ],
     "Annotation::Segmentation": [
       "Token",

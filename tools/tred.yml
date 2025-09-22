@@ -12,10 +12,10 @@ ToolID:
     - Prague Dependency Treebank: link
   Additional-features: |
     Supports custom stylesheets
+  Code-repository: https://github.com/ufal/TrEd
 
 Software:
   License: GPL-2.0
-  Code-repository: https://github.com/ufal/TrEd
   Active-maintenance: 'Yes'
   Software-type: Desktop-based application
   Operating-system:

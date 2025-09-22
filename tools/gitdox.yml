@@ -10,7 +10,7 @@ ToolID:
     - GUM: https://gucorpling.org/gum/
     - Coptic: https://data.copticscriptorium.org/
   Code-repository: https://github.com/gucorpling/gitdox
-  
+
 Software:
   License: Apache-2.0
   Active-maintenance: 'Yes'
@@ -92,6 +92,3 @@ UD-PARSEME-specifics:
     - Nested expressions
     - Overlapping expressions
   Consistency-check: 'No'
-
-Extras:
-
