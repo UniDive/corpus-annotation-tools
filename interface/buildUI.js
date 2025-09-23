@@ -2,6 +2,7 @@ const jsonUrl = 'https://raw.githubusercontent.com/UniDive/corpus-annotation-too
 let tools = [];
 let tools_dict = {};
 let current_selection = {};
+let current_tool;
 
 let excluded_filters = ["Other annotation layers"];
 
@@ -113,14 +114,13 @@ function updateFeatures(matchingTools) {
 
 }
 
-function highlightCardFeatures(toolName) {
+function highlightCardFeatures(tool) {
     // Remove previous highlights
     document.querySelectorAll('.feature-question .value').forEach(valueElem => {
         valueElem.classList.remove('card-highlight');
     });
 
     // Find the tool object
-    const tool = tools.find(t => t["Tool ID::Tool name"] === toolName);
     if (!tool) return;
 
     Object.entries(tool).forEach(([key, value]) => {
@@ -193,10 +193,209 @@ function collapse() {
     });
 }
 
+function populateViz(tool) {
+    console.log(tool);
+    const toolsVisualization = document.querySelector('.tools-viz');
+    toolsVisualization.innerHTML = '';
+
+    const header = document.createElement('div');
+    header.className = 'card-header';
+
+    // Title
+    const h3 = document.createElement('h3');
+    const link = document.createElement('a');
+    link.href = tool["Tool ID::Website"];
+    link.target = "_blank";
+    link.textContent = tool["Tool ID::Tool name"];
+    link.style.color = 'inherit';
+    h3.appendChild(link);
+    header.appendChild(h3);
+    toolsVisualization.appendChild(header);
+
+    const shortDesc = document.createElement("div");
+    shortDesc.className = "short-description";
+
+    // Logo
+    if (tool["Tool ID::Logo"]) {
+        const img = document.createElement('img');
+        img.src = tool["Tool ID::Logo"];
+        img.alt = `${tool["Tool ID::Tool name"]} Logo`;
+        // img.style.display = 'none';
+        shortDesc.appendChild(img);
+    }
+    const description = document.createElement("p");
+    description.innerHTML = `${tool["Tool ID::Short description"] || ''}`;
+    shortDesc.appendChild(description);
+    toolsVisualization.appendChild(shortDesc);
+
+    // Details
+    const details = document.createElement('div');
+    details.className = 'details';
+
+    const infoBox = document.createElement('div');
+    infoBox.className = 'info-box';
+    if (tool['Tool ID::Code repository'] !== '') {
+        const form = document.createElement('form');
+        form.action = tool['Tool ID::Code repository'];
+        form.method = "get";
+        form.target = "_blank";
+        const repository = document.createElement('button');
+        repository.className = 'repo';
+        repository.setAttribute('aria-label', 'Code repository');
+        repository.textContent = "Code repository"
+        form.appendChild(repository)
+        infoBox.appendChild(form);
+    }
+
+
+
+    const add_features = document.createElement("p");
+    if (tool["Tool ID::Information provider"] == 'Developer') {
+        add_features.innerHTML = `${tool["Tool ID::Additional features"] || ""}. Information provided by tool developer.`;
+    } else {
+        add_features.innerHTML = `${tool["Tool ID::Additional features"] || ""}.`
+    }
+    infoBox.appendChild(add_features);
+
+    // Useful links
+    if (tool["Tool ID::Other useful links"] && Array.isArray(tool["Tool ID::Other useful links"])) {
+        const projectsSection = document.createElement('div');
+        projectsSection.className = 'example-projects';
+        projectsSection.innerHTML = '<h4>Other useful links</h4>';
+        tool["Tool ID::Other useful links"].forEach((tool_link) => {
+            Object.entries(tool_link).forEach(([link_key, link_ref]) => {
+                console.log(link_key, link_ref);
+                const linkElem = document.createElement('a');
+                linkElem.href = link_ref;
+                linkElem.textContent = link_key;
+                linkElem.target = '_blank';
+                projectsSection.appendChild(linkElem);
+            });
+        });
+        infoBox.appendChild(projectsSection);
+    }
+
+    if (tool["Tool ID::Example projects"] && Array.isArray(tool["Tool ID::Example projects"])) {
+        const projectsSection = document.createElement('div');
+        projectsSection.className = 'example-projects';
+        projectsSection.innerHTML = '<h4>Example projects</h4>';
+
+        tool["Tool ID::Example projects"].forEach((tool_link) => {
+            Object.entries(tool_link).forEach(([link_key, link_ref]) => {
+                console.log(link_key, link_ref);
+                const linkElem = document.createElement('a');
+                linkElem.href = link_ref;
+                linkElem.textContent = link_key;
+                linkElem.target = '_blank';
+                projectsSection.appendChild(linkElem);
+            });
+        });
+
+        infoBox.appendChild(projectsSection);
+    }
+
+    details.appendChild(infoBox);
+    toolsVisualization.appendChild(details);
+
+    //     infoBox.appendChild(projectsSection);
+    // } else if (tool["Tool ID::Other useful links"] && typeof tool["Tool ID::Other useful links"] === "string") {
+    //     const projectsSection = document.createElement('div');
+    //     projectsSection.className = 'example-projects';
+    //     projectsSection.innerHTML = '<h4>Other useful links</h4>';
+    //     const linkElem = document.createElement('a');
+    //     linkElem.href = tool["Tool ID::Other useful links"];
+    //     linkElem.textContent = tool["Tool ID::Other useful links"];
+    //     linkElem.target = '_blank';
+    //     linkElem.style.display = 'block';
+    //     projectsSection.appendChild(linkElem);
+    //     infoBox.appendChild(projectsSection);
+    // }
+
+		// // Example projects
+        // if (tool["Tool ID::Example projects"] && Array.isArray(tool["Tool ID::Example projects"])) {
+        //     const projectsSection = document.createElement('div');
+        //     projectsSection.className = 'example-projects';
+        //     projectsSection.innerHTML = '<h4>Example projects</h4>';
+        //     tool["Tool ID::Example projects"].forEach(link => {
+        //         const linkElem = document.createElement('a');
+        //         linkElem.href = link;
+        //         linkElem.textContent = link;
+        //         linkElem.target = '_blank';
+        //         linkElem.style.display = 'block';
+        //         projectsSection.appendChild(linkElem);
+        //     });
+        //     infoBox.appendChild(projectsSection);
+        // } else if (tool["Tool ID::Example projects"] && typeof tool["Tool ID::Example projects"] === "string") {
+        //     const projectsSection = document.createElement('div');
+        //     projectsSection.className = 'example-projects';
+        //     projectsSection.innerHTML = '<h4>Example projects</h4>';
+        //     const linkElem = document.createElement('a');
+        //     linkElem.href = tool["Tool ID::Example projects"];
+        //     linkElem.textContent = tool["Tool ID::Example projects"];
+        //     linkElem.target = '_blank';
+        //     linkElem.style.display = 'block';
+        //     projectsSection.appendChild(linkElem);
+        //     infoBox.appendChild(projectsSection);
+        // }
+
+		// // Info box with features (right side of card)
+        // const featuresBox = document.createElement('div');
+        // featuresBox.className = 'features-box';
+        // featuresBox.style.flexDirection = 'column';
+        // featuresBox.style.alignItems = 'flex-end';
+
+        // Object.entries(tool).forEach(([key, value]) => {
+        //     if (!key.startsWith('Tool ID::')) {
+        //         const [prefix, question] = key.split('::');
+        //         if (!question) return;
+        //         // Create a container for value/count pairs
+        //         const featureRow = document.createElement('div');
+        //         featureRow.style.display = 'flex';
+        //         featureRow.style.flexWrap = 'wrap';
+        //         // featureRow.style.marginBottom = '4px';
+
+        //         // Handle array or single value
+        //         let values = Array.isArray(value) ? value : [value];
+        //         values.forEach(val => {
+        //             if (val && val.trim() !== "") {
+        //                 const pairSpan = document.createElement('span');
+        //                 pairSpan.style.display = 'inline-flex';
+        //                 pairSpan.style.alignItems = 'center';
+
+        //                 const valueP = document.createElement('p');
+        //                 valueP.className = 'tool-value';
+        //                 valueP.textContent = val;
+
+        //                 pairSpan.appendChild(valueP);
+        //                 featureRow.appendChild(pairSpan);
+        //             }
+        //         });
+
+        //         // Add question label and values
+        //         if (featureRow.childNodes.length > 0) {
+        //             const label = document.createElement('span');
+        //             label.textContent = `${question}: `;
+        //             label.style.fontWeight = 'bold';
+        //             label.style.marginRight = '6px';
+        //             featureRow.insertBefore(label, featureRow.firstChild);
+        //             featuresBox.appendChild(featureRow);
+        //         }
+        //     }
+        // });
+		// details.appendChild(featuresBox);
+        // details.appendChild(infoBox);
+
+        // card.appendChild(details);
+
+}
+
 function buildTools() {
 
     const toolsContainer = document.querySelector('.tools');
     toolsContainer.innerHTML = '';
+
+    const toolsVisualization = document.querySelector('.tools-viz');
+    toolsVisualization.innerHTML = '';
 
     tools.forEach(tool => {
         const card = document.createElement('div');
@@ -211,6 +410,7 @@ function buildTools() {
         const h3 = document.createElement('h3');
         const link = document.createElement('a');
         link.href = tool["Tool ID::Website"];
+        link.target = "_blank";
         link.textContent = tool["Tool ID::Tool name"];
         link.style.color = 'inherit';
         h3.appendChild(link);
@@ -231,195 +431,19 @@ function buildTools() {
         header.appendChild(minus);
 
 		plus.addEventListener('click', function(e) {
+            console.log(e);
 			e.stopPropagation();
 			collapse();
-			card.classList.add('expanded');
-			highlightCardFeatures(card.dataset.value); // highlight relevant features
-			// Show image and details
-			const img = card.querySelector('img');
-			if (img) img.style.display = 'block';
-			const details = card.querySelector('.details');
-			if (details) details.style.display = 'flex';
+            highlightCardFeatures(tool); // highlight relevant features
+            populateViz(tool);
 		});
 
 		minus.addEventListener('click', function(e) {
 			e.stopPropagation();
-			card.classList.remove('expanded');
 			removeCardHighlights(); // remove highlights
-			// Hide image and details
-			const img = card.querySelector('img');
-			if (img) img.style.display = 'none';
-			const details = card.querySelector('.details');
-			if (details) details.style.display = 'none';
+            toolsVisualization.innerHTML = '';
 		});
-
-        // Logo
-        if (tool["Tool ID::Logo"]) {
-            const img = document.createElement('img');
-            img.src = tool["Tool ID::Logo"];
-            img.alt = `${tool["Tool ID::Tool name"]} Logo`;
-            img.style.display = 'none';
-            header.appendChild(img);
-        }
         card.appendChild(header);
-
-        // Card preview
-        const preview = document.createElement('div');
-        preview.className = 'card-preview';
-        preview.innerHTML = `<p>${tool["Tool ID::Short description"] || ''}</p>`;
-        card.appendChild(preview);
-
-        // Details
-        const details = document.createElement('div');
-        details.className = 'details';
-        details.style.display = 'none';
-
-		const infoBox = document.createElement('div');
-		infoBox.className = 'info-box';
-		if (tool['Tool ID::Code repository'] !== '') {
-			const form = document.createElement('form');
-			form.action = tool['Tool ID::Code repository'];
-			form.method = "get";
-			form.target = "_blank";
-			const repository = document.createElement('button');
-			repository.className = 'repo';
-			repository.setAttribute('aria-label', 'Code repository');
-			repository.textContent = "Code repository"
-			form.appendChild(repository)
-			infoBox.appendChild(form);
-		}
-
-		const add_features = document.createElement("p");
-		if (tool["Tool ID::Information provider"] == 'Developer') {
-			add_features.innerHTML = `${tool["Tool ID::Additional features"] || ""}. Information provided by tool developer.`;
-		} else {
-			add_features.innerHTML = `${tool["Tool ID::Additional features"] || ""}.`
-		}
-		infoBox.appendChild(add_features);
-
-		// Useful links
-
-        if (tool["Tool ID::Other useful links"] && Array.isArray(tool["Tool ID::Other useful links"])) {
-            const projectsSection = document.createElement('div');
-            projectsSection.className = 'example-projects';
-            projectsSection.innerHTML = '<h4>Other useful links</h4>';
-            tool["Tool ID::Other useful links"].forEach(link => {
-                const linkElem = document.createElement('a');
-                linkElem.href = link;
-                linkElem.textContent = link;
-                linkElem.target = '_blank';
-                linkElem.style.display = 'block';
-                projectsSection.appendChild(linkElem);
-            });
-            infoBox.appendChild(projectsSection);
-        } else if (tool["Tool ID::Other useful links"] && typeof tool["Tool ID::Other useful links"] === "string") {
-            const projectsSection = document.createElement('div');
-            projectsSection.className = 'example-projects';
-            projectsSection.innerHTML = '<h4>Other useful links</h4>';
-            const linkElem = document.createElement('a');
-            linkElem.href = tool["Tool ID::Other useful links"];
-            linkElem.textContent = tool["Tool ID::Other useful links"];
-            linkElem.target = '_blank';
-            linkElem.style.display = 'block';
-            projectsSection.appendChild(linkElem);
-            infoBox.appendChild(projectsSection);
-        }
-		// if (tool["Tool ID::Other useful links"] && Array.isArray(tool["Tool ID::Other useful links"])) {
-		// 	const linksSection = document.createElement('div');
-		// 	linksSection.className = 'useful-links';
-		// 	linksSection.innerHTML = '<h4>Useful Links</h4>';
-		// 	tool["Tool ID::Other useful links"].forEach(link => {
-		// 		const [linkName, linkTarget] = link.split('::');
-		// 		const linkElem = document.createElement('a');
-		// 		linkElem.href = linkTarget;
-		// 		linkElem.textContent = linkName;
-		// 		linkElem.target = '_blank';
-		// 		linkElem.style.display = 'block';
-		// 		linksSection.appendChild(linkElem);
-		// 	});
-		// 	infoBox.appendChild(linksSection);
-		// }
-
-		// Example projects
-        if (tool["Tool ID::Example projects"] && Array.isArray(tool["Tool ID::Example projects"])) {
-            const projectsSection = document.createElement('div');
-            projectsSection.className = 'example-projects';
-            projectsSection.innerHTML = '<h4>Example projects</h4>';
-            tool["Tool ID::Example projects"].forEach(link => {
-                const linkElem = document.createElement('a');
-                linkElem.href = link;
-                linkElem.textContent = link;
-                linkElem.target = '_blank';
-                linkElem.style.display = 'block';
-                projectsSection.appendChild(linkElem);
-            });
-            infoBox.appendChild(projectsSection);
-        } else if (tool["Tool ID::Example projects"] && typeof tool["Tool ID::Example projects"] === "string") {
-            const projectsSection = document.createElement('div');
-            projectsSection.className = 'example-projects';
-            projectsSection.innerHTML = '<h4>Example projects</h4>';
-            const linkElem = document.createElement('a');
-            linkElem.href = tool["Tool ID::Example projects"];
-            linkElem.textContent = tool["Tool ID::Example projects"];
-            linkElem.target = '_blank';
-            linkElem.style.display = 'block';
-            projectsSection.appendChild(linkElem);
-            infoBox.appendChild(projectsSection);
-        }
-
-		// Info box with features (right side of card)
-        const featuresBox = document.createElement('div');
-        featuresBox.className = 'features-box';
-        // infoBox.style.display = 'flex';
-        featuresBox.style.flexDirection = 'column';
-        featuresBox.style.alignItems = 'flex-end';
-        // featuresBox.style.marginLeft = 'auto';
-		// featuresBox.style.overflowY = 'auto';
-
-        Object.entries(tool).forEach(([key, value]) => {
-            if (!key.startsWith('Tool ID::')) {
-                const [prefix, question] = key.split('::');
-                if (!question) return;
-                // Create a container for value/count pairs
-                const featureRow = document.createElement('div');
-                featureRow.style.display = 'flex';
-                featureRow.style.flexWrap = 'wrap';
-                // featureRow.style.marginBottom = '4px';
-
-                // Handle array or single value
-                let values = Array.isArray(value) ? value : [value];
-                values.forEach(val => {
-                    if (val && val.trim() !== "") {
-                        const pairSpan = document.createElement('span');
-                        pairSpan.style.display = 'inline-flex';
-                        pairSpan.style.alignItems = 'center';
-                        // pairSpan.style.marginRight = '8px';
-
-                        const valueP = document.createElement('p');
-                        valueP.className = 'tool-value';
-                        valueP.textContent = val;
-
-                        pairSpan.appendChild(valueP);
-                        // pairSpan.appendChild(countP);
-                        featureRow.appendChild(pairSpan);
-                    }
-                });
-
-                // Add question label and values
-                if (featureRow.childNodes.length > 0) {
-                    const label = document.createElement('span');
-                    label.textContent = `${question}: `;
-                    label.style.fontWeight = 'bold';
-                    label.style.marginRight = '6px';
-                    featureRow.insertBefore(label, featureRow.firstChild);
-                    featuresBox.appendChild(featureRow);
-                }
-            }
-        });
-		details.appendChild(featuresBox);
-        details.appendChild(infoBox);
-
-        card.appendChild(details);
 
         toolsContainer.appendChild(card);
     });
