@@ -1710,12 +1710,12 @@
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Multi-tokens (e.g. multi-word expressions) - Relations (e.g. dependencies)",
-      "Chainsc(e.g. coreferences)"
+      "Chains (e.g. coreferences)"
     ],
     "Annotation::Annotation scope": [
       "Annotation inside sentences",
       "Annotation across sentences",
-      "Annotation of full sentences/paragraphs/ documents"
+      "Annotation of full sentences/paragraphs/documents"
     ],
     "Annotation::Tagset customization": "Yes",
     "User Experience::Annotation mode": [
@@ -1852,7 +1852,7 @@
       "FEATS",
       "XPOS",
       "Basic dependencies",
-      "Multiword tokens",
+      "Multi-word tokens",
       "Metadata"
     ],
     "UD/PARSEME specifics::UD validation": "Yes",

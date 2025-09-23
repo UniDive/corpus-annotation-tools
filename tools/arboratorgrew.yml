@@ -81,7 +81,7 @@ UD/PARSEME specifics:
     - FEATS
     - XPOS
     - Basic dependencies
-    - Multiword tokens
+    - Multi-word tokens
     - Metadata
   UD validation: 'Yes'
   Other annotation layers:

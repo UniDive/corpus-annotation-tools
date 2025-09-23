@@ -75,7 +75,7 @@ User Experience:
   Automatic pre-annotation: 'No'
   Automatic recommendation: 'Yes'
   Collaborative annotation:
-    - annotators working independently on their own annotations of the same data
+    - annotators working independently on their own annotations of the same data.
     - annotators working together on the same shared annotation of the data.
   Project management: 'Yes'
   User roles: 'Yes'

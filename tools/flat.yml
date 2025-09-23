@@ -50,7 +50,7 @@ Annotation:
   Annotation types:
     - Tokens (e.g. part-of-speech tag morphological features)
     - Spans (e.g. names entities),
-    - Multi-tokens (e.g. multi-word expressions
+    - Multi-tokens (e.g. multi-word expressions)
     - Relations (e.g. dependencies)
     - Chains (e.g. coreferences)
   Annotation scope:
