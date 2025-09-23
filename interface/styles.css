@@ -101,7 +101,7 @@ body {
     min-width: 20vw;
     max-width: 80vw;
     height: 100%;
-    overflow-y: auto;
+    overflow-y: none;
     background-color: var(--french-gray);
     padding: 30px;
     border-right: 2px solid var(--yinmn-blue);
@@ -145,6 +145,15 @@ body {
     z-index: 2;
 }
 
+.resizer-horizontal {
+    width: 100%;
+    height: 20px;
+    background: var(--french-gray);
+    cursor: ns-resize;
+    position: relative;
+    z-index: 2;
+}
+
 /* Content */
 .content {
     /* flex: 1 1 50%; */
@@ -177,6 +186,18 @@ body {
     flex-wrap: wrap;
     gap: 1rem; /* space between cards */
     justify-content: center;
+    overflow-y: auto;
+    /* min-height: 20vw; */
+    /* max-height: 80vw; */
+    height: 30%;
+    border-bottom: 2px solid var(--yinmn-blue);
+}
+
+.tools-viz {
+    height: 70%;
+    /* min-height: 20vw; */
+    /* max-height: 80vw; */
+    overflow-y: auto;
 }
 
 /* Card Styling */

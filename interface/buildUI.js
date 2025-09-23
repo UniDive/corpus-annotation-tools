@@ -290,102 +290,59 @@ function populateViz(tool) {
                 projectsSection.appendChild(linkElem);
             });
         });
-
         infoBox.appendChild(projectsSection);
     }
-
     details.appendChild(infoBox);
+    // toolsVisualization.appendChild(details);
+
+    // Info box with features (right side of card)
+    const featuresBox = document.createElement('div');
+    featuresBox.className = 'features-box';
+    // featuresBox.style.flexDirection = 'column';
+    // featuresBox.style.alignItems = 'flex-end';
+
+    Object.entries(tool).forEach(([key, value]) => {
+        if (!key.startsWith('Tool ID::')) {
+            const [prefix, question] = key.split('::');
+            if (!question) return;
+            // Create a container for value/count pairs
+            const featureRow = document.createElement('div');
+            featureRow.style.display = 'flex';
+            featureRow.style.flexWrap = 'wrap';
+    //         // featureRow.style.marginBottom = '4px';
+
+            // Handle array or single value
+            let values = Array.isArray(value) ? value : [value];
+            values.forEach(val => {
+                if (val && val.trim() !== "") {
+                    const pairSpan = document.createElement('span');
+                    pairSpan.style.display = 'inline-flex';
+                    pairSpan.style.alignItems = 'center';
+
+                    const valueP = document.createElement('p');
+                    valueP.className = 'tool-value';
+                    valueP.textContent = val;
+
+                    pairSpan.appendChild(valueP);
+                    featureRow.appendChild(pairSpan);
+                }
+            });
+
+            // Add question label and values
+            if (featureRow.childNodes.length > 0) {
+                const label = document.createElement('span');
+                label.textContent = `${question}: `;
+                // label.style.fontWeight = 'bold';
+                // label.style.marginRight = '6px';
+                featureRow.insertBefore(label, featureRow.firstChild);
+                featuresBox.appendChild(featureRow);
+            }
+        }
+    });
+    details.appendChild(featuresBox);
+    // details.appendChild(infoBox);
+
     toolsVisualization.appendChild(details);
-
-    //     infoBox.appendChild(projectsSection);
-    // } else if (tool["Tool ID::Other useful links"] && typeof tool["Tool ID::Other useful links"] === "string") {
-    //     const projectsSection = document.createElement('div');
-    //     projectsSection.className = 'example-projects';
-    //     projectsSection.innerHTML = '<h4>Other useful links</h4>';
-    //     const linkElem = document.createElement('a');
-    //     linkElem.href = tool["Tool ID::Other useful links"];
-    //     linkElem.textContent = tool["Tool ID::Other useful links"];
-    //     linkElem.target = '_blank';
-    //     linkElem.style.display = 'block';
-    //     projectsSection.appendChild(linkElem);
-    //     infoBox.appendChild(projectsSection);
-    // }
-
-		// // Example projects
-        // if (tool["Tool ID::Example projects"] && Array.isArray(tool["Tool ID::Example projects"])) {
-        //     const projectsSection = document.createElement('div');
-        //     projectsSection.className = 'example-projects';
-        //     projectsSection.innerHTML = '<h4>Example projects</h4>';
-        //     tool["Tool ID::Example projects"].forEach(link => {
-        //         const linkElem = document.createElement('a');
-        //         linkElem.href = link;
-        //         linkElem.textContent = link;
-        //         linkElem.target = '_blank';
-        //         linkElem.style.display = 'block';
-        //         projectsSection.appendChild(linkElem);
-        //     });
-        //     infoBox.appendChild(projectsSection);
-        // } else if (tool["Tool ID::Example projects"] && typeof tool["Tool ID::Example projects"] === "string") {
-        //     const projectsSection = document.createElement('div');
-        //     projectsSection.className = 'example-projects';
-        //     projectsSection.innerHTML = '<h4>Example projects</h4>';
-        //     const linkElem = document.createElement('a');
-        //     linkElem.href = tool["Tool ID::Example projects"];
-        //     linkElem.textContent = tool["Tool ID::Example projects"];
-        //     linkElem.target = '_blank';
-        //     linkElem.style.display = 'block';
-        //     projectsSection.appendChild(linkElem);
-        //     infoBox.appendChild(projectsSection);
-        // }
-
-		// // Info box with features (right side of card)
-        // const featuresBox = document.createElement('div');
-        // featuresBox.className = 'features-box';
-        // featuresBox.style.flexDirection = 'column';
-        // featuresBox.style.alignItems = 'flex-end';
-
-        // Object.entries(tool).forEach(([key, value]) => {
-        //     if (!key.startsWith('Tool ID::')) {
-        //         const [prefix, question] = key.split('::');
-        //         if (!question) return;
-        //         // Create a container for value/count pairs
-        //         const featureRow = document.createElement('div');
-        //         featureRow.style.display = 'flex';
-        //         featureRow.style.flexWrap = 'wrap';
-        //         // featureRow.style.marginBottom = '4px';
-
-        //         // Handle array or single value
-        //         let values = Array.isArray(value) ? value : [value];
-        //         values.forEach(val => {
-        //             if (val && val.trim() !== "") {
-        //                 const pairSpan = document.createElement('span');
-        //                 pairSpan.style.display = 'inline-flex';
-        //                 pairSpan.style.alignItems = 'center';
-
-        //                 const valueP = document.createElement('p');
-        //                 valueP.className = 'tool-value';
-        //                 valueP.textContent = val;
-
-        //                 pairSpan.appendChild(valueP);
-        //                 featureRow.appendChild(pairSpan);
-        //             }
-        //         });
-
-        //         // Add question label and values
-        //         if (featureRow.childNodes.length > 0) {
-        //             const label = document.createElement('span');
-        //             label.textContent = `${question}: `;
-        //             label.style.fontWeight = 'bold';
-        //             label.style.marginRight = '6px';
-        //             featureRow.insertBefore(label, featureRow.firstChild);
-        //             featuresBox.appendChild(featureRow);
-        //         }
-        //     }
-        // });
-		// details.appendChild(featuresBox);
-        // details.appendChild(infoBox);
-
-        // card.appendChild(details);
 
 }
 
