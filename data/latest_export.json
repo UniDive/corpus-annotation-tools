@@ -266,7 +266,7 @@
     "User Experience::Automatic pre annotation": "No",
     "User Experience::Automatic recommendation": "Yes",
     "User Experience::Collaborative annotation": [
-      "annotators working independently on their own annotations of the same data",
+      "annotators working independently on their own annotations of the same data.",
       "annotators working together on the same shared annotation of the data."
     ],
     "User Experience::Project management": "Yes",
@@ -392,11 +392,7 @@
     "Tool ID::Logo": "",
     "Tool ID::Short description": "A fully customizable and programmable graphical editor and viewer\nfor tree-like structures.\n",
     "Tool ID::Website": "https://ufal.mff.cuni.cz/tred",
-    "Tool ID::Other useful links": [
-      {
-        "Documentation": "https://ufal.mff.cuni.cz/tred/documentation/ar01-toc.html"
-      }
-    ],
+    "Tool ID::Other useful links::Documentation": "https://ufal.mff.cuni.cz/tred/documentation/ar01-toc.html",
     "Tool ID::Developer": "Yes",
     "Tool ID::Example projects": [
       {
@@ -1237,7 +1233,7 @@
     "Annotation::Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
-      "Multi-tokens (e.g. multi-word expressions",
+      "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)"
     ],
     "Annotation::Annotation scope": [
@@ -1516,7 +1512,7 @@
     "Annotation::Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities),",
-      "Multi-tokens (e.g. multi-word expressions",
+      "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)",
       "Chains (e.g. coreferences)"
     ],
@@ -1709,7 +1705,8 @@
     "Annotation::Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
-      "Multi-tokens (e.g. multi-word expressions) - Relations (e.g. dependencies)",
+      "Multi-tokens (e.g. multi-word expressions)",
+      "Relations (e.g. dependencies)",
       "Chains (e.g. coreferences)"
     ],
     "Annotation::Annotation scope": [
@@ -1731,7 +1728,7 @@
     "User Experience::Automatic pre annotation": "Yes",
     "User Experience::Automatic recommendation": "Yes",
     "User Experience::Collaborative annotation": [
-      "annotators working independently on their own annotations of the same data",
+      "annotators working independently on their own annotations of the same data.",
       "annotators working together on the same shared annotation of the data."
     ],
     "User Experience::Project management": "Yes",
