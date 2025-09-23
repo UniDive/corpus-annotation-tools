@@ -264,7 +264,8 @@ body {
     transition: opacity 0.3s, max-height 0.3s;
     opacity: 0;
     max-height: 0;
-    overflow: hidden;
+    overflow: auto;
+    display: flex;
 }
 
 .card img {
@@ -302,7 +303,7 @@ body {
 
 .card.expanded .details {
     /* display: block !important; */
-    /* margin-top: 0.5rem; */
+    margin: 0.5rem;
     color: var(--yinmn-blue);
     background: var(--air-superiority-blue);
     border-radius: 8px;
@@ -483,10 +484,11 @@ body {
     padding: 8px 12px;
     font-size: 0.95rem;
     box-shadow: 0 1px 4px var(--white);
-    margin-top: 1rem;
-    max-width: 320px;
-    float: left;
-    overflow-y: auto;
+    margin: 1rem;
+    /* max-width: 320px; */
+    flex: 0 1 80%;
+    /* float: left; */
+    /* overflow-y: auto; */
 }
 
 .features-box {
@@ -495,8 +497,9 @@ body {
     padding: 8px 12px;
     font-size: 0.95rem;
     box-shadow: 0 1px 4px var(--white);
-    margin-top: 1rem;
-    max-width: 320px;
-    float: right;
+    margin: 1rem;
+    /* max-width: 320px; */
+    flex: 0 1 80%;
+    /* float: right; */
     overflow-y: auto;
 }
