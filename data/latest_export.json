@@ -392,7 +392,11 @@
     "Tool ID::Logo": "",
     "Tool ID::Short description": "A fully customizable and programmable graphical editor and viewer\nfor tree-like structures.\n",
     "Tool ID::Website": "https://ufal.mff.cuni.cz/tred",
-    "Tool ID::Other useful links::Documentation": "https://ufal.mff.cuni.cz/tred/documentation/ar01-toc.html",
+    "Tool ID::Other useful links": [
+      {
+        "Documentation": "https://ufal.mff.cuni.cz/tred/documentation/ar01-toc.html"
+      }
+    ],
     "Tool ID::Developer": "Yes",
     "Tool ID::Example projects": [
       {
