@@ -647,60 +647,6 @@
     "UD/PARSEME specifics::Consistency check": "No"
   },
   {
-    "Tool ID::Tool name": "",
-    "Tool ID::Logo": "",
-    "Tool ID::Short description": "",
-    "Tool ID::Website": "",
-    "Tool ID::Code repository": "",
-    "Tool ID::Other useful links": [
-      {
-        "Documentation": ""
-      },
-      {
-        "Paper": ""
-      }
-    ],
-    "Tool ID::Developer": "",
-    "Tool ID::Example projects": [],
-    "Tool ID::Additional features": "",
-    "Software::License": "",
-    "Software::Active maintenance": "",
-    "Software::Software type": "",
-    "Software::Operating system": [
-      "Windows",
-      "macOS",
-      "Linux"
-    ],
-    "Software::Software availability": [],
-    "Software::Offline usage": "",
-    "Data support::Input format": [],
-    "Data support::Integration of other resources": [],
-    "Data support::Data export": [],
-    "Diversity features::Diversity features": [],
-    "Diversity features::Language of the interface": [],
-    "Annotation::Segmentation": [],
-    "Annotation::Annotation types": [],
-    "Annotation::Annotation scope": [],
-    "Annotation::Tagset customization": "",
-    "User Experience::Annotation mode": [],
-    "User Experience::Keyboard shortcuts": "",
-    "User Experience::Annotation display": [],
-    "User Experience::Automatic pre annotation": "",
-    "User Experience::Automatic recommendation": "",
-    "User Experience::Collaborative annotation": "",
-    "User Experience::Project management": "",
-    "User Experience::User roles": "",
-    "User Experience::Comparison of annotations": "",
-    "User Experience::Agreement calculation": "",
-    "User Experience::Querying": "",
-    "User Experience::Mass editing": "",
-    "UD/PARSEME specifics::UD specific annotations": "",
-    "UD/PARSEME specifics::UD validation": "",
-    "UD/PARSEME specifics::Other annotation layers": "",
-    "UD/PARSEME specifics::PARSEME specific annotations": "",
-    "UD/PARSEME specifics::Consistency check": ""
-  },
-  {
     "Tool ID::Tool name": "GitDox",
     "Tool ID::Logo": "",
     "Tool ID::Short description": "A version controlled annotation interace for XML and spreadsheet data, as well as nested NER",
