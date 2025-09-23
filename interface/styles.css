@@ -47,9 +47,6 @@ body {
     max-height: 40px;
     opacity: 1;
     padding: 0.5rem 2rem 0.5rem 2rem;
-    /* align-items: center; */
-    /* min-width: 60px; */
-    /* width: 60px; */
 }
 
 .instructions.collapsed .instructions-title,
@@ -187,12 +184,12 @@ body {
     background-color: var(--pumpkin);
     border-radius: 10px;
     padding: 10px;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     box-shadow: 0 2px 4px var(--yinmn-blue);
     color: var(--yinmn-blue);
     text-align: left;
     flex: 0 1 220px;         /* Cards are flexible, min width 220px */
-    min-width: 180px;        /* Minimum width for small screens */
+    /* min-width: 180px;        Minimum width for small screens */
     word-break: break-word;  /* Prevent overflow for long names */
         transition:
         background 0.3s,

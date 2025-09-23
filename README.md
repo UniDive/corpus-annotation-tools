@@ -7,7 +7,8 @@ This is a working repository to elaborate on results from survey on manual corpo
 
 We welcome contributions of new tools or updates to existing ones!
 All tool metadata lives in YAML files under the [tools/](tools/) directory.
-The TSV (`data/results_230125.tsv`) and JSON (`data/latest_export.json`) are generated automatically from those YAMLs.
+The JSON (`data/latest_export.json`) is generated automatically from those YAMLs through the script
+`src/build_json.py`.
 
 ### 1. Add a new tool
 
