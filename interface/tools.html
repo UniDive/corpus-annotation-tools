@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Tools Overview</title>
 		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13tzjvY6sZj4lH3g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 		<script src="buildUI.js"></script>
 		<script src="resize.js"></script>
 		<!-- <script src="toggle_cards.js"></script> -->
@@ -12,10 +13,18 @@
 	</head>
 	<body>
 		<div class="instructions collapsed" id="instructions">
-			<div class="instructions-header">
+			<!--  <div class="instructions-header">
 				<span class="instructions-title">How to interact:</span>
 				<button id="collapse-instructions" aria-label="Collapse instructions">+</button>
+			</div> -->
+
+			<div class="instructions-header">
+			<button id="collapse-instructions" aria-label="Toggle instructions">
+				Instructions
+			</button>
 			</div>
+
+
 			<div class="instructions-content">
 				<ul>
 					<li>You can see surveyed tools on the left of the interface, and surveyed features on the right, divided into sections. You can resize the width of the two sections by dragging the middle separation line.</li>
