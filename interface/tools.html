@@ -12,20 +12,16 @@
 		<!-- <script src="script.js"></script> -->
 	</head>
 	<body>
-		<div class="header">
-			<h1 class="app-title">Tools for Manual Linguistic Annotation</h1>
-		<div class="instructions collapsed" id="instructions">
-			<!--  <div class="instructions-header">
-				<span class="instructions-title">How to interact:</span>
-				<button id="collapse-instructions" aria-label="Collapse instructions">+</button>
-			</div> -->
-
-			<div class="instructions-header">
-			<button id="collapse-instructions" aria-label="Toggle instructions">
-				Instructions
-			</button>
+		
+			<div class="topbar">
+				<h1 class="app-title">Tools for Manual Linguistic Annotation</h1>
+				<button id="collapse-instructions" aria-label="Toggle instructions">
+					<i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+					<span>Instructions</span>
+				</button>
 			</div>
 
+		<div class="instructions collapsed" id="instructions">
 
 			<div class="instructions-content">
 				<ul>
@@ -36,7 +32,7 @@
 				</ul>
 			</div>
 		</div>
-		</div>
+		
 
 		<div class="container">
 			<div class="sidebar" role="complementary" aria-label="Tool Overview" style="width: 493px;">
