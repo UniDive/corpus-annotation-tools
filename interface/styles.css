@@ -1,11 +1,11 @@
 /* Root Variables */
 :root {
     --white: #FFFFFFff;
-    --french-gray: #BFCBD9ff;
-    --air-superiority-blue: #789FB3ff;
-    --yinmn-blue: #3A567Fff;
-    --sandy-brown: #FFA346ff;
-    --pumpkin: #FF853Fff;
+    --french-gray: #F6F8FB; /* #BFCBD9ff; */
+    --air-superiority-blue: #10B981; /* #789FB3ff; */
+    --yinmn-blue: #1E3A8A; /* #3A567Fff; */
+    --sandy-brown:  #FFA346ff;
+    --pumpkin: #F97316; /*#FF853Fff; */
 }
 
 /* General Styling */
@@ -26,12 +26,13 @@ body {
     position: fixed; /* Make it float above everything */
     top: 0;
     left: 0;
+    right: 0;
     /* width: 100vw; */
     z-index: 1000;
     background: var(--white );
     color: var(--yinmn-blue);
     border-bottom: 1px solid var(--french-gray);
-    padding: 1rem 2rem 0.5rem 2rem;
+    padding: 1rem 2rem 1rem 2rem;
     font-size: 1.1rem;
     transition: max-height 0.3s, opacity 0.3s, min-width 0.3s;
     max-height: 300px;
@@ -40,14 +41,25 @@ body {
     box-sizing: border-box;
 }
 
-.instructions.collapsed {
+/*  .instructions.collapsed {
     background: var(--white );
     color: var(--yinmn-blue);
     border-bottom: 1px solid var(--french-gray);
     max-height: 40px;
     opacity: 1;
     padding: 0.5rem 2rem 0.5rem 2rem;
+} */
+
+.instructions.collapsed {
+  background: transparent;  /* rimuove lo sfondo bianco */
+  border-bottom: 0;         /* rimuove la riga di separazione */
+  box-shadow: none;
 }
+
+/* evita che la barra trasparente “copra” i click dietro */
+.instructions { pointer-events: none; }
+.instructions-header, #collapse-instructions { pointer-events: auto; }
+
 
 .instructions.collapsed .instructions-title,
 .instructions.collapsed .instructions-content {
@@ -63,23 +75,54 @@ body {
     width: 100%;
 }
 
-#collapse-instructions {
+/* #collapse-instructions {
     background-color: var(--white);
-    /* background: var(--yinmn-blue); */
+    * background: var(--yinmn-blue); *
     color: var(--yinmn-blue);
     border: none;
-    /* border-radius: 50%; */
-    /* width: 32px; */
-    /* height: 32px; */
+    * border-radius: 50%; *
+    * width: 32px; *
+    * height: 32px; *
     font-size: 1.3rem;
     cursor: pointer;
     margin-left: 1rem;
-}
+}*/
+
+#collapse-instructions {
+    background-color: #0E9E73;
+    color: var(--white);
+    border: none;
+    border-radius: 20px;
+    padding: 6px 12px;
+    margin-left: auto;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* spazio fra ℹ e Instructions */
+} 
 
 #collapse-instructions:hover {
     background-color: var(--sandy-brown);
-    border-radius: 50%;
+    color: var(--yinmn-blue);
 }
+
+#collapse-instructions::before {
+  content: "i";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: #fff;       /* cerchio bianco */
+  color: #0E9E73;               /* testo verde */
+}
+
 
 
 /* CONTAINER */
@@ -98,8 +141,8 @@ body {
 /* Sidebar */
 .sidebar {
     /* flex: 1 1 50%; */
-    min-width: 20vw;
-    max-width: 80vw;
+    min-width: 250px;
+    max-width: 60vw;
     height: 100%;
     overflow-y: none;
     background-color: var(--french-gray);
@@ -113,10 +156,11 @@ body {
     vertical-align: middle;
 }
 
+
 /* Reset Button */
 .reset-btn {
-    background-color: var(--pumpkin);
-    color: var(--yinmn-blue); /* White text */
+    background-color: #0E9E73;
+    color: #fff; /* White text */
     padding: 10px 20px; /* Adjust padding */
     border: none; /* Remove border */
     border-radius: 5px; /* Rounded corners */
@@ -152,6 +196,15 @@ body {
     cursor: ns-resize;
     position: relative;
     z-index: 2;
+}
+
+.resizer-horizontal::after {
+    content: "⋯";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--yinmn-blue);
 }
 
 /* Content */
@@ -200,6 +253,16 @@ body {
     overflow-y: auto;
 }
 
+.tools::-webkit-scrollbar {
+    width: 8px;
+}
+.tools::-webkit-scrollbar-track {
+    background: var(--french-gray);
+}
+.tools::-webkit-scrollbar-thumb {
+    background: var(--yinmn-blue);
+    border-radius: 4px;
+}
 /* Card Styling */
 .card {
     background-color: var(--pumpkin);
