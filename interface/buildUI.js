@@ -1,4 +1,4 @@
-const jsonUrl = 'https://raw.githubusercontent.com/UniDive/corpus-annotation-tools/refs/heads/main/data/latest_export.json';
+const jsonUrl = 'https://raw.githubusercontent.com/ellepannitto/corpus-annotation-tools/refs/heads/main/data/latest_export.json';
 let tools = [];
 let tools_dict = {};
 let current_selection = {};

@@ -297,9 +297,9 @@
     "UD/PARSEME specifics::Consistency check": "No"
   },
   {
-    "Tool ID::Tool name": "PLURAL-conllu-annotator",
+    "Tool ID::Tool name": "PLURAL",
     "Tool ID::Logo": "https://plural.iiit.ac.in/conllu-assets/static/media/IIITH.3e6a0240528e48ab6511.png",
-    "Tool ID::Short description": "Annotate linguistic rich data",
+    "Tool ID::Short description": "PLURAL-conllu-annotator is useful to annotate linguistic rich data",
     "Tool ID::Website": "https://plural.iiit.ac.in/conllu-annotator",
     "Tool ID::Other useful links": "",
     "Tool ID::Developer": "Yes",
@@ -390,7 +390,7 @@
   {
     "Tool ID::Tool name": "TrEd",
     "Tool ID::Logo": "",
-    "Tool ID::Short description": "A fully customizable and programmable graphical editor and viewer\nfor tree-like structures.\n",
+    "Tool ID::Short description": "TrEd is a fully customizable and programmable graphical editor and viewer\nfor tree-like structures.\n",
     "Tool ID::Website": "https://ufal.mff.cuni.cz/tred",
     "Tool ID::Other useful links": [
       {
@@ -483,7 +483,7 @@
     "UD/PARSEME specifics::Consistency check": "No"
   },
   {
-    "Tool ID::Tool name": "Palmyra",
+    "Tool ID::Tool name": "PALMYRA",
     "Tool ID::Logo": "https://camel-lab.github.io/palmyra/fonts/logo.png",
     "Tool ID::Short description": "PALMYRA is a platform-independent graphical tool for syntactic dependency annotation supporting languages that require complex morphological tokenization.",
     "Tool ID::Website": "https://palmyra.camel-lab.com/",
@@ -1021,7 +1021,7 @@
   {
     "Tool ID::Tool name": "TALEN",
     "Tool ID::Logo": "",
-    "Tool ID::Short description": "NER annotation",
+    "Tool ID::Short description": "TALEN is a Named Entity Recognition annotation tool",
     "Tool ID::Website": "https://github.com/CogComp/talen",
     "Tool ID::Other useful links": [
       {
@@ -1102,7 +1102,7 @@
   {
     "Tool ID::Tool name": "ToolBox",
     "Tool ID::Logo": "https://software.sil.org/wp/wp-content/themes/web-productsites/images/sil_logo_glyph.png",
-    "Tool ID::Short description": "A linguistic data management tool designed for building lexicons,\nanalyzing interlinear texts, and organizing fieldwork data, developed by SIL International.\n",
+    "Tool ID::Short description": "ToolBox is a linguistic data management tool designed for building lexicons,\nanalyzing interlinear texts, and organizing fieldwork data, developed by SIL International.\n",
     "Tool ID::Website": "https://software.sil.org/toolbox/",
     "Tool ID::Other useful links": [
       {
@@ -1290,9 +1290,9 @@
     "UD/PARSEME specifics::Consistency check": "No"
   },
   {
-    "Tool ID::Tool name": "BoAT (Boğaziçi University Annotation Tool)",
+    "Tool ID::Tool name": "BoAT",
     "Tool ID::Logo": "",
-    "Tool ID::Short description": "Collaborative grammatical annotation tool",
+    "Tool ID::Short description": "BoAT (Boğaziçi University Annotation Tool) is a collaborative grammatical annotation tool",
     "Tool ID::Website": "https://github.com/furkanakkurt1335/boat",
     "Tool ID::Other useful links": [
       {
@@ -1387,7 +1387,7 @@
   {
     "Tool ID::Tool name": "Q-CAT",
     "Tool ID::Logo": "",
-    "Tool ID::Short description": "A tool for manual linguistic annotation of corpora, which also\nenables advanced queries on top of these annotations.\n",
+    "Tool ID::Short description": "Q-CAT is a tool for manual linguistic annotation of corpora, which also\nenables advanced queries on top of these annotations.\n",
     "Tool ID::Website": "http://hdl.handle.net/11356/1844",
     "Tool ID::Other useful links": "",
     "Tool ID::Developer": "Yes",
@@ -1460,9 +1460,9 @@
     "UD/PARSEME specifics::Consistency check": "No"
   },
   {
-    "Tool ID::Tool name": "FLAT: FoLiA Linguistic Annotation Tool",
+    "Tool ID::Tool name": "FLAT",
     "Tool ID::Logo": "http://proycon.github.io/folia/style/icon.png",
-    "Tool ID::Short description": "Web-based linguistic annotation environment based around the FoLiA format (http://proycon.github.io/folia), a rich XML-based format for linguistic annotation.",
+    "Tool ID::Short description": "\"FLAT: FoLiA Linguistic Annotation Tool Web-based linguistic annotation environment based around the FoLiA format (http://proycon.github.io/folia), a rich XML-based format for linguistic annotation.\"\n",
     "Tool ID::Website": "https://github.com/proycon/flat",
     "Tool ID::Other useful links": [
       {
@@ -1558,9 +1558,9 @@
     "UD/PARSEME specifics::Consistency check": "No"
   },
   {
-    "Tool ID::Tool name": "brat rapid annotation tool",
+    "Tool ID::Tool name": "brat",
     "Tool ID::Logo": "",
-    "Tool ID::Short description": "online environment for collaborative text annotation",
+    "Tool ID::Short description": "brat rapid annotation tool is an online environment for collaborative text annotation",
     "Tool ID::Website": "http://brat.nlplab.org/",
     "Tool ID::Other useful links": [
       {
@@ -1661,7 +1661,7 @@
   {
     "Tool ID::Tool name": "WebAnno",
     "Tool ID::Logo": "https://webanno.github.io/webanno/assets/img/logo.png",
-    "Tool ID::Short description": "A web-based collaborative tool for linguistic annotation that supports various annotation tasks, including POS tagging, dependency parsing, and coreference resolution. It provides collaborative features and works well with formats like CoNLL-U.\n",
+    "Tool ID::Short description": "WebAnno is a web-based collaborative tool for linguistic annotation that supports various annotation tasks, including POS tagging, dependency parsing, and coreference resolution. It provides collaborative features and works well with formats like CoNLL-U.\n",
     "Tool ID::Website": "https://webanno.github.io/webanno/",
     "Tool ID::Other useful links": "",
     "Tool ID::Developer": "No",
@@ -1864,7 +1864,7 @@
   {
     "Tool ID::Tool name": "UD Annotatrix",
     "Tool ID::Logo": "",
-    "Tool ID::Short description": "Client-side, browser-only, language-independent\ntool for editing dependency trees according to the guidelines established by the\nUniversal Dependencies project.\n",
+    "Tool ID::Short description": "UD Annotatrix is a client-side, browser-only, language-independent tool for editing dependency trees according to the guidelines established by the Universal Dependencies project.\n",
     "Tool ID::Website": "https://maryszmary.github.io/ud-annotatrix/standalone/annotator.html",
     "Tool ID::Other useful links": [
       {
