@@ -15,6 +15,14 @@ document.addEventListener("DOMContentLoaded", () => {
 	const sidebar = document.querySelector('.sidebar');
 	const content = document.querySelector('.content');
 
+	// Imposta larghezza iniziale sidebar (es. 58% del container)
+    const containerRect = document.querySelector('.container').getBoundingClientRect();
+    const initialSidebarWidth = Math.round(containerRect.width * 0.70);
+
+    sidebar.style.width = initialSidebarWidth + 'px';
+    content.style.width = (containerRect.width - initialSidebarWidth - resizer.offsetWidth) + 'px';
+	//
+
 	const tools = document.querySelector('.tools');
 	const tools_viz = document.querySelector('.tools-viz');
 
