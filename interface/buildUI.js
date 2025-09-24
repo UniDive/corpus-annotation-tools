@@ -3,6 +3,7 @@ let tools = [];
 let tools_dict = {};
 let current_selection = {};
 let current_tool;
+let active_selection = false;
 
 let excluded_filters = ["Other annotation layers"];
 
@@ -194,7 +195,7 @@ function collapse() {
 }
 
 function populateViz(tool) {
-    console.log(tool);
+    // console.log(tool);
     const toolsVisualization = document.querySelector('.tools-viz');
     toolsVisualization.innerHTML = '';
 
@@ -264,7 +265,7 @@ function populateViz(tool) {
         projectsSection.innerHTML = '<h4>Other useful links</h4>';
         tool["Tool ID::Other useful links"].forEach((tool_link) => {
             Object.entries(tool_link).forEach(([link_key, link_ref]) => {
-                console.log(link_key, link_ref);
+                // console.log(link_key, link_ref);
                 const linkElem = document.createElement('a');
                 linkElem.href = link_ref;
                 linkElem.textContent = link_key;
@@ -282,7 +283,7 @@ function populateViz(tool) {
 
         tool["Tool ID::Example projects"].forEach((tool_link) => {
             Object.entries(tool_link).forEach(([link_key, link_ref]) => {
-                console.log(link_key, link_ref);
+                // console.log(link_key, link_ref);
                 const linkElem = document.createElement('a');
                 linkElem.href = link_ref;
                 linkElem.textContent = link_key;
@@ -389,35 +390,71 @@ function buildTools() {
         header.appendChild(minus);
 
 		plus.addEventListener('click', function(e) {
-            console.log(e);
+
+            // active_selection = true;
+            // console.log(e);
 			e.stopPropagation();
 			collapse();
             highlightCardFeatures(tool); // highlight relevant features
             populateViz(tool);
+
+            let button_plus = card.querySelector('.plus');
+            let button_minus = card.querySelector('.minus');
+            button_plus.style.display = 'none';
+            button_minus.style.display = 'inline-flex';
+
+            let cards = document.querySelectorAll(".card");
+            cards.forEach(other_card => {
+
+                if (other_card.getAttribute('data-value') !== card.getAttribute('data-value'))  {
+                    let button_plus = other_card.querySelector('.plus');
+                    let button_minus = other_card.querySelector('.minus');
+                    button_plus.style.display = 'inline-flex';
+                    button_minus.style.display = 'none';
+                }
+            })
+
 		});
 
 		minus.addEventListener('click', function(e) {
+            // active_selection = false;
 			e.stopPropagation();
 			removeCardHighlights(); // remove highlights
             toolsVisualization.innerHTML = '';
+
+            let button_plus = card.querySelector('.plus');
+            let button_minus = card.querySelector('.minus');
+            button_plus.style.display = 'inline-flex';
+            button_minus.style.display = 'none';
+
+            // let cards = document.querySelectorAll(".card");
+            // cards.forEach(other_card => {
+
+            //     if (other_card.getAttribute('data-value') !== card.getAttribute('data-value'))  {
+            //         let button_plus = other_card.querySelector('.plus');
+            //         let button_minus = other_card.querySelector('.minus');
+            //         button_plus.style.display = 'none';
+            //         button_minus.style.display = 'inline-flex';
+            //     }
+            // })
 		});
 
         card.addEventListener('mouseover', function(e) {
-            console.log(card);
+            // console.log(card);
 			e.stopPropagation();
             let button = card.querySelector('.plus');
             // console.log(button);
             button.classList.add("orange-plus");
-            console.log(button);
+            // console.log(button);
 		});
 
         card.addEventListener('mouseout', function(e) {
-            console.log(card);
+            // console.log(card);
 			e.stopPropagation();
             let button = card.querySelector('.plus');
             // console.log(button);
             button.classList.remove("orange-plus");
-            console.log(button);
+            // console.log(button);
 		});
 
         card.appendChild(header);
@@ -537,7 +574,7 @@ function buildSelections() {
 
 			// Toggle selection regardless of current state
 			current_selection[feature][question][value] = !current_selection[feature][question][value];
-			console.log(current_selection[feature][question][value]);
+			// console.log(current_selection[feature][question][value]);
 
 			let matchingTools = filterTools();
 			updateFeatures(matchingTools);
