@@ -401,6 +401,25 @@ function buildTools() {
 			removeCardHighlights(); // remove highlights
             toolsVisualization.innerHTML = '';
 		});
+
+        card.addEventListener('mouseover', function(e) {
+            console.log(card);
+			e.stopPropagation();
+            let button = card.querySelector('.plus');
+            // console.log(button);
+            button.classList.add("orange-plus");
+            console.log(button);
+		});
+
+        card.addEventListener('mouseout', function(e) {
+            console.log(card);
+			e.stopPropagation();
+            let button = card.querySelector('.plus');
+            // console.log(button);
+            button.classList.remove("orange-plus");
+            console.log(button);
+		});
+
         card.appendChild(header);
 
         toolsContainer.appendChild(card);
