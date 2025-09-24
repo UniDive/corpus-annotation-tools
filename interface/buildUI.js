@@ -365,12 +365,13 @@ function buildTools() {
 
         // Title
         const h3 = document.createElement('h3');
-        const link = document.createElement('a');
-        link.href = tool["Tool ID::Website"];
-        link.target = "_blank";
-        link.textContent = tool["Tool ID::Tool name"];
-        link.style.color = 'inherit';
-        h3.appendChild(link);
+        h3.textContent = tool["Tool ID::Tool name"];
+        // const link = document.createElement('a');
+        // link.href = tool["Tool ID::Website"];
+        // link.target = "_blank";
+        // link.textContent = tool["Tool ID::Tool name"];
+        // link.style.color = 'inherit';
+        // h3.appendChild(link);
         header.appendChild(h3);
 
         // Plus/minus buttons
