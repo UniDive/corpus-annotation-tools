@@ -211,6 +211,20 @@ function populateViz(tool) {
     link.style.color = 'inherit';
     h3.appendChild(link);
     header.appendChild(h3);
+
+    if (tool['Tool ID::Code repository'] !== '') {
+        const form = document.createElement('form');
+        form.action = tool['Tool ID::Code repository'];
+        form.method = "get";
+        form.target = "_blank";
+        const repository = document.createElement('button');
+        repository.className = 'repo';
+        repository.setAttribute('aria-label', 'Code repository');
+        repository.textContent = "Code repository"
+        form.appendChild(repository)
+        header.appendChild(form);
+    }
+
     toolsVisualization.appendChild(header);
 
     const shortDesc = document.createElement("div");
@@ -235,18 +249,7 @@ function populateViz(tool) {
 
     const infoBox = document.createElement('div');
     infoBox.className = 'info-box';
-    if (tool['Tool ID::Code repository'] !== '') {
-        const form = document.createElement('form');
-        form.action = tool['Tool ID::Code repository'];
-        form.method = "get";
-        form.target = "_blank";
-        const repository = document.createElement('button');
-        repository.className = 'repo';
-        repository.setAttribute('aria-label', 'Code repository');
-        repository.textContent = "Code repository"
-        form.appendChild(repository)
-        infoBox.appendChild(form);
-    }
+
 
 
 

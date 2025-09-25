@@ -26,7 +26,7 @@ body {
 /* Titoli */
 h1 {
   font-family: 'Poppins', Arial, sans-serif;
-  font-size: 1.75 rem;        /* circa 32px */
+  font-size: 1.75rem;        /* circa 32px */
   font-weight: bold;
   margin: 0.5em 0;
 }
@@ -40,7 +40,7 @@ h2 {
 
 h3 {
   font-family: 'Poppins', Arial, sans-serif;
-  font-size: 1 rem;     /* circa 18px */
+  font-size: 1rem;     /* circa 18px */
   font-weight: bold;
   margin: 0.75em 0 0.5em;
 }
@@ -167,7 +167,7 @@ a:hover {
     cursor: pointer;
     font-size: 14px;
     font-weight: bold;
-} 
+}
 
 #collapse-instructions:hover {
     background-color: #44bcd7;
@@ -255,6 +255,22 @@ a:hover {
 
 .reset-btn:hover {
     background-color: #44bcd7;
+}
+
+.repo {
+    background-color:#44bcd7;
+    color: #fff;
+    padding: 10px 20px;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px var(--yinmn-blue);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.5s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative; /* serve per posizionare l’icona */
 }
 
 
@@ -411,7 +427,12 @@ a:hover {
 
 
 .card-header {
-    color:#44bcd7
+    color:#44bcd7;
+}
+
+.tools-viz .card-header {
+    width: 30%;
+    float: left;
 }
 
 .short-description{
@@ -419,6 +440,7 @@ a:hover {
     font-size: 16px;
     font-weight: 600;
     display: inline;
+    float: none;
 }
 
 .short-description img{
@@ -460,7 +482,7 @@ a:hover {
     position: relative;
 }
 
-.feature-section:hover {
+.feature-section.collapsed:hover {
     transform: translateY(-5px); /* Slightly lift the card */
     background-color: #ff8e20;
 }
