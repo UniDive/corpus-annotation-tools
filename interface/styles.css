@@ -45,6 +45,13 @@ h3 {
   margin: 0.75em 0 0.5em;
 }
 
+h4 {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 0.9rem;     /* circa 18px */
+  font-weight: bold;
+  margin: 0.75em 0 0.5em;
+}
+
 /* Testo normale */
 p {
   font-family: 'Roboto', Arial, sans-serif;
@@ -206,7 +213,7 @@ a:hover {
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding-top: 56px; /* Height of collapsed instructions bar */
+    padding-top: 40px; /* Height of collapsed instructions bar */
     box-sizing: border-box;
 }
 
@@ -283,6 +290,15 @@ a:hover {
     z-index: 2;
 }
 
+.resizer::after {
+    content: "⋯";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: rotate(-90deg);
+    color: var(--yinmn-blue);
+}
+
 .resizer-horizontal {
     width: 100%;
     height: 20px;
@@ -339,13 +355,11 @@ a:hover {
     height: 30%;
     border-bottom: 2px solid #44bcd7;
 }
-
+/*
 .tools-viz {
     height: 70%;
-    /* min-height: 20vw; */
-    /* max-height: 80vw; */
     overflow-y: auto;
-}
+} */
 
 .tools::-webkit-scrollbar {
     width: 8px;
@@ -425,25 +439,84 @@ a:hover {
     float: left;
 }
 
-
-.card-header {
-    color:#44bcd7;
+.tools-viz{
+  --left: 40%;                        /* left column width for BOTH rows */
+  display: grid;
+  grid-template-columns: var(--left) 1fr;
 }
 
-.tools-viz .card-header {
-    width: 30%;
+.tools-viz .card-header,
+.tools-viz .short-description{
+  display: grid;
+  place-items: center;     /* = align-items + justify-items */
+  text-align: center;      /* center multi-line text */
+}
+
+.short-description{
+  border-left: 2px solid var(--yinmn-blue);
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+/* .tools-viz > *{ box-sizing: border-box; padding: 0.5rem; overflow-y: scroll;} */
+
+.tools-viz{
+  /* existing grid */
+  --left: 40%;
+  display: grid;
+  grid-template-columns: var(--left) 1fr;
+
+  /* make it scrollable */
+  max-height: 60vh;        /* or a fixed height like 480px */
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+}
+
+/* Row 1 */
+.tools-viz .card-header      { grid-column: 1; grid-row: 1; }
+.tools-viz .short-description{ grid-column: 2; grid-row: 1; border-left: 2px solid var(--yinmn-blue); }
+
+/* Row 2 = the wrapper spans the full width */
+.tools-viz .details{ grid-column: 1 / -1; grid-row: 2; display: grid;
+  grid-template-columns: var(--left) 1fr; /* same split as row 1 */
+}
+
+/* Inside the wrapper, place the two boxes */
+.tools-viz .details .features-box{ grid-column: 2; }
+.tools-viz .details .info-box    { grid-column: 1; }
+
+
+
+.short-description{
+  /* flex: 1 1 0;          fills the remaining 60% */
+  padding: 0.5rem;
+  border-left: 2px solid var(--yinmn-blue);
+  color: rgb(61, 61, 61);
+  font-size: 16px;
+  font-weight: 600;
+  /* box-sizing: border-box; */
+}
+
+/* .tools-viz .card-header {
+    width: 40%;
     float: left;
+    padding: 0.5rem;
 }
 
 .short-description{
     color: rgb(61, 61, 61);
     font-size: 16px;
     font-weight: 600;
-    display: inline;
+    display: inline-block;
     float: none;
-}
+    padding: 0.5rem;
+    position: relative;
+    border-left: 2px solid var(--yinmn-blue);
+} */
 
-.short-description img{
+.card-header img{
     width: 80px; /* Set a fixed width */
     height: 80px; /* Set a fixed height */
     object-fit: contain; /* Ensure the image covers the space without distortion */
@@ -456,6 +529,10 @@ a:hover {
     float: left;
 }
 
+.card-header a {
+    font-size: 1.2rem;
+    color: #ff8e20;
+}
 
 .card.disabled {
     opacity: 0.4;
@@ -485,6 +562,7 @@ a:hover {
 .feature-section.collapsed:hover {
     transform: translateY(-5px); /* Slightly lift the card */
     background-color: #ff8e20;
+    color: var(--white);
 }
 
 .feature-section.collapsed .feature-question {
@@ -501,10 +579,6 @@ a:hover {
     gap: 0.5rem;
 }
 
-.feature-section h3:hover {
-    color: white;
-}
-
 .feature-section.collapsed .toggle-arrow {
     transform: rotate(-90deg);
 }
@@ -514,8 +588,8 @@ a:hover {
 }
 
 .feature-question h4 {
-    color: var(--white);           /* Distinct color for question title */
-    font-weight: 600;
+    color: #ff8e20;           /* Distinct color for question title */
+    font-weight: 400;
     margin: 0.3rem 0 0.3rem 0;
     letter-spacing: 0.5px;
 }
@@ -569,7 +643,7 @@ a:hover {
 }
 
 .value.disabled {
-    color: #aaa !important;
+    color: #999 !important;
     background: var(--white);
     opacity: 0.7;
     cursor: pointer !important;
@@ -591,24 +665,38 @@ a:hover {
     box-shadow: 0 0 4px var(--yinmn-blue);
 }
 
-.details {
-  display: flex;
-  flex-direction: row;
-  gap: 0;                 /* nessuno spazio fra i due box */
-  width: 100%;
-}
-
 /* Box sinistro */
 .info-box {
-  flex: 1;                /* prende il 50% */
+  /* width: 40%; */
   border-right: 2px solid var(--yinmn-blue); /* linea verticale di separazione */
   padding: 1rem;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 /* Box destro */
 .features-box {
-  flex: 1;                /* prende il 50% */
-  padding: 1rem;
-  box-sizing: border-box;
+    /* width: 60%; */
+  padding: 0.5rem;
+  /* box-sizing: border-box; */
+}
+
+.tool-question {
+    display: inline-block;
+    background: var(--white);
+    color: var(--pumpkin);
+    border-radius: 5px 0 0 5px;
+    padding: 4px 10px;
+    margin-right: 2px;
+    font-weight: 500;
+}
+
+.tool-value {
+    display: inline-block;
+  background: var(--white);
+  color: var(--yinmn-blue);
+  border-radius: 0 5px 5px 0;
+  padding: 4px 10px;
+  margin-right: 8px;
+  font-weight: 500;
+  border-left: 2px solid var(--pumpkin);
 }

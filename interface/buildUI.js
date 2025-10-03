@@ -208,9 +208,24 @@ function populateViz(tool) {
     link.href = tool["Tool ID::Website"];
     link.target = "_blank";
     link.textContent = tool["Tool ID::Tool name"];
-    link.style.color = 'inherit';
     h3.appendChild(link);
     header.appendChild(h3);
+
+    // Logo
+    if (tool["Tool ID::Logo"]) {
+        const img = document.createElement('img');
+        img.src = tool["Tool ID::Logo"];
+        img.alt = `${tool["Tool ID::Tool name"]} Logo`;
+        // img.style.display = 'none';
+        header.appendChild(img);
+    }
+
+
+
+    toolsVisualization.appendChild(header);
+
+    const shortDesc = document.createElement("div");
+    shortDesc.className = "short-description";
 
     if (tool['Tool ID::Code repository'] !== '') {
         const form = document.createElement('form');
@@ -222,22 +237,9 @@ function populateViz(tool) {
         repository.setAttribute('aria-label', 'Code repository');
         repository.textContent = "Code repository"
         form.appendChild(repository)
-        header.appendChild(form);
+        shortDesc.appendChild(form);
     }
 
-    toolsVisualization.appendChild(header);
-
-    const shortDesc = document.createElement("div");
-    shortDesc.className = "short-description";
-
-    // Logo
-    if (tool["Tool ID::Logo"]) {
-        const img = document.createElement('img');
-        img.src = tool["Tool ID::Logo"];
-        img.alt = `${tool["Tool ID::Tool name"]} Logo`;
-        // img.style.display = 'none';
-        shortDesc.appendChild(img);
-    }
     const description = document.createElement("p");
     description.innerHTML = `${tool["Tool ID::Short description"] || ''}`;
     shortDesc.appendChild(description);
@@ -334,7 +336,8 @@ function populateViz(tool) {
 
             // Add question label and values
             if (featureRow.childNodes.length > 0) {
-                const label = document.createElement('span');
+                const label = document.createElement('p');
+                label.classList.add("tool-question")
                 label.textContent = `${question}: `;
                 // label.style.fontWeight = 'bold';
                 // label.style.marginRight = '6px';
