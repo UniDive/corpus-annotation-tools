@@ -3,8 +3,8 @@ import yaml
 import json
 import re
 
-TOOLS_DIR = '/Users/ludovica/Documents/projects/corpus-annotation-tools/tools'
-OUTPUT_JSON = '/Users/ludovica/Documents/projects/corpus-annotation-tools/data/latest_export.json'
+TOOLS_DIR = 'tools'
+OUTPUT_JSON = 'data/latest_export.json'
 
 def normalize_key(key):
     # Replace underscores and hyphens with spaces, capitalize first letter of each word
