@@ -1,9 +1,12 @@
-name: Build JSON on PR merge (tools/ changes)
+name: Build & commit JSON on PR merge (tools/)
 
 on:
   pull_request:
     types: [closed]
     branches: [ main ]  # adjust if needed
+
+permissions:
+  contents: write  # allow push via GITHUB_TOKEN
 
 jobs:
   build-json:
@@ -11,15 +14,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out repository at merge commit
+      - name: Check out base branch (latest)
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.merge_commit_sha }}
+          ref: ${{ github.event.pull_request.base.ref }}
+          fetch-depth: 0
 
-      - name: Detect changes in tools/ or build script
+      - name: Detect changes in PR (tools/ or build script)
         id: changed
         run: |
-          git fetch --no-tags --depth=1 origin ${{ github.event.pull_request.base.sha }}
+          git fetch --no-tags --depth=1 origin ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.merge_commit_sha }}
           if git diff --name-only \
             ${{ github.event.pull_request.base.sha }} \
             ${{ github.event.pull_request.merge_commit_sha }} \
@@ -45,3 +49,15 @@ jobs:
 
       - name: Run build script
         run: python src/build_json.py
+
+      - name: Commit and push data/latest_export.json if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/latest_export.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "chore: update data/latest_export.json [skip ci]"
+          git push origin HEAD:${{ github.event.pull_request.base.ref }}
