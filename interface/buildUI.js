@@ -1,4 +1,4 @@
-const jsonUrl = 'https://raw.githubusercontent.com/ellepannitto/corpus-annotation-tools/refs/heads/main/data/latest_export.json';
+const jsonUrl = "https://raw.githubusercontent.com/UniDive/corpus-annotation-tools/refs/heads/main/data/latest_export.json";
 let tools = [];
 let tools_dict = {};
 let current_selection = {};
@@ -266,6 +266,8 @@ function populateViz(tool) {
 	infoBox.appendChild(add_features);
 
 	// Useful links
+	console.log(tool["Tool ID::Other useful links"]);
+	console.log(tool)
 	if (tool["Tool ID::Other useful links"] && Array.isArray(tool["Tool ID::Other useful links"])) {
 		const projectsSection = document.createElement('div');
 		projectsSection.className = 'example-projects';
