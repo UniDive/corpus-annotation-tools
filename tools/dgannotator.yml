@@ -1,72 +1,70 @@
-Tool ID:
-  Tool name: DgAnnotator
-  Logo: https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcRnnTZWOgkNyroJuQNd4DhyH71CBc2Ghn0Zg1Ysx2lpV_GhSp143U5OFckDLcFNHxAdEs_6WRmFP2SoOkbHUvPThYGDtD5KfVmHt-jx7Qs
-  Short description: Utility for annotating and visualizing Dependency Graphs for natural language sentences.
-  Website: http://medialab.di.unipi.it/Project/QA/Parser/DgAnnotator/
-  Other useful links:
-  Developer: 'No'
-  Code repository: https://github.com/attardi/DgAnnotator
-
-Software:
-  License: not specified
-  Active maintenance: 'No'
-  Software type: Desktop-based application
-  Operating system:
-    - Windows
-    - macOS
-    - Linux
-  Software availability:
-    - The software should be run by the user (local machine or own server)
-  Offline usage: 'Yes'
-
+Annotation:
+  Annotation scope:
+  - Annotation inside sentences
+  Annotation types:
+  - Tokens (e.g. part-of-speech tag morphological features)
+  - Relations (e.g. dependencies)
+  Segmentation: []
+  Tagset customization: 'Yes'
 Data support:
-  Input format:
-    - XML
-    - CONLL-X
-  Integration-of-other-resources:
   Data export:
-    - The data can be exported.
-
+  - The data can be exported
+  Input format:
+  - XML
+  - CONLL-X
+  Integration of other resources: []
 Diversity features:
   Diversity features:
-    - Language-independence
-    - Writing script support
-    - LTR
-    - unicode support
+  - Language-independence
+  - Writing script support
+  - LTR
+  - unicode support
   Language of the interface:
-    - English
-
-Annotation:
-  Segmentation:
-  Annotation types:
-    - Tokens (e.g. part-of-speech tag morphological features)
-    - Relations (e.g. dependencies)
-  Annotation scope:
-    - Annotation inside sentences
-  Tagset-customization: 'Yes'
-
+  - English
+Software:
+  Active maintenance: 'No'
+  License: not specified
+  Offline usage (for web-based applications): 'Yes'
+  Operating system:
+  - Windows
+  - Mac OS
+  - Linux
+  Software availability:
+  - The software should be run by the user (own machine/server)
+  Software type: Desktop-based application
+Tool ID:
+  Additional features: null
+  Code repository: https://github.com/attardi/DgAnnotator
+  Developer: 'No'
+  Example projects: {}
+  Logo: https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcRnnTZWOgkNyroJuQNd4DhyH71CBc2Ghn0Zg1Ysx2lpV_GhSp143U5OFckDLcFNHxAdEs_6WRmFP2SoOkbHUvPThYGDtD5KfVmHt-jx7Qs
+  Other useful links: {}
+  Short description: DgAnnotator is a utility for annotating and visualizing Dependency
+    Graphs for natural language sentences.
+  Tool name: DgAnnotator
+  Website: http://medialab.di.unipi.it/Project/QA/Parser/DgAnnotator/
+UD/PARSEME specifics:
+  Consistency check: 'No'
+  Other annotation layers: []
+  PARSEME-specific annotations: []
+  UD validation: 'No'
+  UD-specific annotations:
+  - Lemmas
+  - UPOS
+  - Basic dependencies
 User Experience:
-  Annotation mode:
-    - Mouse (e.g. drag & drop)
-  Keyboard shortcuts: 'No'
+  Agreement calculation: 'No'
   Annotation display:
-    - Image (e.g. a graph or coloured text)
+  - Image (e.g. a graph or coloured text)
+  Annotation mode:
+  - Mouse (e.g. drag & drop)
   Automatic pre-annotation: 'No'
   Automatic recommendation: 'No'
   Collaborative annotation:
-  Project management: 'No'
-  User roles: 'No'
+  - 'No'
   Comparison of annotations: 'No'
-  Agreement calculation: 'No'
-  Querying: 'No'
+  Keyboard annotation and shortcuts: 'No'
   Mass editing: 'No'
-
-UD/PARSEME specifics:
-  UD specific annotations:
-    - Lemmas
-    - UPOS
-    - Basic dependencies
-  UD validation: 'No'
-  Other annotation layers:
-  PARSEME specific annotations:
-  Consistency check: 'No'
+  Project management: 'No'
+  Querying: 'No'
+  User roles: 'No'

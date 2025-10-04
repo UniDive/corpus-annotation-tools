@@ -1,96 +1,92 @@
-Tool ID:
-  Tool name: brat rapid annotation tool
-  Logo: ''
-  Short description: online environment for collaborative text annotation
-  Website: http://brat.nlplab.org/
-  Other useful links:
-    - Examples: https://brat.nlplab.org/examples.html
-  Developer: 'No'
-  Additional features: Export of visualisations (images)
-  Code repository: https://github.com/nlplab/brat
-
-Software:
-  License: MIT
-  Active maintenance: 'No'
-  Software type: Web-based application
-  Operating system:
-    - Windows
-    - macOS
-    - Linux
-  Software availability:
-    - The software should be run by the user (local machine or own server)
-  Offline usage: 'No'
-
+Annotation:
+  Annotation scope:
+  - Annotation inside sentences
+  - Annotation across sentences
+  - Annotation of full sentences / paragraphs / documents
+  Annotation types:
+  - Tokens (e.g. part-of-speech tag morphological features)
+  - Spans (e.g. names entities)
+  - Multi-tokens (e.g. multi-word expressions)
+  - Relations (e.g. dependencies)
+  - Chains (e.g. coreferences)
+  Segmentation: []
+  Tagset customization: 'Yes'
 Data support:
-  Input format:
-    - Raw text
-    - .txt+.ann
-  Integration-of-other-resources:
-    - External databases (e.g. dictionaries)
   Data export:
-    - The data can be exported.
-
+  - The data can be exported
+  Input format:
+  - Raw text
+  - .txt+.ann
+  Integration of other resources:
+  - External databases (e.g. dictionaries)
 Diversity features:
   Diversity features:
-    - Language-independence
-    - Writing script support
-    - LTR
-    - RTL
-    - unicode support
+  - Language-independence
+  - Writing script support
+  - LTR
+  - RTL
+  - unicode support
   Language of the interface:
-    - English
-
-Annotation:
-  Segmentation:
-  Annotation types:
-    - Tokens (e.g. part-of-speech tag morphological features)
-    - Spans (e.g. names entities)
-    - Multi-tokens (e.g. multi-word expressions)
-    - Relations (e.g. dependencies)
-    - Chains (e.g. coreferences)
-  Annotation scope:
-    - Annotation inside sentences
-    - Annotation across sentences
-    - Annotation of full sentences/paragraphs/documents
-  Tagset-customization: 'Yes'
-
+  - English
+Software:
+  Active maintenance: 'No'
+  License: MIT
+  Offline usage (for web-based applications): 'No'
+  Operating system:
+  - Windows
+  - Mac OS
+  - Linux
+  Software availability:
+  - The software should be run by the user (own machine/server)
+  Software type: Web-based application
+Tool ID:
+  Additional features: null
+  Code repository: https://github.com/nlplab/brat
+  Developer: 'No'
+  Example projects:
+    Examples: https://brat.nlplab.org/examples.html
+  Logo: ''
+  Other useful links: {}
+  Short description: brat rapid annotation tool is a web-based tool for text annotation.
+    brat is designed in particular for structured annotation, where the notes are
+    not freeform text but have a fixed form that can be automatically processed and
+    interpreted by a computer.
+  Tool name: brat
+  Website: http://brat.nlplab.org/
+UD/PARSEME specifics:
+  Consistency check: 'No'
+  Other annotation layers:
+  - events
+  - relations
+  - chains
+  - attributes
+  - normalization
+  PARSEME-specific annotations:
+  - Discontinuous expressions
+  - Nested expressions
+  - Overlapping expressions
+  UD validation: 'No'
+  UD-specific annotations:
+  - Lemmas
+  - UPOS
+  - FEATS
+  - XPOS
+  - Basic dependencies
+  - Empty nodes
 User Experience:
-  Annotation mode:
-    - Keyboard
-    - Mouse (e.g. drag & drop)
-  Keyboard shortcuts: 'No'
+  Agreement calculation: 'No'
   Annotation display:
-    - Image (e.g. a graph or coloured text)
+  - Image (e.g. a graph or coloured text)
+  Annotation mode:
+  - Keyboard
+  - Mouse (e.g. drag & drop)
   Automatic pre-annotation: 'Yes'
   Automatic recommendation: 'No'
   Collaborative annotation:
-    - annotators working independently on their own annotations of the same data.
-  Project management: 'No'
-  User roles: 'No'
+  - annotators working independently on their own annotations of the same data
   Comparison of annotations: 'Yes'
-  Agreement calculation: 'No'
-  Querying: 'Yes'
+  Keyboard annotation and shortcuts: 'No'
   Mass editing: 'No'
-
-UD/PARSEME specifics:
-  UD specific annotations:
-    - Lemmas
-    - UPOS
-    - FEATS
-    - XPOS
-    - Basic dependencies
-    - Empty nodes
-  UD validation: 'No'
-  Other annotation layers:
-    - events
-    - relations
-    - chains
-    - attributes
-    - normalization
-  PARSEME specific annotations:
-    - Discontinuous expressions
-    - Nested expressions
-    - Overlapping expressions
-  Consistency check: 'No'
-
-
+  Project management: 'No'
+  Querying: 'Yes'
+  User roles: 'No'

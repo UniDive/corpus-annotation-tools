@@ -1,94 +1,91 @@
-Tool ID:
-  Tool name: GitDox
-  Logo: ''
-  Short description: A version controlled annotation interace for XML and spreadsheet data, as well as nested NER
-  Website: https://gucorpling.org/gitdox/
-  Other useful links:
-    - Demo: https://gucorpling.org/gitdox/spannotator.html
-  Developer: 'Yes'
-  Example projects:
-    - GUM: https://gucorpling.org/gum/
-    - Coptic: https://data.copticscriptorium.org/
-  Code repository: https://github.com/gucorpling/gitdox
-
-Software:
-  License: Apache-2.0
-  Active maintenance: 'Yes'
-  Software type: Web-based application
-  Operating system:
-    - Windows
-    - macOS
-    - Linux
-  Software availability:
-    - The software should be run by the user (local machine or own server)
-  Offline usage: 'No'
-
+Annotation:
+  Annotation scope:
+  - Annotation inside sentences
+  - Annotation across sentences
+  - Annotation of full sentences / paragraphs / documents
+  Annotation types:
+  - Tokens (e.g. part-of-speech tag morphological features)
+  - Spans (e.g. names entities)
+  - Chains (e.g. coreferences)
+  Segmentation:
+  - word-level
+  - sentence-level
+  Tagset customization: 'Yes'
 Data support:
-  Input format:
-    - Raw text
-    - XML
-    - Corpus Workbench vertical format
-  Integration-of-other-resources:
   Data export:
-    - The data can be exported.
-
+  - The data can be exported
+  Input format:
+  - Raw text
+  - XML
+  - Corpus Workbench vertical format
+  Integration of other resources: []
 Diversity features:
   Diversity features:
-    - Language-independence
-    - Writing script support
-    - LTR
-    - RTL
-    - unicode support
+  - Language-independence
+  - Writing script support
+  - LTR
+  - RTL
+  - unicode support
   Language of the interface:
-    - English
-Annotation:
-  Segmentation:
-    - word-level
-    - sentence-level
-  Annotation types:
-    - Tokens (e.g. part-of-speech tag morphological features)
-    - Spans (e.g. names entities)
-    - Chains (e.g. coreferences)
-  Annotation scope:
-    - Annotation inside sentences
-    - Annotation across sentences
-    - Annotation of full sentences/paragraphs/documents
-  Tagset-customization: 'Yes'
-
+  - English
+Software:
+  Active maintenance: 'Yes'
+  License: Apache-2.0
+  Offline usage (for web-based applications): 'No'
+  Operating system:
+  - Windows
+  - Mac OS
+  - Linux
+  Software availability:
+  - The software should be run by the user (own machine/server)
+  Software type: Web-based application
+Tool ID:
+  Additional features: null
+  Code repository: https://github.com/gucorpling/gitdox
+  Developer: 'Yes'
+  Example projects:
+    CopticScriptorium: https://datacopticscriptorium.org/
+    GUM: https://gucorpling.org/gum/
+  Logo: ''
+  Other useful links:
+    Demo: https://gucorpling.org/gitdox/spannotator.html
+  Short description: GitDox is a version controlled annotation interace for XML and
+    spreadsheet data, as well as nested NER
+  Tool name: GitDox
+  Website: https://gucorpling.org/gitdox/
+UD/PARSEME specifics:
+  Consistency check: 'No'
+  Other annotation layers:
+  - concurrent/conflicting span annotations
+  - nested NER
+  - entity linking.
+  PARSEME-specific annotations:
+  - Nested expressions
+  - Overlapping expressions
+  UD validation: 'No'
+  UD-specific annotations:
+  - Lemmas
+  - UPOS
+  - FEATS
+  - XPOS
+  - Metadata
 User Experience:
-  Annotation mode:
-    - Keyboard
-    - Mouse (e.g. drag & drop)
-  Keyboard shortcuts: 'No'
+  Agreement calculation: 'No'
   Annotation display:
-    - Image (e.g. a graph or coloured text)
-    - Table
-    - Raw format (e.g. CONLL-U)
+  - Image (e.g. a graph or coloured text)
+  - Table
+  - Raw format (e.g. CONLL-U)
+  Annotation mode:
+  - Keyboard
+  - Mouse (e.g. drag & drop)
   Automatic pre-annotation: 'Yes'
   Automatic recommendation: 'No'
   Collaborative annotation:
-    - annotators working independently on their own annotations of the same data.
-    - annotators working together on the same shared annotation of the data.
-  Project management: 'Yes'
-  User roles: 'Yes'
+  - annotators working independently on their own annotations of the same data
+  - annotators working together on the same shared annotation of the data
   Comparison of annotations: 'Yes'
-  Agreement calculation: 'No'
-  Querying: 'No'
+  Keyboard annotation and shortcuts: 'No'
   Mass editing: 'No'
-
-UD/PARSEME specifics:
-  UD specific annotations:
-    - Lemmas
-    - UPOS
-    - FEATS
-    - XPOS
-    - Metadata
-  UD validation: 'No'
-  Other annotation layers:
-    - concurrent/conflicting span annotations
-    - nested NER
-    - entity linking
-  PARSEME specific annotations:
-    - Nested expressions
-    - Overlapping expressions
-  Consistency check: 'No'
+  Project management: 'Yes'
+  Querying: 'No'
+  User roles: 'Yes'

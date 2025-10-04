@@ -1,76 +1,74 @@
-Tool ID:
-  Tool name: ToolBox
-  Logo: https://software.sil.org/wp/wp-content/themes/web-productsites/images/sil_logo_glyph.png
-  Short description: |
-    A linguistic data management tool designed for building lexicons,
-    analyzing interlinear texts, and organizing fieldwork data, developed by SIL International.
-  Website: https://software.sil.org/toolbox/
-  Other useful links:
-    - Tools: http://www.fieldlinguiststoolbox.org/?i=1
-  Developer: 'No'
-
-Software:
-  License: other
-  Active maintenance: 'No'
-  Software type: Desktop-based application
-  Operating system:
-    - Windows
-  Software availability:
-    - The software should be run by the user (local machine or own server)
-  Offline usage: 'Yes'
-
+Annotation:
+  Annotation scope:
+  - Annotation inside sentences
+  - Annotation across sentences
+  - Annotation of full sentences / paragraphs / documents
+  Annotation types:
+  - Tokens (e.g. part-of-speech tag morphological features)
+  - Spans (e.g. names entities)
+  - Multi-tokens (e.g. multi-word expressions)
+  - Interlinear glossed text annotations
+  Segmentation:
+  - word-level
+  - sentence-level
+  Tagset customization: 'Yes'
 Data support:
-  Input format:
-    - Raw text
-  Integration-of-other-resources:
   Data export:
-    - The data can be exported.
-
+  - The data can be exported
+  Input format:
+  - Raw text
+  Integration of other resources: []
 Diversity features:
   Diversity features:
-    - Language-independence
-    - Writing script support
-    - LTR
-    - RTL
-    - unicode support
+  - Language-independence
+  - Writing script support
+  - LTR
+  - RTL
+  - unicode support
   Language of the interface:
-    - English
-
-Annotation:
-  Segmentation:
-    - word-level
-    - sentence-level
-  Annotation types:
-    - Tokens (e.g. part-of-speech tag morphological features)
-    - Spans (e.g. names entities)
-    - Multi-tokens (e.g. multi-word expressions)
-    - Interlinear glossed text annotations
-  Annotation scope:
-    - Annotation inside sentences
-    - Annotation across sentences
-    - Annotation of full sentences/paragraphs/documents
-  Tagset-customization: 'Yes'
-
+  - English
+Software:
+  Active maintenance: 'No'
+  License: other
+  Offline usage (for web-based applications): 'Yes'
+  Operating system:
+  - Windows
+  Software availability:
+  - The software should be run by the user (own machine/server)
+  Software type: Desktop-based application
+Tool ID:
+  Additional features: null
+  Code repository: ''
+  Developer: 'No'
+  Example projects: {}
+  Logo: https://software.sil.org/wp/wp-content/themes/web-productsites/images/sil_logo_glyph.png
+  Other useful links:
+    Tools: http://www.fieldlinguiststoolbox.org/
+  Short description: ToolBox is a linguistic data management tool designed for building
+    lexicons, analyzing interlinear texts, and organizing fieldwork data, developed
+    by SIL International.
+  Tool name: ToolBox
+  Website: https://software.sil.org/toolbox/
+UD/PARSEME specifics:
+  Consistency check: 'No'
+  Other annotation layers: []
+  PARSEME-specific annotations: []
+  UD validation: 'No'
+  UD-specific annotations:
+  - Metadata
 User Experience:
-  Annotation mode:
-    - Keyboard
-  Keyboard shortcuts: 'Yes'
+  Agreement calculation: 'No'
   Annotation display:
-    - Table
+  - Table
+  Annotation mode:
+  - Keyboard
   Automatic pre-annotation: 'No'
   Automatic recommendation: 'No'
   Collaborative annotation:
-  Project management: 'No'
-  User roles: 'No'
+  - 'No'
   Comparison of annotations: 'No'
-  Agreement calculation: 'No'
-  Querying: 'Yes'
+  Keyboard annotation and shortcuts: 'Yes'
   Mass editing: 'Yes'
-
-UD/PARSEME specifics:
-  UD specific annotations: Metadata
-  UD validation: 'No'
-  Other annotation layers:
-  PARSEME specific annotations: xs
-  Consistency check: 'No'
-
+  Project management: 'No'
+  Querying: 'Yes'
+  User roles: 'No'

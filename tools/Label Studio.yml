@@ -2,23 +2,32 @@ Annotation:
   Annotation scope:
   - Annotation inside sentences
   - Annotation across sentences
+  - Annotation of full sentences / paragraphs / documents
   Annotation types:
   - Tokens (e.g. part-of-speech tag morphological features)
   - Spans (e.g. names entities)
   - Multi-tokens (e.g. multi-word expressions)
   - Relations (e.g. dependencies)
   - Chains (e.g. coreferences)
-  Segmentation: []
+  Segmentation:
+  - word-level
+  - sentence-level
   Tagset customization: 'Yes'
 Data support:
   Data export:
   - The data can be exported
+  - The data can be stored with a third party storage platform (e.g. Git repository)
   Input format:
   - Raw text
+  - PDF
   - CONLL-U
   - XML
+  - TSV
   Integration of other resources:
-  - External databases (e.g. dictionaries)
+  - Audio
+  - Video
+  - Image
+  - PDF
 Diversity features:
   Diversity features:
   - Language-independence
@@ -30,31 +39,35 @@ Diversity features:
   - English
 Software:
   Active maintenance: 'Yes'
-  License: GPL-2.0
+  License: Apache-2.0
   Offline usage (for web-based applications): 'Yes'
   Operating system:
   - Windows
+  - Mac OS
   - Linux
   Software availability:
   - The software should be run by the user (own machine/server)
-  Software type: Desktop-based application
+  Software type: Web-based application
 Tool ID:
   Additional features: null
-  Code repository: https://github.com/ufal/TrEd
-  Developer: 'Yes'
-  Example projects:
-    Prague Dependency Treebank (PDT): https://ufal.mff.cuni.cz/pdt3.0
-  Logo: ''
-  Other useful links:
-    Manual: https://ufal.mff.cuni.cz/tred/documentation/ar01-toc.html
-  Short description: TrEd is a fully customizable and programmable graphical editor
-    and viewer for tree-like structures.
-  Tool name: TrEd
-  Website: https://ufal.mff.cuni.cz/tred
+  Code repository: ''
+  Developer: 'No'
+  Example projects: {}
+  Logo: https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcRwv-OYeU-1T_7Yh_DPJd2QIx9jTJkrafAwiik7kpU4t3poAI0yEAUPceAbfbukMrvbM8W4-XhObr1VMmOc_8puMjiC60CN6w
+  Other useful links: {}
+  Short description: Label Studio is a data labeling tool for all data types (computer
+    vision, natural language processing, speech, voice, and video models)
+  Tool name: Label Studio
+  Website: https://labelstud.io/
 UD/PARSEME specifics:
   Consistency check: 'No'
-  Other annotation layers: []
-  PARSEME-specific annotations: []
+  Other annotation layers:
+  - Text classification
+  - NER
+  PARSEME-specific annotations:
+  - Discontinuous expressions
+  - Nested expressions
+  - Overlapping expressions
   UD validation: 'No'
   UD-specific annotations:
   - Lemmas
@@ -63,22 +76,25 @@ UD/PARSEME specifics:
   - XPOS
   - Multi-word tokens
   - Basic dependencies
-  - Enhanced dependencies
-  - Empty nodes
+  - Metadata
 User Experience:
   Agreement calculation: 'No'
   Annotation display:
-  - Graphical representation of a tree
+  - Image (e.g. a graph or coloured text)
+  - Table
+  - Raw format (e.g. CONLL-U)
   Annotation mode:
   - Keyboard
   - Mouse (e.g. drag & drop)
+  - Touchscreen
   Automatic pre-annotation: 'No'
-  Automatic recommendation: 'No'
+  Automatic recommendation: 'Yes'
   Collaborative annotation:
-  - 'No'
-  Comparison of annotations: 'Yes'
+  - annotators working independently on their own annotations of the same data
+  - annotators working together on the same shared annotation of the data
+  Comparison of annotations: 'No'
   Keyboard annotation and shortcuts: 'Yes'
   Mass editing: 'Yes'
-  Project management: 'No'
+  Project management: 'Yes'
   Querying: 'Yes'
-  User roles: partial
+  User roles: 'Yes'
