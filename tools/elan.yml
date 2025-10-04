@@ -18,20 +18,8 @@ Data support:
   Input format:
   - Raw text
   - XML
-  - .mp4
-  - .avi
-  - .mov
-  - .mkv
-  - .wav
-  - .mp3
-  - .flac
-  - .aac
-  - .eaf
-  - TextGrid files
-  - CHAT
-  - Shoebox/Toolbox
-  - .trs
-  - CSV
+  - other
+  - TSV
   Integration of other resources:
   - Audio
   - Video

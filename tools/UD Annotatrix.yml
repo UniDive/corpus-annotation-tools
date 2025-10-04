@@ -13,9 +13,7 @@ Data support:
   Input format:
   - Raw text
   - CONLL-U
-  - VISL CG3
-  - SDParse
-  - Bracket notation
+  - other
   Integration of other resources: []
 Diversity features:
   Diversity features:
