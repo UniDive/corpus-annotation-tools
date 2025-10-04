@@ -44,10 +44,10 @@ Tool ID:
   Code repository: https://github.com/Arborator
   Developer: 'Yes'
   Example projects:
-    Masakhane-Igbo: https://arboratorgrew.elizia.net/#/projects/Masakhane-Igbo
+  - Masakhane-Igbo: https://arboratorgrew.elizia.net/#/projects/Masakhane-Igbo
   Logo: https://arborator.grew.fr/svg/arborator.grew.svg
   Other useful links:
-    Documentation: https://arborator.github.io/arborator-documentation/
+  - Documentation: https://arborator.github.io/arborator-documentation/
   Short description: A collaborative annotation tool for the treebank developement.
     It allows the creation of lexicons from annotated data. To ensure effective collaboration,
     ArboratorGrew provides a tag system.

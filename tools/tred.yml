@@ -43,10 +43,10 @@ Tool ID:
   Code repository: https://github.com/ufal/TrEd
   Developer: 'Yes'
   Example projects:
-    Prague Dependency Treebank (PDT): https://ufal.mff.cuni.cz/pdt3.0
+  - Prague Dependency Treebank (PDT): https://ufal.mff.cuni.cz/pdt3.0
   Logo: ''
   Other useful links:
-    Manual: https://ufal.mff.cuni.cz/tred/documentation/ar01-toc.html
+  - Manual: https://ufal.mff.cuni.cz/tred/documentation/ar01-toc.html
   Short description: TrEd is a fully customizable and programmable graphical editor
     and viewer for tree-like structures.
   Tool name: TrEd

@@ -38,12 +38,12 @@ Tool ID:
   Code repository: https://github.com/CAMeL-Lab/palmyra
   Developer: 'Yes'
   Example projects:
-    Arabic Dependency Treeban: khttp://www.lrec-conf.org/proceedings/lrec2022/pdf/2022.lrec-1.286.pdf
-    CAMeL-treebank: http://treebank.camel-lab.com/
+  - CAMeL-treebank: http://treebank.camel-lab.com/
+  - Arabic Dependency Treeban: khttp://www.lrec-conf.org/proceedings/lrec2022/pdf/2022.lrec-1.286.pdf
   Logo: https://camel-lab.github.io/palmyra/fonts/logo.png
   Other useful links:
-    Demo: https://camel-lab.github.io/palmyra/viewtree.html
-    New functionalities: https://aclanthology.org/2024.lrec-main.1101.pdf
+  - New functionalities: https://aclanthology.org/2024.lrec-main.1101.pdf
+  - Demo: https://camel-lab.github.io/palmyra/viewtree.html
   Short description: PALMYRA is a platform-independent graphical tool for syntactic
     dependency annotation supporting languages that require complex morphological
     tokenization.

@@ -38,7 +38,7 @@ Tool ID:
   Code repository: https://github.com/CogComp/talen
   Developer: 'No'
   Example projects:
-    UNER: https://annotate.universalner.org/
+  - UNER: https://annotate.universalner.org/
   Logo: https://github.com/CogComp/talen/blob/master/src/main/resources/static/img/logo-grey-trans.png
   Other useful links: {}
   Short description: TALEN is a lightweight web-based tool for annotating word sequences.

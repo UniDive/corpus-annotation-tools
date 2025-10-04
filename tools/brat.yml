@@ -44,7 +44,7 @@ Tool ID:
   Code repository: https://github.com/nlplab/brat
   Developer: 'No'
   Example projects:
-    Examples: https://brat.nlplab.org/examples.html
+  - Examples: https://brat.nlplab.org/examples.html
   Logo: ''
   Other useful links: {}
   Short description: brat rapid annotation tool is a web-based tool for text annotation.

@@ -46,11 +46,11 @@ Tool ID:
   Code repository: https://github.com/proycon/flat
   Developer: 'Yes'
   Example projects:
-    PARSEME: https://gitlab.com/parseme
-    Pre-Modern Slavic Texts: https://aclanthology.org/2024.lrec-main.184/
+  - PARSEME: https://gitlab.com/parseme
+  - Pre-Modern Slavic Texts: https://aclanthology.org/2024.lrec-main.184/
   Logo: http://proycon.github.io/folia/style/icon.png
   Other useful links:
-    Tools: http://proycon.github.io/folia/
+  - Tools: http://proycon.github.io/folia/
   Short description: Flat (FoLiA Linguistic Annotation Tool) is a web-based linguistic
     annotation environment based around the FoLiA format, a rich XML-based format
     for linguistic annotation.

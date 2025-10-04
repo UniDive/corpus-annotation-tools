@@ -41,7 +41,7 @@ Tool ID:
   Example projects: {}
   Logo: https://www.label-sleuth.org/_static/images/homepage/logo_white_invert.svg
   Other useful links:
-    Paper: https://arxiv.org/abs/2208.01483
+  - Paper: https://arxiv.org/abs/2208.01483
   Short description: Label Sleuth is an open-source no-code system for text annotation
     and building text classifiers
   Tool name: Label Sleuth

@@ -38,8 +38,8 @@ Tool ID:
   Code repository: https://github.com/parameshkrishnaa/PLURAL-conllu-annotator
   Developer: 'Yes'
   Example projects:
-    UD for Tamil: https://universaldependencies.org/ta/index.html
-    UD_Telugu-MTG: https://github.com/UniversalDependencies/UD_Telugu-MTG
+  - UD for Tamil: https://universaldependencies.org/ta/index.html
+  - UD_Telugu-MTG: https://github.com/UniversalDependencies/UD_Telugu-MTG
   Logo: https://plural.iiit.ac.in/conllu-assets/static/media/IIITH.3e6a0240528e48ab6511.png
   Other useful links: {}
   Short description: PLURAL-conllu-annotator allows treatement of linguistic rich

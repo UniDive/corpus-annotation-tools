@@ -44,11 +44,11 @@ Tool ID:
   Code repository: https://github.com/gucorpling/gitdox
   Developer: 'Yes'
   Example projects:
-    CopticScriptorium: https://datacopticscriptorium.org/
-    GUM: https://gucorpling.org/gum/
+  - GUM: https://gucorpling.org/gum/
+  - CopticScriptorium: https://datacopticscriptorium.org/
   Logo: ''
   Other useful links:
-    Demo: https://gucorpling.org/gitdox/spannotator.html
+  - Demo: https://gucorpling.org/gitdox/spannotator.html
   Short description: GitDox is a version controlled annotation interace for XML and
     spreadsheet data, as well as nested NER
   Tool name: GitDox

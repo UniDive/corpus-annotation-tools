@@ -45,7 +45,7 @@ Tool ID:
   Code repository: https://github.com/Orange-Opensource/conllueditor
   Developer: 'Yes'
   Example projects:
-    UD_Welsh-CCG: https://github.com/UniversalDependencies/UD_Welsh-CCG
+  - UD_Welsh-CCG: https://github.com/UniversalDependencies/UD_Welsh-CCG
   Logo: https://avatars.githubusercontent.com/u/1506386?s=48&v=4
   Other useful links: {}
   Short description: CoNLLU-editor is a graphical tool to annotate sentences in dependency

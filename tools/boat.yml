@@ -41,7 +41,7 @@ Tool ID:
   Code repository: https://github.com/furkanakkurt1335/boat
   Developer: 'Yes'
   Example projects:
-    UD_Turkish-BOUN: https://github.com/UniversalDependencies/UD_Turkish-BOUN
+  - UD_Turkish-BOUN: https://github.com/UniversalDependencies/UD_Turkish-BOUN
   Logo: ''
   Other useful links: {}
   Short description: BoAT (Boğaziçi University Annotation Tool) is a collaborative
