@@ -15,6 +15,14 @@ document.addEventListener("DOMContentLoaded", () => {
 	const sidebar = document.querySelector('.sidebar');
 	const content = document.querySelector('.content');
 
+	// Imposta larghezza iniziale sidebar (es. 58% del container)
+    const containerRect = document.querySelector('.container').getBoundingClientRect();
+    const initialSidebarWidth = Math.round(containerRect.width * 0.70);
+
+    sidebar.style.width = initialSidebarWidth + 'px';
+    content.style.width = (containerRect.width - initialSidebarWidth - resizer.offsetWidth) + 'px';
+	//
+
 	const tools = document.querySelector('.tools');
 	const tools_viz = document.querySelector('.tools-viz');
 
@@ -38,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			const containerRect = document.querySelector('.container').getBoundingClientRect();
 			let newSidebarWidth = e.clientX - containerRect.left;
 			// Clamp sidebar width
-			newSidebarWidth = Math.max(250, Math.min(newSidebarWidth, containerRect.width - 250));
+			newSidebarWidth = Math.max(200, Math.min(newSidebarWidth, containerRect.width - 200));
 			sidebar.style.width = newSidebarWidth + 'px';
 			content.style.width = (containerRect.width - newSidebarWidth - resizer.offsetWidth) + 'px';
 		}
@@ -47,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			const sidebarRect = sidebar.getBoundingClientRect();
 			let newVizHeight = e.clientY - sidebarRect.top;
 			// Clamp tools_viz height
-			newVizHeight = Math.max(100, Math.min(newVizHeight, sidebarRect.height - 100));
+			newVizHeight = Math.max(50, Math.min(newVizHeight, sidebarRect.height - 50));
 			tools.style.height = newVizHeight + 'px';
 			tools_viz.style.height = (sidebarRect.height - newVizHeight - resizer_hor.offsetHeight) + 'px';
 		}

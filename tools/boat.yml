@@ -1,87 +1,81 @@
-Tool ID:
-  Tool name: BoAT (Boğaziçi University Annotation Tool)
-  Logo: ''
-  Short description: Collaborative grammatical annotation tool
-  Website: https://github.com/furkanakkurt1335/boat
-  Other useful links:
-    - Tutorial: https://youtu.be/BtRVqgtxK8c?si=eXcfjmy-t2D431u5&t=509
-  Developer: 'Yes'
-  Example projects:
-    - UD_Turkish-BOUN: https://github.com/UniversalDependencies/UD_Turkish-BOUN
-  Additional features:
-  Code repository: https://github.com/furkanakkurt1335/boat
-
-Software:
-  License: MIT
-  Active maintenance: 'Yes'
-  Software type: Web-based application
-  Operating system:
-    - Windows
-    - macOS
-    - Linux
-  Software availability:
-    - The software should be run by the user (local machine or own server)
-  Offline usage: 'No'
-
+Annotation:
+  Annotation scope:
+  - Annotation inside sentences
+  Annotation types:
+  - Tokens (e.g. part-of-speech tag morphological features)
+  - Spans (e.g. names entities)
+  - Relations (e.g. dependencies)
+  - Chains (e.g. coreferences)
+  Segmentation:
+  - word-level
+  Tagset customization: 'Yes'
 Data support:
-  Input format:
-    - Raw text
-    - CONLL-U
-  Integration-of-other-resources:
   Data export:
-    - The data can be exported.
-
+  - The data can be exported
+  Input format:
+  - Raw text
+  - CONLL-U
+  Integration of other resources: []
 Diversity features:
   Diversity features:
-    - Language-independence
-    - Writing script support
-    - LTR
-    - RTL
-    - unicode support
+  - Language-independence
+  - Writing script support
+  - LTR
+  - RTL
+  - unicode support
   Language of the interface:
-    - English
-
-Annotation:
-  Segmentation:
-    - word-level
-  Annotation types:
-    - Tokens (e.g. part-of-speech tag morphological features)
-    - Spans (e.g. names entities)
-    - Relations (e.g. dependencies)
-    - Chains (e.g. coreferences)
-  Annotation scope:
-    - Annotation inside sentences
-  Tagset-customization: 'Yes'
-
+  - English
+Software:
+  Active maintenance: 'Yes'
+  License: MIT
+  Offline usage (for web-based applications): 'No'
+  Operating system:
+  - Windows
+  - Mac OS
+  - Linux
+  Software availability:
+  - The software should be run by the user (own machine/server)
+  Software type: Web-based application
+Tool ID:
+  Additional features: null
+  Code repository: https://github.com/furkanakkurt1335/boat
+  Developer: 'Yes'
+  Example projects:
+    UD_Turkish-BOUN: https://github.com/UniversalDependencies/UD_Turkish-BOUN
+  Logo: ''
+  Other useful links: {}
+  Short description: BoAT (Boğaziçi University Annotation Tool) is a collaborative
+    grammatical annotation tool.
+  Tool name: BoAT
+  Website: https://github.com/furkanakkurt1335/boat
+UD/PARSEME specifics:
+  Consistency check: 'No'
+  Other annotation layers: []
+  PARSEME-specific annotations: []
+  UD validation: 'Yes'
+  UD-specific annotations:
+  - Lemmas
+  - UPOS
+  - FEATS
+  - XPOS
+  - Basic dependencies
+  - Enhanced dependencies
+  - Empty nodes
+  - Metadata
 User Experience:
-  Annotation mode:
-    - Keyboard
-  Keyboard shortcuts: 'Yes'
+  Agreement calculation: partial
   Annotation display:
-    - Image (e.g. a graph or coloured text)
-    - Table
+  - Image (e.g. a graph or coloured text)
+  - Table
+  Annotation mode:
+  - Keyboard
   Automatic pre-annotation: tokenization
   Automatic recommendation: 'No'
   Collaborative annotation:
-    - annotators working independently on their own annotations of the same data.
-  Project management: partial
-  User roles: 'No'
+  - annotators working independently on their own annotations of the same data
   Comparison of annotations: 'Yes'
-  Agreement calculation: partial
-  Querying: 'Yes'
+  Keyboard annotation and shortcuts: 'Yes'
   Mass editing: 'No'
-
-UD/PARSEME specifics:
-  UD specific annotations:
-    - Lemmas
-    - UPOS
-    - FEATS
-    - XPOS
-    - Basic dependencies
-    - Enhanced dependencies
-    - Empty nodes
-    - Metadata
-  UD validation: 'Yes'
-  Other annotation layers:
-  PARSEME specific annotations:
-  Consistency check: 'No'
+  Project management: partial
+  Querying: 'Yes'
+  User roles: 'No'

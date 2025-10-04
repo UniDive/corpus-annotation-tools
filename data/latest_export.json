@@ -1,29 +1,20 @@
 [
   {
-    "Tool ID::Tool name": "EXMARaLDA",
-    "Tool ID::Logo": "",
-    "Tool ID::Short description": "Toolset for working with spoken language corpora",
-    "Tool ID::Website": "https://www.exmaralda.org",
-    "Tool ID::Other useful links": "",
-    "Tool ID::Developer": "Yes",
-    "Tool ID::Example projects": [
-      {
-        "TODO": "https://exmaralda.org/en/projects/"
-      }
+    "Annotation::Annotation scope": [
+      "Free span annotation"
     ],
-    "Tool ID::Code repository": "https://github.com/Exmaralda-Org/exmaralda",
-    "Software::License": "GPL-2.0",
-    "Software::Active maintenance": "Yes",
-    "Software::Software type": "Desktop-based application",
-    "Software::Operating system": [
-      "Windows",
-      "macOS",
-      "Linux"
+    "Annotation::Annotation types": [
+      "Tokens (e.g. part-of-speech tag morphological features)",
+      "Spans (e.g. names entities)"
     ],
-    "Software::Software availability": [
-      "The software is freely available online (with sign up option and/or social logins)"
+    "Annotation::Segmentation": [
+      "word-level",
+      "sentence-level"
     ],
-    "Software::Offline usage": "Yes",
+    "Annotation::Tagset customization": "Yes",
+    "Data support::Data export": [
+      "The data can be exported"
+    ],
     "Data support::Input format": [
       "Raw text",
       "XML",
@@ -33,9 +24,6 @@
       "Audio",
       "Video",
       "Image"
-    ],
-    "Data support::Data export": [
-      "The data can be exported."
     ],
     "Diversity features::Diversity features": [
       "Language-independence",
@@ -49,65 +37,70 @@
       "French",
       "Chinese"
     ],
-    "Annotation::Segmentation": [
-      "word-level",
-      "sentence-level"
+    "Software::Active maintenance": "Yes",
+    "Software::License": "GPL-2.0",
+    "Software::Offline usage (for web based applications)": "Yes",
+    "Software::Operating system": [
+      "Windows",
+      "Mac OS",
+      "Linux"
     ],
-    "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)"
+    "Software::Software availability": [
+      "The software is freely available online (with sign up option)"
     ],
-    "Annotation::Annotation scope": [
-      "Free span annotation",
-      "independent of sentences"
-    ],
-    "Annotation::Tagset customization": "Yes",
-    "User Experience::Annotation mode": [
-      "Keyboard",
-      "Mouse (e.g. drag & drop)"
-    ],
-    "User Experience::Keyboard shortcuts": "Yes",
+    "Software::Software type": "Desktop-based application",
+    "Tool ID::Additional features": "",
+    "Tool ID::Code repository": "https://github.com/Exmaralda-Org/exmaralda",
+    "Tool ID::Developer": "Yes",
+    "Tool ID::Example projects::Projects": "https://exmaralda.org/en/projects/",
+    "Tool ID::Logo": "",
+    "Tool ID::Short description": "EXMARaLDA is a toolset for working with spoken language corpora",
+    "Tool ID::Tool name": "EXMARaLDA",
+    "Tool ID::Website": "https://www.exmaralda.org",
+    "UD/PARSEME specifics::Consistency check": "No",
+    "UD/PARSEME specifics::Other annotation layers": [],
+    "UD/PARSEME specifics::PARSEME specific annotations": [],
+    "UD/PARSEME specifics::UD validation": "No",
+    "UD/PARSEME specifics::UD specific annotations": [],
+    "User Experience::Agreement calculation": "No",
     "User Experience::Annotation display": [
       "Table",
       "Musical score visualisation"
     ],
+    "User Experience::Annotation mode": [
+      "Keyboard",
+      "Mouse (e.g. drag & drop)"
+    ],
     "User Experience::Automatic pre annotation": "No",
     "User Experience::Automatic recommendation": "No",
-    "User Experience::Collaborative annotation": "",
-    "User Experience::Project management": "No",
-    "User Experience::User roles": "No",
+    "User Experience::Collaborative annotation": [
+      "No"
+    ],
     "User Experience::Comparison of annotations": "No",
-    "User Experience::Agreement calculation": "No",
-    "User Experience::Querying": "Yes",
+    "User Experience::Keyboard annotation and shortcuts": "Yes",
     "User Experience::Mass editing": "Yes",
-    "UD/PARSEME specifics::UD specific annotations": "",
-    "UD/PARSEME specifics::UD validation": "No",
-    "UD/PARSEME specifics::Other annotation layers": "",
-    "UD/PARSEME specifics::PARSEME specific annotations": "",
-    "UD/PARSEME specifics::Consistency check": "No"
+    "User Experience::Project management": "No",
+    "User Experience::Querying": "Yes",
+    "User Experience::User roles": "No"
   },
   {
-    "Tool ID::Tool name": "INCEpTION",
-    "Tool ID::Logo": "https://inception-project.github.io/assets/img/logo.png",
-    "Tool ID::Short description": "Text Annotation Platform",
-    "Tool ID::Website": "https://inception-project.github.io",
-    "Tool ID::Other useful links": "",
-    "Tool ID::Developer": "Yes",
-    "Tool ID::Additional features": "INCEpTION caters to a wide range of individual users who find different aspects of the tool useful. I would say that probably the ability to link to knowledge bases the ability to work on sensitive data the ability to use ML/AI to support the annotation process the multi-user capabilities curation support agreement calculation support and the range of supported data formats are among the most attractive features. INCEpTION also caters to institutional users who need to integrate the tool into their existing infrastructure by supporting e.g. single-sign-on mechanisms docker-based deployment a remote API etc.\n",
-    "Tool ID::Code repository": "https://github.com/inception-project/inception",
-    "Software::License": "Apache-2.0",
-    "Software::Active maintenance": "Yes",
-    "Software::Software type": "Web-based application",
-    "Software::Operating system": [
-      "Windows",
-      "macOS",
-      "Linux"
+    "Annotation::Annotation scope": [
+      "Annotation inside sentences",
+      "Annotation across sentences",
+      "Annotation of full sentences / paragraphs / documents"
     ],
-    "Software::Software availability": [
-      "The software should be run by the user (local machine or own server)",
-      "some public instances available"
+    "Annotation::Annotation types": [
+      "Tokens (e.g. part-of-speech tag morphological features)",
+      "Spans (e.g. names entities)",
+      "Multi-tokens (e.g. multi-word expressions)",
+      "Relations (e.g. dependencies)",
+      "Chains (e.g. coreferences)"
     ],
-    "Software::Offline usage": "No",
+    "Annotation::Segmentation": [],
+    "Annotation::Tagset customization": "Yes",
+    "Data support::Data export": [
+      "The data can be exported"
+    ],
     "Data support::Input format": [
       "Raw text",
       "PDF",
@@ -122,9 +115,6 @@
       "PDF",
       "External databases (e.g. dictionaries)"
     ],
-    "Data support::Data export": [
-      "The data can be exported."
-    ],
     "Diversity features::Diversity features": [
       "Language-independence",
       "Writing script support",
@@ -135,49 +125,27 @@
     "Diversity features::Language of the interface": [
       "English"
     ],
-    "Annotation::Segmentation": "",
-    "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)",
-      "Multi-tokens (e.g. multi-word expressions)",
-      "Relations (e.g. dependencies)",
-      "Chains (e.g. coreferences)"
+    "Software::Active maintenance": "Yes",
+    "Software::License": "Apache-2.0",
+    "Software::Offline usage (for web based applications)": "No",
+    "Software::Operating system": [
+      "Windows",
+      "Mac OS",
+      "Linux"
     ],
-    "Annotation::Annotation scope": [
-      "Annotation inside sentences",
-      "Annotation across sentences",
-      "Annotation of full sentences/paragraphs/documents"
+    "Software::Software availability": [
+      "The software should be run by the user (own machine/server)",
+      "some public instances available"
     ],
-    "Annotation::Tagset customization": "Yes",
-    "User Experience::Annotation mode": [
-      "Keyboard",
-      "Mouse (e.g. drag & drop)"
-    ],
-    "User Experience::Keyboard shortcuts": "Yes",
-    "User Experience::Annotation display": [
-      "Image (e.g. a graph or coloured text)"
-    ],
-    "User Experience::Automatic pre annotation": "partial",
-    "User Experience::Automatic recommendation": "partial",
-    "User Experience::Collaborative annotation": [
-      "annotators working independently on their own annotations of the same data."
-    ],
-    "User Experience::Project management": "Yes",
-    "User Experience::User roles": "Yes",
-    "User Experience::Comparison of annotations": "partial",
-    "User Experience::Agreement calculation": "Yes",
-    "User Experience::Querying": "Yes",
-    "User Experience::Mass editing": "Yes",
-    "UD/PARSEME specifics::UD specific annotations": [
-      "Lemmas",
-      "UPOS",
-      "FEATS",
-      "XPOS",
-      "Multi-word tokens",
-      "Basic dependencies",
-      "Enhanced dependencies"
-    ],
-    "UD/PARSEME specifics::UD validation": "No",
+    "Software::Software type": "Web-based application",
+    "Tool ID::Additional features": "INCEpTION also caters to institutional users who need to integrate the tool into their existing infrastructure by supporting e.g. single-sign-on mechanisms, docker-based deployment, a remote API, etc.",
+    "Tool ID::Code repository": "https://github.com/inception-project/inception",
+    "Tool ID::Developer": "Yes",
+    "Tool ID::Logo": "https://inception-project.github.io/assets/img/logo.png",
+    "Tool ID::Short description": "INCEpTION is a emantic annotation platform offering intelligent assistance and knowledge management. It caters to a wide range of individual users who find different aspects of the tool useful.",
+    "Tool ID::Tool name": "INCEpTION",
+    "Tool ID::Website": "https://inception-project.github.io",
+    "UD/PARSEME specifics::Consistency check": "partial",
     "UD/PARSEME specifics::Other annotation layers": [
       "relation between spans",
       "chains",
@@ -187,27 +155,58 @@
       "Nested expressions",
       "Overlapping expressions"
     ],
-    "UD/PARSEME specifics::Consistency check": "partial"
+    "UD/PARSEME specifics::UD validation": "No",
+    "UD/PARSEME specifics::UD specific annotations": [
+      "Lemmas",
+      "UPOS",
+      "FEATS",
+      "XPOS",
+      "Multi-word tokens",
+      "Basic dependencies",
+      "Enhanced dependencies"
+    ],
+    "User Experience::Agreement calculation": "Yes",
+    "User Experience::Annotation display": [
+      "Image (e.g. a graph or coloured text)"
+    ],
+    "User Experience::Annotation mode": [
+      "Keyboard",
+      "Mouse (e.g. drag & drop)"
+    ],
+    "User Experience::Automatic pre annotation": "partial",
+    "User Experience::Automatic recommendation": "partial",
+    "User Experience::Collaborative annotation": [
+      "annotators working independently on their own annotations of the same data"
+    ],
+    "User Experience::Comparison of annotations": "partial",
+    "User Experience::Keyboard annotation and shortcuts": "Yes",
+    "User Experience::Mass editing": "Yes",
+    "User Experience::Project management": "Yes",
+    "User Experience::Querying": "Yes",
+    "User Experience::User roles": "Yes"
   },
   {
-    "Tool ID::Tool name": "Label Studio",
-    "Tool ID::Logo": "https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcRwv-OYeU-1T_7Yh_DPJd2QIx9jTJkrafAwiik7kpU4t3poAI0yEAUPceAbfbukMrvbM8W4-XhObr1VMmOc_8puMjiC60CN6w",
-    "Tool ID::Short description": "Data labeling tool for all data types (computer vision, natural\nlanguage processing, speech, voice, and video models)\n",
-    "Tool ID::Website": "https://labelstud.io/",
-    "Tool ID::Other useful links": "",
-    "Tool ID::Developer": "No",
-    "Software::License": "Apache-2.0",
-    "Software::Active maintenance": "Yes",
-    "Software::Software type": "Web-based application",
-    "Software::Operating system": [
-      "Windows",
-      "macOS",
-      "Linux"
+    "Annotation::Annotation scope": [
+      "Annotation inside sentences",
+      "Annotation across sentences",
+      "Annotation of full sentences / paragraphs / documents"
     ],
-    "Software::Software availability": [
-      "The software should be run by the user (local machine or own server)"
+    "Annotation::Annotation types": [
+      "Tokens (e.g. part-of-speech tag morphological features)",
+      "Spans (e.g. names entities)",
+      "Multi-tokens (e.g. multi-word expressions)",
+      "Relations (e.g. dependencies)",
+      "Chains (e.g. coreferences)"
     ],
-    "Software::Offline usage": "Yes",
+    "Annotation::Segmentation": [
+      "word-level",
+      "sentence-level"
+    ],
+    "Annotation::Tagset customization": "Yes",
+    "Data support::Data export": [
+      "The data can be exported",
+      "The data can be stored with a third party storage platform (e.g. Git repository)"
+    ],
     "Data support::Input format": [
       "Raw text",
       "PDF",
@@ -221,10 +220,6 @@
       "Image",
       "PDF"
     ],
-    "Data support::Data export": [
-      "The data can be exported.",
-      "The data can be stored with a third party storage platform (e.g. Git repository)"
-    ],
     "Diversity features::Diversity features": [
       "Language-independence",
       "Writing script support",
@@ -235,56 +230,26 @@
     "Diversity features::Language of the interface": [
       "English"
     ],
-    "Annotation::Segmentation": [
-      "word-level",
-      "sentence-level"
+    "Software::Active maintenance": "Yes",
+    "Software::License": "Apache-2.0",
+    "Software::Offline usage (for web based applications)": "Yes",
+    "Software::Operating system": [
+      "Windows",
+      "Mac OS",
+      "Linux"
     ],
-    "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)",
-      "Multi-tokens (e.g. multi-word expressions)",
-      "Relations (e.g. dependencies)",
-      "Chains (e.g. coreferences)"
+    "Software::Software availability": [
+      "The software should be run by the user (own machine/server)"
     ],
-    "Annotation::Annotation scope": [
-      "Annotation inside sentences",
-      "Annotation across sentences",
-      "Annotation of full sentences/paragraphs/documents"
-    ],
-    "Annotation::Tagset customization": "Yes",
-    "User Experience::Annotation mode": [
-      "Keyboard",
-      "Mouse (e.g. drag & drop)",
-      "Touchscreen"
-    ],
-    "User Experience::Keyboard shortcuts": "Yes",
-    "User Experience::Annotation display": [
-      "Image (e.g. a graph or coloured text)",
-      "Table",
-      "Raw format (e.g. CONLL-U)"
-    ],
-    "User Experience::Automatic pre annotation": "No",
-    "User Experience::Automatic recommendation": "Yes",
-    "User Experience::Collaborative annotation": [
-      "annotators working independently on their own annotations of the same data.",
-      "annotators working together on the same shared annotation of the data."
-    ],
-    "User Experience::Project management": "Yes",
-    "User Experience::User roles": "Yes",
-    "User Experience::Comparison of annotations": "No",
-    "User Experience::Agreement calculation": "No",
-    "User Experience::Querying": "Yes",
-    "User Experience::Mass editing": "Yes",
-    "UD/PARSEME specifics::UD specific annotations": [
-      "Lemmas",
-      "UPOS",
-      "FEATS",
-      "XPOS",
-      "Multi-word tokens",
-      "Basic dependencies",
-      "Metadata"
-    ],
-    "UD/PARSEME specifics::UD validation": "No",
+    "Software::Software type": "Web-based application",
+    "Tool ID::Additional features": "",
+    "Tool ID::Code repository": "",
+    "Tool ID::Developer": "No",
+    "Tool ID::Logo": "https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcRwv-OYeU-1T_7Yh_DPJd2QIx9jTJkrafAwiik7kpU4t3poAI0yEAUPceAbfbukMrvbM8W4-XhObr1VMmOc_8puMjiC60CN6w",
+    "Tool ID::Short description": "Label Studio is a data labeling tool for all data types (computer vision, natural language processing, speech, voice, and video models)",
+    "Tool ID::Tool name": "Label Studio",
+    "Tool ID::Website": "https://labelstud.io/",
+    "UD/PARSEME specifics::Consistency check": "No",
     "UD/PARSEME specifics::Other annotation layers": [
       "Text classification",
       "NER"
@@ -294,81 +259,7 @@
       "Nested expressions",
       "Overlapping expressions"
     ],
-    "UD/PARSEME specifics::Consistency check": "No"
-  },
-  {
-    "Tool ID::Tool name": "PLURAL-conllu-annotator",
-    "Tool ID::Logo": "https://plural.iiit.ac.in/conllu-assets/static/media/IIITH.3e6a0240528e48ab6511.png",
-    "Tool ID::Short description": "Annotate linguistic rich data",
-    "Tool ID::Website": "https://plural.iiit.ac.in/conllu-annotator",
-    "Tool ID::Other useful links": "",
-    "Tool ID::Developer": "Yes",
-    "Tool ID::Example projects": [
-      {
-        "TAMIL_UD": "Tamil UD"
-      },
-      {
-        "TELUGU_UD": "Telugu UD"
-      }
-    ],
-    "Tool ID::Code repository": "https://github.com/parameshkrishnaa/PLURAL-conllu-annotator",
-    "Software::License": "CC_BY",
-    "Software::Active maintenance": "Yes",
-    "Software::Software type": "Web-based application",
-    "Software::Operating system": [
-      "Windows",
-      "macOS",
-      "Linux"
-    ],
-    "Software::Software availability": [
-      "The software is freely available online (without sign up option )"
-    ],
-    "Software::Offline usage": "Yes",
-    "Data support::Input format": [
-      "CONLL-U"
-    ],
-    "Data support::Integration of other resources": "",
-    "Data support::Data export": [
-      "The data can be exported."
-    ],
-    "Diversity features::Diversity features": [
-      "Language-independence",
-      "Writing script support",
-      "LTR",
-      "unicode support"
-    ],
-    "Diversity features::Language of the interface": [
-      "English"
-    ],
-    "Annotation::Segmentation": [
-      "word-level"
-    ],
-    "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Multi-tokens (e.g. multi-word expressions)",
-      "Relations (e.g. dependencies)"
-    ],
-    "Annotation::Annotation scope": [
-      "Annotation inside sentences"
-    ],
-    "Annotation::Tagset customization": "Yes",
-    "User Experience::Annotation mode": [
-      "Keyboard"
-    ],
-    "User Experience::Keyboard shortcuts": "Yes",
-    "User Experience::Annotation display": [
-      "Image (e.g. a graph or coloured text)",
-      "Raw format (e.g. CONLL-U)"
-    ],
-    "User Experience::Automatic pre annotation": "No",
-    "User Experience::Automatic recommendation": "Yes",
-    "User Experience::Collaborative annotation": "",
-    "User Experience::Project management": "No",
-    "User Experience::User roles": "No",
-    "User Experience::Comparison of annotations": "No",
-    "User Experience::Agreement calculation": "No",
-    "User Experience::Querying": "No",
-    "User Experience::Mass editing": "No",
+    "UD/PARSEME specifics::UD validation": "No",
     "UD/PARSEME specifics::UD specific annotations": [
       "Lemmas",
       "UPOS",
@@ -376,46 +267,49 @@
       "XPOS",
       "Multi-word tokens",
       "Basic dependencies",
-      "Enhanced dependencies",
-      "Empty nodes",
       "Metadata"
     ],
-    "UD/PARSEME specifics::UD validation": "Yes",
-    "UD/PARSEME specifics::Other annotation layers": [
-      "NIL"
+    "User Experience::Agreement calculation": "No",
+    "User Experience::Annotation display": [
+      "Image (e.g. a graph or coloured text)",
+      "Table",
+      "Raw format (e.g. CONLL-U)"
     ],
-    "UD/PARSEME specifics::PARSEME specific annotations": "",
-    "UD/PARSEME specifics::Consistency check": "No"
+    "User Experience::Annotation mode": [
+      "Keyboard",
+      "Mouse (e.g. drag & drop)",
+      "Touchscreen"
+    ],
+    "User Experience::Automatic pre annotation": "No",
+    "User Experience::Automatic recommendation": "Yes",
+    "User Experience::Collaborative annotation": [
+      "annotators working independently on their own annotations of the same data",
+      "annotators working together on the same shared annotation of the data"
+    ],
+    "User Experience::Comparison of annotations": "No",
+    "User Experience::Keyboard annotation and shortcuts": "Yes",
+    "User Experience::Mass editing": "Yes",
+    "User Experience::Project management": "Yes",
+    "User Experience::Querying": "Yes",
+    "User Experience::User roles": "Yes"
   },
   {
-    "Tool ID::Tool name": "TrEd",
-    "Tool ID::Logo": "",
-    "Tool ID::Short description": "A fully customizable and programmable graphical editor and viewer\nfor tree-like structures.\n",
-    "Tool ID::Website": "https://ufal.mff.cuni.cz/tred",
-    "Tool ID::Other useful links": [
-      {
-        "Documentation": "https://ufal.mff.cuni.cz/tred/documentation/ar01-toc.html"
-      }
+    "Annotation::Annotation scope": [
+      "Annotation inside sentences",
+      "Annotation across sentences"
     ],
-    "Tool ID::Developer": "Yes",
-    "Tool ID::Example projects": [
-      {
-        "Prague Dependency Treebank": "link"
-      }
+    "Annotation::Annotation types": [
+      "Tokens (e.g. part-of-speech tag morphological features)",
+      "Spans (e.g. names entities)",
+      "Multi-tokens (e.g. multi-word expressions)",
+      "Relations (e.g. dependencies)",
+      "Chains (e.g. coreferences)"
     ],
-    "Tool ID::Additional features": "Supports custom stylesheets\n",
-    "Tool ID::Code repository": "https://github.com/ufal/TrEd",
-    "Software::License": "GPL-2.0",
-    "Software::Active maintenance": "Yes",
-    "Software::Software type": "Desktop-based application",
-    "Software::Operating system": [
-      "Windows",
-      "Linux"
+    "Annotation::Segmentation": [],
+    "Annotation::Tagset customization": "Yes",
+    "Data support::Data export": [
+      "The data can be exported"
     ],
-    "Software::Software availability": [
-      "The software should be run by the user (local machine or own server)"
-    ],
-    "Software::Offline usage": "Yes",
     "Data support::Input format": [
       "Raw text",
       "CONLL-U",
@@ -423,9 +317,6 @@
     ],
     "Data support::Integration of other resources": [
       "External databases (e.g. dictionaries)"
-    ],
-    "Data support::Data export": [
-      "The data can be exported."
     ],
     "Diversity features::Diversity features": [
       "Language-independence",
@@ -437,36 +328,30 @@
     "Diversity features::Language of the interface": [
       "English"
     ],
-    "Annotation::Segmentation": "",
-    "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)",
-      "Multi-tokens (e.g. multi-word expressions)",
-      "Relations (e.g. dependencies)",
-      "Chains (e.g. coreferences)"
+    "Software::Active maintenance": "Yes",
+    "Software::License": "GPL-2.0",
+    "Software::Offline usage (for web based applications)": "Yes",
+    "Software::Operating system": [
+      "Windows",
+      "Linux"
     ],
-    "Annotation::Annotation scope": [
-      "Annotation inside sentences",
-      "Annotation across sentences"
+    "Software::Software availability": [
+      "The software should be run by the user (own machine/server)"
     ],
-    "Annotation::Tagset customization": "Yes",
-    "User Experience::Annotation mode": [
-      "Keyboard",
-      "Mouse (e.g. drag & drop)"
-    ],
-    "User Experience::Keyboard shortcuts": "Yes",
-    "User Experience::Annotation display": [
-      "Graphical representation of a tree"
-    ],
-    "User Experience::Automatic pre annotation": "No",
-    "User Experience::Automatic recommendation": "No",
-    "User Experience::Collaborative annotation": "",
-    "User Experience::Project management": "No",
-    "User Experience::User roles": "partial",
-    "User Experience::Comparison of annotations": "Yes",
-    "User Experience::Agreement calculation": "No",
-    "User Experience::Querying": "Yes",
-    "User Experience::Mass editing": "Yes",
+    "Software::Software type": "Desktop-based application",
+    "Tool ID::Additional features": "",
+    "Tool ID::Code repository": "https://github.com/ufal/TrEd",
+    "Tool ID::Developer": "Yes",
+    "Tool ID::Example projects::Prague Dependency Treebank (PDT)": "https://ufal.mff.cuni.cz/pdt3.0",
+    "Tool ID::Logo": "",
+    "Tool ID::Other useful links::Manual": "https://ufal.mff.cuni.cz/tred/documentation/ar01-toc.html",
+    "Tool ID::Short description": "TrEd is a fully customizable and programmable graphical editor and viewer for tree-like structures.",
+    "Tool ID::Tool name": "TrEd",
+    "Tool ID::Website": "https://ufal.mff.cuni.cz/tred",
+    "UD/PARSEME specifics::Consistency check": "No",
+    "UD/PARSEME specifics::Other annotation layers": [],
+    "UD/PARSEME specifics::PARSEME specific annotations": [],
+    "UD/PARSEME specifics::UD validation": "No",
     "UD/PARSEME specifics::UD specific annotations": [
       "Lemmas",
       "UPOS",
@@ -477,51 +362,45 @@
       "Enhanced dependencies",
       "Empty nodes"
     ],
-    "UD/PARSEME specifics::UD validation": "No",
-    "UD/PARSEME specifics::Other annotation layers": "",
-    "UD/PARSEME specifics::PARSEME specific annotations": "",
-    "UD/PARSEME specifics::Consistency check": "No"
+    "User Experience::Agreement calculation": "No",
+    "User Experience::Annotation display": [
+      "Graphical representation of a tree"
+    ],
+    "User Experience::Annotation mode": [
+      "Keyboard",
+      "Mouse (e.g. drag & drop)"
+    ],
+    "User Experience::Automatic pre annotation": "No",
+    "User Experience::Automatic recommendation": "No",
+    "User Experience::Collaborative annotation": [
+      "No"
+    ],
+    "User Experience::Comparison of annotations": "Yes",
+    "User Experience::Keyboard annotation and shortcuts": "Yes",
+    "User Experience::Mass editing": "Yes",
+    "User Experience::Project management": "No",
+    "User Experience::Querying": "Yes",
+    "User Experience::User roles": "partial"
   },
   {
-    "Tool ID::Tool name": "Palmyra",
-    "Tool ID::Logo": "https://camel-lab.github.io/palmyra/fonts/logo.png",
-    "Tool ID::Short description": "PALMYRA is a platform-independent graphical tool for syntactic dependency annotation supporting languages that require complex morphological tokenization.",
-    "Tool ID::Website": "https://palmyra.camel-lab.com/",
-    "Tool ID::Other useful links": [
-      {
-        "About": "https://camel-lab.github.io/palmyra/about.html"
-      }
+    "Annotation::Annotation scope": [
+      "Annotation inside sentences"
     ],
-    "Tool ID::Developer": "Yes",
-    "Tool ID::Example projects": [
-      {
-        "CAMELLAB": "http://treebank.camel-lab.com/"
-      },
-      {
-        "LREC": "http://www.lrec-conf.org/proceedings/lrec2022/pdf/2022.lrec-1.286.pdf"
-      }
+    "Annotation::Annotation types": [
+      "Tokens (e.g. part-of-speech tag morphological features)",
+      "Relations (e.g. dependencies)"
     ],
-    "Tool ID::Additional features": "We recently added an Undo/Redo functionality and also the ability\nto synchonize files on google Drive https://aclanthology.org/2024.lrec-main.1101.pdf\n",
-    "Tool ID::Code repository": "https://github.com/CAMeL-Lab/palmyra",
-    "Software::License": "MIT",
-    "Software::Active maintenance": "Yes",
-    "Software::Software type": "Web-based application",
-    "Software::Operating system": [
-      "Windows",
-      "macOS",
-      "Linux"
+    "Annotation::Segmentation": [
+      "word-level"
     ],
-    "Software::Software availability": [
-      "The software is freely available online (with sign up option and/or social logins)"
+    "Annotation::Tagset customization": "Yes",
+    "Data support::Data export": [
+      "The data can be exported"
     ],
-    "Software::Offline usage": "Yes",
     "Data support::Input format": [
       "CONLL-U"
     ],
-    "Data support::Integration of other resources": "",
-    "Data support::Data export": [
-      "The data can be exported."
-    ],
+    "Data support::Integration of other resources": [],
     "Diversity features::Diversity features": [
       "Language-independence",
       "Writing script support",
@@ -532,35 +411,33 @@
     "Diversity features::Language of the interface": [
       "English"
     ],
-    "Annotation::Segmentation": [
-      "word-level"
+    "Software::Active maintenance": "Yes",
+    "Software::License": "MIT",
+    "Software::Offline usage (for web based applications)": "Yes",
+    "Software::Operating system": [
+      "Windows",
+      "Mac OS",
+      "Linux"
     ],
-    "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Relations (e.g. dependencies)"
+    "Software::Software availability": [
+      "The software is freely available online (with sign up option)"
     ],
-    "Annotation::Annotation scope": [
-      "Annotation inside sentences"
-    ],
-    "Annotation::Tagset customization": "Yes",
-    "User Experience::Annotation mode": [
-      "Keyboard",
-      "Mouse (e.g. drag & drop)"
-    ],
-    "User Experience::Keyboard shortcuts": "Yes",
-    "User Experience::Annotation display": [
-      "Image (e.g. a graph or coloured text)",
-      "Raw format (e.g. CONLL-U)"
-    ],
-    "User Experience::Automatic pre annotation": "Yes",
-    "User Experience::Automatic recommendation": "No",
-    "User Experience::Collaborative annotation": "",
-    "User Experience::Project management": "No",
-    "User Experience::User roles": "No",
-    "User Experience::Comparison of annotations": "No",
-    "User Experience::Agreement calculation": "No",
-    "User Experience::Querying": "No",
-    "User Experience::Mass editing": "No",
+    "Software::Software type": "Web-based application",
+    "Tool ID::Additional features": "",
+    "Tool ID::Code repository": "https://github.com/CAMeL-Lab/palmyra",
+    "Tool ID::Developer": "Yes",
+    "Tool ID::Example projects::Arabic Dependency Treeban": "khttp://www.lrec-conf.org/proceedings/lrec2022/pdf/2022.lrec-1.286.pdf",
+    "Tool ID::Example projects::CAMe L treebank": "http://treebank.camel-lab.com/",
+    "Tool ID::Logo": "https://camel-lab.github.io/palmyra/fonts/logo.png",
+    "Tool ID::Other useful links::Demo": "https://camel-lab.github.io/palmyra/viewtree.html",
+    "Tool ID::Other useful links::New functionalities": "https://aclanthology.org/2024.lrec-main.1101.pdf",
+    "Tool ID::Short description": "PALMYRA is a platform-independent graphical tool for syntactic dependency annotation supporting languages that require complex morphological tokenization.",
+    "Tool ID::Tool name": "Palmyra",
+    "Tool ID::Website": "https://palmyra.camel-lab.com/",
+    "UD/PARSEME specifics::Consistency check": "No",
+    "UD/PARSEME specifics::Other annotation layers": [],
+    "UD/PARSEME specifics::PARSEME specific annotations": [],
+    "UD/PARSEME specifics::UD validation": "No",
     "UD/PARSEME specifics::UD specific annotations": [
       "UPOS",
       "FEATS",
@@ -569,39 +446,45 @@
       "Empty nodes",
       "Metadata"
     ],
-    "UD/PARSEME specifics::UD validation": "No",
-    "UD/PARSEME specifics::Other annotation layers": "",
-    "UD/PARSEME specifics::PARSEME specific annotations": "",
-    "UD/PARSEME specifics::Consistency check": "No"
+    "User Experience::Agreement calculation": "No",
+    "User Experience::Annotation display": [
+      "Image (e.g. a graph or coloured text)",
+      "Raw format (e.g. CONLL-U)"
+    ],
+    "User Experience::Annotation mode": [
+      "Keyboard",
+      "Mouse (e.g. drag & drop)"
+    ],
+    "User Experience::Automatic pre annotation": "Yes",
+    "User Experience::Automatic recommendation": "No",
+    "User Experience::Collaborative annotation": [
+      "No"
+    ],
+    "User Experience::Comparison of annotations": "No",
+    "User Experience::Keyboard annotation and shortcuts": "Yes",
+    "User Experience::Mass editing": "No",
+    "User Experience::Project management": "No",
+    "User Experience::Querying": "No",
+    "User Experience::User roles": "No"
   },
   {
-    "Tool ID::Tool name": "DgAnnotator",
-    "Tool ID::Logo": "https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcRnnTZWOgkNyroJuQNd4DhyH71CBc2Ghn0Zg1Ysx2lpV_GhSp143U5OFckDLcFNHxAdEs_6WRmFP2SoOkbHUvPThYGDtD5KfVmHt-jx7Qs",
-    "Tool ID::Short description": "Utility for annotating and visualizing Dependency Graphs for natural language sentences.",
-    "Tool ID::Website": "http://medialab.di.unipi.it/Project/QA/Parser/DgAnnotator/",
-    "Tool ID::Other useful links": "",
-    "Tool ID::Developer": "No",
-    "Tool ID::Code repository": "https://github.com/attardi/DgAnnotator",
-    "Software::License": "not specified",
-    "Software::Active maintenance": "No",
-    "Software::Software type": "Desktop-based application",
-    "Software::Operating system": [
-      "Windows",
-      "macOS",
-      "Linux"
+    "Annotation::Annotation scope": [
+      "Annotation inside sentences"
     ],
-    "Software::Software availability": [
-      "The software should be run by the user (local machine or own server)"
+    "Annotation::Annotation types": [
+      "Tokens (e.g. part-of-speech tag morphological features)",
+      "Relations (e.g. dependencies)"
     ],
-    "Software::Offline usage": "Yes",
+    "Annotation::Segmentation": [],
+    "Annotation::Tagset customization": "Yes",
+    "Data support::Data export": [
+      "The data can be exported"
+    ],
     "Data support::Input format": [
       "XML",
       "CONLL-X"
     ],
-    "Data support::Integration of other resources": "",
-    "Data support::Data export": [
-      "The data can be exported."
-    ],
+    "Data support::Integration of other resources": [],
     "Diversity features::Diversity features": [
       "Language-independence",
       "Writing script support",
@@ -611,82 +494,78 @@
     "Diversity features::Language of the interface": [
       "English"
     ],
-    "Annotation::Segmentation": "",
-    "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Relations (e.g. dependencies)"
+    "Software::Active maintenance": "No",
+    "Software::License": "not specified",
+    "Software::Offline usage (for web based applications)": "Yes",
+    "Software::Operating system": [
+      "Windows",
+      "Mac OS",
+      "Linux"
     ],
-    "Annotation::Annotation scope": [
-      "Annotation inside sentences"
+    "Software::Software availability": [
+      "The software should be run by the user (own machine/server)"
     ],
-    "Annotation::Tagset customization": "Yes",
-    "User Experience::Annotation mode": [
-      "Mouse (e.g. drag & drop)"
-    ],
-    "User Experience::Keyboard shortcuts": "No",
-    "User Experience::Annotation display": [
-      "Image (e.g. a graph or coloured text)"
-    ],
-    "User Experience::Automatic pre annotation": "No",
-    "User Experience::Automatic recommendation": "No",
-    "User Experience::Collaborative annotation": "",
-    "User Experience::Project management": "No",
-    "User Experience::User roles": "No",
-    "User Experience::Comparison of annotations": "No",
-    "User Experience::Agreement calculation": "No",
-    "User Experience::Querying": "No",
-    "User Experience::Mass editing": "No",
+    "Software::Software type": "Desktop-based application",
+    "Tool ID::Additional features": "",
+    "Tool ID::Code repository": "https://github.com/attardi/DgAnnotator",
+    "Tool ID::Developer": "No",
+    "Tool ID::Logo": "https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcRnnTZWOgkNyroJuQNd4DhyH71CBc2Ghn0Zg1Ysx2lpV_GhSp143U5OFckDLcFNHxAdEs_6WRmFP2SoOkbHUvPThYGDtD5KfVmHt-jx7Qs",
+    "Tool ID::Short description": "DgAnnotator is a utility for annotating and visualizing Dependency Graphs for natural language sentences.",
+    "Tool ID::Tool name": "DgAnnotator",
+    "Tool ID::Website": "http://medialab.di.unipi.it/Project/QA/Parser/DgAnnotator/",
+    "UD/PARSEME specifics::Consistency check": "No",
+    "UD/PARSEME specifics::Other annotation layers": [],
+    "UD/PARSEME specifics::PARSEME specific annotations": [],
+    "UD/PARSEME specifics::UD validation": "No",
     "UD/PARSEME specifics::UD specific annotations": [
       "Lemmas",
       "UPOS",
       "Basic dependencies"
     ],
-    "UD/PARSEME specifics::UD validation": "No",
-    "UD/PARSEME specifics::Other annotation layers": "",
-    "UD/PARSEME specifics::PARSEME specific annotations": "",
-    "UD/PARSEME specifics::Consistency check": "No"
+    "User Experience::Agreement calculation": "No",
+    "User Experience::Annotation display": [
+      "Image (e.g. a graph or coloured text)"
+    ],
+    "User Experience::Annotation mode": [
+      "Mouse (e.g. drag & drop)"
+    ],
+    "User Experience::Automatic pre annotation": "No",
+    "User Experience::Automatic recommendation": "No",
+    "User Experience::Collaborative annotation": [
+      "No"
+    ],
+    "User Experience::Comparison of annotations": "No",
+    "User Experience::Keyboard annotation and shortcuts": "No",
+    "User Experience::Mass editing": "No",
+    "User Experience::Project management": "No",
+    "User Experience::Querying": "No",
+    "User Experience::User roles": "No"
   },
   {
-    "Tool ID::Tool name": "GitDox",
-    "Tool ID::Logo": "",
-    "Tool ID::Short description": "A version controlled annotation interace for XML and spreadsheet data, as well as nested NER",
-    "Tool ID::Website": "https://gucorpling.org/gitdox/",
-    "Tool ID::Other useful links": [
-      {
-        "Demo": "https://gucorpling.org/gitdox/spannotator.html"
-      }
+    "Annotation::Annotation scope": [
+      "Annotation inside sentences",
+      "Annotation across sentences",
+      "Annotation of full sentences / paragraphs / documents"
     ],
-    "Tool ID::Developer": "Yes",
-    "Tool ID::Example projects": [
-      {
-        "GUM": "https://gucorpling.org/gum/"
-      },
-      {
-        "Coptic": "https://data.copticscriptorium.org/"
-      }
+    "Annotation::Annotation types": [
+      "Tokens (e.g. part-of-speech tag morphological features)",
+      "Spans (e.g. names entities)",
+      "Chains (e.g. coreferences)"
     ],
-    "Tool ID::Code repository": "https://github.com/gucorpling/gitdox",
-    "Software::License": "Apache-2.0",
-    "Software::Active maintenance": "Yes",
-    "Software::Software type": "Web-based application",
-    "Software::Operating system": [
-      "Windows",
-      "macOS",
-      "Linux"
+    "Annotation::Segmentation": [
+      "word-level",
+      "sentence-level"
     ],
-    "Software::Software availability": [
-      "The software should be run by the user (local machine or own server)"
+    "Annotation::Tagset customization": "Yes",
+    "Data support::Data export": [
+      "The data can be exported"
     ],
-    "Software::Offline usage": "No",
     "Data support::Input format": [
       "Raw text",
       "XML",
       "Corpus Workbench vertical format"
     ],
-    "Data support::Integration of other resources": "",
-    "Data support::Data export": [
-      "The data can be exported."
-    ],
+    "Data support::Integration of other resources": [],
     "Diversity features::Diversity features": [
       "Language-independence",
       "Writing script support",
@@ -697,43 +576,39 @@
     "Diversity features::Language of the interface": [
       "English"
     ],
-    "Annotation::Segmentation": [
-      "word-level",
-      "sentence-level"
+    "Software::Active maintenance": "Yes",
+    "Software::License": "Apache-2.0",
+    "Software::Offline usage (for web based applications)": "No",
+    "Software::Operating system": [
+      "Windows",
+      "Mac OS",
+      "Linux"
     ],
-    "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)",
-      "Chains (e.g. coreferences)"
+    "Software::Software availability": [
+      "The software should be run by the user (own machine/server)"
     ],
-    "Annotation::Annotation scope": [
-      "Annotation inside sentences",
-      "Annotation across sentences",
-      "Annotation of full sentences/paragraphs/documents"
+    "Software::Software type": "Web-based application",
+    "Tool ID::Additional features": "",
+    "Tool ID::Code repository": "https://github.com/gucorpling/gitdox",
+    "Tool ID::Developer": "Yes",
+    "Tool ID::Example projects::Coptic Scriptorium": "https://datacopticscriptorium.org/",
+    "Tool ID::Example projects::GUM": "https://gucorpling.org/gum/",
+    "Tool ID::Logo": "",
+    "Tool ID::Other useful links::Demo": "https://gucorpling.org/gitdox/spannotator.html",
+    "Tool ID::Short description": "GitDox is a version controlled annotation interace for XML and spreadsheet data, as well as nested NER",
+    "Tool ID::Tool name": "GitDox",
+    "Tool ID::Website": "https://gucorpling.org/gitdox/",
+    "UD/PARSEME specifics::Consistency check": "No",
+    "UD/PARSEME specifics::Other annotation layers": [
+      "concurrent/conflicting span annotations",
+      "nested NER",
+      "entity linking."
     ],
-    "Annotation::Tagset customization": "Yes",
-    "User Experience::Annotation mode": [
-      "Keyboard",
-      "Mouse (e.g. drag & drop)"
+    "UD/PARSEME specifics::PARSEME specific annotations": [
+      "Nested expressions",
+      "Overlapping expressions"
     ],
-    "User Experience::Keyboard shortcuts": "No",
-    "User Experience::Annotation display": [
-      "Image (e.g. a graph or coloured text)",
-      "Table",
-      "Raw format (e.g. CONLL-U)"
-    ],
-    "User Experience::Automatic pre annotation": "Yes",
-    "User Experience::Automatic recommendation": "No",
-    "User Experience::Collaborative annotation": [
-      "annotators working independently on their own annotations of the same data.",
-      "annotators working together on the same shared annotation of the data."
-    ],
-    "User Experience::Project management": "Yes",
-    "User Experience::User roles": "Yes",
-    "User Experience::Comparison of annotations": "Yes",
-    "User Experience::Agreement calculation": "No",
-    "User Experience::Querying": "No",
-    "User Experience::Mass editing": "No",
+    "UD/PARSEME specifics::UD validation": "No",
     "UD/PARSEME specifics::UD specific annotations": [
       "Lemmas",
       "UPOS",
@@ -741,41 +616,48 @@
       "XPOS",
       "Metadata"
     ],
-    "UD/PARSEME specifics::UD validation": "No",
-    "UD/PARSEME specifics::Other annotation layers": [
-      "concurrent/conflicting span annotations",
-      "nested NER",
-      "entity linking"
+    "User Experience::Agreement calculation": "No",
+    "User Experience::Annotation display": [
+      "Image (e.g. a graph or coloured text)",
+      "Table",
+      "Raw format (e.g. CONLL-U)"
     ],
-    "UD/PARSEME specifics::PARSEME specific annotations": [
-      "Nested expressions",
-      "Overlapping expressions"
+    "User Experience::Annotation mode": [
+      "Keyboard",
+      "Mouse (e.g. drag & drop)"
     ],
-    "UD/PARSEME specifics::Consistency check": "No"
+    "User Experience::Automatic pre annotation": "Yes",
+    "User Experience::Automatic recommendation": "No",
+    "User Experience::Collaborative annotation": [
+      "annotators working independently on their own annotations of the same data",
+      "annotators working together on the same shared annotation of the data"
+    ],
+    "User Experience::Comparison of annotations": "Yes",
+    "User Experience::Keyboard annotation and shortcuts": "No",
+    "User Experience::Mass editing": "No",
+    "User Experience::Project management": "Yes",
+    "User Experience::Querying": "No",
+    "User Experience::User roles": "Yes"
   },
   {
-    "Tool ID::Tool name": "FLeX",
-    "Tool ID::Logo": "https://software.sil.org/wp/wp-content/themes/web-productsites/images/sil_logo_glyph.png",
-    "Tool ID::Short description": "A comprehensive linguistic software tool designed for documenting, analyzing, and managing lexical and textual data, particularly for under-documented languages.",
-    "Tool ID::Website": "https://software.sil.org/fieldworks/",
-    "Tool ID::Other useful links": [
-      {
-        "Training": "https://vimeo.com/showcase/3123523"
-      }
+    "Annotation::Annotation scope": [
+      "Annotation inside sentences",
+      "Annotation across sentences",
+      "Annotation of full sentences / paragraphs / documents"
     ],
-    "Tool ID::Developer": "No",
-    "Tool ID::Code repository": "https://github.com/sillsdev/FieldWorks",
-    "Software::License": "GNU LGPL",
-    "Software::Active maintenance": "Yes",
-    "Software::Software type": "Desktop-based application",
-    "Software::Operating system": [
-      "Windows",
-      "Linux"
+    "Annotation::Annotation types": [
+      "Tokens (e.g. part-of-speech tag morphological features)",
+      "Spans (e.g. names entities)",
+      "Multi-tokens (e.g. multi-word expressions)"
     ],
-    "Software::Software availability": [
-      "The software should be run by the user (local machine or own server)"
+    "Annotation::Segmentation": [
+      "word-level",
+      "sentence-level"
     ],
-    "Software::Offline usage": "Yes",
+    "Annotation::Tagset customization": "Yes",
+    "Data support::Data export": [
+      "The data can be exported"
+    ],
     "Data support::Input format": [
       "Raw text",
       "XML",
@@ -790,9 +672,6 @@
       "PDF",
       "External databases (e.g. dictionaries)"
     ],
-    "Data support::Data export": [
-      "The data can be exported."
-    ],
     "Diversity features::Diversity features": [
       "Language-independence",
       "Writing script support",
@@ -803,169 +682,56 @@
     "Diversity features::Language of the interface": [
       "English"
     ],
-    "Annotation::Segmentation": [
-      "word-level",
-      "sentence-level"
+    "Software::Active maintenance": "Yes",
+    "Software::License": "GNU LGPL",
+    "Software::Offline usage (for web based applications)": "Yes",
+    "Software::Operating system": [
+      "Windows",
+      "Linux"
     ],
-    "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)",
-      "Multi-tokens (e.g. multi-word expressions)"
+    "Software::Software availability": [
+      "The software should be run by the user (own machine/server)"
     ],
-    "Annotation::Annotation scope": [
-      "Annotation inside sentences",
-      "Annotation across sentences",
-      "Annotation of full sentences/paragraphs/documents"
+    "Software::Software type": "Desktop-based application",
+    "Tool ID::Additional features": "",
+    "Tool ID::Code repository": "https://github.com/sillsdev/FieldWorks",
+    "Tool ID::Developer": "No",
+    "Tool ID::Logo": "https://software.sil.org/wp/wp-content/themes/web-productsites/images/sil_logo_glyph.png",
+    "Tool ID::Other useful links::Training": "https://vimeo.com/showcase/3123523",
+    "Tool ID::Short description": "FLeX is a comprehensive linguistic software tool designed for documenting, analyzing, and managing lexical and textual data, particularly for under-documented languages.",
+    "Tool ID::Tool name": "FLeX",
+    "Tool ID::Website": "https://software.sil.org/fieldworks/",
+    "UD/PARSEME specifics::Consistency check": "No",
+    "UD/PARSEME specifics::Other annotation layers": [],
+    "UD/PARSEME specifics::PARSEME specific annotations": [],
+    "UD/PARSEME specifics::UD validation": "No",
+    "UD/PARSEME specifics::UD specific annotations": [
+      "Metadata"
     ],
-    "Annotation::Tagset customization": "Yes",
-    "User Experience::Annotation mode": [
-      "Keyboard",
-      "Mouse (e.g. drag & drop)"
-    ],
-    "User Experience::Keyboard shortcuts": "Yes",
+    "User Experience::Agreement calculation": "No",
     "User Experience::Annotation display": [
       "Table",
       "Raw format (e.g. CONLL-U)"
     ],
-    "User Experience::Automatic pre annotation": "partial",
-    "User Experience::Automatic recommendation": "No",
-    "User Experience::Collaborative annotation": "",
-    "User Experience::Project management": "partial",
-    "User Experience::User roles": "No",
-    "User Experience::Comparison of annotations": "partial",
-    "User Experience::Agreement calculation": "No",
-    "User Experience::Querying": "Yes",
-    "User Experience::Mass editing": "Yes",
-    "UD/PARSEME specifics::UD specific annotations": "Metadata",
-    "UD/PARSEME specifics::UD validation": "No",
-    "UD/PARSEME specifics::Other annotation layers": "",
-    "UD/PARSEME specifics::PARSEME specific annotations": "",
-    "UD/PARSEME specifics::Consistency check": "No"
-  },
-  {
-    "Tool ID::Tool name": "Label Sleuth",
-    "Tool ID::Logo": "https://www.label-sleuth.org/_static/images/homepage/logo_white_invert.svg",
-    "Tool ID::Short description": "An open-source no-code system for text annotation and building\ntext classifiers\n",
-    "Tool ID::Website": "https://www.label-sleuth.org/",
-    "Tool ID::Other useful links": [
-      {
-        "Paper": "https://arxiv.org/abs/2208.01483"
-      }
-    ],
-    "Tool ID::Developer": "No",
-    "Tool ID::Code repository": "https://github.com/label-sleuth/label-sleuth",
-    "Software::License": "Apache-2.0",
-    "Software::Active maintenance": "Yes",
-    "Software::Software type": "Web-based application",
-    "Software::Operating system": [
-      "Windows",
-      "macOS",
-      "Linux"
-    ],
-    "Software::Software availability": [
-      "The software should be run by the user (local machine or own server)"
-    ],
-    "Software::Offline usage": "Yes",
-    "Data support::Input format": [
-      "Raw text",
-      "CONLL-U",
-      "XML",
-      "TSV"
-    ],
-    "Data support::Integration of other resources": "",
-    "Data support::Data export": [
-      "The data can be exported."
-    ],
-    "Diversity features::Diversity features": [
-      "Language-independence",
-      "Writing script support",
-      "LTR",
-      "RTL",
-      "unicode support"
-    ],
-    "Diversity features::Language of the interface": [
-      "English"
-    ],
-    "Annotation::Segmentation": "",
-    "Annotation::Annotation types": [
-      "Spans (e.g. names entities)"
-    ],
-    "Annotation::Annotation scope": [
-      "Annotation of full sentences/paragraphs/documents"
-    ],
-    "Annotation::Tagset customization": "Yes",
     "User Experience::Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)"
     ],
-    "User Experience::Keyboard shortcuts": "Yes",
-    "User Experience::Annotation display": [
-      "Image (e.g. a graph or coloured text)"
-    ],
-    "User Experience::Automatic pre annotation": "No",
-    "User Experience::Automatic recommendation": "Yes",
+    "User Experience::Automatic pre annotation": "partial",
+    "User Experience::Automatic recommendation": "No",
     "User Experience::Collaborative annotation": [
-      "annotators working together on the same shared annotation of the data."
+      "No"
     ],
-    "User Experience::Project management": "Yes",
-    "User Experience::User roles": "Yes",
-    "User Experience::Comparison of annotations": "Yes",
-    "User Experience::Agreement calculation": "No",
-    "User Experience::Querying": "Yes",
+    "User Experience::Comparison of annotations": "partial",
+    "User Experience::Keyboard annotation and shortcuts": "Yes",
     "User Experience::Mass editing": "Yes",
-    "UD/PARSEME specifics::UD specific annotations": "Metadata",
-    "UD/PARSEME specifics::UD validation": "No",
-    "UD/PARSEME specifics::Other annotation layers": "",
-    "UD/PARSEME specifics::PARSEME specific annotations": "",
-    "UD/PARSEME specifics::Consistency check": "No"
+    "User Experience::Project management": "partial",
+    "User Experience::Querying": "Yes",
+    "User Experience::User roles": "No"
   },
   {
-    "Tool ID::Tool name": "CoNLLU-Editor",
-    "Tool ID::Logo": "https://avatars.githubusercontent.com/u/1506386?s=48&v=4",
-    "Tool ID::Short description": "A graphical tool to annotate sentences in dependency syntax\n",
-    "Tool ID::Website": "https://github.com/Orange-Opensource/conllueditor",
-    "Tool ID::Other useful links": "",
-    "Tool ID::Developer": "Yes",
-    "Tool ID::Example projects": [
-      {
-        "UD_Welsh": "https://github.com/UniversalDependencies/UD_Welsh-CCG"
-      }
-    ],
-    "Tool ID::Additional features": "git-support (automatic gid add/git commit; automatic generation of transliteration of non-Latin scripts into Latin-script (Translit= fields in MISC and trainsliteration of the entire sentence; statistics (number/percentage of UPOSes, deprels, etc). The tool can be used as a frontend to an parser which returns the result in CoNLL-U format\n",
-    "Tool ID::Code repository": "https://github.com/Orange-Opensource/conllueditor",
-    "Software::License": "BSD 3-Clause",
-    "Software::Active maintenance": "Yes",
-    "Software::Software type": "Web-based application",
-    "Software::Operating system": [
-      "Windows",
-      "macOS",
-      "Linux"
-    ],
-    "Software::Software availability": [
-      "The software should be run by the user (local machine or own server)"
-    ],
-    "Software::Offline usage": "No",
-    "Data support::Input format": [
-      "CONLL-U",
-      "CoNLL-U plus"
-    ],
-    "Data support::Integration of other resources": "",
-    "Data support::Data export": [
-      "The data can be exported."
-    ],
-    "Diversity features::Diversity features": [
-      "Language-independence",
-      "Writing script support",
-      "LTR",
-      "RTL",
-      "unicode support"
-    ],
-    "Diversity features::Language of the interface": [
-      "English"
-    ],
-    "Annotation::Segmentation": [
-      "word-level",
-      "sentence-level"
+    "Annotation::Annotation scope": [
+      "Annotation inside sentences"
     ],
     "Annotation::Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
@@ -973,33 +739,55 @@
       "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)"
     ],
-    "Annotation::Annotation scope": [
-      "Annotation inside sentences"
+    "Annotation::Segmentation": [
+      "word-level",
+      "sentence-level"
     ],
     "Annotation::Tagset customization": "Yes",
-    "User Experience::Annotation mode": [
-      "Keyboard",
-      "Mouse (e.g. drag & drop)"
+    "Data support::Data export": [
+      "The data can be exported"
     ],
-    "User Experience::Keyboard shortcuts": "Yes",
-    "User Experience::Annotation display": [
-      "Image (e.g. a graph or coloured text)",
-      "Table",
-      "Raw format (e.g. CONLL-U)",
-      "SD",
-      "LateX (tikz)"
+    "Data support::Input format": [
+      "CONLL-U",
+      "CoNLL-U plus"
     ],
-    "User Experience::Automatic pre annotation": "No",
-    "User Experience::Automatic recommendation": "No",
-    "User Experience::Collaborative annotation": [
-      "partial"
+    "Data support::Integration of other resources": [],
+    "Diversity features::Diversity features": [
+      "Language-independence",
+      "Writing script support",
+      "LTR",
+      "RTL",
+      "unicode support"
     ],
-    "User Experience::Project management": "No",
-    "User Experience::User roles": "No",
-    "User Experience::Comparison of annotations": "Yes",
-    "User Experience::Agreement calculation": "No",
-    "User Experience::Querying": "Yes",
-    "User Experience::Mass editing": "Yes",
+    "Diversity features::Language of the interface": [
+      "English"
+    ],
+    "Software::Active maintenance": "Yes",
+    "Software::License": "BSD 3-Clause",
+    "Software::Offline usage (for web based applications)": "No",
+    "Software::Operating system": [
+      "Windows",
+      "Mac OS",
+      "Linux"
+    ],
+    "Software::Software availability": [
+      "The software should be run by the user (own machine/server)"
+    ],
+    "Software::Software type": "Web-based application",
+    "Tool ID::Additional features": "The tool supports git and provides automatic transliteration of non-Latin scripts into Latin-script, as well as statistics (number/percentage of UPOS, deprels, etc). The tool can be used as a frontend to an parser which returns the result in CoNLL-U format",
+    "Tool ID::Code repository": "https://github.com/Orange-Opensource/conllueditor",
+    "Tool ID::Developer": "Yes",
+    "Tool ID::Example projects::UD Welsh CCG": "https://github.com/UniversalDependencies/UD_Welsh-CCG",
+    "Tool ID::Logo": "https://avatars.githubusercontent.com/u/1506386?s=48&v=4",
+    "Tool ID::Short description": "CoNLLU-editor is a graphical tool to annotate sentences in dependency syntax",
+    "Tool ID::Tool name": "CoNLLU-Editor",
+    "Tool ID::Website": "https://github.com/Orange-Opensource/conllueditor",
+    "UD/PARSEME specifics::Consistency check": "No",
+    "UD/PARSEME specifics::Other annotation layers": [
+      "BIO-like annotations"
+    ],
+    "UD/PARSEME specifics::PARSEME specific annotations": [],
+    "UD/PARSEME specifics::UD validation": "Yes",
     "UD/PARSEME specifics::UD specific annotations": [
       "Lemmas",
       "UPOS",
@@ -1011,45 +799,125 @@
       "Empty nodes",
       "Metadata"
     ],
-    "UD/PARSEME specifics::UD validation": "Yes",
-    "UD/PARSEME specifics::Other annotation layers": [
-      "BIO-like annotations"
+    "User Experience::Agreement calculation": "No",
+    "User Experience::Annotation display": [
+      "Image (e.g. a graph or coloured text)",
+      "Table",
+      "Raw format (e.g. CONLL-U)",
+      "SD",
+      "LateX (tikz)"
     ],
-    "UD/PARSEME specifics::PARSEME specific annotations": "",
-    "UD/PARSEME specifics::Consistency check": "No"
+    "User Experience::Annotation mode": [
+      "Keyboard",
+      "Mouse (e.g. drag & drop)"
+    ],
+    "User Experience::Automatic pre annotation": "No",
+    "User Experience::Automatic recommendation": "No",
+    "User Experience::Collaborative annotation": [
+      "partial support"
+    ],
+    "User Experience::Comparison of annotations": "Yes",
+    "User Experience::Keyboard annotation and shortcuts": "Yes",
+    "User Experience::Mass editing": "Yes",
+    "User Experience::Project management": "No",
+    "User Experience::Querying": "Yes",
+    "User Experience::User roles": "No"
   },
   {
-    "Tool ID::Tool name": "TALEN",
-    "Tool ID::Logo": "",
-    "Tool ID::Short description": "NER annotation",
-    "Tool ID::Website": "https://github.com/CogComp/talen",
-    "Tool ID::Other useful links": [
-      {
-        "UNER project": "https://annotate.universalner.org/"
-      }
+    "Annotation::Annotation scope": [
+      "Annotation of full sentences / paragraphs / documents"
     ],
-    "Tool ID::Developer": "No",
-    "Tool ID::Code repository": "https://github.com/CogComp/talen",
-    "Software::License": "other",
+    "Annotation::Annotation types": [
+      "Spans (e.g. names entities)"
+    ],
+    "Annotation::Segmentation": [],
+    "Annotation::Tagset customization": "Yes",
+    "Data support::Data export": [
+      "The data can be exported"
+    ],
+    "Data support::Input format": [
+      "Raw text",
+      "CONLL-U",
+      "XML",
+      "TSV"
+    ],
+    "Data support::Integration of other resources": [],
+    "Diversity features::Diversity features": [
+      "Language-independence",
+      "Writing script support",
+      "LTR",
+      "RTL",
+      "unicode support"
+    ],
+    "Diversity features::Language of the interface": [
+      "English"
+    ],
     "Software::Active maintenance": "Yes",
-    "Software::Software type": "Web-based application",
+    "Software::License": "Apache-2.0",
+    "Software::Offline usage (for web based applications)": "Yes",
     "Software::Operating system": [
       "Windows",
-      "macOS",
+      "Mac OS",
       "Linux"
     ],
     "Software::Software availability": [
-      "The software should be run by the user (local machine or own server)"
+      "The software should be run by the user (own machine/server)"
     ],
-    "Software::Offline usage": "No",
+    "Software::Software type": "Web-based application",
+    "Tool ID::Additional features": "The tool offers machine-learned automatic tagging suggestions",
+    "Tool ID::Code repository": "https://github.com/label-sleuth/label-sleuth",
+    "Tool ID::Developer": "No",
+    "Tool ID::Logo": "https://www.label-sleuth.org/_static/images/homepage/logo_white_invert.svg",
+    "Tool ID::Other useful links::Paper": "https://arxiv.org/abs/2208.01483",
+    "Tool ID::Short description": "Label Sleuth is an open-source no-code system for text annotation and building text classifiers",
+    "Tool ID::Tool name": "Label Sleuth",
+    "Tool ID::Website": "https://www.label-sleuth.org/",
+    "UD/PARSEME specifics::Consistency check": "No",
+    "UD/PARSEME specifics::Other annotation layers": [],
+    "UD/PARSEME specifics::PARSEME specific annotations": [],
+    "UD/PARSEME specifics::UD validation": "No",
+    "UD/PARSEME specifics::UD specific annotations": [
+      "Metadata"
+    ],
+    "User Experience::Agreement calculation": "No",
+    "User Experience::Annotation display": [
+      "Image (e.g. a graph or coloured text)"
+    ],
+    "User Experience::Annotation mode": [
+      "Keyboard",
+      "Mouse (e.g. drag & drop)"
+    ],
+    "User Experience::Automatic pre annotation": "No",
+    "User Experience::Automatic recommendation": "Yes",
+    "User Experience::Collaborative annotation": [
+      "annotators working together on the same shared annotation of the data"
+    ],
+    "User Experience::Comparison of annotations": "Yes",
+    "User Experience::Keyboard annotation and shortcuts": "Yes",
+    "User Experience::Mass editing": "Yes",
+    "User Experience::Project management": "Yes",
+    "User Experience::Querying": "Yes",
+    "User Experience::User roles": "Yes"
+  },
+  {
+    "Annotation::Annotation scope": [
+      "Annotation inside sentences"
+    ],
+    "Annotation::Annotation types": [
+      "Tokens (e.g. part-of-speech tag morphological features)",
+      "Spans (e.g. names entities)",
+      "Multi-tokens (e.g. multi-word expressions)"
+    ],
+    "Annotation::Segmentation": [],
+    "Annotation::Tagset customization": "No",
+    "Data support::Data export": [
+      "The data can be exported"
+    ],
     "Data support::Input format": [
       "Raw text",
       "CONLL-U"
     ],
-    "Data support::Integration of other resources": "",
-    "Data support::Data export": [
-      "The data can be exported."
-    ],
+    "Data support::Integration of other resources": [],
     "Diversity features::Diversity features": [
       "Language-independence",
       "Writing script support",
@@ -1059,87 +927,63 @@
     "Diversity features::Language of the interface": [
       "English"
     ],
-    "Annotation::Segmentation": "",
-    "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)",
-      "Multi-tokens (e.g. multi-word expressions)"
+    "Software::Active maintenance": "Yes",
+    "Software::License": "other",
+    "Software::Offline usage (for web based applications)": "No",
+    "Software::Operating system": [
+      "Windows",
+      "Mac OS",
+      "Linux"
     ],
-    "Annotation::Annotation scope": [
-      "Annotation inside sentences"
+    "Software::Software availability": [
+      "The software should be run by the user (own machine/server)"
     ],
-    "Annotation::Tagset customization": "No",
-    "User Experience::Annotation mode": [
-      "Mouse (e.g. drag & drop)",
-      "Touchscreen"
+    "Software::Software type": "Web-based application",
+    "Tool ID::Additional features": "",
+    "Tool ID::Code repository": "https://github.com/CogComp/talen",
+    "Tool ID::Developer": "No",
+    "Tool ID::Example projects::UNER": "https://annotate.universalner.org/",
+    "Tool ID::Logo": "https://github.com/CogComp/talen/blob/master/src/main/resources/static/img/logo-grey-trans.png",
+    "Tool ID::Short description": "TALEN is a lightweight web-based tool for annotating word sequences.",
+    "Tool ID::Tool name": "TALEN",
+    "Tool ID::Website": "https://github.com/CogComp/talen",
+    "UD/PARSEME specifics::Consistency check": "partial",
+    "UD/PARSEME specifics::Other annotation layers": [
+      "NER"
     ],
-    "User Experience::Keyboard shortcuts": "No",
-    "User Experience::Annotation display": [
-      "Image (e.g. a graph or coloured text)"
-    ],
-    "User Experience::Automatic pre annotation": "Yes",
-    "User Experience::Automatic recommendation": "No",
-    "User Experience::Collaborative annotation": [
-      "annotators working independently on their own annotations of the same data."
-    ],
-    "User Experience::Project management": "No",
-    "User Experience::User roles": "Yes",
-    "User Experience::Comparison of annotations": "No",
-    "User Experience::Agreement calculation": "No",
-    "User Experience::Querying": "No",
-    "User Experience::Mass editing": "Yes",
+    "UD/PARSEME specifics::PARSEME specific annotations": [],
+    "UD/PARSEME specifics::UD validation": "No",
     "UD/PARSEME specifics::UD specific annotations": [
       "UPOS",
       "XPOS",
       "Multi-word tokens",
       "Metadata"
     ],
-    "UD/PARSEME specifics::UD validation": "No",
-    "UD/PARSEME specifics::Other annotation layers": "NER",
-    "UD/PARSEME specifics::PARSEME specific annotations": "",
-    "UD/PARSEME specifics::Consistency check": "partial"
+    "User Experience::Agreement calculation": "No",
+    "User Experience::Annotation display": [
+      "Image (e.g. a graph or coloured text)"
+    ],
+    "User Experience::Annotation mode": [
+      "Mouse (e.g. drag & drop)",
+      "Touchscreen"
+    ],
+    "User Experience::Automatic pre annotation": "Yes",
+    "User Experience::Automatic recommendation": "No",
+    "User Experience::Collaborative annotation": [
+      "annotators working independently on their own annotations of the same data"
+    ],
+    "User Experience::Comparison of annotations": "No",
+    "User Experience::Keyboard annotation and shortcuts": "No",
+    "User Experience::Mass editing": "Yes",
+    "User Experience::Project management": "No",
+    "User Experience::Querying": "No",
+    "User Experience::User roles": "Yes"
   },
   {
-    "Tool ID::Tool name": "ToolBox",
-    "Tool ID::Logo": "https://software.sil.org/wp/wp-content/themes/web-productsites/images/sil_logo_glyph.png",
-    "Tool ID::Short description": "A linguistic data management tool designed for building lexicons,\nanalyzing interlinear texts, and organizing fieldwork data, developed by SIL International.\n",
-    "Tool ID::Website": "https://software.sil.org/toolbox/",
-    "Tool ID::Other useful links": [
-      {
-        "Tools": "http://www.fieldlinguiststoolbox.org/?i=1"
-      }
-    ],
-    "Tool ID::Developer": "No",
-    "Software::License": "other",
-    "Software::Active maintenance": "No",
-    "Software::Software type": "Desktop-based application",
-    "Software::Operating system": [
-      "Windows"
-    ],
-    "Software::Software availability": [
-      "The software should be run by the user (local machine or own server)"
-    ],
-    "Software::Offline usage": "Yes",
-    "Data support::Input format": [
-      "Raw text"
-    ],
-    "Data support::Integration of other resources": "",
-    "Data support::Data export": [
-      "The data can be exported."
-    ],
-    "Diversity features::Diversity features": [
-      "Language-independence",
-      "Writing script support",
-      "LTR",
-      "RTL",
-      "unicode support"
-    ],
-    "Diversity features::Language of the interface": [
-      "English"
-    ],
-    "Annotation::Segmentation": [
-      "word-level",
-      "sentence-level"
+    "Annotation::Annotation scope": [
+      "Annotation inside sentences",
+      "Annotation across sentences",
+      "Annotation of full sentences / paragraphs / documents"
     ],
     "Annotation::Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
@@ -1147,78 +991,202 @@
       "Multi-tokens (e.g. multi-word expressions)",
       "Interlinear glossed text annotations"
     ],
-    "Annotation::Annotation scope": [
-      "Annotation inside sentences",
-      "Annotation across sentences",
-      "Annotation of full sentences/paragraphs/documents"
+    "Annotation::Segmentation": [
+      "word-level",
+      "sentence-level"
     ],
     "Annotation::Tagset customization": "Yes",
-    "User Experience::Annotation mode": [
-      "Keyboard"
+    "Data support::Data export": [
+      "The data can be exported"
     ],
-    "User Experience::Keyboard shortcuts": "Yes",
+    "Data support::Input format": [
+      "Raw text"
+    ],
+    "Data support::Integration of other resources": [],
+    "Diversity features::Diversity features": [
+      "Language-independence",
+      "Writing script support",
+      "LTR",
+      "RTL",
+      "unicode support"
+    ],
+    "Diversity features::Language of the interface": [
+      "English"
+    ],
+    "Software::Active maintenance": "No",
+    "Software::License": "other",
+    "Software::Offline usage (for web based applications)": "Yes",
+    "Software::Operating system": [
+      "Windows"
+    ],
+    "Software::Software availability": [
+      "The software should be run by the user (own machine/server)"
+    ],
+    "Software::Software type": "Desktop-based application",
+    "Tool ID::Additional features": "",
+    "Tool ID::Code repository": "",
+    "Tool ID::Developer": "No",
+    "Tool ID::Logo": "https://software.sil.org/wp/wp-content/themes/web-productsites/images/sil_logo_glyph.png",
+    "Tool ID::Other useful links::Tools": "http://www.fieldlinguiststoolbox.org/",
+    "Tool ID::Short description": "ToolBox is a linguistic data management tool designed for building lexicons, analyzing interlinear texts, and organizing fieldwork data, developed by SIL International.",
+    "Tool ID::Tool name": "ToolBox",
+    "Tool ID::Website": "https://software.sil.org/toolbox/",
+    "UD/PARSEME specifics::Consistency check": "No",
+    "UD/PARSEME specifics::Other annotation layers": [],
+    "UD/PARSEME specifics::PARSEME specific annotations": [],
+    "UD/PARSEME specifics::UD validation": "No",
+    "UD/PARSEME specifics::UD specific annotations": [
+      "Metadata"
+    ],
+    "User Experience::Agreement calculation": "No",
     "User Experience::Annotation display": [
       "Table"
     ],
+    "User Experience::Annotation mode": [
+      "Keyboard"
+    ],
     "User Experience::Automatic pre annotation": "No",
     "User Experience::Automatic recommendation": "No",
-    "User Experience::Collaborative annotation": "",
-    "User Experience::Project management": "No",
-    "User Experience::User roles": "No",
+    "User Experience::Collaborative annotation": [
+      "No"
+    ],
     "User Experience::Comparison of annotations": "No",
-    "User Experience::Agreement calculation": "No",
-    "User Experience::Querying": "Yes",
+    "User Experience::Keyboard annotation and shortcuts": "Yes",
     "User Experience::Mass editing": "Yes",
-    "UD/PARSEME specifics::UD specific annotations": "Metadata",
-    "UD/PARSEME specifics::UD validation": "No",
-    "UD/PARSEME specifics::Other annotation layers": "",
-    "UD/PARSEME specifics::PARSEME specific annotations": "xs",
-    "UD/PARSEME specifics::Consistency check": "No"
+    "User Experience::Project management": "No",
+    "User Experience::Querying": "Yes",
+    "User Experience::User roles": "No"
   },
   {
-    "Tool ID::Tool name": "ELAN",
-    "Tool ID::Logo": "https://archive.mpi.nl/forums/uploads/default/original/1X/b9a095d7450d269ba707171fe5571f248dc99665.svg",
-    "Tool ID::Short description": "Tool for the creation, annotation, and analysis of complex multimedia data, enabling time-aligned transcription and linguistic analysis.\n",
-    "Tool ID::Website": "https://archive.mpi.nl/tla/elan",
-    "Tool ID::Other useful links": [
-      {
-        "Forum": "https://archive.mpi.nl/forums/"
-      }
+    "Annotation::Annotation scope": [
+      "Annotation inside sentences"
     ],
-    "Tool ID::Developer": "No",
-    "Tool ID::Example projects": [
-      "TODO::https://archive.mpi.nl/tla/islandora/object/lat%3A1839_00_0000_0000_0000_0000_4"
+    "Annotation::Annotation types": [
+      "Tokens (e.g. part-of-speech tag morphological features)",
+      "Multi-tokens (e.g. multi-word expressions)",
+      "Relations (e.g. dependencies)"
     ],
-    "Tool ID::Additional features": "Multimedia synchronization; customizable annotation workflow; metadata management and support like IMDI and CMDI\n",
-    "Tool ID::Code repository": "https://archive.mpi.nl/tla/elan/download",
-    "Software::License": "GPL-3.0",
+    "Annotation::Segmentation": [],
+    "Annotation::Tagset customization": "Yes",
+    "Data support::Data export": [
+      "The data can be exported"
+    ],
+    "Data support::Input format": [
+      "Raw text",
+      "CONLL-U",
+      "VISL CG3",
+      "SDParse",
+      "Bracket notation"
+    ],
+    "Data support::Integration of other resources": [],
+    "Diversity features::Diversity features": [
+      "Language-independence",
+      "Writing script support",
+      "LTR",
+      "RTL",
+      "unicode support"
+    ],
+    "Diversity features::Language of the interface": [
+      "English"
+    ],
     "Software::Active maintenance": "Yes",
-    "Software::Software type": "Desktop-based application",
+    "Software::License": "GPL-3.0",
+    "Software::Offline usage (for web based applications)": "Yes",
     "Software::Operating system": [
       "Windows",
-      "macOS",
+      "Mac OS",
       "Linux"
     ],
     "Software::Software availability": [
-      "The software should be run by the user (local machine or own server)"
+      "The software is freely available online (with sign up option)"
     ],
-    "Software::Offline usage": "Yes",
+    "Software::Software type": "Web-based application",
+    "Tool ID::Additional features": "",
+    "Tool ID::Code repository": "https://github.com/jonorthwash/ud-annotatrix",
+    "Tool ID::Developer": "No",
+    "Tool ID::Logo": "https://github.com/jonorthwash/ud-annotatrix/blob/master/src/server/public/logo.png",
+    "Tool ID::Other useful links::Paper": "https://aclanthology.org/W17-7604",
+    "Tool ID::Short description": "UD Annotatrix is a client-side, browser-only, language-independent tool for editing dependency trees according to the guidelines established by the Universal Dependencies project.",
+    "Tool ID::Tool name": "UD Annotatrix",
+    "Tool ID::Website": "https://maryszmary.github.io/ud-annotatrix/standalone/annotator.html",
+    "UD/PARSEME specifics::Consistency check": "No",
+    "UD/PARSEME specifics::Other annotation layers": [],
+    "UD/PARSEME specifics::PARSEME specific annotations": [],
+    "UD/PARSEME specifics::UD validation": "No",
+    "UD/PARSEME specifics::UD specific annotations": [
+      "Lemmas",
+      "UPOS",
+      "FEATS",
+      "XPOS",
+      "Multi-word tokens",
+      "Basic dependencies",
+      "Enhanced dependencies",
+      "Empty nodes"
+    ],
+    "User Experience::Agreement calculation": "No",
+    "User Experience::Annotation display": [
+      "Image (e.g. a graph or coloured text)",
+      "Table",
+      "Raw format (e.g. CONLL-U)"
+    ],
+    "User Experience::Annotation mode": [
+      "Keyboard",
+      "Mouse (e.g. drag & drop)"
+    ],
+    "User Experience::Automatic pre annotation": "No",
+    "User Experience::Automatic recommendation": "No",
+    "User Experience::Collaborative annotation": [
+      "Yes"
+    ],
+    "User Experience::Comparison of annotations": "No",
+    "User Experience::Keyboard annotation and shortcuts": "No",
+    "User Experience::Mass editing": "No",
+    "User Experience::Project management": "No",
+    "User Experience::Querying": "No",
+    "User Experience::User roles": "No"
+  },
+  {
+    "Annotation::Annotation scope": [
+      "Annotation inside sentences",
+      "Annotation across sentences",
+      "Annotation of full sentences / paragraphs / documents"
+    ],
+    "Annotation::Annotation types": [
+      "Tokens (e.g. part-of-speech tag morphological features)",
+      "Spans (e.g. names entities)",
+      "Multi-tokens (e.g. multi-word expressions)",
+      "Relations (e.g. dependencies)"
+    ],
+    "Annotation::Segmentation": [
+      "word-level",
+      "sentence-level"
+    ],
+    "Annotation::Tagset customization": "Yes",
+    "Data support::Data export": [
+      "The data can be exported"
+    ],
     "Data support::Input format": [
       "Raw text",
       "XML",
+      ".mp4",
+      ".avi",
+      ".mov",
+      ".mkv",
+      ".wav",
+      ".mp3",
+      ".flac",
+      ".aac",
       ".eaf",
-      "TextGrid",
+      "TextGrid files",
       "CHAT",
       "Shoebox/Toolbox",
+      ".trs",
       "CSV"
     ],
     "Data support::Integration of other resources": [
       "Audio",
       "Video",
       "Image"
-    ],
-    "Data support::Data export": [
-      "The data can be exported."
     ],
     "Diversity features::Diversity features": [
       "Language-independence",
@@ -1230,54 +1198,27 @@
     "Diversity features::Language of the interface": [
       "English"
     ],
-    "Annotation::Segmentation": [
-      "word-level",
-      "sentence-level"
+    "Software::Active maintenance": "Yes",
+    "Software::License": "GPL-3.0",
+    "Software::Offline usage (for web based applications)": "Yes",
+    "Software::Operating system": [
+      "Windows",
+      "Mac OS",
+      "Linux"
     ],
-    "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)",
-      "Multi-tokens (e.g. multi-word expressions)",
-      "Relations (e.g. dependencies)"
+    "Software::Software availability": [
+      "The software should be run by the user (own machine/server)"
     ],
-    "Annotation::Annotation scope": [
-      "Annotation inside sentences",
-      "Annotation across sentences",
-      "Annotation of full sentences/paragraphs/documents"
-    ],
-    "Annotation::Tagset customization": "Yes",
-    "User Experience::Annotation mode": [
-      "Keyboard",
-      "Mouse (e.g. drag & drop)",
-      "Touchscreen"
-    ],
-    "User Experience::Keyboard shortcuts": "Yes",
-    "User Experience::Annotation display": [
-      "Image (e.g. a graph or coloured text)",
-      "Table",
-      "CSV"
-    ],
-    "User Experience::Automatic pre annotation": "Yes",
-    "User Experience::Automatic recommendation": "No",
-    "User Experience::Collaborative annotation": [
-      "annotators working independently on their own annotations of the same data."
-    ],
-    "User Experience::Project management": "No",
-    "User Experience::User roles": "No",
-    "User Experience::Comparison of annotations": "No",
-    "User Experience::Agreement calculation": "No",
-    "User Experience::Querying": "Yes",
-    "User Experience::Mass editing": "Yes",
-    "UD/PARSEME specifics::UD specific annotations": [
-      "Lemmas",
-      "UPOS",
-      "FEATS",
-      "XPOS",
-      "Multi-word tokens",
-      "Basic dependencies",
-      "Metadata"
-    ],
-    "UD/PARSEME specifics::UD validation": "No",
+    "Software::Software type": "Desktop-based application",
+    "Tool ID::Additional features": "The tools supports synchronization with multimedia content, a customizable annotation workflow and metadata management (IMDI and CMDI)",
+    "Tool ID::Code repository": "https://archive.mpi.nl/tla/elan/download",
+    "Tool ID::Developer": "No",
+    "Tool ID::Logo": "https://archive.mpi.nl/forums/uploads/default/original/1X/b9a095d7450d269ba707171fe5571f248dc99665.svg",
+    "Tool ID::Other useful links::Forum": "https://archive.mpi.nl/forums/",
+    "Tool ID::Short description": "ELAN is a professional tool for the creation, annotation, and analysis of complex multimedia data, enabling time-aligned transcription and linguistic analysis.",
+    "Tool ID::Tool name": "ELAN",
+    "Tool ID::Website": "https://archive.mpi.nl/tla/elan",
+    "UD/PARSEME specifics::Consistency check": "No",
     "UD/PARSEME specifics::Other annotation layers": [
       "Time-aligned annotations",
       "multimodal annotations"
@@ -1287,46 +1228,61 @@
       "Nested expressions",
       "Overlapping expressions"
     ],
-    "UD/PARSEME specifics::Consistency check": "No"
+    "UD/PARSEME specifics::UD validation": "No",
+    "UD/PARSEME specifics::UD specific annotations": [
+      "Lemmas",
+      "UPOS",
+      "FEATS",
+      "XPOS",
+      "Multi-word tokens",
+      "Basic dependencies",
+      "Metadata"
+    ],
+    "User Experience::Agreement calculation": "No",
+    "User Experience::Annotation display": [
+      "Image (e.g. a graph or coloured text)",
+      "Table",
+      "CSV"
+    ],
+    "User Experience::Annotation mode": [
+      "Keyboard",
+      "Mouse (e.g. drag & drop)",
+      "Touchscreen"
+    ],
+    "User Experience::Automatic pre annotation": "Yes",
+    "User Experience::Automatic recommendation": "No",
+    "User Experience::Collaborative annotation": [
+      "annotators working independently on their own annotations of the same data"
+    ],
+    "User Experience::Comparison of annotations": "No",
+    "User Experience::Keyboard annotation and shortcuts": "Yes",
+    "User Experience::Mass editing": "Yes",
+    "User Experience::Project management": "No",
+    "User Experience::Querying": "Yes",
+    "User Experience::User roles": "No"
   },
   {
-    "Tool ID::Tool name": "BoAT (Boğaziçi University Annotation Tool)",
-    "Tool ID::Logo": "",
-    "Tool ID::Short description": "Collaborative grammatical annotation tool",
-    "Tool ID::Website": "https://github.com/furkanakkurt1335/boat",
-    "Tool ID::Other useful links": [
-      {
-        "Tutorial": "https://youtu.be/BtRVqgtxK8c?si=eXcfjmy-t2D431u5&t=509"
-      }
+    "Annotation::Annotation scope": [
+      "Annotation inside sentences"
     ],
-    "Tool ID::Developer": "Yes",
-    "Tool ID::Example projects": [
-      {
-        "UD_Turkish-BOUN": "https://github.com/UniversalDependencies/UD_Turkish-BOUN"
-      }
+    "Annotation::Annotation types": [
+      "Tokens (e.g. part-of-speech tag morphological features)",
+      "Spans (e.g. names entities)",
+      "Relations (e.g. dependencies)",
+      "Chains (e.g. coreferences)"
     ],
-    "Tool ID::Additional features": "",
-    "Tool ID::Code repository": "https://github.com/furkanakkurt1335/boat",
-    "Software::License": "MIT",
-    "Software::Active maintenance": "Yes",
-    "Software::Software type": "Web-based application",
-    "Software::Operating system": [
-      "Windows",
-      "macOS",
-      "Linux"
+    "Annotation::Segmentation": [
+      "word-level"
     ],
-    "Software::Software availability": [
-      "The software should be run by the user (local machine or own server)"
+    "Annotation::Tagset customization": "Yes",
+    "Data support::Data export": [
+      "The data can be exported"
     ],
-    "Software::Offline usage": "No",
     "Data support::Input format": [
       "Raw text",
       "CONLL-U"
     ],
-    "Data support::Integration of other resources": "",
-    "Data support::Data export": [
-      "The data can be exported."
-    ],
+    "Data support::Integration of other resources": [],
     "Diversity features::Diversity features": [
       "Language-independence",
       "Writing script support",
@@ -1337,38 +1293,30 @@
     "Diversity features::Language of the interface": [
       "English"
     ],
-    "Annotation::Segmentation": [
-      "word-level"
+    "Software::Active maintenance": "Yes",
+    "Software::License": "MIT",
+    "Software::Offline usage (for web based applications)": "No",
+    "Software::Operating system": [
+      "Windows",
+      "Mac OS",
+      "Linux"
     ],
-    "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)",
-      "Relations (e.g. dependencies)",
-      "Chains (e.g. coreferences)"
+    "Software::Software availability": [
+      "The software should be run by the user (own machine/server)"
     ],
-    "Annotation::Annotation scope": [
-      "Annotation inside sentences"
-    ],
-    "Annotation::Tagset customization": "Yes",
-    "User Experience::Annotation mode": [
-      "Keyboard"
-    ],
-    "User Experience::Keyboard shortcuts": "Yes",
-    "User Experience::Annotation display": [
-      "Image (e.g. a graph or coloured text)",
-      "Table"
-    ],
-    "User Experience::Automatic pre annotation": "tokenization",
-    "User Experience::Automatic recommendation": "No",
-    "User Experience::Collaborative annotation": [
-      "annotators working independently on their own annotations of the same data."
-    ],
-    "User Experience::Project management": "partial",
-    "User Experience::User roles": "No",
-    "User Experience::Comparison of annotations": "Yes",
-    "User Experience::Agreement calculation": "partial",
-    "User Experience::Querying": "Yes",
-    "User Experience::Mass editing": "No",
+    "Software::Software type": "Web-based application",
+    "Tool ID::Additional features": "",
+    "Tool ID::Code repository": "https://github.com/furkanakkurt1335/boat",
+    "Tool ID::Developer": "Yes",
+    "Tool ID::Example projects::UD Turkish BOUN": "https://github.com/UniversalDependencies/UD_Turkish-BOUN",
+    "Tool ID::Logo": "",
+    "Tool ID::Short description": "BoAT (Boğaziçi University Annotation Tool) is a collaborative grammatical annotation tool.",
+    "Tool ID::Tool name": "BoAT",
+    "Tool ID::Website": "https://github.com/furkanakkurt1335/boat",
+    "UD/PARSEME specifics::Consistency check": "No",
+    "UD/PARSEME specifics::Other annotation layers": [],
+    "UD/PARSEME specifics::PARSEME specific annotations": [],
+    "UD/PARSEME specifics::UD validation": "Yes",
     "UD/PARSEME specifics::UD specific annotations": [
       "Lemmas",
       "UPOS",
@@ -1379,36 +1327,46 @@
       "Empty nodes",
       "Metadata"
     ],
-    "UD/PARSEME specifics::UD validation": "Yes",
-    "UD/PARSEME specifics::Other annotation layers": "",
-    "UD/PARSEME specifics::PARSEME specific annotations": "",
-    "UD/PARSEME specifics::Consistency check": "No"
+    "User Experience::Agreement calculation": "partial",
+    "User Experience::Annotation display": [
+      "Image (e.g. a graph or coloured text)",
+      "Table"
+    ],
+    "User Experience::Annotation mode": [
+      "Keyboard"
+    ],
+    "User Experience::Automatic pre annotation": "tokenization",
+    "User Experience::Automatic recommendation": "No",
+    "User Experience::Collaborative annotation": [
+      "annotators working independently on their own annotations of the same data"
+    ],
+    "User Experience::Comparison of annotations": "Yes",
+    "User Experience::Keyboard annotation and shortcuts": "Yes",
+    "User Experience::Mass editing": "No",
+    "User Experience::Project management": "partial",
+    "User Experience::Querying": "Yes",
+    "User Experience::User roles": "No"
   },
   {
-    "Tool ID::Tool name": "Q-CAT",
-    "Tool ID::Logo": "",
-    "Tool ID::Short description": "A tool for manual linguistic annotation of corpora, which also\nenables advanced queries on top of these annotations.\n",
-    "Tool ID::Website": "http://hdl.handle.net/11356/1844",
-    "Tool ID::Other useful links": "",
-    "Tool ID::Developer": "Yes",
-    "Software::License": "Apache-2.0",
-    "Software::Active maintenance": "Yes",
-    "Software::Software type": "Desktop-based application",
-    "Software::Operating system": [
-      "Windows"
+    "Annotation::Annotation scope": [
+      "Annotation inside sentences"
     ],
-    "Software::Software availability": [
-      "The software should be run by the user (local machine or own server)"
+    "Annotation::Annotation types": [
+      "Tokens (e.g. part-of-speech tag morphological features)",
+      "Spans (e.g. names entities)",
+      "Multi-tokens (e.g. multi-word expressions)",
+      "Relations (e.g. dependencies)"
     ],
-    "Software::Offline usage": "Yes",
+    "Annotation::Segmentation": [],
+    "Annotation::Tagset customization": "Yes",
+    "Data support::Data export": [
+      "The data can be exported"
+    ],
     "Data support::Input format": [
       "CONLL-U",
       "XML"
     ],
-    "Data support::Integration of other resources": "",
-    "Data support::Data export": [
-      "The data can be exported."
-    ],
+    "Data support::Integration of other resources": [],
     "Diversity features::Diversity features": [
       "Language-independence",
       "Writing script support",
@@ -1418,76 +1376,159 @@
     "Diversity features::Language of the interface": [
       "English"
     ],
-    "Annotation::Segmentation": "",
-    "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)",
-      "Multi-tokens (e.g. multi-word expressions)",
-      "Relations (e.g. dependencies)"
+    "Software::Active maintenance": "Yes",
+    "Software::License": "Apache-2.0",
+    "Software::Offline usage (for web based applications)": "Yes",
+    "Software::Operating system": [
+      "Windows"
     ],
-    "Annotation::Annotation scope": [
-      "Annotation inside sentences"
+    "Software::Software availability": [
+      "The software should be run by the user (own machine/server)"
     ],
-    "Annotation::Tagset customization": "Yes",
-    "User Experience::Annotation mode": [
-      "Keyboard",
-      "Mouse (e.g. drag & drop)"
-    ],
-    "User Experience::Keyboard shortcuts": "No",
-    "User Experience::Annotation display": [
-      "Image (e.g. a graph or coloured text)"
-    ],
-    "User Experience::Automatic pre annotation": "No",
-    "User Experience::Automatic recommendation": "No",
-    "User Experience::Collaborative annotation": [
-      "annotators working independently on their own annotations of the same data."
-    ],
-    "User Experience::Project management": "No",
-    "User Experience::User roles": "No",
-    "User Experience::Comparison of annotations": "No",
-    "User Experience::Agreement calculation": "No",
-    "User Experience::Querying": "Yes",
-    "User Experience::Mass editing": "No",
+    "Software::Software type": "Desktop-based application",
+    "Tool ID::Additional features": "",
+    "Tool ID::Code repository": "",
+    "Tool ID::Developer": "Yes",
+    "Tool ID::Logo": "",
+    "Tool ID::Short description": "Q-CAT is a tool for manual linguistic annotation of corpora, which also enables advanced queries on top of these annotations.",
+    "Tool ID::Tool name": "Q-CAT",
+    "Tool ID::Website": "http://hdl.handle.net/11356/1844",
+    "UD/PARSEME specifics::Consistency check": "No",
+    "UD/PARSEME specifics::Other annotation layers": [],
+    "UD/PARSEME specifics::PARSEME specific annotations": [],
+    "UD/PARSEME specifics::UD validation": "No",
     "UD/PARSEME specifics::UD specific annotations": [
       "Lemmas",
       "UPOS",
       "Multi-word tokens",
       "Basic dependencies"
     ],
-    "UD/PARSEME specifics::UD validation": "No",
-    "UD/PARSEME specifics::Other annotation layers": "",
-    "UD/PARSEME specifics::PARSEME specific annotations": "",
-    "UD/PARSEME specifics::Consistency check": "No"
+    "User Experience::Agreement calculation": "No",
+    "User Experience::Annotation display": [
+      "Image (e.g. a graph or coloured text)"
+    ],
+    "User Experience::Annotation mode": [
+      "Keyboard",
+      "Mouse (e.g. drag & drop)"
+    ],
+    "User Experience::Automatic pre annotation": "No",
+    "User Experience::Automatic recommendation": "No",
+    "User Experience::Collaborative annotation": [
+      "annotators working independently on their own annotations of the same data"
+    ],
+    "User Experience::Comparison of annotations": "No",
+    "User Experience::Keyboard annotation and shortcuts": "No",
+    "User Experience::Mass editing": "No",
+    "User Experience::Project management": "No",
+    "User Experience::Querying": "Yes",
+    "User Experience::User roles": "No"
   },
   {
-    "Tool ID::Tool name": "FLAT: FoLiA Linguistic Annotation Tool",
-    "Tool ID::Logo": "http://proycon.github.io/folia/style/icon.png",
-    "Tool ID::Short description": "Web-based linguistic annotation environment based around the FoLiA format (http://proycon.github.io/folia), a rich XML-based format for linguistic annotation.",
-    "Tool ID::Website": "https://github.com/proycon/flat",
-    "Tool ID::Other useful links": [
-      {
-        "Folia format": "http://proycon.github.io/folia/"
-      }
+    "Annotation::Annotation scope": [
+      "Annotation inside sentences"
     ],
-    "Tool ID::Developer": "Yes",
-    "Tool ID::Example projects": [
-      {
-        "PARSEME": "https://aclanthology.org/2024.lrec-main.184/"
-      }
+    "Annotation::Annotation types": [
+      "Tokens (e.g. part-of-speech tag morphological features)",
+      "Multi-tokens (e.g. multi-word expressions)",
+      "Relations (e.g. dependencies)"
     ],
-    "Tool ID::Code repository": "https://github.com/proycon/flat",
-    "Software::License": "GPL-3.0",
-    "Software::Active maintenance": "Legacy",
-    "Software::Software type": "Web-based application",
+    "Annotation::Segmentation": [
+      "word-level"
+    ],
+    "Annotation::Tagset customization": "Yes",
+    "Data support::Data export": [
+      "The data can be exported"
+    ],
+    "Data support::Input format": [
+      "CONLL-U"
+    ],
+    "Data support::Integration of other resources": [],
+    "Diversity features::Diversity features": [
+      "Language-independence",
+      "Writing script support",
+      "LTR",
+      "unicode support"
+    ],
+    "Diversity features::Language of the interface": [
+      "English"
+    ],
+    "Software::Active maintenance": "Yes",
+    "Software::License": "CC_BY",
+    "Software::Offline usage (for web based applications)": "Yes",
     "Software::Operating system": [
       "Windows",
-      "macOS",
+      "Mac OS",
       "Linux"
     ],
     "Software::Software availability": [
-      "The software should be run by the user (local machine or own server)"
+      "The software is freely available online (without sign up option )"
     ],
-    "Software::Offline usage": "No",
+    "Software::Software type": "Web-based application",
+    "Tool ID::Additional features": "",
+    "Tool ID::Code repository": "https://github.com/parameshkrishnaa/PLURAL-conllu-annotator",
+    "Tool ID::Developer": "Yes",
+    "Tool ID::Example projects::UD for Tamil": "https://universaldependencies.org/ta/index.html",
+    "Tool ID::Example projects::UD Telugu MTG": "https://github.com/UniversalDependencies/UD_Telugu-MTG",
+    "Tool ID::Logo": "https://plural.iiit.ac.in/conllu-assets/static/media/IIITH.3e6a0240528e48ab6511.png",
+    "Tool ID::Short description": "PLURAL-conllu-annotator allows treatement of linguistic rich data",
+    "Tool ID::Tool name": "PLURAL",
+    "Tool ID::Website": "https://plural.iiit.ac.in/conllu-annotator",
+    "UD/PARSEME specifics::Consistency check": "No",
+    "UD/PARSEME specifics::Other annotation layers": [
+      "NIL"
+    ],
+    "UD/PARSEME specifics::PARSEME specific annotations": [],
+    "UD/PARSEME specifics::UD validation": "Yes",
+    "UD/PARSEME specifics::UD specific annotations": [
+      "Lemmas",
+      "UPOS",
+      "FEATS",
+      "XPOS",
+      "Multi-word tokens",
+      "Basic dependencies",
+      "Enhanced dependencies",
+      "Empty nodes",
+      "Metadata"
+    ],
+    "User Experience::Agreement calculation": "No",
+    "User Experience::Annotation display": [
+      "Image (e.g. a graph or coloured text)",
+      "Raw format (e.g. CONLL-U)"
+    ],
+    "User Experience::Annotation mode": [
+      "Keyboard"
+    ],
+    "User Experience::Automatic pre annotation": "No",
+    "User Experience::Automatic recommendation": "Yes",
+    "User Experience::Collaborative annotation": [
+      "No"
+    ],
+    "User Experience::Comparison of annotations": "No",
+    "User Experience::Keyboard annotation and shortcuts": "Yes",
+    "User Experience::Mass editing": "No",
+    "User Experience::Project management": "No",
+    "User Experience::Querying": "No",
+    "User Experience::User roles": "No"
+  },
+  {
+    "Annotation::Annotation scope": [
+      "Annotation inside sentences"
+    ],
+    "Annotation::Annotation types": [
+      "Tokens (e.g. part-of-speech tag morphological features)",
+      "Spans (e.g. names entities)",
+      "Multi-tokens (e.g. multi-word expressions)",
+      "Relations (e.g. dependencies)",
+      "Chains (e.g. coreferences)"
+    ],
+    "Annotation::Segmentation": [
+      "word-level"
+    ],
+    "Annotation::Tagset customization": "Yes",
+    "Data support::Data export": [
+      "The data can be exported",
+      "The data can be stored with a third party storage platform (e.g. Git repository)"
+    ],
     "Data support::Input format": [
       "Raw text",
       "CONLL-U",
@@ -1495,11 +1536,7 @@
       "TSV",
       "FoLiA XML"
     ],
-    "Data support::Integration of other resources": "",
-    "Data support::Data export": [
-      "The data can be exported.",
-      "The data can be stored with a third party storage platform (e.g. Git repository)"
-    ],
+    "Data support::Integration of other resources": [],
     "Diversity features::Diversity features": [
       "Language-independence",
       "Writing script support",
@@ -1510,36 +1547,36 @@
     "Diversity features::Language of the interface": [
       "English"
     ],
-    "Annotation::Segmentation": [
-      "word-level"
+    "Software::Active maintenance": "Legacy",
+    "Software::License": "GPL-3.0",
+    "Software::Offline usage (for web based applications)": "No",
+    "Software::Operating system": [
+      "Windows",
+      "Mac OS",
+      "Linux"
     ],
-    "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities),",
-      "Multi-tokens (e.g. multi-word expressions)",
-      "Relations (e.g. dependencies)",
-      "Chains (e.g. coreferences)"
+    "Software::Software availability": [
+      "The software should be run by the user (own machine/server)"
     ],
-    "Annotation::Annotation scope": [
-      "Annotation inside sentences"
+    "Software::Software type": "Web-based application",
+    "Tool ID::Additional features": "",
+    "Tool ID::Code repository": "https://github.com/proycon/flat",
+    "Tool ID::Developer": "Yes",
+    "Tool ID::Example projects::PARSEME": "https://gitlab.com/parseme",
+    "Tool ID::Example projects::Pre Modern Slavic Texts": "https://aclanthology.org/2024.lrec-main.184/",
+    "Tool ID::Logo": "http://proycon.github.io/folia/style/icon.png",
+    "Tool ID::Other useful links::Tools": "http://proycon.github.io/folia/",
+    "Tool ID::Short description": "Flat (FoLiA Linguistic Annotation Tool) is a web-based linguistic annotation environment based around the FoLiA format, a rich XML-based format for linguistic annotation.",
+    "Tool ID::Tool name": "FLAT",
+    "Tool ID::Website": "https://github.com/proycon/flat",
+    "UD/PARSEME specifics::Consistency check": "No",
+    "UD/PARSEME specifics::Other annotation layers": [],
+    "UD/PARSEME specifics::PARSEME specific annotations": [
+      "Discontinuous expressions",
+      "Nested expressions",
+      "Overlapping expressions"
     ],
-    "Annotation::Tagset customization": "Yes",
-    "User Experience::Annotation mode": [
-      "Mouse (e.g. drag & drop)"
-    ],
-    "User Experience::Keyboard shortcuts": "No",
-    "User Experience::Annotation display": "",
-    "User Experience::Automatic pre annotation": "No",
-    "User Experience::Automatic recommendation": "No",
-    "User Experience::Collaborative annotation": [
-      "annotators working independently on their own annotations of the same data."
-    ],
-    "User Experience::Project management": "partial",
-    "User Experience::User roles": "Yes",
-    "User Experience::Comparison of annotations": "No",
-    "User Experience::Agreement calculation": "No",
-    "User Experience::Querying": "Yes",
-    "User Experience::Mass editing": "Yes",
+    "UD/PARSEME specifics::UD validation": "No",
     "UD/PARSEME specifics::UD specific annotations": [
       "Lemmas",
       "UPOS",
@@ -1548,49 +1585,47 @@
       "Multi-word tokens",
       "Basic dependencies"
     ],
-    "UD/PARSEME specifics::UD validation": "No",
-    "UD/PARSEME specifics::Other annotation layers": "",
-    "UD/PARSEME specifics::PARSEME specific annotations": [
-      "Discontinuous expressions",
-      "Nested expressions",
-      "Overlapping expressions"
+    "User Experience::Agreement calculation": "No",
+    "User Experience::Annotation display": [],
+    "User Experience::Annotation mode": [
+      "Mouse (e.g. drag & drop)"
     ],
-    "UD/PARSEME specifics::Consistency check": "No"
+    "User Experience::Automatic pre annotation": "No",
+    "User Experience::Automatic recommendation": "No",
+    "User Experience::Collaborative annotation": [
+      "annotators working independently on their own annotations of the same data"
+    ],
+    "User Experience::Comparison of annotations": "No",
+    "User Experience::Keyboard annotation and shortcuts": "No",
+    "User Experience::Mass editing": "Yes",
+    "User Experience::Project management": "partial",
+    "User Experience::Querying": "Yes",
+    "User Experience::User roles": "Yes"
   },
   {
-    "Tool ID::Tool name": "brat rapid annotation tool",
-    "Tool ID::Logo": "",
-    "Tool ID::Short description": "online environment for collaborative text annotation",
-    "Tool ID::Website": "http://brat.nlplab.org/",
-    "Tool ID::Other useful links": [
-      {
-        "Examples": "https://brat.nlplab.org/examples.html"
-      }
+    "Annotation::Annotation scope": [
+      "Annotation inside sentences",
+      "Annotation across sentences",
+      "Annotation of full sentences / paragraphs / documents"
     ],
-    "Tool ID::Developer": "No",
-    "Tool ID::Additional features": "Export of visualisations (images)",
-    "Tool ID::Code repository": "https://github.com/nlplab/brat",
-    "Software::License": "MIT",
-    "Software::Active maintenance": "No",
-    "Software::Software type": "Web-based application",
-    "Software::Operating system": [
-      "Windows",
-      "macOS",
-      "Linux"
+    "Annotation::Annotation types": [
+      "Tokens (e.g. part-of-speech tag morphological features)",
+      "Spans (e.g. names entities)",
+      "Multi-tokens (e.g. multi-word expressions)",
+      "Relations (e.g. dependencies)",
+      "Chains (e.g. coreferences)"
     ],
-    "Software::Software availability": [
-      "The software should be run by the user (local machine or own server)"
+    "Annotation::Segmentation": [],
+    "Annotation::Tagset customization": "Yes",
+    "Data support::Data export": [
+      "The data can be exported"
     ],
-    "Software::Offline usage": "No",
     "Data support::Input format": [
       "Raw text",
       ".txt+.ann"
     ],
     "Data support::Integration of other resources": [
       "External databases (e.g. dictionaries)"
-    ],
-    "Data support::Data export": [
-      "The data can be exported."
     ],
     "Diversity features::Diversity features": [
       "Language-independence",
@@ -1602,48 +1637,27 @@
     "Diversity features::Language of the interface": [
       "English"
     ],
-    "Annotation::Segmentation": "",
-    "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)",
-      "Multi-tokens (e.g. multi-word expressions)",
-      "Relations (e.g. dependencies)",
-      "Chains (e.g. coreferences)"
+    "Software::Active maintenance": "No",
+    "Software::License": "MIT",
+    "Software::Offline usage (for web based applications)": "No",
+    "Software::Operating system": [
+      "Windows",
+      "Mac OS",
+      "Linux"
     ],
-    "Annotation::Annotation scope": [
-      "Annotation inside sentences",
-      "Annotation across sentences",
-      "Annotation of full sentences/paragraphs/documents"
+    "Software::Software availability": [
+      "The software should be run by the user (own machine/server)"
     ],
-    "Annotation::Tagset customization": "Yes",
-    "User Experience::Annotation mode": [
-      "Keyboard",
-      "Mouse (e.g. drag & drop)"
-    ],
-    "User Experience::Keyboard shortcuts": "No",
-    "User Experience::Annotation display": [
-      "Image (e.g. a graph or coloured text)"
-    ],
-    "User Experience::Automatic pre annotation": "Yes",
-    "User Experience::Automatic recommendation": "No",
-    "User Experience::Collaborative annotation": [
-      "annotators working independently on their own annotations of the same data."
-    ],
-    "User Experience::Project management": "No",
-    "User Experience::User roles": "No",
-    "User Experience::Comparison of annotations": "Yes",
-    "User Experience::Agreement calculation": "No",
-    "User Experience::Querying": "Yes",
-    "User Experience::Mass editing": "No",
-    "UD/PARSEME specifics::UD specific annotations": [
-      "Lemmas",
-      "UPOS",
-      "FEATS",
-      "XPOS",
-      "Basic dependencies",
-      "Empty nodes"
-    ],
-    "UD/PARSEME specifics::UD validation": "No",
+    "Software::Software type": "Web-based application",
+    "Tool ID::Additional features": "",
+    "Tool ID::Code repository": "https://github.com/nlplab/brat",
+    "Tool ID::Developer": "No",
+    "Tool ID::Example projects::Examples": "https://brat.nlplab.org/examples.html",
+    "Tool ID::Logo": "",
+    "Tool ID::Short description": "brat rapid annotation tool is a web-based tool for text annotation. brat is designed in particular for structured annotation, where the notes are not freeform text but have a fixed form that can be automatically processed and interpreted by a computer.",
+    "Tool ID::Tool name": "brat",
+    "Tool ID::Website": "http://brat.nlplab.org/",
+    "UD/PARSEME specifics::Consistency check": "No",
     "UD/PARSEME specifics::Other annotation layers": [
       "events",
       "relations",
@@ -1656,29 +1670,57 @@
       "Nested expressions",
       "Overlapping expressions"
     ],
-    "UD/PARSEME specifics::Consistency check": "No"
+    "UD/PARSEME specifics::UD validation": "No",
+    "UD/PARSEME specifics::UD specific annotations": [
+      "Lemmas",
+      "UPOS",
+      "FEATS",
+      "XPOS",
+      "Basic dependencies",
+      "Empty nodes"
+    ],
+    "User Experience::Agreement calculation": "No",
+    "User Experience::Annotation display": [
+      "Image (e.g. a graph or coloured text)"
+    ],
+    "User Experience::Annotation mode": [
+      "Keyboard",
+      "Mouse (e.g. drag & drop)"
+    ],
+    "User Experience::Automatic pre annotation": "Yes",
+    "User Experience::Automatic recommendation": "No",
+    "User Experience::Collaborative annotation": [
+      "annotators working independently on their own annotations of the same data"
+    ],
+    "User Experience::Comparison of annotations": "Yes",
+    "User Experience::Keyboard annotation and shortcuts": "No",
+    "User Experience::Mass editing": "No",
+    "User Experience::Project management": "No",
+    "User Experience::Querying": "Yes",
+    "User Experience::User roles": "No"
   },
   {
-    "Tool ID::Tool name": "WebAnno",
-    "Tool ID::Logo": "https://webanno.github.io/webanno/assets/img/logo.png",
-    "Tool ID::Short description": "A web-based collaborative tool for linguistic annotation that supports various annotation tasks, including POS tagging, dependency parsing, and coreference resolution. It provides collaborative features and works well with formats like CoNLL-U.\n",
-    "Tool ID::Website": "https://webanno.github.io/webanno/",
-    "Tool ID::Other useful links": "",
-    "Tool ID::Developer": "No",
-    "Tool ID::Additional features": "WebAnno supports a rich set of features including customizable annotation layers, integration with external data sources, support for multiple annotators, and visualization of annotated data. It also supports automatic pre-annotation and inter-annotator agreement calculation\n",
-    "Tool ID::Code repository": "https://github.com/webanno/webanno",
-    "Software::License": "Apache-2.0",
-    "Software::Active maintenance": "Yes",
-    "Software::Software type": "Web-based application",
-    "Software::Operating system": [
-      "Windows",
-      "macOS",
-      "Linux"
+    "Annotation::Annotation scope": [
+      "Annotation inside sentences",
+      "Annotation across sentences",
+      "Annotation of full sentences / paragraphs / documents"
     ],
-    "Software::Software availability": [
-      "The software is available upon request (the user should ask to get an account)"
+    "Annotation::Annotation types": [
+      "Tokens (e.g. part-of-speech tag morphological features)",
+      "Spans (e.g. names entities)",
+      "Multi-tokens (e.g. multi-word expressions)",
+      "Relations (e.g. dependencies)",
+      "Chains (e.g. coreferences)"
     ],
-    "Software::Offline usage": "No",
+    "Annotation::Segmentation": [
+      "word-level",
+      "sentence-level"
+    ],
+    "Annotation::Tagset customization": "Yes",
+    "Data support::Data export": [
+      "The data can be exported",
+      "The data can be stored with a third party storage platform (e.g. Git repository)"
+    ],
     "Data support::Input format": [
       "Raw text",
       "CONLL-U",
@@ -1687,10 +1729,6 @@
     ],
     "Data support::Integration of other resources": [
       "External databases (e.g. dictionaries)"
-    ],
-    "Data support::Data export": [
-      "The data can be exported.",
-      "The data can be stored with a third party storage platform (e.g. Git repository)"
     ],
     "Diversity features::Diversity features": [
       "Language-independence",
@@ -1702,45 +1740,37 @@
     "Diversity features::Language of the interface": [
       "English"
     ],
-    "Annotation::Segmentation": [
-      "word-level",
-      "sentence-level"
+    "Software::Active maintenance": "Yes",
+    "Software::License": "Apache-2.0",
+    "Software::Offline usage (for web based applications)": "No",
+    "Software::Operating system": [
+      "Windows",
+      "Mac OS",
+      "Linux"
     ],
-    "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Spans (e.g. names entities)",
-      "Multi-tokens (e.g. multi-word expressions)",
-      "Relations (e.g. dependencies)",
-      "Chains (e.g. coreferences)"
+    "Software::Software availability": [
+      "The software is available upon request (the user should ask to get an account)"
     ],
-    "Annotation::Annotation scope": [
-      "Annotation inside sentences",
-      "Annotation across sentences",
-      "Annotation of full sentences/paragraphs/documents"
+    "Software::Software type": "Web-based application",
+    "Tool ID::Additional features": "WebAnno supports a rich set of features including customizable annotation layers, integration with external data sources, support for multiple annotators, and visualization of annotated data It also supports automatic pre-annotation and inter-annotator agreement calculation",
+    "Tool ID::Code repository": "https://github.com/webanno/webanno",
+    "Tool ID::Developer": "No",
+    "Tool ID::Logo": "https://webanno.github.io/webanno/assets/img/logo.png",
+    "Tool ID::Short description": "WebAnno is a web-based collaborative tool for linguistic annotation that supports various annotation tasks, including POS tagging, dependency parsing, and coreference resolution. It provides collaborative features and works well with formats like CoNLL-U.",
+    "Tool ID::Tool name": "WebAnno",
+    "Tool ID::Website": "https://webanno.github.io/webanno/",
+    "UD/PARSEME specifics::Consistency check": "Yes",
+    "UD/PARSEME specifics::Other annotation layers": [
+      "NER",
+      "coreference",
+      "MWE"
     ],
-    "Annotation::Tagset customization": "Yes",
-    "User Experience::Annotation mode": [
-      "Keyboard",
-      "Mouse (e.g. drag & drop)"
+    "UD/PARSEME specifics::PARSEME specific annotations": [
+      "Discontinuous expressions",
+      "Nested expressions",
+      "Overlapping expressions"
     ],
-    "User Experience::Keyboard shortcuts": "Yes",
-    "User Experience::Annotation display": [
-      "Image (e.g. a graph or coloured text)",
-      "Table",
-      "Raw format (e.g. CONLL-U)"
-    ],
-    "User Experience::Automatic pre annotation": "Yes",
-    "User Experience::Automatic recommendation": "Yes",
-    "User Experience::Collaborative annotation": [
-      "annotators working independently on their own annotations of the same data.",
-      "annotators working together on the same shared annotation of the data."
-    ],
-    "User Experience::Project management": "Yes",
-    "User Experience::User roles": "Yes",
-    "User Experience::Comparison of annotations": "Yes",
-    "User Experience::Agreement calculation": "Yes",
-    "User Experience::Querying": "Yes",
-    "User Experience::Mass editing": "No",
+    "UD/PARSEME specifics::UD validation": "Yes",
     "UD/PARSEME specifics::UD specific annotations": [
       "Lemmas",
       "UPOS",
@@ -1752,150 +1782,52 @@
       "Empty nodes",
       "Metadata"
     ],
-    "UD/PARSEME specifics::UD validation": "Yes",
-    "UD/PARSEME specifics::Other annotation layers": [
-      "NER",
-      "coreference",
-      "MWE"
-    ],
-    "UD/PARSEME specifics::PARSEME specific annotations": [
-      "Discontinuous expressions",
-      "Nested expressions",
-      "Overlapping expressions"
-    ],
-    "UD/PARSEME specifics::Consistency check": "Yes"
-  },
-  {
-    "Tool ID::Tool name": "ArboratorGrew",
-    "Tool ID::Logo": "https://arboratorgrew.elda.org/static/images/logo.svg",
-    "Tool ID::Short description": "Collaborative UD treebank annotation and search tool.\n",
-    "Tool ID::Website": "https://arborator.github.io",
-    "Tool ID::Code repository": "https://github.com/Arborator",
-    "Tool ID::Other useful links": [
-      {
-        "Documentation": "https://arborator.github.io/arborator-documentation/#/"
-      },
-      {
-        "Paper": "https://doi.org/10.18653/v1/2021.eacl-demo.23"
-      }
-    ],
-    "Tool ID::Developer": "Yes",
-    "Tool ID::Example projects": [
-      {
-        "Masakhane-Igbo": "https://arboratorgrew.elizia.net/#/projects/Masakhane-Igbo"
-      }
-    ],
-    "Tool ID::Additional features": "ArboratorGrew can be used also to teach syntax. It has a mode when users can create exercises with different levels of complexity and export students results by the end\nUsers can also generate lexicons from your annotated data\nAnd to ensure effective collaboration, ArboratorGrew provides a tag system\n",
-    "Software::License": "AGPL-3.0",
-    "Software::Active maintenance": "Yes",
-    "Software::Software type": "Web-based application",
-    "Software::Operating system": [
-      "Windows",
-      "macOS",
-      "Linux"
-    ],
-    "Software::Software availability": [
-      "The software is freely available online (with sign up option and/or social logins)"
-    ],
-    "Software::Offline usage": "No",
-    "Data support::Input format": [
-      "Raw text",
-      "CoNLL-U"
-    ],
-    "Data support::Integration of other resources": "",
-    "Data support::Data export": [
-      "The data can be exported.",
-      "The data can be stored with a third party storage platform (e.g. Git repository)"
-    ],
-    "Diversity features::Diversity features": [
-      "Accessibility"
-    ],
-    "Diversity features::Language of the interface": [
-      "English",
-      "French"
-    ],
-    "Annotation::Segmentation": [
-      "word segmentation",
-      "Sentence segmentation"
-    ],
-    "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag, morphological features)",
-      "Multi-tokens (e.g. multi-word expressions)",
-      "Relations (e.g. dependencies)"
-    ],
-    "Annotation::Annotation scope": [
-      "Annotation inside sentences"
-    ],
-    "Annotation::Tagset customization": "Import custom",
-    "User Experience::Annotation mode": [
-      "Mouse (e.g. drag & drop)"
-    ],
-    "User Experience::Keyboard shortcuts": "Yes",
+    "User Experience::Agreement calculation": "Yes",
     "User Experience::Annotation display": [
       "Image (e.g. a graph or coloured text)",
       "Table",
       "Raw format (e.g. CONLL-U)"
     ],
-    "User Experience::Automatic pre annotation": "partial",
-    "User Experience::Automatic recommendation": "No",
+    "User Experience::Annotation mode": [
+      "Keyboard",
+      "Mouse (e.g. drag & drop)"
+    ],
+    "User Experience::Automatic pre annotation": "Yes",
+    "User Experience::Automatic recommendation": "Yes",
     "User Experience::Collaborative annotation": [
-      "multiple annotators working independently on their own annotations of the same data."
+      "annotators working independently on their own annotations of the same data",
+      "annotators working together on the same shared annotation of the data"
     ],
-    "User Experience::Project management": "Yes",
-    "User Experience::User roles": "Yes",
     "User Experience::Comparison of annotations": "Yes",
-    "User Experience::Agreement calculation": "Yes",
+    "User Experience::Keyboard annotation and shortcuts": "Yes",
+    "User Experience::Mass editing": "No",
+    "User Experience::Project management": "Yes",
     "User Experience::Querying": "Yes",
-    "User Experience::Mass editing": "partial",
-    "UD/PARSEME specifics::UD specific annotations": [
-      "Lemmas",
-      "UPOS",
-      "FEATS",
-      "XPOS",
-      "Basic dependencies",
-      "Multi-word tokens",
-      "Metadata"
-    ],
-    "UD/PARSEME specifics::UD validation": "Yes",
-    "UD/PARSEME specifics::Other annotation layers": "",
-    "UD/PARSEME specifics::PARSEME specific annotations": "",
-    "UD/PARSEME specifics::Consistency check": "Yes"
+    "User Experience::User roles": "Yes"
   },
   {
-    "Tool ID::Tool name": "UD Annotatrix",
-    "Tool ID::Logo": "",
-    "Tool ID::Short description": "Client-side, browser-only, language-independent\ntool for editing dependency trees according to the guidelines established by the\nUniversal Dependencies project.\n",
-    "Tool ID::Website": "https://maryszmary.github.io/ud-annotatrix/standalone/annotator.html",
-    "Tool ID::Other useful links": [
-      {
-        "Paper": "https://aclanthology.org/W17-7604"
-      }
+    "Annotation::Annotation scope": [
+      "Annotation inside sentences"
     ],
-    "Tool ID::Developer": "No",
-    "Tool ID::Code repository": "https://github.com/jonorthwash/ud-annotatrix",
-    "Software::License": "GPL-3.0",
-    "Software::Active maintenance": "Yes",
-    "Software::Software type": "Web-based application",
-    "Software::Operating system": [
-      "Windows",
-      "macOS",
-      "Linux"
+    "Annotation::Annotation types": [
+      "Tokens (e.g. part-of-speech tags)",
+      "Multi-tokens (e.g. multi-word expressions)",
+      "Relations (e.g. dependencies)"
     ],
-    "Software::Software availability": [
-      "The software is freely available online (with sign up option and/or social logins)"
+    "Annotation::Segmentation": [
+      "word-level",
+      "sentence-level"
     ],
-    "Software::Offline usage": "Yes",
+    "Annotation::Tagset customization": "Yes",
+    "Data support::Data export": [
+      "The data can be exported",
+      "The data can be stored with a third party storage platform (e.g. Git repository)"
+    ],
     "Data support::Input format": [
       "Raw text",
-      "CONLL-U",
-      "VISL CG3",
-      "SDParse",
-      "Bracket notation"
+      "CONLL-U"
     ],
-    "Data support::Integration of other resources": "",
-    "Data support::Data export": [
-      "The data can be exported."
-    ],
+    "Data support::Integration of other resources": [],
     "Diversity features::Diversity features": [
       "Language-independence",
       "Writing script support",
@@ -1904,39 +1836,34 @@
       "unicode support"
     ],
     "Diversity features::Language of the interface": [
-      "English"
+      "English",
+      "French"
     ],
-    "Annotation::Segmentation": "",
-    "Annotation::Annotation types": [
-      "Tokens (e.g. part-of-speech tag morphological features)",
-      "Multi-tokens (e.g. multi-word expressions)",
-      "Relations (e.g. dependencies)"
+    "Software::Active maintenance": "Yes",
+    "Software::License": "AGPL-3.0",
+    "Software::Offline usage (for web based applications)": "No",
+    "Software::Operating system": [
+      "Windows",
+      "Mac OS",
+      "Linux"
     ],
-    "Annotation::Annotation scope": [
-      "Annotation inside sentences"
+    "Software::Software availability": [
+      "The software is freely available online (with sign up option)"
     ],
-    "Annotation::Tagset customization": "Yes",
-    "User Experience::Annotation mode": [
-      "Keyboard",
-      "Mouse (e.g. drag & drop)"
-    ],
-    "User Experience::Keyboard shortcuts": "No",
-    "User Experience::Annotation display": [
-      "Image (e.g. a graph or coloured text)",
-      "Table",
-      "Raw format (e.g. CONLL-U)"
-    ],
-    "User Experience::Automatic pre annotation": "No",
-    "User Experience::Automatic recommendation": "No",
-    "User Experience::Collaborative annotation": [
-      "Yes"
-    ],
-    "User Experience::Project management": "No",
-    "User Experience::User roles": "No",
-    "User Experience::Comparison of annotations": "No",
-    "User Experience::Agreement calculation": "No",
-    "User Experience::Querying": "No",
-    "User Experience::Mass editing": "No",
+    "Software::Software type": "Web-based application",
+    "Tool ID::Additional features": "ArboratorGrew can be used also to teach syntax: users can create exercises with different levels of complexity and export results",
+    "Tool ID::Code repository": "https://github.com/Arborator",
+    "Tool ID::Developer": "Yes",
+    "Tool ID::Example projects::Masakhane Igbo": "https://arboratorgrew.elizia.net/#/projects/Masakhane-Igbo",
+    "Tool ID::Logo": "https://arborator.grew.fr/svg/arborator.grew.svg",
+    "Tool ID::Other useful links::Documentation": "https://arborator.github.io/arborator-documentation/",
+    "Tool ID::Short description": "A collaborative annotation tool for the treebank developement. It allows the creation of lexicons from annotated data. To ensure effective collaboration, ArboratorGrew provides a tag system.",
+    "Tool ID::Tool name": "ArboratorGrew",
+    "Tool ID::Website": "https://arborator.grew.fr/",
+    "UD/PARSEME specifics::Consistency check": "No",
+    "UD/PARSEME specifics::Other annotation layers": [],
+    "UD/PARSEME specifics::PARSEME specific annotations": [],
+    "UD/PARSEME specifics::UD validation": "Yes",
     "UD/PARSEME specifics::UD specific annotations": [
       "Lemmas",
       "UPOS",
@@ -1944,12 +1871,27 @@
       "XPOS",
       "Multi-word tokens",
       "Basic dependencies",
-      "Enhanced dependencies",
-      "Empty nodes"
+      "Metadata"
     ],
-    "UD/PARSEME specifics::UD validation": "No",
-    "UD/PARSEME specifics::Other annotation layers": "",
-    "UD/PARSEME specifics::PARSEME specific annotations": "",
-    "UD/PARSEME specifics::Consistency check": "No"
+    "User Experience::Agreement calculation": "Yes",
+    "User Experience::Annotation display": [
+      "Image (e.g. a graph or coloured text)",
+      "Table",
+      "Raw format (e.g. CONLL-U)"
+    ],
+    "User Experience::Annotation mode": [
+      "Mouse (e.g. drag & drop)"
+    ],
+    "User Experience::Automatic pre annotation": "Yes",
+    "User Experience::Automatic recommendation": "Yes",
+    "User Experience::Collaborative annotation": [
+      "annotators working independently on their own annotations of the same data"
+    ],
+    "User Experience::Comparison of annotations": "Yes",
+    "User Experience::Keyboard annotation and shortcuts": "No",
+    "User Experience::Mass editing": "Yes",
+    "User Experience::Project management": "Yes",
+    "User Experience::Querying": "Yes",
+    "User Experience::User roles": "Yes"
   }
 ]

@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Two-Pane (Horizontal) + Side-by-Side (Vertical) Resizers</title>
+  <style>
+    :root {
+      /* Vertical split (top/bottom) */
+      --separator-size: 8px;   /* thickness of horizontal bar */
+      --min-panel: 80px;       /* min height for top/bottom */
+      --top: 50vh;             /* initial top panel height */
+
+      /* Side-by-side split (left/right) */
+      --v-separator-size: 8px; /* thickness of vertical bar */
+      --min-side: 120px;       /* min width for left/right */
+      --left: 50vw;            /* initial left panel width */
+    }
+
+    html, body { height: 100%; margin: 0; }
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+
+    /* Outer layout: left | v-separator | right */
+    .container {
+      display: grid;
+      grid-template-columns: var(--left) var(--v-separator-size) 1fr;
+      grid-template-rows: 100vh;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Left side contains the top/bottom split */
+    .split {
+      display: grid;
+      grid-template-rows: var(--top) var(--separator-size) 1fr;
+      height: 100%;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .panel { overflow: auto; padding: 16px; }
+    .top { background: #f6f7f9; }
+    .bottom { background: #ffffff; }
+
+    /* Horizontal draggable bar (between top/bottom) */
+    .separator {
+      background: #e5e7eb;
+      cursor: row-resize;
+      touch-action: none;
+      user-select: none;
+      display: grid;
+      place-items: center;
+    }
+    .separator::before {
+      content: "";
+      width: 48px;
+      height: 3px;
+      border-radius: 999px;
+      background: #9ca3af;
+    }
+
+    /* Vertical draggable bar (between left/right) */
+    .separator2 {
+      background: #e5e7eb;
+      cursor: col-resize;
+      touch-action: none;
+      user-select: none;
+      display: grid;
+      place-items: center;
+    }
+    .separator2::before {
+      content: "";
+      width: 3px;
+      height: 48px;
+      border-radius: 999px;
+      background: #9ca3af;
+    }
+
+    /* Drag cursors */
+    .dragging-y, .dragging-y * { cursor: row-resize !important; }
+    .dragging-x, .dragging-x * { cursor: col-resize !important; }
+
+    /* Right panel demo styles */
+    .rightpanel { padding: 16px; overflow: auto; background: #fafafa; }
+  </style>
+</head>
+<body>
+  <div class="container" id="container">
+    <!-- LEFT: split into top/bottom with a horizontal resizer -->
+    <div class="split" id="split">
+      <section class="panel top">
+        <h2>Top Panel</h2>
+        <p>Drag the horizontal bar below to change this panel's height.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel purus nec arcu sagittis mollis. Mauris ut posuere justo. Vivamus semper.</p>
+      </section>
+
+      <div id="separator" class="separator"></div>
+
+      <section class="panel bottom">
+        <h2>Bottom Panel</h2>
+        <p>Only drag & drop is enabled (no keyboard/dbl‑click).</p>
+      </section>
+    </div>
+
+    <!-- MIDDLE: vertical resizer -->
+    <div id="separator2" class="separator2"></div>
+
+    <!-- RIGHT: any content -->
+    <aside class="rightpanel" id="right">
+      <h2>Right Panel</h2>
+      <p>Drag the vertical bar to resize left/right.</p>
+      <p>Put anything you want here (preview, editor, etc.).</p>
+    </aside>
+  </div>
+
+  <script>
+    (function () {
+      // Horizontal resizer (top/bottom) in LEFT area
+      const split = document.getElementById('split');
+      const sepY = document.getElementById('separator');
+      const minPanel = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--min-panel')) || 80;
+      const sepSize = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--separator-size')) || 8;
+
+      function clampTop(px) {
+        const total = split.clientHeight;
+        const maxTop = total - sepSize - minPanel;
+        const minTop = minPanel;
+        return Math.max(minTop, Math.min(px, maxTop));
+      }
+      function setTop(px) {
+        const clamped = clampTop(px);
+        document.documentElement.style.setProperty('--top', clamped + 'px');
+      }
+      function getTop() {
+        const v = getComputedStyle(document.documentElement).getPropertyValue('--top').trim();
+        return v.endsWith('vh') ? (parseFloat(v) / 100) * window.innerHeight : parseFloat(v);
+      }
+
+      let draggingY = false;
+      function onPointerDownY(e) {
+        draggingY = true;
+        document.body.classList.add('dragging-y');
+        window.addEventListener('pointermove', onPointerMoveY);
+        window.addEventListener('pointerup', onPointerUpY, { once: true });
+      }
+      function onPointerMoveY(e) {
+        if (!draggingY) return;
+        const rect = split.getBoundingClientRect();
+        const y = e.clientY - rect.top;
+        setTop(y);
+      }
+      function onPointerUpY() {
+        draggingY = false;
+        document.body.classList.remove('dragging-y');
+        window.removeEventListener('pointermove', onPointerMoveY);
+      }
+      sepY.addEventListener('pointerdown', onPointerDownY);
+      window.addEventListener('resize', () => setTop(getTop()));
+
+      // Vertical resizer (left/right) in OUTER container
+      const container = document.getElementById('container');
+      const sepX = document.getElementById('separator2');
+      const vSepSize = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--v-separator-size')) || 8;
+      const minSide = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--min-side')) || 120;
+
+      function clampLeft(px) {
+        const total = container.clientWidth;
+        const maxLeft = total - vSepSize - minSide;
+        const minLeft = minSide;
+        return Math.max(minLeft, Math.min(px, maxLeft));
+      }
+      function setLeft(px) {
+        const clamped = clampLeft(px);
+        document.documentElement.style.setProperty('--left', clamped + 'px');
+      }
+      function getLeft() {
+        const v = getComputedStyle(document.documentElement).getPropertyValue('--left').trim();
+        return v.endsWith('vw') ? (parseFloat(v) / 100) * window.innerWidth : parseFloat(v);
+      }
+
+      let draggingX = false;
+      function onPointerDownX(e) {
+        draggingX = true;
+        document.body.classList.add('dragging-x');
+        window.addEventListener('pointermove', onPointerMoveX);
+        window.addEventListener('pointerup', onPointerUpX, { once: true });
+      }
+      function onPointerMoveX(e) {
+        if (!draggingX) return;
+        const rect = container.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        setLeft(x);
+      }
+      function onPointerUpX() {
+        draggingX = false;
+        document.body.classList.remove('dragging-x');
+        window.removeEventListener('pointermove', onPointerMoveX);
+      }
+      sepX.addEventListener('pointerdown', onPointerDownX);
+      window.addEventListener('resize', () => setLeft(getLeft()));
+    })();
+  </script>
+</body>
+</html>
