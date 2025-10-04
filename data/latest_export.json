@@ -587,7 +587,7 @@
     "Data support::Input format": [
       "Raw text",
       "XML",
-      "Corpus Workbench vertical format"
+      "other"
     ],
     "Data support::Integration of other resources": [],
     "Diversity features::Diversity features": [
@@ -695,9 +695,7 @@
     "Data support::Input format": [
       "Raw text",
       "XML",
-      "SFM",
-      "ToolBox files",
-      "Praat files"
+      "other"
     ],
     "Data support::Integration of other resources": [
       "Audio",
@@ -787,7 +785,7 @@
     ],
     "Data support::Input format": [
       "CONLL-U",
-      "CoNLL-U plus"
+      "CoNLL-U Plus"
     ],
     "Data support::Integration of other resources": [],
     "Diversity features::Diversity features": [
@@ -1128,9 +1126,7 @@
     "Data support::Input format": [
       "Raw text",
       "CONLL-U",
-      "VISL CG3",
-      "SDParse",
-      "Bracket notation"
+      "other"
     ],
     "Data support::Integration of other resources": [],
     "Diversity features::Diversity features": [
@@ -1226,20 +1222,8 @@
     "Data support::Input format": [
       "Raw text",
       "XML",
-      ".mp4",
-      ".avi",
-      ".mov",
-      ".mkv",
-      ".wav",
-      ".mp3",
-      ".flac",
-      ".aac",
-      ".eaf",
-      "TextGrid files",
-      "CHAT",
-      "Shoebox/Toolbox",
-      ".trs",
-      "CSV"
+      "other",
+      "TSV"
     ],
     "Data support::Integration of other resources": [
       "Audio",
@@ -1606,7 +1590,7 @@
       "CONLL-U",
       "XML",
       "TSV",
-      "FoLiA XML"
+      "other"
     ],
     "Data support::Integration of other resources": [],
     "Diversity features::Diversity features": [
