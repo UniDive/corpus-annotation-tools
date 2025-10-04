@@ -6,6 +6,16 @@
     --yinmn-blue: #1E3A8A; /* #3A567Fff; */
     --sandy-brown:  #FFA346ff;
     --pumpkin: #F97316; /*#FF853Fff; */
+
+    /* Vertical split (top/bottom) */
+    --separator-size: 8px;   /* thickness of horizontal bar */
+    --min-panel: 80px;       /* min height for top/bottom */
+    --top: 50vh;             /* initial top panel height */
+
+    /* Side-by-side split (left/right) */
+    --v-separator-size: 8px; /* thickness of vertical bar */
+    --min-side: 120px;       /* min width for left/right */
+    --left: 50vw;            /* initial left panel width */
 }
 
 
@@ -80,7 +90,6 @@ a:hover {
   display: flex; align-items: center; justify-content: space-between;
   padding: 0px 20px;
   background: var(--french-gray);
-  border-bottom: 1px solid var(--french-gray);
     /* linea arancione sotto */
   border-bottom: 3px solid #44bcd7;
 
@@ -115,14 +124,6 @@ a:hover {
     box-sizing: border-box;
 }
 
-/*  .instructions.collapsed {
-    background: var(--white );
-    color: var(--yinmn-blue);
-    border-bottom: 1px solid var(--french-gray);
-    max-height: 40px;
-    opacity: 1;
-    padding: 0.5rem 2rem 0.5rem 2rem;
-} */
 
 .instructions.collapsed {
   max-height: 0;
@@ -207,26 +208,42 @@ a:hover {
 /* CONTAINER */
 .container {
     position: absolute;
-    display: flex;
+    display: grid;
+    grid-template-columns: var(--left) var(--v-separator-size) 1fr;
+    grid-template-rows: 100vh;
+    /* height: 100vh; */
+    overflow: hidden;
+    top: 56px;
+
+    /* position: absolute; */
+    /* display: flex; */
     height: calc(100vh - 40px); /* Adjust for instructions bar height */
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    padding-top: 40px; /* Height of collapsed instructions bar */
-    box-sizing: border-box;
+    /* top: 0; */
+    /* left: 0; */
+    /* width: 100vw; */
+    /* height: 100vh; */
+    /* padding-top: 40px; Height of collapsed instructions bar */
+    /* box-sizing: border-box; */
+}
+
+/* Left side contains the top/bottom split */
+.split {
+    display: grid;
+    grid-template-rows: var(--top) var(--separator-size) 1fr;
+    height: 100%;
+    overflow-y: none;
 }
 
 /* Sidebar */
 .sidebar {
     /* flex: 1 1 50%; */
-    min-width: 250px;
-    width: 70%;
-    max-width: 60vw;
-    height: 100%;
-    overflow-y: none;
+    /* min-width: 250px; */
+    /* width: 70%; */
+    /* max-width: 60vw; */
+    /* height: 100%; */
+    /* overflow-y: none; */
     background-color: var(--french-gray);
-    padding: 30px;
+    padding: 20px;
     border-right: 2px solid var(--yinmn-blue);
     color: var(--yinmn-blue);
 }
@@ -265,19 +282,24 @@ a:hover {
 }
 
 .repo {
-    background-color:#44bcd7;
+      background-color:#ff8e20;
     color: #fff;
     padding: 10px 20px;
-  border-radius: 25px;
-  box-shadow: 0 2px 4px var(--yinmn-blue);
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: bold;
-  transition: background-color 0.5s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  position: relative; /* serve per posizionare l’icona */
+    margin-left: 15px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px var(--yinmn-blue);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.5s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.repo:hover {
+    background-color: #44bcd7;
 }
 
 
@@ -317,16 +339,51 @@ a:hover {
     color: var(--yinmn-blue);
 }
 
+    /* Horizontal draggable bar (between top/bottom) */
+    .separator {
+      background: #e5e7eb;
+      cursor: row-resize;
+      touch-action: none;
+      user-select: none;
+      display: grid;
+      place-items: center;
+    }
+    .separator::before {
+      content: "";
+      width: 48px;
+      height: 3px;
+      border-radius: 999px;
+      background: #9ca3af;
+    }
+
+    /* Vertical draggable bar (between left/right) */
+    .separator2 {
+      background: #e5e7eb;
+      cursor: col-resize;
+      touch-action: none;
+      user-select: none;
+      display: grid;
+      place-items: center;
+    }
+    .separator2::before {
+      content: "";
+      width: 3px;
+      height: 48px;
+      border-radius: 999px;
+      background: #9ca3af;
+    }
+
+
+.rightpanel {
+    padding: 16px;
+    overflow: hidden;
+    width: calc(95vw - var(--left) - var(--v-separator-size));
+}
 /* Content */
 .content {
-    /* flex: 1 1 50%; */
-    min-width: 20vw;
-    max-width: 80vw;
     height: 100%;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
-    padding: 30px;
     font-weight: 1700;
 }
 
@@ -338,9 +395,7 @@ a:hover {
     height: 100%;
 }
 
-
 /* Tools */
-
 .tools {
     background-color: var(--white);
     margin-top: 1rem;
@@ -350,16 +405,8 @@ a:hover {
     gap: 1rem; /* space between cards */
     justify-content: center;
     overflow-y: auto;
-    /* min-height: 20vw; */
-    /* max-height: 80vw; */
-    height: 30%;
-    border-bottom: 2px solid #44bcd7;
+    /* height: 30%; */
 }
-/*
-.tools-viz {
-    height: 70%;
-    overflow-y: auto;
-} */
 
 .tools::-webkit-scrollbar {
     width: 8px;
@@ -371,6 +418,13 @@ a:hover {
     background: #44bcd7;;
     border-radius: 4px;
 }
+
+.top {
+    border-bottom: 2px solid var(--yinmn-blue);
+    display: flex;
+    flex-direction: column;
+}
+
 /* Card Styling */
 .card {
     background-color: #192d67;
@@ -443,11 +497,12 @@ a:hover {
   --left: 40%;                        /* left column width for BOTH rows */
   display: grid;
   grid-template-columns: var(--left) 1fr;
+  padding: 15px;
 }
 
 .tools-viz .card-header,
 .tools-viz .short-description{
-  display: grid;
+    display: grid;
   place-items: center;     /* = align-items + justify-items */
   text-align: center;      /* center multi-line text */
 }
@@ -472,6 +527,10 @@ a:hover {
   overflow-x: hidden;
   overscroll-behavior: contain;
   scrollbar-gutter: stable;
+}
+
+.details {
+    padding: 15px;
 }
 
 /* Row 1 */
@@ -700,3 +759,8 @@ a:hover {
   font-weight: 500;
   border-left: 2px solid var(--pumpkin);
 }
+
+
+/* Drag cursors */
+.dragging-y, .dragging-y * { cursor: row-resize !important; }
+.dragging-x, .dragging-x * { cursor: col-resize !important; }
