@@ -1,0 +1,47 @@
+name: Build JSON on PR merge (tools/ changes)
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [ main ]  # adjust if needed
+
+jobs:
+  build-json:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository at merge commit
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.merge_commit_sha }}
+
+      - name: Detect changes in tools/ or build script
+        id: changed
+        run: |
+          git fetch --no-tags --depth=1 origin ${{ github.event.pull_request.base.sha }}
+          if git diff --name-only \
+            ${{ github.event.pull_request.base.sha }} \
+            ${{ github.event.pull_request.merge_commit_sha }} \
+            | grep -E '^tools/|^src/build_json\.py$' > /dev/null; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Skip if no relevant changes
+        if: steps.changed.outputs.changed != 'true'
+        run: echo "No changes in tools/ or src/build_json.py; skipping." && exit 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install PyYAML
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml
+
+      - name: Run build script
+        run: python src/build_json.py
