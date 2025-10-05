@@ -22,15 +22,13 @@ The JSON (`data/latest_export.json`) is generated automatically from those YAMLs
    - Lists → use YAML lists (- item1, - item2) or [] if none.
    - Yes/No/partial → write exactly "Yes", "No", or "partial".
    - Links → full https://…. For extra resources, use Label: "URL".
-   - Operating system → mark each as "Yes" or "No".
 3. Save and commit only this new YAML file.
 
 
 Tips:
 - Keep descriptions short and clear (one line in Short-description).
 - If unsure, leave the field blank ("") — don’t delete the key.
-- Use ISO codes for interface languages (en, fr, it, …).
-- You can check an [example file](tools/arborator.yaml) for inspiration
+- You can check an example file for inspiration, anything in the [tools/](./tools/) folder works
 
 ### 2. Update an existing tool
 
@@ -43,10 +41,9 @@ Tips:
 If you want to check your file before opening a PR:
 ```
 pip install -r src/requirements.txt
-python src/build_from_yaml.py
+python src/build_json.py
 ```
 This will regenerate:
-- `data/results_230125.tsv`
 - `data/latest_export.json`
 
 ### 4. Open a Pull Request
