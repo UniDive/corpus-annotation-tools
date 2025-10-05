@@ -73,8 +73,7 @@ User Experience:
   - Mouse (e.g. drag & drop)
   Automatic pre-annotation: partial
   Automatic recommendation: 'No'
-  Collaborative annotation:
-  - 'No'
+  Collaborative annotation: []
   Comparison of annotations: partial
   Keyboard annotation and shortcuts: 'Yes'
   Mass editing: 'Yes'
