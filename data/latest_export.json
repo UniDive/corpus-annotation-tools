@@ -77,9 +77,7 @@
     ],
     "User Experience::Automatic pre-annotation": "No",
     "User Experience::Automatic recommendation": "No",
-    "User Experience::Collaborative annotation": [
-      "No"
-    ],
+    "User Experience::Collaborative annotation": [],
     "User Experience::Comparison of annotations": "No",
     "User Experience::Keyboard annotation and shortcuts": "Yes",
     "User Experience::Mass editing": "Yes",
@@ -555,9 +553,7 @@
     ],
     "User Experience::Automatic pre-annotation": "No",
     "User Experience::Automatic recommendation": "No",
-    "User Experience::Collaborative annotation": [
-      "No"
-    ],
+    "User Experience::Collaborative annotation": [],
     "User Experience::Comparison of annotations": "No",
     "User Experience::Keyboard annotation and shortcuts": "No",
     "User Experience::Mass editing": "No",
@@ -755,9 +751,7 @@
     ],
     "User Experience::Automatic pre-annotation": "partial",
     "User Experience::Automatic recommendation": "No",
-    "User Experience::Collaborative annotation": [
-      "No"
-    ],
+    "User Experience::Collaborative annotation": [],
     "User Experience::Comparison of annotations": "partial",
     "User Experience::Keyboard annotation and shortcuts": "Yes",
     "User Experience::Mass editing": "Yes",
