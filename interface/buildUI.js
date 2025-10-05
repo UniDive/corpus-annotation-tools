@@ -272,16 +272,20 @@ function populateViz(tool) {
 		const projectsSection = document.createElement('div');
 		projectsSection.className = 'example-projects';
 		projectsSection.innerHTML = '<h4>Other useful links</h4>';
+		const example_list = document.createElement('ul');
 		tool["Tool ID::Other useful links"].forEach((tool_link) => {
 			Object.entries(tool_link).forEach(([link_key, link_ref]) => {
 				// console.log(link_key, link_ref);
+				const listElem = document.createElement('li');
 				const linkElem = document.createElement('a');
 				linkElem.href = link_ref;
 				linkElem.textContent = link_key;
 				linkElem.target = '_blank';
-				projectsSection.appendChild(linkElem);
+				listElem.appendChild(linkElem);
+				example_list.appendChild(listElem);
 			});
 		});
+		projectsSection.appendChild(example_list);
 		infoBox.appendChild(projectsSection);
 	}
 
@@ -289,17 +293,20 @@ function populateViz(tool) {
 		const projectsSection = document.createElement('div');
 		projectsSection.className = 'example-projects';
 		projectsSection.innerHTML = '<h4>Example projects</h4>';
-
+		const example_list = document.createElement('ul');
 		tool["Tool ID::Example projects"].forEach((tool_link) => {
 			Object.entries(tool_link).forEach(([link_key, link_ref]) => {
 				// console.log(link_key, link_ref);
+				const listElem = document.createElement('li');
 				const linkElem = document.createElement('a');
 				linkElem.href = link_ref;
 				linkElem.textContent = link_key;
 				linkElem.target = '_blank';
-				projectsSection.appendChild(linkElem);
+				listElem.appendChild(linkElem);
+				example_list.appendChild(listElem);
 			});
 		});
+		projectsSection.appendChild(example_list);
 		infoBox.appendChild(projectsSection);
 	}
 	details.appendChild(infoBox);
