@@ -90,7 +90,6 @@ a:hover {
   display: flex; align-items: center; justify-content: space-between;
   padding: 0px 20px;
   background: var(--french-gray);
-    /* linea arancione sotto */
   border-bottom: 3px solid #44bcd7;
 
   /* ombreggiatura */
@@ -151,19 +150,6 @@ a:hover {
     width: 100%;
 }
 
-/* #collapse-instructions {
-    background-color: var(--white);
-    * background: var(--yinmn-blue); *
-    color: var(--yinmn-blue);
-    border: none;
-    * border-radius: 50%; *
-    * width: 32px; *
-    * height: 32px; *
-    font-size: 1.3rem;
-    cursor: pointer;
-    margin-left: 1rem;
-}*/
-
 #collapse-instructions {
     background-color: #ff8e20;
     color: var(--white);
@@ -203,8 +189,6 @@ a:hover {
     color: white;
 }
 
-
-
 /* CONTAINER */
 .container {
     position: absolute;
@@ -214,16 +198,7 @@ a:hover {
     /* height: 100vh; */
     overflow: hidden;
     top: 56px;
-
-    /* position: absolute; */
-    /* display: flex; */
     height: calc(100vh - 40px); /* Adjust for instructions bar height */
-    /* top: 0; */
-    /* left: 0; */
-    /* width: 100vw; */
-    /* height: 100vh; */
-    /* padding-top: 40px; Height of collapsed instructions bar */
-    /* box-sizing: border-box; */
 }
 
 /* Left side contains the top/bottom split */
@@ -236,12 +211,6 @@ a:hover {
 
 /* Sidebar */
 .sidebar {
-    /* flex: 1 1 50%; */
-    /* min-width: 250px; */
-    /* width: 70%; */
-    /* max-width: 60vw; */
-    /* height: 100%; */
-    /* overflow-y: none; */
     background-color: var(--french-gray);
     padding: 20px;
     border-right: 2px solid var(--yinmn-blue);
@@ -255,9 +224,7 @@ a:hover {
     color:var(--yinmn-blue);
 }
 
-
 /* Reset Button */
-
 .reset-btn {
   background-color:#ff8e20;
   color: #fff;
@@ -275,7 +242,6 @@ a:hover {
   gap: 8px;
   position: relative; /* serve per posizionare l’icona */
 }
-
 
 .reset-btn:hover {
     background-color: #44bcd7;
@@ -301,7 +267,6 @@ a:hover {
 .repo:hover {
     background-color: #44bcd7;
 }
-
 
 /* Resizer */
 .resizer {
@@ -340,14 +305,14 @@ a:hover {
 }
 
     /* Horizontal draggable bar (between top/bottom) */
-    .separator {
+.separator {
       background: #e5e7eb;
       cursor: row-resize;
       touch-action: none;
       user-select: none;
       display: grid;
       place-items: center;
-    }
+}
     .separator::before {
       content: "";
       width: 48px;
@@ -372,7 +337,6 @@ a:hover {
       border-radius: 999px;
       background: #9ca3af;
     }
-
 
 .rightpanel {
     padding: 16px;
@@ -405,7 +369,6 @@ a:hover {
     gap: 1rem; /* space between cards */
     justify-content: center;
     overflow-y: auto;
-    /* height: 30%; */
 }
 
 .tools::-webkit-scrollbar {
@@ -513,8 +476,6 @@ a:hover {
   box-sizing: border-box;
 }
 
-/* .tools-viz > *{ box-sizing: border-box; padding: 0.5rem; overflow-y: scroll;} */
-
 .tools-viz{
   /* existing grid */
   --left: 40%;
@@ -546,34 +507,13 @@ a:hover {
 .tools-viz .details .features-box{ grid-column: 2; }
 .tools-viz .details .info-box    { grid-column: 1; }
 
-
-
 .short-description{
-  /* flex: 1 1 0;          fills the remaining 60% */
   padding: 0.5rem;
   border-left: 2px solid var(--yinmn-blue);
   color: rgb(61, 61, 61);
   font-size: 16px;
   font-weight: 600;
-  /* box-sizing: border-box; */
 }
-
-/* .tools-viz .card-header {
-    width: 40%;
-    float: left;
-    padding: 0.5rem;
-}
-
-.short-description{
-    color: rgb(61, 61, 61);
-    font-size: 16px;
-    font-weight: 600;
-    display: inline-block;
-    float: none;
-    padding: 0.5rem;
-    position: relative;
-    border-left: 2px solid var(--yinmn-blue);
-} */
 
 .card-header img{
     width: 80px; /* Set a fixed width */
@@ -595,7 +535,6 @@ a:hover {
 
 .card.disabled {
     opacity: 0.4;
-    /* pointer-events: none; */
 }
 
 .card.disabled .plus,
@@ -607,7 +546,6 @@ a:hover {
 
 
 /* Feature sections */
-
 .feature-section {
     background: var(--french-gray);
     border-radius: 8px;
@@ -684,7 +622,6 @@ a:hover {
     background: var(--yinmn-blue);
 }
 
-
 .value {
     color: #aaa;
     background: var(--pumpkin);
@@ -726,17 +663,13 @@ a:hover {
 
 /* Box sinistro */
 .info-box {
-  /* width: 40%; */
   border-right: 2px solid var(--yinmn-blue); /* linea verticale di separazione */
   padding: 1rem;
-  /* box-sizing: border-box; */
 }
 
 /* Box destro */
 .features-box {
-    /* width: 60%; */
   padding: 0.5rem;
-  /* box-sizing: border-box; */
 }
 
 .tool-question {
@@ -759,7 +692,6 @@ a:hover {
   font-weight: 500;
   border-left: 2px solid var(--pumpkin);
 }
-
 
 /* Drag cursors */
 .dragging-y, .dragging-y * { cursor: row-resize !important; }
