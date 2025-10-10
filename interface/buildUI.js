@@ -699,6 +699,14 @@ function fixResizer () {
 
 // ON LOAD
 document.addEventListener("DOMContentLoaded", () => {
+
+	const instructions = document.getElementById('instructions');
+    const collapseBtn = document.getElementById('collapse-instructions');
+    collapseBtn.addEventListener('click', function() {
+        instructions.classList.toggle('collapsed');
+        collapseBtn.textContent = instructions.classList.contains('collapsed') ? '+' : '−';
+    });
+
 	buildUI();
 
 	// Collapse expanded card when clicking outside
