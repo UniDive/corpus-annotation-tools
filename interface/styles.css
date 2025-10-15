@@ -345,7 +345,7 @@ a:hover {
 }
 /* Content */
 .content {
-    height: 100%;
+    height: 92%;
     display: flex;
     flex-direction: column;
     font-weight: 1700;
