@@ -82,7 +82,13 @@ Annotation layers:
   Tagset customization: ""
 
 # === USER EXPERIENCE ===
-User Experience:
+User Interface:
+
+Workflow:
+
+Annotation Analysis:
+
+
   Annotation mode:                          # Remove the options that don't apply, or add more
   - Mouse (e.g. drag & drop)
   - Keyboard

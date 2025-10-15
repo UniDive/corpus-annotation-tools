@@ -77,8 +77,7 @@ PARSEME:
   - Discontinuous expressions
   - Nested expressions
   - Overlapping expressions
-User Experience:
-  Agreement calculation: 'No'
+User Interface:
   Annotation display:
   - Image (e.g. a graph or coloured text)
   - Table
@@ -87,14 +86,17 @@ User Experience:
   - Keyboard
   - Mouse (e.g. drag & drop)
   - Touchscreen
+  Keyboard annotation and shortcuts: 'Yes'
+Workflow:
   Automatic pre-annotation: 'No'
   Automatic recommendation: 'Yes'
   Collaborative annotation:
   - annotators working independently on their own annotations of the same data
   - annotators working together on the same shared annotation of the data
-  Comparison of annotations: 'No'
-  Keyboard annotation and shortcuts: 'Yes'
-  Mass editing: 'Yes'
   Project management: 'Yes'
-  Querying: 'Yes'
   User roles: 'Yes'
+Annotation Analysis:
+  Agreement calculation: 'No'
+  Comparison of annotations: 'No'
+  Mass editing: 'Yes'
+  Querying: 'Yes'

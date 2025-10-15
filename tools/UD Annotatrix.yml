@@ -61,8 +61,7 @@ Annotation of Universal Dependencies:
 PARSEME:
   Consistency check: 'No'
   PARSEME-specific annotations: []
-User Experience:
-  Agreement calculation: 'No'
+User Interface:
   Annotation display:
   - Image (e.g. a graph or coloured text)
   - Table
@@ -70,13 +69,16 @@ User Experience:
   Annotation mode:
   - Keyboard
   - Mouse (e.g. drag & drop)
+  Keyboard annotation and shortcuts: 'No'
+Workflow:
   Automatic pre-annotation: 'No'
   Automatic recommendation: 'No'
   Collaborative annotation:
   - 'Yes'
-  Comparison of annotations: 'No'
-  Keyboard annotation and shortcuts: 'No'
-  Mass editing: 'No'
   Project management: 'No'
-  Querying: 'No'
   User roles: 'No'
+Annotation Analysis:
+  Agreement calculation: 'No'
+  Comparison of annotations: 'No'
+  Mass editing: 'No'
+  Querying: 'No'
