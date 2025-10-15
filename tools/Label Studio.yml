@@ -1,4 +1,4 @@
-Annotation:
+Annotation layers:
   Annotation scope:
   - Annotation inside sentences
   - Annotation across sentences
@@ -28,13 +28,13 @@ Data support:
   - Video
   - Image
   - PDF
-Diversity features:
-  Diversity features:
-  - Language-independence
-  - Writing script support
+Language support:
+  Language independence: 'Yes'
+  Multiple writing scripts: 'Yes'
+  Writing direction:
   - LTR
   - RTL
-  - unicode support
+  Handling of Unicode: 'Yes'
   Language of the interface:
   - English
 Software:
@@ -55,19 +55,13 @@ Tool ID:
   Example projects: {}
   Logo: https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcRwv-OYeU-1T_7Yh_DPJd2QIx9jTJkrafAwiik7kpU4t3poAI0yEAUPceAbfbukMrvbM8W4-XhObr1VMmOc_8puMjiC60CN6w
   Other useful links: {}
-  Short description: Label Studio is a data labeling tool for all data types (computer
-    vision, natural language processing, speech, voice, and video models)
+  Short description: Label Studio is a data labeling tool for all data types (computer vision, natural language processing, speech, voice, and video models)
   Tool name: Label Studio
   Website: https://labelstud.io/
-UD/PARSEME specifics:
-  Consistency check: 'No'
+Annotation of Universal Dependencies:
   Other annotation layers:
   - Text classification
   - NER
-  PARSEME-specific annotations:
-  - Discontinuous expressions
-  - Nested expressions
-  - Overlapping expressions
   UD validation: 'No'
   UD-specific annotations:
   - Lemmas
@@ -77,6 +71,12 @@ UD/PARSEME specifics:
   - Multi-word tokens
   - Basic dependencies
   - Metadata
+PARSEME:
+  Consistency check: 'No'
+  PARSEME-specific annotations:
+  - Discontinuous expressions
+  - Nested expressions
+  - Overlapping expressions
 User Experience:
   Agreement calculation: 'No'
   Annotation display:

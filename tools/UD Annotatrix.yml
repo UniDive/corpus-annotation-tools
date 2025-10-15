@@ -1,4 +1,4 @@
-Annotation:
+Annotation layers:
   Annotation scope:
   - Annotation inside sentences
   Annotation types:
@@ -15,13 +15,13 @@ Data support:
   - CONLL-U
   - other
   Integration of other resources: []
-Diversity features:
-  Diversity features:
-  - Language-independence
-  - Writing script support
+Language support:
+  Language independence: 'Yes'
+  Multiple writing scripts: 'Yes'
+  Writing direction:
   - LTR
   - RTL
-  - unicode support
+  Handling of Unicode: 'Yes'
   Language of the interface:
   - English
 Software:
@@ -43,15 +43,11 @@ Tool ID:
   Logo: https://github.com/jonorthwash/ud-annotatrix/blob/master/src/server/public/logo.png
   Other useful links:
   - Paper: https://aclanthology.org/W17-7604
-  Short description: UD Annotatrix is a client-side, browser-only, language-independent
-    tool for editing dependency trees according to the guidelines established by the
-    Universal Dependencies project.
+  Short description: UD Annotatrix is a client-side, browser-only, language-independent tool for editing dependency trees according to the guidelines established by the Universal Dependencies project.
   Tool name: UD Annotatrix
   Website: https://maryszmary.github.io/ud-annotatrix/standalone/annotator.html
-UD/PARSEME specifics:
-  Consistency check: 'No'
+Annotation of Universal Dependencies:
   Other annotation layers: []
-  PARSEME-specific annotations: []
   UD validation: 'No'
   UD-specific annotations:
   - Lemmas
@@ -62,6 +58,9 @@ UD/PARSEME specifics:
   - Basic dependencies
   - Enhanced dependencies
   - Empty nodes
+PARSEME:
+  Consistency check: 'No'
+  PARSEME-specific annotations: []
 User Experience:
   Agreement calculation: 'No'
   Annotation display:

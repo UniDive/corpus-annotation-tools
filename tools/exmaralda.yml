@@ -1,4 +1,4 @@
-Annotation:
+Annotation layers:
   Annotation scope:
   - Free span annotation
   Annotation types:
@@ -19,12 +19,12 @@ Data support:
   - Audio
   - Video
   - Image
-Diversity features:
-  Diversity features:
-  - Language-independence
-  - Writing script support
-  - LTR
-  - unicode support
+Language support:
+  Language independence: 'Yes'
+  Multiple writing scripts: 'Yes'
+  Writing direction:
+    - LTR
+  Handling of Unicode: 'Yes'
   Language of the interface:
   - English
   - German
@@ -52,12 +52,13 @@ Tool ID:
   Short description: EXMARaLDA is a toolset for working with spoken language corpora
   Tool name: EXMARaLDA
   Website: https://www.exmaralda.org
-UD/PARSEME specifics:
-  Consistency check: 'No'
+Annotation of Universal Dependencies:
   Other annotation layers: []
-  PARSEME-specific annotations: []
   UD validation: 'No'
   UD-specific annotations: []
+PARSEME:
+  Consistency check: 'No'
+  PARSEME-specific annotations: []
 User Experience:
   Agreement calculation: 'No'
   Annotation display:

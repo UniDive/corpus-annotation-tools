@@ -1,4 +1,4 @@
-Annotation:
+Annotation layers:
   Annotation scope:
   - Annotation inside sentences
   - Annotation across sentences
@@ -19,13 +19,13 @@ Data support:
   - XML
   Integration of other resources:
   - External databases (e.g. dictionaries)
-Diversity features:
-  Diversity features:
-  - Language-independence
-  - Writing script support
+Language support:
+  Language independence: 'Yes'
+  Multiple writing scripts: 'Yes'
+  Writing direction:
   - LTR
   - RTL
-  - unicode support
+  Handling of Unicode: 'Yes'
   Language of the interface:
   - English
 Software:
@@ -47,14 +47,11 @@ Tool ID:
   Logo: ''
   Other useful links:
   - Manual: https://ufal.mff.cuni.cz/tred/documentation/ar01-toc.html
-  Short description: TrEd is a fully customizable and programmable graphical editor
-    and viewer for tree-like structures.
+  Short description: TrEd is a fully customizable and programmable graphical editor and viewer for tree-like structures.
   Tool name: TrEd
   Website: https://ufal.mff.cuni.cz/tred
-UD/PARSEME specifics:
-  Consistency check: 'No'
+Annotation of Universal Dependencies:
   Other annotation layers: []
-  PARSEME-specific annotations: []
   UD validation: 'No'
   UD-specific annotations:
   - Lemmas
@@ -65,6 +62,9 @@ UD/PARSEME specifics:
   - Basic dependencies
   - Enhanced dependencies
   - Empty nodes
+PARSEME:
+  Consistency check: 'No'
+  PARSEME-specific annotations: []
 User Experience:
   Agreement calculation: 'No'
   Annotation display:

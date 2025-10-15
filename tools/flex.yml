@@ -1,4 +1,4 @@
-Annotation:
+Annotation layers:
   Annotation scope:
   - Annotation inside sentences
   - Annotation across sentences
@@ -24,13 +24,13 @@ Data support:
   - Image
   - PDF
   - External databases (e.g. dictionaries)
-Diversity features:
-  Diversity features:
-  - Language-independence
-  - Writing script support
+Language support:
+  Language independence: 'Yes'
+  Multiple writing scripts: 'Yes'
+  Writing direction:
   - LTR
   - RTL
-  - unicode support
+  Handling of Unicode: 'Yes'
   Language of the interface:
   - English
 Software:
@@ -51,18 +51,17 @@ Tool ID:
   Logo: https://software.sil.org/wp/wp-content/themes/web-productsites/images/sil_logo_glyph.png
   Other useful links:
   - Training: https://vimeo.com/showcase/3123523
-  Short description: FLeX is a comprehensive linguistic software tool designed for
-    documenting, analyzing, and managing lexical and textual data, particularly for
-    under-documented languages.
+  Short description: FLeX is a comprehensive linguistic software tool designed for documenting, analyzing, and managing lexical and textual data, particularly for under-documented languages.
   Tool name: FLeX
   Website: https://software.sil.org/fieldworks/
-UD/PARSEME specifics:
-  Consistency check: 'No'
+Annotation of Universal Dependencies:
   Other annotation layers: []
-  PARSEME-specific annotations: []
   UD validation: 'No'
   UD-specific annotations:
   - Metadata
+PARSEME:
+  Consistency check: 'No'
+  PARSEME-specific annotations: []
 User Experience:
   Agreement calculation: 'No'
   Annotation display:

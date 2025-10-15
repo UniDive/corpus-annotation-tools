@@ -1,4 +1,4 @@
-Annotation:
+Annotation layers:
   Annotation scope:
   - Annotation inside sentences
   - Annotation across sentences
@@ -19,13 +19,13 @@ Data support:
   - .txt+.ann
   Integration of other resources:
   - External databases (e.g. dictionaries)
-Diversity features:
-  Diversity features:
-  - Language-independence
-  - Writing script support
+Language support:
+  Language independence: 'Yes'
+  Multiple writing scripts: 'Yes'
+  Writing direction:
   - LTR
   - RTL
-  - unicode support
+  Handling of Unicode: 'Yes'
   Language of the interface:
   - English
 Software:
@@ -47,24 +47,16 @@ Tool ID:
   - Examples: https://brat.nlplab.org/examples.html
   Logo: ''
   Other useful links: {}
-  Short description: brat rapid annotation tool is a web-based tool for text annotation.
-    brat is designed in particular for structured annotation, where the notes are
-    not freeform text but have a fixed form that can be automatically processed and
-    interpreted by a computer.
+  Short description: brat rapid annotation tool is a web-based tool for text annotation. brat is designed in particular for structured annotation, where the notes are not freeform text but have a fixed form that can be automatically processed and interpreted by a computer.
   Tool name: brat
   Website: http://brat.nlplab.org/
-UD/PARSEME specifics:
-  Consistency check: 'No'
+Annotation of Universal Dependencies:
   Other annotation layers:
   - events
   - relations
   - chains
   - attributes
   - normalization
-  PARSEME-specific annotations:
-  - Discontinuous expressions
-  - Nested expressions
-  - Overlapping expressions
   UD validation: 'No'
   UD-specific annotations:
   - Lemmas
@@ -73,6 +65,12 @@ UD/PARSEME specifics:
   - XPOS
   - Basic dependencies
   - Empty nodes
+PARSEME:
+  Consistency check: 'No'
+  PARSEME-specific annotations:
+  - Discontinuous expressions
+  - Nested expressions
+  - Overlapping expressions
 User Experience:
   Agreement calculation: 'No'
   Annotation display:

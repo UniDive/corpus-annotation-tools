@@ -1,4 +1,4 @@
-Annotation:
+Annotation layers:
   Annotation scope:
   - Annotation inside sentences
   - Annotation across sentences
@@ -24,13 +24,13 @@ Data support:
   - TSV
   Integration of other resources:
   - External databases (e.g. dictionaries)
-Diversity features:
-  Diversity features:
-  - Language-independence
-  - Writing script support
+Language support:
+  Language independence: 'Yes'
+  Multiple writing scripts: 'Yes'
+  Writing direction:
   - LTR
   - RTL
-  - unicode support
+  Handling of Unicode: 'Yes'
   Language of the interface:
   - English
 Software:
@@ -45,31 +45,20 @@ Software:
   - The software is available upon request (the user should ask to get an account)
   Software type: Web-based application
 Tool ID:
-  Additional features: WebAnno supports a rich set of features including customizable
-    annotation layers, integration with external data sources, support for multiple
-    annotators, and visualization of annotated data It also supports automatic pre-annotation
-    and inter-annotator agreement calculation
+  Additional features: WebAnno supports a rich set of features including customizable annotation layers, integration with external data sources, support for multiple annotators, and visualization of annotated data It also supports automatic pre-annotation and inter-annotator agreement calculation
   Code repository: https://github.com/webanno/webanno
   Developer: 'No'
   Example projects: {}
   Logo: https://webanno.github.io/webanno/assets/img/logo.png
   Other useful links: {}
-  Short description: WebAnno is a web-based collaborative tool for linguistic annotation
-    that supports various annotation tasks, including POS tagging, dependency parsing,
-    and coreference resolution. It provides collaborative features and works well
-    with formats like CoNLL-U.
+  Short description: WebAnno is a web-based collaborative tool for linguistic annotation that supports various annotation tasks, including POS tagging, dependency parsing, and coreference resolution. It provides collaborative features and works well with formats like CoNLL-U.
   Tool name: WebAnno
   Website: https://webanno.github.io/webanno/
-UD/PARSEME specifics:
-  Consistency check: 'Yes'
+Annotation of Universal Dependencies:
   Other annotation layers:
   - NER
   - coreference
   - MWE
-  PARSEME-specific annotations:
-  - Discontinuous expressions
-  - Nested expressions
-  - Overlapping expressions
   UD validation: 'Yes'
   UD-specific annotations:
   - Lemmas
@@ -81,6 +70,12 @@ UD/PARSEME specifics:
   - Enhanced dependencies
   - Empty nodes
   - Metadata
+UD/PARSEME specifics:
+  Consistency check: 'Yes'
+  PARSEME-specific annotations:
+  - Discontinuous expressions
+  - Nested expressions
+  - Overlapping expressions
 User Experience:
   Agreement calculation: 'Yes'
   Annotation display:

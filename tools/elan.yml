@@ -1,4 +1,4 @@
-Annotation:
+Annotation layers:
   Annotation scope:
   - Annotation inside sentences
   - Annotation across sentences
@@ -24,13 +24,13 @@ Data support:
   - Audio
   - Video
   - Image
-Diversity features:
-  Diversity features:
-  - Language-independence
-  - Writing script support
+Language support:
+  Language independence: 'Yes'
+  Multiple writing scripts: 'Yes'
+  Writing direction:
   - LTR
   - RTL
-  - unicode support
+  Handling of Unicode: 'Yes'
   Language of the interface:
   - English
 Software:
@@ -45,28 +45,20 @@ Software:
   - The software should be run by the user (own machine/server)
   Software type: Desktop-based application
 Tool ID:
-  Additional features: The tools supports synchronization with multimedia content,
-    a customizable annotation workflow and metadata management (IMDI and CMDI)
+  Additional features: The tools supports synchronization with multimedia content, a customizable annotation workflow and metadata management (IMDI and CMDI)
   Code repository: https://archive.mpi.nl/tla/elan/download
   Developer: 'No'
   Example projects: {}
   Logo: https://archive.mpi.nl/forums/uploads/default/original/1X/b9a095d7450d269ba707171fe5571f248dc99665.svg
   Other useful links:
   - Forum: https://archive.mpi.nl/forums/
-  Short description: ELAN is a professional tool for the creation, annotation, and
-    analysis of complex multimedia data, enabling time-aligned transcription and linguistic
-    analysis.
+  Short description: ELAN is a professional tool for the creation, annotation, and analysis of complex multimedia data, enabling time-aligned transcription and linguistic analysis.
   Tool name: ELAN
   Website: https://archive.mpi.nl/tla/elan
-UD/PARSEME specifics:
-  Consistency check: 'No'
+Annotation of Universal Dependencies:
   Other annotation layers:
   - Time-aligned annotations
   - multimodal annotations
-  PARSEME-specific annotations:
-  - Discontinuous expressions
-  - Nested expressions
-  - Overlapping expressions
   UD validation: 'No'
   UD-specific annotations:
   - Lemmas
@@ -76,6 +68,12 @@ UD/PARSEME specifics:
   - Multi-word tokens
   - Basic dependencies
   - Metadata
+PARSEME:
+  Consistency check: 'No'
+  PARSEME-specific annotations:
+  - Discontinuous expressions
+  - Nested expressions
+  - Overlapping expressions
 User Experience:
   Agreement calculation: 'No'
   Annotation display:

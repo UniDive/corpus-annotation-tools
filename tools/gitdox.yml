@@ -1,4 +1,4 @@
-Annotation:
+Annotation layers:
   Annotation scope:
   - Annotation inside sentences
   - Annotation across sentences
@@ -19,13 +19,13 @@ Data support:
   - XML
   - other
   Integration of other resources: []
-Diversity features:
-  Diversity features:
-  - Language-independence
-  - Writing script support
+Language support:
+  Language independence: 'Yes'
+  Multiple writing scripts: 'Yes'
+  Writing direction:
   - LTR
   - RTL
-  - unicode support
+  Handling of Unicode: 'Yes'
   Language of the interface:
   - English
 Software:
@@ -49,19 +49,14 @@ Tool ID:
   Logo: ''
   Other useful links:
   - Demo: https://gucorpling.org/gitdox/spannotator.html
-  Short description: GitDox is a version controlled annotation interace for XML and
-    spreadsheet data, as well as nested NER
+  Short description: GitDox is a version controlled annotation interace for XML and spreadsheet data, as well as nested NER
   Tool name: GitDox
   Website: https://gucorpling.org/gitdox/
-UD/PARSEME specifics:
-  Consistency check: 'No'
+Annotation of Universal Dependencies:
   Other annotation layers:
   - concurrent/conflicting span annotations
   - nested NER
-  - entity linking.
-  PARSEME-specific annotations:
-  - Nested expressions
-  - Overlapping expressions
+  - entity linking
   UD validation: 'No'
   UD-specific annotations:
   - Lemmas
@@ -69,6 +64,11 @@ UD/PARSEME specifics:
   - FEATS
   - XPOS
   - Metadata
+PARSEME:
+  Consistency check: 'No'
+  PARSEME-specific annotations:
+  - Nested expressions
+  - Overlapping expressions
 User Experience:
   Agreement calculation: 'No'
   Annotation display:

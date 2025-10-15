@@ -1,4 +1,4 @@
-Annotation:
+Annotation layers:
   Annotation scope:
   - Annotation inside sentences
   Annotation types:
@@ -17,13 +17,13 @@ Data support:
   - CONLL-U
   - CoNLL-U Plus
   Integration of other resources: []
-Diversity features:
-  Diversity features:
-  - Language-independence
-  - Writing script support
+Language support:
+  Language independence: 'Yes'
+  Multiple writing scripts: 'Yes'
+  Writing direction:
   - LTR
   - RTL
-  - unicode support
+  Handling of Unicode: 'Yes'
   Language of the interface:
   - English
 Software:
@@ -38,10 +38,7 @@ Software:
   - The software should be run by the user (own machine/server)
   Software type: Web-based application
 Tool ID:
-  Additional features: The tool supports git and provides automatic transliteration
-    of non-Latin scripts into Latin-script, as well as statistics (number/percentage
-    of UPOS, deprels, etc). The tool can be used as a frontend to an parser which
-    returns the result in CoNLL-U format
+  Additional features: The tool supports git and provides automatic transliteration of non-Latin scripts into Latin-script, as well as statistics (number/percentage of UPOS, deprels, etc). The tool can be used as a frontend to an parser which returns the result in CoNLL-U format
   Code repository: https://github.com/Orange-Opensource/conllueditor
   Developer: 'Yes'
   Example projects:
@@ -52,11 +49,9 @@ Tool ID:
     syntax
   Tool name: CoNLLU-Editor
   Website: https://github.com/Orange-Opensource/conllueditor
-UD/PARSEME specifics:
-  Consistency check: 'No'
+Annotation of Universal Dependencies:
   Other annotation layers:
   - BIO-like annotations
-  PARSEME-specific annotations: []
   UD validation: 'Yes'
   UD-specific annotations:
   - Lemmas
@@ -68,6 +63,9 @@ UD/PARSEME specifics:
   - Enhanced dependencies
   - Empty nodes
   - Metadata
+PARSEME:
+  Consistency check: 'No'
+  PARSEME-specific annotations: []
 User Experience:
   Agreement calculation: 'No'
   Annotation display:

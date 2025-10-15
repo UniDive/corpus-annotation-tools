@@ -1,4 +1,4 @@
-Annotation:
+Annotation layers:
   Annotation scope:
   - Annotation inside sentences
   Annotation types:
@@ -15,12 +15,12 @@ Data support:
   - CONLL-U
   - XML
   Integration of other resources: []
-Diversity features:
-  Diversity features:
-  - Language-independence
-  - Writing script support
+Language support:
+  Language independence: 'Yes'
+  Multiple writing scripts: 'Yes'
+  Writing direction:
   - LTR
-  - unicode support
+  Handling of Unicode: 'Yes'
   Language of the interface:
   - English
 Software:
@@ -39,20 +39,20 @@ Tool ID:
   Example projects: {}
   Logo: ''
   Other useful links: {}
-  Short description: Q-CAT is a tool for manual linguistic annotation of corpora,
-    which also enables advanced queries on top of these annotations.
+  Short description: Q-CAT is a tool for manual linguistic annotation of corpora, which also enables advanced queries on top of these annotations.
   Tool name: Q-CAT
   Website: http://hdl.handle.net/11356/1844
-UD/PARSEME specifics:
-  Consistency check: 'No'
+Annotation of Universal Dependencies:
   Other annotation layers: []
-  PARSEME-specific annotations: []
   UD validation: 'No'
   UD-specific annotations:
   - Lemmas
   - UPOS
   - Multi-word tokens
   - Basic dependencies
+PARSEME:
+  Consistency check: 'No'
+  PARSEME-specific annotations: []
 User Experience:
   Agreement calculation: 'No'
   Annotation display:

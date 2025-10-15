@@ -1,4 +1,4 @@
-Annotation:
+Annotation layers:
   Annotation scope:
   - Annotation of full sentences / paragraphs / documents
   Annotation types:
@@ -14,13 +14,13 @@ Data support:
   - XML
   - TSV
   Integration of other resources: []
-Diversity features:
-  Diversity features:
-  - Language-independence
-  - Writing script support
+Language support:
+  Language independence: 'Yes'
+  Multiple writing scripts: 'Yes'
+  Writing direction:
   - LTR
   - RTL
-  - unicode support
+  Handling of Unicode: 'Yes'
   Language of the interface:
   - English
 Software:
@@ -42,17 +42,17 @@ Tool ID:
   Logo: https://www.label-sleuth.org/_static/images/homepage/logo_white_invert.svg
   Other useful links:
   - Paper: https://arxiv.org/abs/2208.01483
-  Short description: Label Sleuth is an open-source no-code system for text annotation
-    and building text classifiers
+  Short description: Label Sleuth is an open-source no-code system for text annotation and building text classifiers
   Tool name: Label Sleuth
   Website: https://www.label-sleuth.org/
-UD/PARSEME specifics:
-  Consistency check: 'No'
+Annotation of Universal Dependencies:
   Other annotation layers: []
-  PARSEME-specific annotations: []
   UD validation: 'No'
   UD-specific annotations:
   - Metadata
+PARSEME:
+  Consistency check: 'No'
+  PARSEME-specific annotations: []
 User Experience:
   Agreement calculation: 'No'
   Annotation display:

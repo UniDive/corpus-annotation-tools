@@ -1,4 +1,4 @@
-Annotation:
+Annotation layers:
   Annotation scope:
   - Annotation inside sentences
   - Annotation across sentences
@@ -26,13 +26,13 @@ Data support:
   - Image
   - PDF
   - External databases (e.g. dictionaries)
-Diversity features:
-  Diversity features:
-  - Language-independence
-  - Writing script support
+Language support:
+  Language independence: 'Yes'
+  Multiple writing scripts: 'Yes'
+  Writing direction:
   - LTR
   - RTL
-  - unicode support
+  Handling of Unicode: 'Yes'
   Language of the interface:
   - English
 Software:
@@ -48,9 +48,7 @@ Software:
   - some public instances available
   Software type: Web-based application
 Tool ID:
-  Additional features: INCEpTION also caters to institutional users who need to integrate
-    the tool into their existing infrastructure by supporting e.g. single-sign-on
-    mechanisms, docker-based deployment, a remote API, etc.
+  Additional features: INCEpTION also caters to institutional users who need to integrate the tool into their existing infrastructure by supporting e.g. single-sign-on mechanisms, docker-based deployment, a remote API, etc.
   Code repository: https://github.com/inception-project/inception
   Developer: 'Yes'
   Example projects: {}
@@ -61,15 +59,11 @@ Tool ID:
     who find different aspects of the tool useful.
   Tool name: INCEpTION
   Website: https://inception-project.github.io
-UD/PARSEME specifics:
-  Consistency check: partial
+Annotation of Universal Dependencies:
   Other annotation layers:
   - relation between spans
   - chains
   - document-level
-  PARSEME-specific annotations:
-  - Nested expressions
-  - Overlapping expressions
   UD validation: 'No'
   UD-specific annotations:
   - Lemmas
@@ -79,6 +73,11 @@ UD/PARSEME specifics:
   - Multi-word tokens
   - Basic dependencies
   - Enhanced dependencies
+PARSEME:
+  Consistency check: partial
+  PARSEME-specific annotations:
+  - Nested expressions
+  - Overlapping expressions
 User Experience:
   Agreement calculation: 'Yes'
   Annotation display:

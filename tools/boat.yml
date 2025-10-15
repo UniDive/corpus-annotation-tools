@@ -1,4 +1,4 @@
-Annotation:
+Annotation layers:
   Annotation scope:
   - Annotation inside sentences
   Annotation types:
@@ -16,13 +16,13 @@ Data support:
   - Raw text
   - CONLL-U
   Integration of other resources: []
-Diversity features:
-  Diversity features:
-  - Language-independence
-  - Writing script support
+Language support:
+  Language independence: 'Yes'
+  Multiple writing scripts: 'Yes'
+  Writing direction:
   - LTR
   - RTL
-  - unicode support
+  Handling of Unicode: 'Yes'
   Language of the interface:
   - English
 Software:
@@ -44,14 +44,11 @@ Tool ID:
   - UD_Turkish-BOUN: https://github.com/UniversalDependencies/UD_Turkish-BOUN
   Logo: ''
   Other useful links: {}
-  Short description: BoAT (Boğaziçi University Annotation Tool) is a collaborative
-    grammatical annotation tool.
+  Short description: BoAT (Boğaziçi University Annotation Tool) is a collaborative grammatical annotation tool.
   Tool name: BoAT
   Website: https://github.com/furkanakkurt1335/boat
-UD/PARSEME specifics:
-  Consistency check: 'No'
+Annotation of Universal Dependencies:
   Other annotation layers: []
-  PARSEME-specific annotations: []
   UD validation: 'Yes'
   UD-specific annotations:
   - Lemmas
@@ -62,6 +59,9 @@ UD/PARSEME specifics:
   - Enhanced dependencies
   - Empty nodes
   - Metadata
+PARSEME:
+  Consistency check: 'No'
+  PARSEME-specific annotations: []
 User Experience:
   Agreement calculation: partial
   Annotation display:

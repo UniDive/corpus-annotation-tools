@@ -1,32 +1,3 @@
-Annotation:
-  Annotation scope:
-  - Annotation inside sentences
-  Annotation types:
-  - Tokens (e.g. part-of-speech tags)
-  - Multi-tokens (e.g. multi-word expressions)
-  - Relations (e.g. dependencies)
-  Segmentation:
-  - word-level
-  - sentence-level
-  Tagset customization: 'Yes'
-Data support:
-  Data export:
-  - The data can be exported
-  - The data can be stored with a third party storage platform (e.g. Git repository)
-  Input format:
-  - Raw text
-  - CONLL-U
-  Integration of other resources: []
-Diversity features:
-  Diversity features:
-  - Language-independence
-  - Writing script support
-  - LTR
-  - RTL
-  - unicode support
-  Language of the interface:
-  - English
-  - French
 Software:
   Active maintenance: 'Yes'
   License: AGPL-3.0
@@ -39,8 +10,7 @@ Software:
   - The software is freely available online (with sign up option)
   Software type: Web-based application
 Tool ID:
-  Additional features: 'ArboratorGrew can be used also to teach syntax: users can
-    create exercises with different levels of complexity and export results'
+  Additional features: 'ArboratorGrew can be used also to teach syntax: users can create exercises with different levels of complexity and export results'
   Code repository: https://github.com/Arborator
   Developer: 'Yes'
   Example projects:
@@ -48,15 +18,29 @@ Tool ID:
   Logo: https://arborator.grew.fr/svg/arborator.grew.svg
   Other useful links:
   - Documentation: https://arborator.github.io/arborator-documentation/
-  Short description: A collaborative annotation tool for the treebank developement.
-    It allows the creation of lexicons from annotated data. To ensure effective collaboration,
-    ArboratorGrew provides a tag system.
+  Short description: A collaborative annotation tool for the treebank developement. It allows the creation of lexicons from annotated data. To ensure effective collaboration, ArboratorGrew provides a tag system.
   Tool name: ArboratorGrew
   Website: https://arborator.grew.fr/
-UD/PARSEME specifics:
-  Consistency check: 'No'
-  Other annotation layers: []
-  PARSEME-specific annotations: []
+Data support:
+  Data export:
+  - The data can be exported
+  - The data can be stored with a third party storage platform (e.g. Git repository)
+  Input format:
+  - Raw text
+  - CONLL-U
+  Integration of other resources: []
+Annotation layers:
+  Annotation scope:
+  - Annotation inside sentences
+  Annotation types:
+  - Tokens (e.g. part-of-speech tags)
+  - Multi-tokens (e.g. multi-word expressions)
+  - Relations (e.g. dependencies)
+  Segmentation:
+  - word-level
+  - sentence-level
+  Tagset customization: 'Yes'
+Annotation of Universal Dependencies:
   UD validation: 'Yes'
   UD-specific annotations:
   - Lemmas
@@ -66,21 +50,37 @@ UD/PARSEME specifics:
   - Multi-word tokens
   - Basic dependencies
   - Metadata
-User Experience:
-  Agreement calculation: 'Yes'
+  Other annotation layers: []
+PARSEME:
+  Consistency check: 'No'
+  PARSEME-specific annotations: []
+User Interface:
   Annotation display:
   - Image (e.g. a graph or coloured text)
   - Table
   - Raw format (e.g. CONLL-U)
   Annotation mode:
   - Mouse (e.g. drag & drop)
+  Keyboard annotation and shortcuts: 'No'
+Workflow:
   Automatic pre-annotation: 'Yes'
   Automatic recommendation: 'Yes'
   Collaborative annotation:
   - annotators working independently on their own annotations of the same data
-  Comparison of annotations: 'Yes'
-  Keyboard annotation and shortcuts: 'No'
-  Mass editing: 'Yes'
   Project management: 'Yes'
-  Querying: 'Yes'
   User roles: 'Yes'
+Annotation Analysis:
+  Agreement calculation: 'Yes'
+  Comparison of annotations: 'Yes'
+  Mass editing: 'Yes'
+  Querying: 'Yes'
+Language support:
+  Language independence: 'Yes'
+  Multiple writing scripts: 'Yes'
+  Writing direction:
+    - LTR
+    - RTL
+  Handling of Unicode: 'Yes'
+  Language of the interface:
+  - English
+  - French

@@ -54,18 +54,18 @@ Data support:
   - Image
 
 # === DIVERSITY FEATURES ===
-Diversity features:
-  Diversity features:                     # Remove the options that don't apply
-  - Language-independence
-  - Writing script support
+Language support:
+  Language independence:                  # Is the tool language independent?
+  Multiple writing scripts:               # Does it support multiple writing scripts?
+  Writing direction:                      # Remove the options that don't apply
   - LTR
   - RTL
-  - unicode support
+  Handling of Unicode:                     # Does it support unicode and special symbols?
   Language of the interface:               # Add all languages that apply
   - English
 
 # === ANNOTATION ===
-Annotation:
+Annotation layers:
   Annotation scope:                        # Remove the options that don't apply
   - Annotation inside sentences
   - Annotation across sentences

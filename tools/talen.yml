@@ -1,4 +1,4 @@
-Annotation:
+Annotation layers:
   Annotation scope:
   - Annotation inside sentences
   Annotation types:
@@ -14,12 +14,13 @@ Data support:
   - Raw text
   - CONLL-U
   Integration of other resources: []
-Diversity features:
-  Diversity features:
-  - Language-independence
-  - Writing script support
+Language support:
+  Language independence: 'Yes'
+  Multiple writing scripts: 'Yes'
+  Writing direction:
   - LTR
   - RTL
+  Handling of Unicode: 'No'
   Language of the interface:
   - English
 Software:
@@ -44,17 +45,18 @@ Tool ID:
   Short description: TALEN is a lightweight web-based tool for annotating word sequences.
   Tool name: TALEN
   Website: https://github.com/CogComp/talen
-UD/PARSEME specifics:
-  Consistency check: partial
+Annotation of Universal Dependencies:
   Other annotation layers:
   - NER
-  PARSEME-specific annotations: []
   UD validation: 'No'
   UD-specific annotations:
   - UPOS
   - XPOS
   - Multi-word tokens
   - Metadata
+PARSEME:
+  Consistency check: partial
+  PARSEME-specific annotations: []
 User Experience:
   Agreement calculation: 'No'
   Annotation display:

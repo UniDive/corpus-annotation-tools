@@ -1,4 +1,4 @@
-Annotation:
+Annotation layers:
   Annotation scope:
   - Annotation inside sentences
   Annotation types:
@@ -13,13 +13,13 @@ Data support:
   Input format:
   - CONLL-U
   Integration of other resources: []
-Diversity features:
-  Diversity features:
-  - Language-independence
-  - Writing script support
+Language support:
+  Language independence: 'Yes'
+  Multiple writing scripts: 'Yes'
+  Writing direction:
   - LTR
   - RTL
-  - unicode support
+  Handling of Unicode: 'Yes'
   Language of the interface:
   - English
 Software:
@@ -44,15 +44,11 @@ Tool ID:
   Other useful links:
   - New functionalities: https://aclanthology.org/2024.lrec-main.1101.pdf
   - Demo: https://camel-lab.github.io/palmyra/viewtree.html
-  Short description: PALMYRA is a platform-independent graphical tool for syntactic
-    dependency annotation supporting languages that require complex morphological
-    tokenization.
+  Short description: PALMYRA is a platform-independent graphical tool for syntactic dependency annotation supporting languages that require complex morphological tokenization.
   Tool name: Palmyra
   Website: https://palmyra.camel-lab.com/
-UD/PARSEME specifics:
-  Consistency check: 'No'
+Annotation of Universal Dependencies:
   Other annotation layers: []
-  PARSEME-specific annotations: []
   UD validation: 'No'
   UD-specific annotations:
   - UPOS
@@ -61,6 +57,9 @@ UD/PARSEME specifics:
   - Basic dependencies
   - Empty nodes
   - Metadata
+PARSEME:
+  Consistency check: 'No'
+  PARSEME-specific annotations: []
 User Experience:
   Agreement calculation: 'No'
   Annotation display:

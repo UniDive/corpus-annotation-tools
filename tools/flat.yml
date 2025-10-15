@@ -1,4 +1,4 @@
-Annotation:
+Annotation layers:
   Annotation scope:
   - Annotation inside sentences
   Annotation types:
@@ -21,13 +21,13 @@ Data support:
   - TSV
   - other
   Integration of other resources: []
-Diversity features:
-  Diversity features:
-  - Language-independence
-  - Writing script support
+Language support:
+  Language independence: 'Yes'
+  Multiple writing scripts: 'Yes'
+  Writing direction:
   - LTR
   - RTL
-  - unicode support
+  Handling of Unicode: 'Yes'
   Language of the interface:
   - English
 Software:
@@ -51,18 +51,11 @@ Tool ID:
   Logo: http://proycon.github.io/folia/style/icon.png
   Other useful links:
   - Tools: http://proycon.github.io/folia/
-  Short description: Flat (FoLiA Linguistic Annotation Tool) is a web-based linguistic
-    annotation environment based around the FoLiA format, a rich XML-based format
-    for linguistic annotation.
+  Short description: Flat (FoLiA Linguistic Annotation Tool) is a web-based linguistic annotation environment based around the FoLiA format, a rich XML-based format for linguistic annotation.
   Tool name: FLAT
   Website: https://github.com/proycon/flat
-UD/PARSEME specifics:
-  Consistency check: 'No'
+Annotation of Universal Dependencies:
   Other annotation layers: []
-  PARSEME-specific annotations:
-  - Discontinuous expressions
-  - Nested expressions
-  - Overlapping expressions
   UD validation: 'No'
   UD-specific annotations:
   - Lemmas
@@ -71,6 +64,12 @@ UD/PARSEME specifics:
   - XPOS
   - Multi-word tokens
   - Basic dependencies
+PARSEME:
+  Consistency check: 'No'
+  PARSEME-specific annotations:
+  - Discontinuous expressions
+  - Nested expressions
+  - Overlapping expressions
 User Experience:
   Agreement calculation: 'No'
   Annotation display: []

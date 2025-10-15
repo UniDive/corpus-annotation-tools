@@ -1,4 +1,4 @@
-Annotation:
+Annotation layers:
   Annotation scope:
   - Annotation inside sentences
   Annotation types:
@@ -14,12 +14,12 @@ Data support:
   Input format:
   - CONLL-U
   Integration of other resources: []
-Diversity features:
-  Diversity features:
-  - Language-independence
-  - Writing script support
+Language support:
+  Language independence: 'Yes'
+  Multiple writing scripts: 'Yes'
+  Writing direction:
   - LTR
-  - unicode support
+  Handling of Unicode: 'Yes'
   Language of the interface:
   - English
 Software:
@@ -42,15 +42,12 @@ Tool ID:
   - UD_Telugu-MTG: https://github.com/UniversalDependencies/UD_Telugu-MTG
   Logo: https://plural.iiit.ac.in/conllu-assets/static/media/IIITH.3e6a0240528e48ab6511.png
   Other useful links: {}
-  Short description: PLURAL-conllu-annotator allows treatement of linguistic rich
-    data
+  Short description: PLURAL-conllu-annotator allows treatement of linguistic rich data
   Tool name: PLURAL
   Website: https://plural.iiit.ac.in/conllu-annotator
-UD/PARSEME specifics:
-  Consistency check: 'No'
+Annotation of Universal Dependencies:
   Other annotation layers:
   - NIL
-  PARSEME-specific annotations: []
   UD validation: 'Yes'
   UD-specific annotations:
   - Lemmas
@@ -62,6 +59,9 @@ UD/PARSEME specifics:
   - Enhanced dependencies
   - Empty nodes
   - Metadata
+PARSEME:
+  Consistency check: 'No'
+  PARSEME-specific annotations: []
 User Experience:
   Agreement calculation: 'No'
   Annotation display:

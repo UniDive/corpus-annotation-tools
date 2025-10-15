@@ -1,4 +1,4 @@
-Annotation:
+Annotation layers:
   Annotation scope:
   - Annotation inside sentences
   - Annotation across sentences
@@ -18,13 +18,13 @@ Data support:
   Input format:
   - Raw text
   Integration of other resources: []
-Diversity features:
-  Diversity features:
-  - Language-independence
-  - Writing script support
+Language support:
+  Language independence: 'Yes'
+  Multiple writing scripts: 'Yes'
+  Writing direction:
   - LTR
   - RTL
-  - unicode support
+  Handling of Unicode: 'Yes'
   Language of the interface:
   - English
 Software:
@@ -44,18 +44,17 @@ Tool ID:
   Logo: https://software.sil.org/wp/wp-content/themes/web-productsites/images/sil_logo_glyph.png
   Other useful links:
   - Tools: http://www.fieldlinguiststoolbox.org/
-  Short description: ToolBox is a linguistic data management tool designed for building
-    lexicons, analyzing interlinear texts, and organizing fieldwork data, developed
-    by SIL International.
+  Short description: ToolBox is a linguistic data management tool designed for building lexicons, analyzing interlinear texts, and organizing fieldwork data, developed by SIL International.
   Tool name: ToolBox
   Website: https://software.sil.org/toolbox/
-UD/PARSEME specifics:
-  Consistency check: 'No'
+Annotation of Universal Dependencies:
   Other annotation layers: []
-  PARSEME-specific annotations: []
   UD validation: 'No'
   UD-specific annotations:
   - Metadata
+PARSEME:
+  Consistency check: 'No'
+  PARSEME-specific annotations: []
 User Experience:
   Agreement calculation: 'No'
   Annotation display:
