@@ -1841,8 +1841,8 @@
       "Empty nodes",
       "Metadata"
     ],
-    "UD/PARSEME specifics::Consistency check": "Yes",
-    "UD/PARSEME specifics::PARSEME-specific annotations": [
+    "PARSEME::Consistency check": "Yes",
+    "PARSEME::PARSEME-specific annotations": [
       "Discontinuous expressions",
       "Nested expressions",
       "Overlapping expressions"

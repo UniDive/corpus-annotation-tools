@@ -70,7 +70,7 @@ Annotation of Universal Dependencies:
   - Enhanced dependencies
   - Empty nodes
   - Metadata
-UD/PARSEME specifics:
+PARSEME:
   Consistency check: 'Yes'
   PARSEME-specific annotations:
   - Discontinuous expressions
