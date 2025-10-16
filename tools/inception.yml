@@ -1,4 +1,4 @@
-Annotation layers:
+6. Annotation layers:
   Annotation scope:
   - Annotation inside sentences
   - Annotation across sentences
@@ -11,7 +11,7 @@ Annotation layers:
   - Chains (e.g. coreferences)
   Segmentation: []
   Tagset customization: 'Yes'
-Data support:
+2. Data support:
   Data export:
   - The data can be exported
   Input format:
@@ -26,27 +26,27 @@ Data support:
   - Image
   - PDF
   - External databases (e.g. dictionaries)
-Language support:
+3. Language support:
   Language independence: 'Yes'
   Multiple writing scripts: 'Yes'
   Writing direction:
-  - LTR
-  - RTL
+  - Left to Right
+  - Right to Left
   Handling of Unicode: 'Yes'
   Language of the interface:
   - English
-Software:
-  Active maintenance: 'Yes'
-  License: Apache-2.0
-  Offline usage (for web-based applications): 'No'
-  Operating system:
+1. Software:
+  1. Active maintenance: 'Yes'
+  2. License: Apache-2.0
+  5. Offline usage (for web-based applications): 'No'
+  4. Operating system:
   - Windows
   - Mac OS
   - Linux
-  Software availability:
+  6. Software access:
   - The software should be run by the user (own machine/server)
   - some public instances available
-  Software type: Web-based application
+  3. Software type: Web-based application
 Tool ID:
   Additional features: INCEpTION also caters to institutional users who need to integrate the tool into their existing infrastructure by supporting e.g. single-sign-on mechanisms, docker-based deployment, a remote API, etc.
   Code repository: https://github.com/inception-project/inception
@@ -59,13 +59,13 @@ Tool ID:
     who find different aspects of the tool useful.
   Tool name: INCEpTION
   Website: https://inception-project.github.io
-Annotation of Universal Dependencies:
+8. Universal Dependencies:
   Other annotation layers:
   - relation between spans
   - chains
   - document-level
-  UD validation: 'No'
-  UD-specific annotations:
+  2. UD validation: 'No'
+  1. UD-specific annotations:
   - Lemmas
   - UPOS
   - FEATS
@@ -73,27 +73,27 @@ Annotation of Universal Dependencies:
   - Multi-word tokens
   - Basic dependencies
   - Enhanced dependencies
-PARSEME:
-  Consistency check: partial
-  PARSEME-specific annotations:
+9. PARSEME:
+  2. Consistency check: partial
+  1. PARSEME-specific annotations:
   - Nested expressions
   - Overlapping expressions
-User Interface:
+4. User Interface:
   Annotation display:
   - Image (e.g. a graph or coloured text)
   Annotation mode:
   - Keyboard
   - Mouse (e.g. drag & drop)
   Keyboard annotation and shortcuts: 'Yes'
-Workflow:
+5. Workflow:
   Automatic pre-annotation: partial
   Automatic recommendation: partial
   Collaborative annotation:
   - annotators working independently on their own annotations of the same data
   Project management: 'Yes'
   User roles: 'Yes'
-Annotation Analysis:
-  Agreement calculation: 'Yes'
-  Mass editing: 'Yes'
-  Querying: 'Yes'
-  Comparison of annotations: partial
+7. Annotation Analysis:
+  2. Agreement calculation: 'Yes'
+  4. Mass editing: 'Yes'
+  3. Querying: 'Yes'
+  1. Comparison of annotations: partial

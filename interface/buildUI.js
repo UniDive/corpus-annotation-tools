@@ -2,55 +2,55 @@
 // let tools = [];
 let tools = [     // added for anonymous submission
   {
-    "Annotation layers::Annotation scope": [
+    "6. Annotation layers::Annotation scope": [
       "Free span annotation"
     ],
-    "Annotation layers::Annotation types": [
+    "6. Annotation layers::Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)"
     ],
-    "Annotation layers::Segmentation": [
+    "6. Annotation layers::Segmentation": [
       "word-level",
       "sentence-level"
     ],
-    "Annotation layers::Tagset customization": "Yes",
-    "Data support::Data export": [
+    "6. Annotation layers::Tagset customization": "Yes",
+    "2. Data support::Data export": [
       "The data can be exported"
     ],
-    "Data support::Input format": [
+    "2. Data support::Input format": [
       "Raw text",
       "XML",
       "TSV"
     ],
-    "Data support::Integration of other resources": [
+    "2. Data support::Integration of other resources": [
       "Audio",
       "Video",
       "Image"
     ],
-    "Language support::Language independence": "Yes",
-    "Language support::Multiple writing scripts": "Yes",
-    "Language support::Writing direction": [
-      "LTR"
+    "3. Language support::Language independence": "Yes",
+    "3. Language support::Multiple writing scripts": "Yes",
+    "3. Language support::Writing direction": [
+      "Left to Right"
     ],
-    "Language support::Handling of Unicode": "Yes",
-    "Language support::Language of the interface": [
+    "3. Language support::Handling of Unicode": "Yes",
+    "3. Language support::Language of the interface": [
       "English",
       "German",
       "French",
       "Chinese"
     ],
-    "Software::Active maintenance": "Yes",
-    "Software::License": "GPL-2.0",
-    "Software::Offline usage (for web-based applications)": "Yes",
-    "Software::Operating system": [
+    "1. Software::1. Active maintenance": "Yes",
+    "1. Software::2. License": "GPL-2.0",
+    "1. Software::5. Offline usage (for web-based applications)": "Yes",
+    "1. Software::4. Operating system": [
       "Windows",
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": [
+    "1. Software::6. Software access": [
       "The software is freely available online (with sign up option)"
     ],
-    "Software::Software type": "Desktop-based application",
+    "1. Software::3. Software type": "Desktop-based application",
     "Tool ID::Additional features": "",
     "Tool ID::Code repository": "https://github.com/Exmaralda-Org/exmaralda",
     "Tool ID::Developer": "Yes",
@@ -63,85 +63,85 @@ let tools = [     // added for anonymous submission
     "Tool ID::Short description": "EXMARaLDA is a toolset for working with spoken language corpora",
     "Tool ID::Tool name": "EXMARaLDA",
     "Tool ID::Website": "https://www.exmaralda.org",
-    "Annotation of Universal Dependencies::Other annotation layers": [],
-    "Annotation of Universal Dependencies::UD validation": "No",
-    "Annotation of Universal Dependencies::UD-specific annotations": [],
-    "PARSEME::Consistency check": "No",
-    "PARSEME::PARSEME-specific annotations": [],
-    "User Interface::Annotation display": [
+    "8. Universal Dependencies::Other 6. Annotation layers": [],
+    "8. Universal Dependencies::2. UD validation": "No",
+    "8. Universal Dependencies::1. UD-specific annotations": [],
+    "9. PARSEME::2. Consistency check": "No",
+    "9. PARSEME::1. PARSEME-specific annotations": [],
+    "4. User Interface::Annotation display": [
       "Table",
       "Musical score visualisation"
     ],
-    "User Interface::Annotation mode": [
+    "4. User Interface::Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)"
     ],
-    "Workflow::Automatic pre-annotation": "No",
-    "Workflow::Automatic recommendation": "No",
-    "Workflow::Collaborative annotation": [],
-    "Workflow::Keyboard annotation and shortcuts": "Yes",
-    "Workflow::Project management": "No",
-    "Workflow::User roles": "No",
-    "Annotation Analysis::Agreement calculation": "No",
-    "Annotation Analysis::Comparison of annotations": "No",
-    "Annotation Analysis::Mass editing": "Yes",
-    "Annotation Analysis::Querying": "Yes"
+    "5. Workflow::Automatic pre-annotation": "No",
+    "5. Workflow::Automatic recommendation": "No",
+    "5. Workflow::Collaborative annotation": [],
+    "5. Workflow::Keyboard annotation and shortcuts": "Yes",
+    "5. Workflow::Project management": "No",
+    "5. Workflow::User roles": "No",
+    "7. Annotation Analysis::2. Agreement calculation": "No",
+    "7. Annotation Analysis::1. Comparison of annotations": "No",
+    "7. Annotation Analysis::4. Mass editing": "Yes",
+    "7. Annotation Analysis::3. Querying": "Yes"
   },
   {
-    "Annotation layers::Annotation scope": [
+    "6. Annotation layers::Annotation scope": [
       "Annotation inside sentences",
       "Annotation across sentences",
       "Annotation of full sentences / paragraphs / documents"
     ],
-    "Annotation layers::Annotation types": [
+    "6. Annotation layers::Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)",
       "Chains (e.g. coreferences)"
     ],
-    "Annotation layers::Segmentation": [],
-    "Annotation layers::Tagset customization": "Yes",
-    "Data support::Data export": [
+    "6. Annotation layers::Segmentation": [],
+    "6. Annotation layers::Tagset customization": "Yes",
+    "2. Data support::Data export": [
       "The data can be exported"
     ],
-    "Data support::Input format": [
+    "2. Data support::Input format": [
       "Raw text",
       "PDF",
       "CONLL-U",
       "XML",
       "TSV"
     ],
-    "Data support::Integration of other resources": [
+    "2. Data support::Integration of other resources": [
       "Audio",
       "Video",
       "Image",
       "PDF",
       "External databases (e.g. dictionaries)"
     ],
-    "Language support::Language independence": "Yes",
-    "Language support::Multiple writing scripts": "Yes",
-    "Language support::Writing direction": [
-      "LTR",
-      "RTL"
+    "3. Language support::Language independence": "Yes",
+    "3. Language support::Multiple writing scripts": "Yes",
+    "3. Language support::Writing direction": [
+      "Left to Right",
+      "Right to Left"
     ],
-    "Language support::Handling of Unicode": "Yes",
-    "Language support::Language of the interface": [
+    "3. Language support::Handling of Unicode": "Yes",
+    "3. Language support::Language of the interface": [
       "English"
     ],
-    "Software::Active maintenance": "Yes",
-    "Software::License": "Apache-2.0",
-    "Software::Offline usage (for web-based applications)": "No",
-    "Software::Operating system": [
+    "1. Software::1. Active maintenance": "Yes",
+    "1. Software::2. License": "Apache-2.0",
+    "1. Software::5. Offline usage (for web-based applications)": "No",
+    "1. Software::4. Operating system": [
       "Windows",
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": [
+    "1. Software::6. Software access": [
       "The software should be run by the user (own machine/server)",
       "some public instances available"
     ],
-    "Software::Software type": "Web-based application",
+    "1. Software::3. Software type": "Web-based application",
     "Tool ID::Additional features": "INCEpTION also caters to institutional users who need to integrate the tool into their existing infrastructure by supporting e.g. single-sign-on mechanisms, docker-based deployment, a remote API, etc.",
     "Tool ID::Code repository": "https://github.com/inception-project/inception",
     "Tool ID::Developer": "Yes",
@@ -149,13 +149,13 @@ let tools = [     // added for anonymous submission
     "Tool ID::Short description": "INCEpTION is a emantic annotation platform offering intelligent assistance and knowledge management. It caters to a wide range of individual users who find different aspects of the tool useful.",
     "Tool ID::Tool name": "INCEpTION",
     "Tool ID::Website": "https://inception-project.github.io",
-    "Annotation of Universal Dependencies::Other annotation layers": [
+    "8. Universal Dependencies::Other 6. Annotation layers": [
       "relation between spans",
       "chains",
       "document-level"
     ],
-    "Annotation of Universal Dependencies::UD validation": "No",
-    "Annotation of Universal Dependencies::UD-specific annotations": [
+    "8. Universal Dependencies::2. UD validation": "No",
+    "8. Universal Dependencies::1. UD-specific annotations": [
       "Lemmas",
       "UPOS",
       "FEATS",
@@ -164,88 +164,88 @@ let tools = [     // added for anonymous submission
       "Basic dependencies",
       "Enhanced dependencies"
     ],
-    "PARSEME::Consistency check": "partial",
-    "PARSEME::PARSEME-specific annotations": [
+    "9. PARSEME::2. Consistency check": "partial",
+    "9. PARSEME::1. PARSEME-specific annotations": [
       "Nested expressions",
       "Overlapping expressions"
     ],
-    "User Interface::Annotation display": [
+    "4. User Interface::Annotation display": [
       "Image (e.g. a graph or coloured text)"
     ],
-    "User Interface::Annotation mode": [
+    "4. User Interface::Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)"
     ],
-    "User Interface::Keyboard annotation and shortcuts": "Yes",
-    "Workflow::Automatic pre-annotation": "partial",
-    "Workflow::Automatic recommendation": "partial",
-    "Workflow::Collaborative annotation": [
+    "4. User Interface::Keyboard annotation and shortcuts": "Yes",
+    "5. Workflow::Automatic pre-annotation": "partial",
+    "5. Workflow::Automatic recommendation": "partial",
+    "5. Workflow::Collaborative annotation": [
       "annotators working independently on their own annotations of the same data"
     ],
-    "Workflow::Project management": "Yes",
-    "Workflow::User roles": "Yes",
-    "Annotation Analysis::Agreement calculation": "Yes",
-    "Annotation Analysis::Mass editing": "Yes",
-    "Annotation Analysis::Querying": "Yes",
-    "Annotation Analysis::Comparison of annotations": "partial"
+    "5. Workflow::Project management": "Yes",
+    "5. Workflow::User roles": "Yes",
+    "7. Annotation Analysis::2. Agreement calculation": "Yes",
+    "7. Annotation Analysis::4. Mass editing": "Yes",
+    "7. Annotation Analysis::3. Querying": "Yes",
+    "7. Annotation Analysis::1. Comparison of annotations": "partial"
   },
   {
-    "Annotation layers::Annotation scope": [
+    "6. Annotation layers::Annotation scope": [
       "Annotation inside sentences",
       "Annotation across sentences",
       "Annotation of full sentences / paragraphs / documents"
     ],
-    "Annotation layers::Annotation types": [
+    "6. Annotation layers::Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)",
       "Chains (e.g. coreferences)"
     ],
-    "Annotation layers::Segmentation": [
+    "6. Annotation layers::Segmentation": [
       "word-level",
       "sentence-level"
     ],
-    "Annotation layers::Tagset customization": "Yes",
-    "Data support::Data export": [
+    "6. Annotation layers::Tagset customization": "Yes",
+    "2. Data support::Data export": [
       "The data can be exported",
       "The data can be stored with a third party storage platform (e.g. Git repository)"
     ],
-    "Data support::Input format": [
+    "2. Data support::Input format": [
       "Raw text",
       "PDF",
       "CONLL-U",
       "XML",
       "TSV"
     ],
-    "Data support::Integration of other resources": [
+    "2. Data support::Integration of other resources": [
       "Audio",
       "Video",
       "Image",
       "PDF"
     ],
-    "Language support::Language independence": "Yes",
-    "Language support::Multiple writing scripts": "Yes",
-    "Language support::Writing direction": [
-      "LTR",
-      "RTL"
+    "3. Language support::Language independence": "Yes",
+    "3. Language support::Multiple writing scripts": "Yes",
+    "3. Language support::Writing direction": [
+      "Left to Right",
+      "Right to Left"
     ],
-    "Language support::Handling of Unicode": "Yes",
-    "Language support::Language of the interface": [
+    "3. Language support::Handling of Unicode": "Yes",
+    "3. Language support::Language of the interface": [
       "English"
     ],
-    "Software::Active maintenance": "Yes",
-    "Software::License": "Apache-2.0",
-    "Software::Offline usage (for web-based applications)": "Yes",
-    "Software::Operating system": [
+    "1. Software::1. Active maintenance": "Yes",
+    "1. Software::2. License": "Apache-2.0",
+    "1. Software::5. Offline usage (for web-based applications)": "Yes",
+    "1. Software::4. Operating system": [
       "Windows",
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": [
+    "1. Software::6. Software access": [
       "The software should be run by the user (own machine/server)"
     ],
-    "Software::Software type": "Web-based application",
+    "1. Software::3. Software type": "Web-based application",
     "Tool ID::Additional features": "",
     "Tool ID::Code repository": "",
     "Tool ID::Developer": "No",
@@ -253,12 +253,12 @@ let tools = [     // added for anonymous submission
     "Tool ID::Short description": "Label Studio is a data labeling tool for all data types (computer vision, natural language processing, speech, voice, and video models)",
     "Tool ID::Tool name": "Label Studio",
     "Tool ID::Website": "https://labelstud.io/",
-    "Annotation of Universal Dependencies::Other annotation layers": [
+    "8. Universal Dependencies::Other 6. Annotation layers": [
       "Text classification",
       "NER"
     ],
-    "Annotation of Universal Dependencies::UD validation": "No",
-    "Annotation of Universal Dependencies::UD-specific annotations": [
+    "8. Universal Dependencies::2. UD validation": "No",
+    "8. Universal Dependencies::1. UD-specific annotations": [
       "Lemmas",
       "UPOS",
       "FEATS",
@@ -267,82 +267,82 @@ let tools = [     // added for anonymous submission
       "Basic dependencies",
       "Metadata"
     ],
-    "PARSEME::Consistency check": "No",
-    "PARSEME::PARSEME-specific annotations": [
+    "9. PARSEME::2. Consistency check": "No",
+    "9. PARSEME::1. PARSEME-specific annotations": [
       "Discontinuous expressions",
       "Nested expressions",
       "Overlapping expressions"
     ],
-    "User Interface::Annotation display": [
+    "4. User Interface::Annotation display": [
       "Image (e.g. a graph or coloured text)",
       "Table",
       "Raw format (e.g. CONLL-U)"
     ],
-    "User Interface::Annotation mode": [
+    "4. User Interface::Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)",
       "Touchscreen"
     ],
-    "User Interface::Keyboard annotation and shortcuts": "Yes",
-    "Workflow::Automatic pre-annotation": "No",
-    "Workflow::Automatic recommendation": "Yes",
-    "Workflow::Collaborative annotation": [
+    "4. User Interface::Keyboard annotation and shortcuts": "Yes",
+    "5. Workflow::Automatic pre-annotation": "No",
+    "5. Workflow::Automatic recommendation": "Yes",
+    "5. Workflow::Collaborative annotation": [
       "annotators working independently on their own annotations of the same data",
       "annotators working together on the same shared annotation of the data"
     ],
-    "Workflow::Project management": "Yes",
-    "Workflow::User roles": "Yes",
-    "Annotation Analysis::Agreement calculation": "No",
-    "Annotation Analysis::Comparison of annotations": "No",
-    "Annotation Analysis::Mass editing": "Yes",
-    "Annotation Analysis::Querying": "Yes"
+    "5. Workflow::Project management": "Yes",
+    "5. Workflow::User roles": "Yes",
+    "7. Annotation Analysis::2. Agreement calculation": "No",
+    "7. Annotation Analysis::1. Comparison of annotations": "No",
+    "7. Annotation Analysis::4. Mass editing": "Yes",
+    "7. Annotation Analysis::3. Querying": "Yes"
   },
   {
-    "Annotation layers::Annotation scope": [
+    "6. Annotation layers::Annotation scope": [
       "Annotation inside sentences",
       "Annotation across sentences"
     ],
-    "Annotation layers::Annotation types": [
+    "6. Annotation layers::Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)",
       "Chains (e.g. coreferences)"
     ],
-    "Annotation layers::Segmentation": [],
-    "Annotation layers::Tagset customization": "Yes",
-    "Data support::Data export": [
+    "6. Annotation layers::Segmentation": [],
+    "6. Annotation layers::Tagset customization": "Yes",
+    "2. Data support::Data export": [
       "The data can be exported"
     ],
-    "Data support::Input format": [
+    "2. Data support::Input format": [
       "Raw text",
       "CONLL-U",
       "XML"
     ],
-    "Data support::Integration of other resources": [
+    "2. Data support::Integration of other resources": [
       "External databases (e.g. dictionaries)"
     ],
-    "Language support::Language independence": "Yes",
-    "Language support::Multiple writing scripts": "Yes",
-    "Language support::Writing direction": [
-      "LTR",
-      "RTL"
+    "3. Language support::Language independence": "Yes",
+    "3. Language support::Multiple writing scripts": "Yes",
+    "3. Language support::Writing direction": [
+      "Left to Right",
+      "Right to Left"
     ],
-    "Language support::Handling of Unicode": "Yes",
-    "Language support::Language of the interface": [
+    "3. Language support::Handling of Unicode": "Yes",
+    "3. Language support::Language of the interface": [
       "English"
     ],
-    "Software::Active maintenance": "Yes",
-    "Software::License": "GPL-2.0",
-    "Software::Offline usage (for web-based applications)": "Yes",
-    "Software::Operating system": [
+    "1. Software::1. Active maintenance": "Yes",
+    "1. Software::2. License": "GPL-2.0",
+    "1. Software::5. Offline usage (for web-based applications)": "Yes",
+    "1. Software::4. Operating system": [
       "Windows",
       "Linux"
     ],
-    "Software::Software availability": [
+    "1. Software::6. Software access": [
       "The software should be run by the user (own machine/server)"
     ],
-    "Software::Software type": "Desktop-based application",
+    "1. Software::3. Software type": "Desktop-based application",
     "Tool ID::Additional features": "",
     "Tool ID::Code repository": "https://github.com/ufal/TrEd",
     "Tool ID::Developer": "Yes",
@@ -360,9 +360,9 @@ let tools = [     // added for anonymous submission
     "Tool ID::Short description": "TrEd is a fully customizable and programmable graphical editor and viewer for tree-like structures.",
     "Tool ID::Tool name": "TrEd",
     "Tool ID::Website": "https://ufal.mff.cuni.cz/tred",
-    "Annotation of Universal Dependencies::Other annotation layers": [],
-    "Annotation of Universal Dependencies::UD validation": "No",
-    "Annotation of Universal Dependencies::UD-specific annotations": [
+    "8. Universal Dependencies::Other 6. Annotation layers": [],
+    "8. Universal Dependencies::2. UD validation": "No",
+    "8. Universal Dependencies::1. UD-specific annotations": [
       "Lemmas",
       "UPOS",
       "FEATS",
@@ -372,69 +372,69 @@ let tools = [     // added for anonymous submission
       "Enhanced dependencies",
       "Empty nodes"
     ],
-    "PARSEME::Consistency check": "No",
-    "PARSEME::PARSEME-specific annotations": [],
-    "User Interface::Annotation display": [
+    "9. PARSEME::2. Consistency check": "No",
+    "9. PARSEME::1. PARSEME-specific annotations": [],
+    "4. User Interface::Annotation display": [
       "Graphical representation of a tree"
     ],
-    "User Interface::Annotation mode": [
+    "4. User Interface::Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)"
     ],
-    "User Interface::Keyboard annotation and shortcuts": "Yes",
-    "Workflow::Automatic pre-annotation": "No",
-    "Workflow::Automatic recommendation": "No",
-    "Workflow::Collaborative annotation": [
+    "4. User Interface::Keyboard annotation and shortcuts": "Yes",
+    "5. Workflow::Automatic pre-annotation": "No",
+    "5. Workflow::Automatic recommendation": "No",
+    "5. Workflow::Collaborative annotation": [
       "No"
     ],
-    "Workflow::Project management": "No",
-    "Workflow::User roles": "partial",
-    "Annotation Analysis::Agreement calculation": "No",
-    "Annotation Analysis::Comparison of annotations": "Yes",
-    "Annotation Analysis::Mass editing": "Yes",
-    "Annotation Analysis::Querying": "Yes"
+    "5. Workflow::Project management": "No",
+    "5. Workflow::User roles": "partial",
+    "7. Annotation Analysis::2. Agreement calculation": "No",
+    "7. Annotation Analysis::1. Comparison of annotations": "Yes",
+    "7. Annotation Analysis::4. Mass editing": "Yes",
+    "7. Annotation Analysis::3. Querying": "Yes"
   },
   {
-    "Annotation layers::Annotation scope": [
+    "6. Annotation layers::Annotation scope": [
       "Annotation inside sentences"
     ],
-    "Annotation layers::Annotation types": [
+    "6. Annotation layers::Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Relations (e.g. dependencies)"
     ],
-    "Annotation layers::Segmentation": [
+    "6. Annotation layers::Segmentation": [
       "word-level"
     ],
-    "Annotation layers::Tagset customization": "Yes",
-    "Data support::Data export": [
+    "6. Annotation layers::Tagset customization": "Yes",
+    "2. Data support::Data export": [
       "The data can be exported"
     ],
-    "Data support::Input format": [
+    "2. Data support::Input format": [
       "CONLL-U"
     ],
-    "Data support::Integration of other resources": [],
-    "Language support::Language independence": "Yes",
-    "Language support::Multiple writing scripts": "Yes",
-    "Language support::Writing direction": [
-      "LTR",
-      "RTL"
+    "2. Data support::Integration of other resources": [],
+    "3. Language support::Language independence": "Yes",
+    "3. Language support::Multiple writing scripts": "Yes",
+    "3. Language support::Writing direction": [
+      "Left to Right",
+      "Right to Left"
     ],
-    "Language support::Handling of Unicode": "Yes",
-    "Language support::Language of the interface": [
+    "3. Language support::Handling of Unicode": "Yes",
+    "3. Language support::Language of the interface": [
       "English"
     ],
-    "Software::Active maintenance": "Yes",
-    "Software::License": "MIT",
-    "Software::Offline usage (for web-based applications)": "Yes",
-    "Software::Operating system": [
+    "1. Software::1. Active maintenance": "Yes",
+    "1. Software::2. License": "MIT",
+    "1. Software::5. Offline usage (for web-based applications)": "Yes",
+    "1. Software::4. Operating system": [
       "Windows",
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": [
+    "1. Software::6. Software access": [
       "The software is freely available online (with sign up option)"
     ],
-    "Software::Software type": "Web-based application",
+    "1. Software::3. Software type": "Web-based application",
     "Tool ID::Additional features": "",
     "Tool ID::Code repository": "https://github.com/CAMeL-Lab/palmyra",
     "Tool ID::Developer": "Yes",
@@ -458,9 +458,9 @@ let tools = [     // added for anonymous submission
     "Tool ID::Short description": "PALMYRA is a platform-independent graphical tool for syntactic dependency annotation supporting languages that require complex morphological tokenization.",
     "Tool ID::Tool name": "Palmyra",
     "Tool ID::Website": "https://palmyra.camel-lab.com/",
-    "Annotation of Universal Dependencies::Other annotation layers": [],
-    "Annotation of Universal Dependencies::UD validation": "No",
-    "Annotation of Universal Dependencies::UD-specific annotations": [
+    "8. Universal Dependencies::Other 6. Annotation layers": [],
+    "8. Universal Dependencies::2. UD validation": "No",
+    "8. Universal Dependencies::1. UD-specific annotations": [
       "UPOS",
       "FEATS",
       "XPOS",
@@ -468,68 +468,68 @@ let tools = [     // added for anonymous submission
       "Empty nodes",
       "Metadata"
     ],
-    "PARSEME::Consistency check": "No",
-    "PARSEME::PARSEME-specific annotations": [],
-    "User Interface::Annotation display": [
+    "9. PARSEME::2. Consistency check": "No",
+    "9. PARSEME::1. PARSEME-specific annotations": [],
+    "4. User Interface::Annotation display": [
       "Image (e.g. a graph or coloured text)",
       "Raw format (e.g. CONLL-U)"
     ],
-    "User Interface::Annotation mode": [
+    "4. User Interface::Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)"
     ],
-    "User Interface::Keyboard annotation and shortcuts": "Yes",
-    "Workflow::Automatic pre-annotation": "Yes",
-    "Workflow::Automatic recommendation": "No",
-    "Workflow::Collaborative annotation": [
+    "4. User Interface::Keyboard annotation and shortcuts": "Yes",
+    "5. Workflow::Automatic pre-annotation": "Yes",
+    "5. Workflow::Automatic recommendation": "No",
+    "5. Workflow::Collaborative annotation": [
       "No"
     ],
-    "Workflow::Project management": "No",
-    "Workflow::User roles": "No",
-    "Annotation Analysis::Agreement calculation": "No",
-    "Annotation Analysis::Comparison of annotations": "No",
-    "Annotation Analysis::Mass editing": "No",
-    "Annotation Analysis::Querying": "No"
+    "5. Workflow::Project management": "No",
+    "5. Workflow::User roles": "No",
+    "7. Annotation Analysis::2. Agreement calculation": "No",
+    "7. Annotation Analysis::1. Comparison of annotations": "No",
+    "7. Annotation Analysis::4. Mass editing": "No",
+    "7. Annotation Analysis::3. Querying": "No"
   },
   {
-    "Annotation layers::Annotation scope": [
+    "6. Annotation layers::Annotation scope": [
       "Annotation inside sentences"
     ],
-    "Annotation layers::Annotation types": [
+    "6. Annotation layers::Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Relations (e.g. dependencies)"
     ],
-    "Annotation layers::Segmentation": [],
-    "Annotation layers::Tagset customization": "Yes",
-    "Data support::Data export": [
+    "6. Annotation layers::Segmentation": [],
+    "6. Annotation layers::Tagset customization": "Yes",
+    "2. Data support::Data export": [
       "The data can be exported"
     ],
-    "Data support::Input format": [
+    "2. Data support::Input format": [
       "XML",
       "CONLL-X"
     ],
-    "Data support::Integration of other resources": [],
-    "Language support::Language independence": "Yes",
-    "Language support::Multiple writing scripts": "Yes",
-    "Language support::Writing direction": [
-      "LTR"
+    "2. Data support::Integration of other resources": [],
+    "3. Language support::Language independence": "Yes",
+    "3. Language support::Multiple writing scripts": "Yes",
+    "3. Language support::Writing direction": [
+      "Left to Right"
     ],
-    "Language support::Handling of Unicode": "Yes",
-    "Language support::Language of the interface": [
+    "3. Language support::Handling of Unicode": "Yes",
+    "3. Language support::Language of the interface": [
       "English"
     ],
-    "Software::Active maintenance": "No",
-    "Software::License": "not specified",
-    "Software::Offline usage (for web-based applications)": "Yes",
-    "Software::Operating system": [
+    "1. Software::1. Active maintenance": "No",
+    "1. Software::2. License": "not specified",
+    "1. Software::5. Offline usage (for web-based applications)": "Yes",
+    "1. Software::4. Operating system": [
       "Windows",
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": [
+    "1. Software::6. Software access": [
       "The software should be run by the user (own machine/server)"
     ],
-    "Software::Software type": "Desktop-based application",
+    "1. Software::3. Software type": "Desktop-based application",
     "Tool ID::Additional features": "",
     "Tool ID::Code repository": "https://github.com/attardi/DgAnnotator",
     "Tool ID::Developer": "No",
@@ -537,79 +537,79 @@ let tools = [     // added for anonymous submission
     "Tool ID::Short description": "DgAnnotator is a utility for annotating and visualizing Dependency Graphs for natural language sentences.",
     "Tool ID::Tool name": "DgAnnotator",
     "Tool ID::Website": "http://medialab.di.unipi.it/Project/QA/Parser/DgAnnotator/",
-    "Annotation of Universal Dependencies::Other annotation layers": [],
-    "Annotation of Universal Dependencies::UD validation": "No",
-    "Annotation of Universal Dependencies::UD-specific annotations": [
+    "8. Universal Dependencies::Other 6. Annotation layers": [],
+    "8. Universal Dependencies::2. UD validation": "No",
+    "8. Universal Dependencies::1. UD-specific annotations": [
       "Lemmas",
       "UPOS",
       "Basic dependencies"
     ],
-    "PARSEME::Consistency check": "No",
-    "PARSEME::PARSEME-specific annotations": [],
-    "User Interface::Annotation display": [
+    "9. PARSEME::2. Consistency check": "No",
+    "9. PARSEME::1. PARSEME-specific annotations": [],
+    "4. User Interface::Annotation display": [
       "Image (e.g. a graph or coloured text)"
     ],
-    "User Interface::Annotation mode": [
+    "4. User Interface::Annotation mode": [
       "Mouse (e.g. drag & drop)"
     ],
-    "User Interface::Keyboard annotation and shortcuts": "No",
-    "Workflow::Automatic pre-annotation": "No",
-    "Workflow::Automatic recommendation": "No",
-    "Workflow::Collaborative annotation": [],
-    "Workflow::Project management": "No",
-    "Workflow::User roles": "No",
-    "Annotation Analysis::Agreement calculation": "No",
-    "Annotation Analysis::Comparison of annotations": "No",
-    "Annotation Analysis::Mass editing": "No",
-    "Annotation Analysis::Querying": "No"
+    "4. User Interface::Keyboard annotation and shortcuts": "No",
+    "5. Workflow::Automatic pre-annotation": "No",
+    "5. Workflow::Automatic recommendation": "No",
+    "5. Workflow::Collaborative annotation": [],
+    "5. Workflow::Project management": "No",
+    "5. Workflow::User roles": "No",
+    "7. Annotation Analysis::2. Agreement calculation": "No",
+    "7. Annotation Analysis::1. Comparison of annotations": "No",
+    "7. Annotation Analysis::4. Mass editing": "No",
+    "7. Annotation Analysis::3. Querying": "No"
   },
   {
-    "Annotation layers::Annotation scope": [
+    "6. Annotation layers::Annotation scope": [
       "Annotation inside sentences",
       "Annotation across sentences",
       "Annotation of full sentences / paragraphs / documents"
     ],
-    "Annotation layers::Annotation types": [
+    "6. Annotation layers::Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Chains (e.g. coreferences)"
     ],
-    "Annotation layers::Segmentation": [
+    "6. Annotation layers::Segmentation": [
       "word-level",
       "sentence-level"
     ],
-    "Annotation layers::Tagset customization": "Yes",
-    "Data support::Data export": [
+    "6. Annotation layers::Tagset customization": "Yes",
+    "2. Data support::Data export": [
       "The data can be exported"
     ],
-    "Data support::Input format": [
+    "2. Data support::Input format": [
       "Raw text",
       "XML",
       "other"
     ],
-    "Data support::Integration of other resources": [],
-    "Language support::Language independence": "Yes",
-    "Language support::Multiple writing scripts": "Yes",
-    "Language support::Writing direction": [
-      "LTR",
-      "RTL"
+    "2. Data support::Integration of other resources": [],
+    "3. Language support::Language independence": "Yes",
+    "3. Language support::Multiple writing scripts": "Yes",
+    "3. Language support::Writing direction": [
+      "Left to Right",
+      "Right to Left"
     ],
-    "Language support::Handling of Unicode": "Yes",
-    "Language support::Language of the interface": [
+    "3. Language support::Handling of Unicode": "Yes",
+    "3. Language support::Language of the interface": [
       "English"
     ],
-    "Software::Active maintenance": "Yes",
-    "Software::License": "Apache-2.0",
-    "Software::Offline usage (for web-based applications)": "No",
-    "Software::Operating system": [
+    "1. Software::1. Active maintenance": "Yes",
+    "1. Software::2. License": "Apache-2.0",
+    "1. Software::5. Offline usage (for web-based applications)": "No",
+    "1. Software::4. Operating system": [
       "Windows",
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": [
+    "1. Software::6. Software access": [
       "The software should be run by the user (own machine/server)"
     ],
-    "Software::Software type": "Web-based application",
+    "1. Software::3. Software type": "Web-based application",
     "Tool ID::Additional features": "",
     "Tool ID::Code repository": "https://github.com/gucorpling/gitdox",
     "Tool ID::Developer": "Yes",
@@ -630,99 +630,99 @@ let tools = [     // added for anonymous submission
     "Tool ID::Short description": "GitDox is a version controlled annotation interace for XML and spreadsheet data, as well as nested NER",
     "Tool ID::Tool name": "GitDox",
     "Tool ID::Website": "https://gucorpling.org/gitdox/",
-    "Annotation of Universal Dependencies::Other annotation layers": [
+    "8. Universal Dependencies::Other 6. Annotation layers": [
       "concurrent/conflicting span annotations",
       "nested NER",
       "entity linking"
     ],
-    "Annotation of Universal Dependencies::UD validation": "No",
-    "Annotation of Universal Dependencies::UD-specific annotations": [
+    "8. Universal Dependencies::2. UD validation": "No",
+    "8. Universal Dependencies::1. UD-specific annotations": [
       "Lemmas",
       "UPOS",
       "FEATS",
       "XPOS",
       "Metadata"
     ],
-    "PARSEME::Consistency check": "No",
-    "PARSEME::PARSEME-specific annotations": [
+    "9. PARSEME::2. Consistency check": "No",
+    "9. PARSEME::1. PARSEME-specific annotations": [
       "Nested expressions",
       "Overlapping expressions"
     ],
-    "User Interface::Annotation display": [
+    "4. User Interface::Annotation display": [
       "Image (e.g. a graph or coloured text)",
       "Table",
       "Raw format (e.g. CONLL-U)"
     ],
-    "User Interface::Annotation mode": [
+    "4. User Interface::Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)"
     ],
-    "User Interface::Keyboard annotation and shortcuts": "No",
-    "Workflow::Automatic pre-annotation": "Yes",
-    "Workflow::Automatic recommendation": "No",
-    "Workflow::Collaborative annotation": [
+    "4. User Interface::Keyboard annotation and shortcuts": "No",
+    "5. Workflow::Automatic pre-annotation": "Yes",
+    "5. Workflow::Automatic recommendation": "No",
+    "5. Workflow::Collaborative annotation": [
       "annotators working independently on their own annotations of the same data",
       "annotators working together on the same shared annotation of the data"
     ],
-    "Workflow::Project management": "Yes",
-    "Workflow::User roles": "Yes",
-    "Annotation Analysis::Agreement calculation": "No",
-    "Annotation Analysis::Comparison of annotations": "Yes",
-    "Annotation Analysis::Mass editing": "No",
-    "Annotation Analysis::Querying": "No"
+    "5. Workflow::Project management": "Yes",
+    "5. Workflow::User roles": "Yes",
+    "7. Annotation Analysis::2. Agreement calculation": "No",
+    "7. Annotation Analysis::1. Comparison of annotations": "Yes",
+    "7. Annotation Analysis::4. Mass editing": "No",
+    "7. Annotation Analysis::3. Querying": "No"
   },
   {
-    "Annotation layers::Annotation scope": [
+    "6. Annotation layers::Annotation scope": [
       "Annotation inside sentences",
       "Annotation across sentences",
       "Annotation of full sentences / paragraphs / documents"
     ],
-    "Annotation layers::Annotation types": [
+    "6. Annotation layers::Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Multi-tokens (e.g. multi-word expressions)"
     ],
-    "Annotation layers::Segmentation": [
+    "6. Annotation layers::Segmentation": [
       "word-level",
       "sentence-level"
     ],
-    "Annotation layers::Tagset customization": "Yes",
-    "Data support::Data export": [
+    "6. Annotation layers::Tagset customization": "Yes",
+    "2. Data support::Data export": [
       "The data can be exported"
     ],
-    "Data support::Input format": [
+    "2. Data support::Input format": [
       "Raw text",
       "XML",
       "other"
     ],
-    "Data support::Integration of other resources": [
+    "2. Data support::Integration of other resources": [
       "Audio",
       "Video",
       "Image",
       "PDF",
       "External databases (e.g. dictionaries)"
     ],
-    "Language support::Language independence": "Yes",
-    "Language support::Multiple writing scripts": "Yes",
-    "Language support::Writing direction": [
-      "LTR",
-      "RTL"
+    "3. Language support::Language independence": "Yes",
+    "3. Language support::Multiple writing scripts": "Yes",
+    "3. Language support::Writing direction": [
+      "Left to Right",
+      "Right to Left"
     ],
-    "Language support::Handling of Unicode": "Yes",
-    "Language support::Language of the interface": [
+    "3. Language support::Handling of Unicode": "Yes",
+    "3. Language support::Language of the interface": [
       "English"
     ],
-    "Software::Active maintenance": "Yes",
-    "Software::License": "GNU LGPL",
-    "Software::Offline usage (for web-based applications)": "Yes",
-    "Software::Operating system": [
+    "1. Software::1. Active maintenance": "Yes",
+    "1. Software::2. License": "GNU LGPL",
+    "1. Software::5. Offline usage (for web-based applications)": "Yes",
+    "1. Software::4. Operating system": [
       "Windows",
       "Linux"
     ],
-    "Software::Software availability": [
+    "1. Software::6. Software access": [
       "The software should be run by the user (own machine/server)"
     ],
-    "Software::Software type": "Desktop-based application",
+    "1. Software::3. Software type": "Desktop-based application",
     "Tool ID::Additional features": "",
     "Tool ID::Code repository": "https://github.com/sillsdev/FieldWorks",
     "Tool ID::Developer": "No",
@@ -735,77 +735,77 @@ let tools = [     // added for anonymous submission
     "Tool ID::Short description": "FLeX is a comprehensive linguistic software tool designed for documenting, analyzing, and managing lexical and textual data, particularly for under-documented languages.",
     "Tool ID::Tool name": "FLeX",
     "Tool ID::Website": "https://software.sil.org/fieldworks/",
-    "Annotation of Universal Dependencies::Other annotation layers": [],
-    "Annotation of Universal Dependencies::UD validation": "No",
-    "Annotation of Universal Dependencies::UD-specific annotations": [
+    "8. Universal Dependencies::Other 6. Annotation layers": [],
+    "8. Universal Dependencies::2. UD validation": "No",
+    "8. Universal Dependencies::1. UD-specific annotations": [
       "Metadata"
     ],
-    "PARSEME::Consistency check": "No",
-    "PARSEME::PARSEME-specific annotations": [],
-    "User Interface::Annotation display": [
+    "9. PARSEME::2. Consistency check": "No",
+    "9. PARSEME::1. PARSEME-specific annotations": [],
+    "4. User Interface::Annotation display": [
       "Table",
       "Raw format (e.g. CONLL-U)"
     ],
-    "User Interface::Annotation mode": [
+    "4. User Interface::Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)"
     ],
-    "User Interface::Keyboard annotation and shortcuts": "Yes",
-    "Workflow::Automatic pre-annotation": "partial",
-    "Workflow::Automatic recommendation": "No",
-    "Workflow::Collaborative annotation": [],
-    "Workflow::Project management": "partial",
-    "Workflow::User roles": "No",
-    "Annotation Analysis::Agreement calculation": "No",
-    "Annotation Analysis::Comparison of annotations": "partial",
-    "Annotation Analysis::Mass editing": "Yes",
-    "Annotation Analysis::Querying": "Yes"
+    "4. User Interface::Keyboard annotation and shortcuts": "Yes",
+    "5. Workflow::Automatic pre-annotation": "partial",
+    "5. Workflow::Automatic recommendation": "No",
+    "5. Workflow::Collaborative annotation": [],
+    "5. Workflow::Project management": "partial",
+    "5. Workflow::User roles": "No",
+    "7. Annotation Analysis::2. Agreement calculation": "No",
+    "7. Annotation Analysis::1. Comparison of annotations": "partial",
+    "7. Annotation Analysis::4. Mass editing": "Yes",
+    "7. Annotation Analysis::3. Querying": "Yes"
   },
   {
-    "Annotation layers::Annotation scope": [
+    "6. Annotation layers::Annotation scope": [
       "Annotation inside sentences"
     ],
-    "Annotation layers::Annotation types": [
+    "6. Annotation layers::Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)"
     ],
-    "Annotation layers::Segmentation": [
+    "6. Annotation layers::Segmentation": [
       "word-level",
       "sentence-level"
     ],
-    "Annotation layers::Tagset customization": "Yes",
-    "Data support::Data export": [
+    "6. Annotation layers::Tagset customization": "Yes",
+    "2. Data support::Data export": [
       "The data can be exported"
     ],
-    "Data support::Input format": [
+    "2. Data support::Input format": [
       "CONLL-U",
       "CoNLL-U Plus"
     ],
-    "Data support::Integration of other resources": [],
-    "Language support::Language independence": "Yes",
-    "Language support::Multiple writing scripts": "Yes",
-    "Language support::Writing direction": [
-      "LTR",
-      "RTL"
+    "2. Data support::Integration of other resources": [],
+    "3. Language support::Language independence": "Yes",
+    "3. Language support::Multiple writing scripts": "Yes",
+    "3. Language support::Writing direction": [
+      "Left to Right",
+      "Right to Left"
     ],
-    "Language support::Handling of Unicode": "Yes",
-    "Language support::Language of the interface": [
+    "3. Language support::Handling of Unicode": "Yes",
+    "3. Language support::Language of the interface": [
       "English"
     ],
-    "Software::Active maintenance": "Yes",
-    "Software::License": "BSD 3-Clause",
-    "Software::Offline usage (for web-based applications)": "No",
-    "Software::Operating system": [
+    "1. Software::1. Active maintenance": "Yes",
+    "1. Software::2. License": "BSD 3-Clause",
+    "1. Software::5. Offline usage (for web-based applications)": "No",
+    "1. Software::4. Operating system": [
       "Windows",
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": [
+    "1. Software::6. Software access": [
       "The software should be run by the user (own machine/server)"
     ],
-    "Software::Software type": "Web-based application",
+    "1. Software::3. Software type": "Web-based application",
     "Tool ID::Additional features": "The tool supports git and provides automatic transliteration of non-Latin scripts into Latin-script, as well as statistics (number/percentage of UPOS, deprels, etc). The tool can be used as a frontend to an parser which returns the result in CoNLL-U format",
     "Tool ID::Code repository": "https://github.com/Orange-Opensource/conllueditor",
     "Tool ID::Developer": "Yes",
@@ -818,11 +818,11 @@ let tools = [     // added for anonymous submission
     "Tool ID::Short description": "CoNLLU-editor is a graphical tool to annotate sentences in dependency syntax",
     "Tool ID::Tool name": "CoNLLU-Editor",
     "Tool ID::Website": "https://github.com/Orange-Opensource/conllueditor",
-    "Annotation of Universal Dependencies::Other annotation layers": [
+    "8. Universal Dependencies::Other 6. Annotation layers": [
       "BIO-like annotations"
     ],
-    "Annotation of Universal Dependencies::UD validation": "Yes",
-    "Annotation of Universal Dependencies::UD-specific annotations": [
+    "8. Universal Dependencies::2. UD validation": "Yes",
+    "8. Universal Dependencies::1. UD-specific annotations": [
       "Lemmas",
       "UPOS",
       "FEATS",
@@ -833,73 +833,73 @@ let tools = [     // added for anonymous submission
       "Empty nodes",
       "Metadata"
     ],
-    "PARSEME::Consistency check": "No",
-    "PARSEME::PARSEME-specific annotations": [],
-    "User Interface::Annotation display": [
+    "9. PARSEME::2. Consistency check": "No",
+    "9. PARSEME::1. PARSEME-specific annotations": [],
+    "4. User Interface::Annotation display": [
       "Image (e.g. a graph or coloured text)",
       "Table",
       "Raw format (e.g. CONLL-U)",
       "SD",
       "LateX (tikz)"
     ],
-    "User Interface::Annotation mode": [
+    "4. User Interface::Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)"
     ],
-    "User Interface::Keyboard annotation and shortcuts": "Yes",
-    "Workflow::Automatic pre-annotation": "No",
-    "Workflow::Automatic recommendation": "No",
-    "Workflow::Collaborative annotation": [
+    "4. User Interface::Keyboard annotation and shortcuts": "Yes",
+    "5. Workflow::Automatic pre-annotation": "No",
+    "5. Workflow::Automatic recommendation": "No",
+    "5. Workflow::Collaborative annotation": [
       "partial support"
     ],
-    "Workflow::Project management": "No",
-    "Workflow::User roles": "No",
-    "Annotation Analysis::Agreement calculation": "No",
-    "Annotation Analysis::Comparison of annotations": "Yes",
-    "Annotation Analysis::Mass editing": "Yes",
-    "Annotation Analysis::Querying": "Yes"
+    "5. Workflow::Project management": "No",
+    "5. Workflow::User roles": "No",
+    "7. Annotation Analysis::2. Agreement calculation": "No",
+    "7. Annotation Analysis::1. Comparison of annotations": "Yes",
+    "7. Annotation Analysis::4. Mass editing": "Yes",
+    "7. Annotation Analysis::3. Querying": "Yes"
   },
   {
-    "Annotation layers::Annotation scope": [
+    "6. Annotation layers::Annotation scope": [
       "Annotation of full sentences / paragraphs / documents"
     ],
-    "Annotation layers::Annotation types": [
+    "6. Annotation layers::Annotation types": [
       "Spans (e.g. names entities)"
     ],
-    "Annotation layers::Segmentation": [],
-    "Annotation layers::Tagset customization": "Yes",
-    "Data support::Data export": [
+    "6. Annotation layers::Segmentation": [],
+    "6. Annotation layers::Tagset customization": "Yes",
+    "2. Data support::Data export": [
       "The data can be exported"
     ],
-    "Data support::Input format": [
+    "2. Data support::Input format": [
       "Raw text",
       "CONLL-U",
       "XML",
       "TSV"
     ],
-    "Data support::Integration of other resources": [],
-    "Language support::Language independence": "Yes",
-    "Language support::Multiple writing scripts": "Yes",
-    "Language support::Writing direction": [
-      "LTR",
-      "RTL"
+    "2. Data support::Integration of other resources": [],
+    "3. Language support::Language independence": "Yes",
+    "3. Language support::Multiple writing scripts": "Yes",
+    "3. Language support::Writing direction": [
+      "Left to Right",
+      "Right to Left"
     ],
-    "Language support::Handling of Unicode": "Yes",
-    "Language support::Language of the interface": [
+    "3. Language support::Handling of Unicode": "Yes",
+    "3. Language support::Language of the interface": [
       "English"
     ],
-    "Software::Active maintenance": "Yes",
-    "Software::License": "Apache-2.0",
-    "Software::Offline usage (for web-based applications)": "Yes",
-    "Software::Operating system": [
+    "1. Software::1. Active maintenance": "Yes",
+    "1. Software::2. License": "Apache-2.0",
+    "1. Software::5. Offline usage (for web-based applications)": "Yes",
+    "1. Software::4. Operating system": [
       "Windows",
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": [
+    "1. Software::6. Software access": [
       "The software should be run by the user (own machine/server)"
     ],
-    "Software::Software type": "Web-based application",
+    "1. Software::3. Software type": "Web-based application",
     "Tool ID::Additional features": "The tool offers machine-learned automatic tagging suggestions",
     "Tool ID::Code repository": "https://github.com/label-sleuth/label-sleuth",
     "Tool ID::Developer": "No",
@@ -912,74 +912,74 @@ let tools = [     // added for anonymous submission
     "Tool ID::Short description": "Label Sleuth is an open-source no-code system for text annotation and building text classifiers",
     "Tool ID::Tool name": "Label Sleuth",
     "Tool ID::Website": "https://www.label-sleuth.org/",
-    "Annotation of Universal Dependencies::Other annotation layers": [],
-    "Annotation of Universal Dependencies::UD validation": "No",
-    "Annotation of Universal Dependencies::UD-specific annotations": [
+    "8. Universal Dependencies::Other 6. Annotation layers": [],
+    "8. Universal Dependencies::2. UD validation": "No",
+    "8. Universal Dependencies::1. UD-specific annotations": [
       "Metadata"
     ],
-    "PARSEME::Consistency check": "No",
-    "PARSEME::PARSEME-specific annotations": [],
-    "User Interface::Annotation display": [
+    "9. PARSEME::2. Consistency check": "No",
+    "9. PARSEME::1. PARSEME-specific annotations": [],
+    "4. User Interface::Annotation display": [
       "Image (e.g. a graph or coloured text)"
     ],
-    "User Interface::Annotation mode": [
+    "4. User Interface::Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)"
     ],
-    "User Interface::Keyboard annotation and shortcuts": "Yes",
-    "Workflow::Automatic pre-annotation": "No",
-    "Workflow::Automatic recommendation": "Yes",
-    "Workflow::Collaborative annotation": [
+    "4. User Interface::Keyboard annotation and shortcuts": "Yes",
+    "5. Workflow::Automatic pre-annotation": "No",
+    "5. Workflow::Automatic recommendation": "Yes",
+    "5. Workflow::Collaborative annotation": [
       "annotators working together on the same shared annotation of the data"
     ],
-    "Workflow::Project management": "Yes",
-    "Workflow::User roles": "Yes",
-    "Annotation Analysis::Agreement calculation": "No",
-    "Annotation Analysis::Comparison of annotations": "Yes",
-    "Annotation Analysis::Mass editing": "Yes",
-    "Annotation Analysis::Querying": "Yes"
+    "5. Workflow::Project management": "Yes",
+    "5. Workflow::User roles": "Yes",
+    "7. Annotation Analysis::2. Agreement calculation": "No",
+    "7. Annotation Analysis::1. Comparison of annotations": "Yes",
+    "7. Annotation Analysis::4. Mass editing": "Yes",
+    "7. Annotation Analysis::3. Querying": "Yes"
   },
   {
-    "Annotation layers::Annotation scope": [
+    "6. Annotation layers::Annotation scope": [
       "Annotation inside sentences"
     ],
-    "Annotation layers::Annotation types": [
+    "6. Annotation layers::Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Multi-tokens (e.g. multi-word expressions)"
     ],
-    "Annotation layers::Segmentation": [],
-    "Annotation layers::Tagset customization": "No",
-    "Data support::Data export": [
+    "6. Annotation layers::Segmentation": [],
+    "6. Annotation layers::Tagset customization": "No",
+    "2. Data support::Data export": [
       "The data can be exported"
     ],
-    "Data support::Input format": [
+    "2. Data support::Input format": [
       "Raw text",
       "CONLL-U"
     ],
-    "Data support::Integration of other resources": [],
-    "Language support::Language independence": "Yes",
-    "Language support::Multiple writing scripts": "Yes",
-    "Language support::Writing direction": [
-      "LTR",
-      "RTL"
+    "2. Data support::Integration of other resources": [],
+    "3. Language support::Language independence": "Yes",
+    "3. Language support::Multiple writing scripts": "Yes",
+    "3. Language support::Writing direction": [
+      "Left to Right",
+      "Right to Left"
     ],
-    "Language support::Handling of Unicode": "No",
-    "Language support::Language of the interface": [
+    "3. Language support::Handling of Unicode": "No",
+    "3. Language support::Language of the interface": [
       "English"
     ],
-    "Software::Active maintenance": "Yes",
-    "Software::License": "other",
-    "Software::Offline usage (for web-based applications)": "No",
-    "Software::Operating system": [
+    "1. Software::1. Active maintenance": "Yes",
+    "1. Software::2. License": "other",
+    "1. Software::5. Offline usage (for web-based applications)": "No",
+    "1. Software::4. Operating system": [
       "Windows",
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": [
+    "1. Software::6. Software access": [
       "The software should be run by the user (own machine/server)"
     ],
-    "Software::Software type": "Web-based application",
+    "1. Software::3. Software type": "Web-based application",
     "Tool ID::Additional features": "",
     "Tool ID::Code repository": "https://github.com/CogComp/talen",
     "Tool ID::Developer": "No",
@@ -992,82 +992,82 @@ let tools = [     // added for anonymous submission
     "Tool ID::Short description": "TALEN is a lightweight web-based tool for annotating word sequences.",
     "Tool ID::Tool name": "TALEN",
     "Tool ID::Website": "https://github.com/CogComp/talen",
-    "Annotation of Universal Dependencies::Other annotation layers": [
+    "8. Universal Dependencies::Other 6. Annotation layers": [
       "NER"
     ],
-    "Annotation of Universal Dependencies::UD validation": "No",
-    "Annotation of Universal Dependencies::UD-specific annotations": [
+    "8. Universal Dependencies::2. UD validation": "No",
+    "8. Universal Dependencies::1. UD-specific annotations": [
       "UPOS",
       "XPOS",
       "Multi-word tokens",
       "Metadata"
     ],
-    "PARSEME::Consistency check": "partial",
-    "PARSEME::PARSEME-specific annotations": [],
-    "User Interface::Annotation display": [
+    "9. PARSEME::2. Consistency check": "partial",
+    "9. PARSEME::1. PARSEME-specific annotations": [],
+    "4. User Interface::Annotation display": [
       "Image (e.g. a graph or coloured text)"
     ],
-    "User Interface::Annotation mode": [
+    "4. User Interface::Annotation mode": [
       "Mouse (e.g. drag & drop)",
       "Touchscreen"
     ],
-    "User Interface::Keyboard annotation and shortcuts": "No",
-    "Workflow::Automatic pre-annotation": "Yes",
-    "Workflow::Automatic recommendation": "No",
-    "Workflow::Collaborative annotation": [
+    "4. User Interface::Keyboard annotation and shortcuts": "No",
+    "5. Workflow::Automatic pre-annotation": "Yes",
+    "5. Workflow::Automatic recommendation": "No",
+    "5. Workflow::Collaborative annotation": [
       "annotators working independently on their own annotations of the same data"
     ],
-    "Workflow::Project management": "No",
-    "Workflow::User roles": "Yes",
-    "Annotation Analysis::Agreement calculation": "No",
-    "Annotation Analysis::Comparison of annotations": "No",
-    "Annotation Analysis::Mass editing": "Yes",
-    "Annotation Analysis::Querying": "No"
+    "5. Workflow::Project management": "No",
+    "5. Workflow::User roles": "Yes",
+    "7. Annotation Analysis::2. Agreement calculation": "No",
+    "7. Annotation Analysis::1. Comparison of annotations": "No",
+    "7. Annotation Analysis::4. Mass editing": "Yes",
+    "7. Annotation Analysis::3. Querying": "No"
   },
   {
-    "Annotation layers::Annotation scope": [
+    "6. Annotation layers::Annotation scope": [
       "Annotation inside sentences",
       "Annotation across sentences",
       "Annotation of full sentences / paragraphs / documents"
     ],
-    "Annotation layers::Annotation types": [
+    "6. Annotation layers::Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Multi-tokens (e.g. multi-word expressions)",
       "Interlinear glossed text annotations"
     ],
-    "Annotation layers::Segmentation": [
+    "6. Annotation layers::Segmentation": [
       "word-level",
       "sentence-level"
     ],
-    "Annotation layers::Tagset customization": "Yes",
-    "Data support::Data export": [
+    "6. Annotation layers::Tagset customization": "Yes",
+    "2. Data support::Data export": [
       "The data can be exported"
     ],
-    "Data support::Input format": [
+    "2. Data support::Input format": [
       "Raw text"
     ],
-    "Data support::Integration of other resources": [],
-    "Language support::Language independence": "Yes",
-    "Language support::Multiple writing scripts": "Yes",
-    "Language support::Writing direction": [
-      "LTR",
-      "RTL"
+    "2. Data support::Integration of other resources": [],
+    "3. Language support::Language independence": "Yes",
+    "3. Language support::Multiple writing scripts": "Yes",
+    "3. Language support::Writing direction": [
+      "Left to Right",
+      "Right to Left"
     ],
-    "Language support::Handling of Unicode": "Yes",
-    "Language support::Language of the interface": [
+    "3. Language support::Handling of Unicode": "Yes",
+    "3. Language support::Language of the interface": [
       "English"
     ],
-    "Software::Active maintenance": "No",
-    "Software::License": "other",
-    "Software::Offline usage (for web-based applications)": "Yes",
-    "Software::Operating system": [
+    "1. Software::1. Active maintenance": "No",
+    "1. Software::2. License": "other",
+    "1. Software::5. Offline usage (for web-based applications)": "Yes",
+    "1. Software::4. Operating system": [
       "Windows"
     ],
-    "Software::Software availability": [
+    "1. Software::6. Software access": [
       "The software should be run by the user (own machine/server)"
     ],
-    "Software::Software type": "Desktop-based application",
+    "1. Software::3. Software type": "Desktop-based application",
     "Tool ID::Additional features": "",
     "Tool ID::Code repository": "",
     "Tool ID::Developer": "No",
@@ -1080,74 +1080,74 @@ let tools = [     // added for anonymous submission
     "Tool ID::Short description": "ToolBox is a linguistic data management tool designed for building lexicons, analyzing interlinear texts, and organizing fieldwork data, developed by SIL International.",
     "Tool ID::Tool name": "ToolBox",
     "Tool ID::Website": "https://software.sil.org/toolbox/",
-    "Annotation of Universal Dependencies::Other annotation layers": [],
-    "Annotation of Universal Dependencies::UD validation": "No",
-    "Annotation of Universal Dependencies::UD-specific annotations": [
+    "8. Universal Dependencies::Other 6. Annotation layers": [],
+    "8. Universal Dependencies::2. UD validation": "No",
+    "8. Universal Dependencies::1. UD-specific annotations": [
       "Metadata"
     ],
-    "PARSEME::Consistency check": "No",
-    "PARSEME::PARSEME-specific annotations": [],
-    "User Interface::Annotation display": [
+    "9. PARSEME::2. Consistency check": "No",
+    "9. PARSEME::1. PARSEME-specific annotations": [],
+    "4. User Interface::Annotation display": [
       "Table"
     ],
-    "User Interface::Annotation mode": [
+    "4. User Interface::Annotation mode": [
       "Keyboard"
     ],
-    "User Interface::Keyboard annotation and shortcuts": "Yes",
-    "Workflow::Automatic pre-annotation": "No",
-    "Workflow::Automatic recommendation": "No",
-    "Workflow::Collaborative annotation": [
+    "4. User Interface::Keyboard annotation and shortcuts": "Yes",
+    "5. Workflow::Automatic pre-annotation": "No",
+    "5. Workflow::Automatic recommendation": "No",
+    "5. Workflow::Collaborative annotation": [
       "No"
     ],
-    "Workflow::Project management": "No",
-    "Workflow::User roles": "No",
-    "Annotation Analysis::Agreement calculation": "No",
-    "Annotation Analysis::Comparison of annotations": "No",
-    "Annotation Analysis::Mass editing": "Yes",
-    "Annotation Analysis::Querying": "Yes"
+    "5. Workflow::Project management": "No",
+    "5. Workflow::User roles": "No",
+    "7. Annotation Analysis::2. Agreement calculation": "No",
+    "7. Annotation Analysis::1. Comparison of annotations": "No",
+    "7. Annotation Analysis::4. Mass editing": "Yes",
+    "7. Annotation Analysis::3. Querying": "Yes"
   },
   {
-    "Annotation layers::Annotation scope": [
+    "6. Annotation layers::Annotation scope": [
       "Annotation inside sentences"
     ],
-    "Annotation layers::Annotation types": [
+    "6. Annotation layers::Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)"
     ],
-    "Annotation layers::Segmentation": [],
-    "Annotation layers::Tagset customization": "Yes",
-    "Data support::Data export": [
+    "6. Annotation layers::Segmentation": [],
+    "6. Annotation layers::Tagset customization": "Yes",
+    "2. Data support::Data export": [
       "The data can be exported"
     ],
-    "Data support::Input format": [
+    "2. Data support::Input format": [
       "Raw text",
       "CONLL-U",
       "other"
     ],
-    "Data support::Integration of other resources": [],
-    "Language support::Language independence": "Yes",
-    "Language support::Multiple writing scripts": "Yes",
-    "Language support::Writing direction": [
-      "LTR",
-      "RTL"
+    "2. Data support::Integration of other resources": [],
+    "3. Language support::Language independence": "Yes",
+    "3. Language support::Multiple writing scripts": "Yes",
+    "3. Language support::Writing direction": [
+      "Left to Right",
+      "Right to Left"
     ],
-    "Language support::Handling of Unicode": "Yes",
-    "Language support::Language of the interface": [
+    "3. Language support::Handling of Unicode": "Yes",
+    "3. Language support::Language of the interface": [
       "English"
     ],
-    "Software::Active maintenance": "Yes",
-    "Software::License": "GPL-3.0",
-    "Software::Offline usage (for web-based applications)": "Yes",
-    "Software::Operating system": [
+    "1. Software::1. Active maintenance": "Yes",
+    "1. Software::2. License": "GPL-3.0",
+    "1. Software::5. Offline usage (for web-based applications)": "Yes",
+    "1. Software::4. Operating system": [
       "Windows",
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": [
+    "1. Software::6. Software access": [
       "The software is freely available online (with sign up option)"
     ],
-    "Software::Software type": "Web-based application",
+    "1. Software::3. Software type": "Web-based application",
     "Tool ID::Additional features": "",
     "Tool ID::Code repository": "https://github.com/jonorthwash/ud-annotatrix",
     "Tool ID::Developer": "No",
@@ -1157,12 +1157,12 @@ let tools = [     // added for anonymous submission
         "Paper": "https://aclanthology.org/W17-7604"
       }
     ],
-    "Tool ID::Short description": "UD Annotatrix is a client-side, browser-only, language-independent tool for editing dependency trees according to the guidelines established by the Universal Dependencies project.",
+    "Tool ID::Short description": "UD Annotatrix is a client-side, browser-only, language-independent tool for editing dependency trees according to the guidelines established by the 8. Universal Dependencies project.",
     "Tool ID::Tool name": "UD Annotatrix",
     "Tool ID::Website": "https://maryszmary.github.io/ud-annotatrix/standalone/annotator.html",
-    "Annotation of Universal Dependencies::Other annotation layers": [],
-    "Annotation of Universal Dependencies::UD validation": "No",
-    "Annotation of Universal Dependencies::UD-specific annotations": [
+    "8. Universal Dependencies::Other 6. Annotation layers": [],
+    "8. Universal Dependencies::2. UD validation": "No",
+    "8. Universal Dependencies::1. UD-specific annotations": [
       "Lemmas",
       "UPOS",
       "FEATS",
@@ -1172,83 +1172,83 @@ let tools = [     // added for anonymous submission
       "Enhanced dependencies",
       "Empty nodes"
     ],
-    "PARSEME::Consistency check": "No",
-    "PARSEME::PARSEME-specific annotations": [],
-    "User Interface::Annotation display": [
+    "9. PARSEME::2. Consistency check": "No",
+    "9. PARSEME::1. PARSEME-specific annotations": [],
+    "4. User Interface::Annotation display": [
       "Image (e.g. a graph or coloured text)",
       "Table",
       "Raw format (e.g. CONLL-U)"
     ],
-    "User Interface::Annotation mode": [
+    "4. User Interface::Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)"
     ],
-    "User Interface::Keyboard annotation and shortcuts": "No",
-    "Workflow::Automatic pre-annotation": "No",
-    "Workflow::Automatic recommendation": "No",
-    "Workflow::Collaborative annotation": [
+    "4. User Interface::Keyboard annotation and shortcuts": "No",
+    "5. Workflow::Automatic pre-annotation": "No",
+    "5. Workflow::Automatic recommendation": "No",
+    "5. Workflow::Collaborative annotation": [
       "Yes"
     ],
-    "Workflow::Project management": "No",
-    "Workflow::User roles": "No",
-    "Annotation Analysis::Agreement calculation": "No",
-    "Annotation Analysis::Comparison of annotations": "No",
-    "Annotation Analysis::Mass editing": "No",
-    "Annotation Analysis::Querying": "No"
+    "5. Workflow::Project management": "No",
+    "5. Workflow::User roles": "No",
+    "7. Annotation Analysis::2. Agreement calculation": "No",
+    "7. Annotation Analysis::1. Comparison of annotations": "No",
+    "7. Annotation Analysis::4. Mass editing": "No",
+    "7. Annotation Analysis::3. Querying": "No"
   },
   {
-    "Annotation layers::Annotation scope": [
+    "6. Annotation layers::Annotation scope": [
       "Annotation inside sentences",
       "Annotation across sentences",
       "Annotation of full sentences / paragraphs / documents"
     ],
-    "Annotation layers::Annotation types": [
+    "6. Annotation layers::Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)"
     ],
-    "Annotation layers::Segmentation": [
+    "6. Annotation layers::Segmentation": [
       "word-level",
       "sentence-level"
     ],
-    "Annotation layers::Tagset customization": "Yes",
-    "Data support::Data export": [
+    "6. Annotation layers::Tagset customization": "Yes",
+    "2. Data support::Data export": [
       "The data can be exported"
     ],
-    "Data support::Input format": [
+    "2. Data support::Input format": [
       "Raw text",
       "XML",
       "other",
       "TSV"
     ],
-    "Data support::Integration of other resources": [
+    "2. Data support::Integration of other resources": [
       "Audio",
       "Video",
       "Image"
     ],
-    "Language support::Language independence": "Yes",
-    "Language support::Multiple writing scripts": "Yes",
-    "Language support::Writing direction": [
-      "LTR",
-      "RTL"
+    "3. Language support::Language independence": "Yes",
+    "3. Language support::Multiple writing scripts": "Yes",
+    "3. Language support::Writing direction": [
+      "Left to Right",
+      "Right to Left"
     ],
-    "Language support::Handling of Unicode": "Yes",
-    "Language support::Language of the interface": [
+    "3. Language support::Handling of Unicode": "Yes",
+    "3. Language support::Language of the interface": [
       "English"
     ],
-    "Software::Active maintenance": "Yes",
-    "Software::License": "GPL-3.0",
-    "Software::Offline usage (for web-based applications)": "Yes",
-    "Software::Operating system": [
+    "1. Software::1. Active maintenance": "Yes",
+    "1. Software::2. License": "GPL-3.0",
+    "1. Software::5. Offline usage (for web-based applications)": "Yes",
+    "1. Software::4. Operating system": [
       "Windows",
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": [
+    "1. Software::6. Software access": [
       "The software should be run by the user (own machine/server)"
     ],
-    "Software::Software type": "Desktop-based application",
+    "1. Software::3. Software type": "Desktop-based application",
     "Tool ID::Additional features": "The tools supports synchronization with multimedia content, a customizable annotation workflow and metadata management (IMDI and CMDI)",
     "Tool ID::Code repository": "https://archive.mpi.nl/tla/elan/download",
     "Tool ID::Developer": "No",
@@ -1261,12 +1261,12 @@ let tools = [     // added for anonymous submission
     "Tool ID::Short description": "ELAN is a professional tool for the creation, annotation, and analysis of complex multimedia data, enabling time-aligned transcription and linguistic analysis.",
     "Tool ID::Tool name": "ELAN",
     "Tool ID::Website": "https://archive.mpi.nl/tla/elan",
-    "Annotation of Universal Dependencies::Other annotation layers": [
+    "8. Universal Dependencies::Other 6. Annotation layers": [
       "Time-aligned annotations",
       "multimodal annotations"
     ],
-    "Annotation of Universal Dependencies::UD validation": "No",
-    "Annotation of Universal Dependencies::UD-specific annotations": [
+    "8. Universal Dependencies::2. UD validation": "No",
+    "8. Universal Dependencies::1. UD-specific annotations": [
       "Lemmas",
       "UPOS",
       "FEATS",
@@ -1275,79 +1275,79 @@ let tools = [     // added for anonymous submission
       "Basic dependencies",
       "Metadata"
     ],
-    "PARSEME::Consistency check": "No",
-    "PARSEME::PARSEME-specific annotations": [
+    "9. PARSEME::2. Consistency check": "No",
+    "9. PARSEME::1. PARSEME-specific annotations": [
       "Discontinuous expressions",
       "Nested expressions",
       "Overlapping expressions"
     ],
-    "User Interface::Annotation display": [
+    "4. User Interface::Annotation display": [
       "Image (e.g. a graph or coloured text)",
       "Table",
       "CSV"
     ],
-    "User Interface::Annotation mode": [
+    "4. User Interface::Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)",
       "Touchscreen"
     ],
-    "User Interface::Keyboard annotation and shortcuts": "Yes",
-    "Workflow::Automatic pre-annotation": "Yes",
-    "Workflow::Automatic recommendation": "No",
-    "Workflow::Collaborative annotation": [
+    "4. User Interface::Keyboard annotation and shortcuts": "Yes",
+    "5. Workflow::Automatic pre-annotation": "Yes",
+    "5. Workflow::Automatic recommendation": "No",
+    "5. Workflow::Collaborative annotation": [
       "annotators working independently on their own annotations of the same data"
     ],
-    "Workflow::Project management": "No",
-    "Workflow::User roles": "No",
-    "Annotation Analysis::Agreement calculation": "No",
-    "Annotation Analysis::Comparison of annotations": "No",
-    "Annotation Analysis::Mass editing": "Yes",
-    "Annotation Analysis::Querying": "Yes"
+    "5. Workflow::Project management": "No",
+    "5. Workflow::User roles": "No",
+    "7. Annotation Analysis::2. Agreement calculation": "No",
+    "7. Annotation Analysis::1. Comparison of annotations": "No",
+    "7. Annotation Analysis::4. Mass editing": "Yes",
+    "7. Annotation Analysis::3. Querying": "Yes"
   },
   {
-    "Annotation layers::Annotation scope": [
+    "6. Annotation layers::Annotation scope": [
       "Annotation inside sentences"
     ],
-    "Annotation layers::Annotation types": [
+    "6. Annotation layers::Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Relations (e.g. dependencies)",
       "Chains (e.g. coreferences)"
     ],
-    "Annotation layers::Segmentation": [
+    "6. Annotation layers::Segmentation": [
       "word-level"
     ],
-    "Annotation layers::Tagset customization": "Yes",
-    "Data support::Data export": [
+    "6. Annotation layers::Tagset customization": "Yes",
+    "2. Data support::Data export": [
       "The data can be exported"
     ],
-    "Data support::Input format": [
+    "2. Data support::Input format": [
       "Raw text",
       "CONLL-U"
     ],
-    "Data support::Integration of other resources": [],
-    "Language support::Language independence": "Yes",
-    "Language support::Multiple writing scripts": "Yes",
-    "Language support::Writing direction": [
-      "LTR",
-      "RTL"
+    "2. Data support::Integration of other resources": [],
+    "3. Language support::Language independence": "Yes",
+    "3. Language support::Multiple writing scripts": "Yes",
+    "3. Language support::Writing direction": [
+      "Left to Right",
+      "Right to Left"
     ],
-    "Language support::Handling of Unicode": "Yes",
-    "Language support::Language of the interface": [
+    "3. Language support::Handling of Unicode": "Yes",
+    "3. Language support::Language of the interface": [
       "English"
     ],
-    "Software::Active maintenance": "Yes",
-    "Software::License": "MIT",
-    "Software::Offline usage (for web-based applications)": "No",
-    "Software::Operating system": [
+    "1. Software::1. Active maintenance": "Yes",
+    "1. Software::2. License": "MIT",
+    "1. Software::5. Offline usage (for web-based applications)": "No",
+    "1. Software::4. Operating system": [
       "Windows",
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": [
+    "1. Software::6. Software access": [
       "The software should be run by the user (own machine/server)"
     ],
-    "Software::Software type": "Web-based application",
+    "1. Software::3. Software type": "Web-based application",
     "Tool ID::Additional features": "",
     "Tool ID::Code repository": "https://github.com/furkanakkurt1335/boat",
     "Tool ID::Developer": "Yes",
@@ -1360,9 +1360,9 @@ let tools = [     // added for anonymous submission
     "Tool ID::Short description": "BoAT (Boğaziçi University Annotation Tool) is a collaborative grammatical annotation tool.",
     "Tool ID::Tool name": "BoAT",
     "Tool ID::Website": "https://github.com/furkanakkurt1335/boat",
-    "Annotation of Universal Dependencies::Other annotation layers": [],
-    "Annotation of Universal Dependencies::UD validation": "Yes",
-    "Annotation of Universal Dependencies::UD-specific annotations": [
+    "8. Universal Dependencies::Other 6. Annotation layers": [],
+    "8. Universal Dependencies::2. UD validation": "Yes",
+    "8. Universal Dependencies::1. UD-specific annotations": [
       "Lemmas",
       "UPOS",
       "FEATS",
@@ -1372,67 +1372,67 @@ let tools = [     // added for anonymous submission
       "Empty nodes",
       "Metadata"
     ],
-    "PARSEME::Consistency check": "No",
-    "PARSEME::PARSEME-specific annotations": [],
-    "User Interface::Annotation display": [
+    "9. PARSEME::2. Consistency check": "No",
+    "9. PARSEME::1. PARSEME-specific annotations": [],
+    "4. User Interface::Annotation display": [
       "Image (e.g. a graph or coloured text)",
       "Table"
     ],
-    "User Interface::Annotation mode": [
+    "4. User Interface::Annotation mode": [
       "Keyboard"
     ],
-    "User Interface::Keyboard annotation and shortcuts": "Yes",
-    "Workflow::Automatic pre-annotation": "tokenization",
-    "Workflow::Automatic recommendation": "No",
-    "Workflow::Collaborative annotation": [
+    "4. User Interface::Keyboard annotation and shortcuts": "Yes",
+    "5. Workflow::Automatic pre-annotation": "tokenization",
+    "5. Workflow::Automatic recommendation": "No",
+    "5. Workflow::Collaborative annotation": [
       "annotators working independently on their own annotations of the same data"
     ],
-    "Workflow::Project management": "partial",
-    "Workflow::User roles": "No",
-    "Annotation Analysis::Agreement calculation": "partial",
-    "Annotation Analysis::Comparison of annotations": "Yes",
-    "Annotation Analysis::Mass editing": "No",
-    "Annotation Analysis::Querying": "Yes"
+    "5. Workflow::Project management": "partial",
+    "5. Workflow::User roles": "No",
+    "7. Annotation Analysis::2. Agreement calculation": "partial",
+    "7. Annotation Analysis::1. Comparison of annotations": "Yes",
+    "7. Annotation Analysis::4. Mass editing": "No",
+    "7. Annotation Analysis::3. Querying": "Yes"
   },
   {
-    "Annotation layers::Annotation scope": [
+    "6. Annotation layers::Annotation scope": [
       "Annotation inside sentences"
     ],
-    "Annotation layers::Annotation types": [
+    "6. Annotation layers::Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)"
     ],
-    "Annotation layers::Segmentation": [],
-    "Annotation layers::Tagset customization": "Yes",
-    "Data support::Data export": [
+    "6. Annotation layers::Segmentation": [],
+    "6. Annotation layers::Tagset customization": "Yes",
+    "2. Data support::Data export": [
       "The data can be exported"
     ],
-    "Data support::Input format": [
+    "2. Data support::Input format": [
       "CONLL-U",
       "XML"
     ],
-    "Data support::Integration of other resources": [],
-    "Language support::Language independence": "Yes",
-    "Language support::Multiple writing scripts": "Yes",
-    "Language support::Writing direction": [
-      "LTR"
+    "2. Data support::Integration of other resources": [],
+    "3. Language support::Language independence": "Yes",
+    "3. Language support::Multiple writing scripts": "Yes",
+    "3. Language support::Writing direction": [
+      "Left to Right"
     ],
-    "Language support::Handling of Unicode": "Yes",
-    "Language support::Language of the interface": [
+    "3. Language support::Handling of Unicode": "Yes",
+    "3. Language support::Language of the interface": [
       "English"
     ],
-    "Software::Active maintenance": "Yes",
-    "Software::License": "Apache-2.0",
-    "Software::Offline usage (for web-based applications)": "Yes",
-    "Software::Operating system": [
+    "1. Software::1. Active maintenance": "Yes",
+    "1. Software::2. License": "Apache-2.0",
+    "1. Software::5. Offline usage (for web-based applications)": "Yes",
+    "1. Software::4. Operating system": [
       "Windows"
     ],
-    "Software::Software availability": [
+    "1. Software::6. Software access": [
       "The software should be run by the user (own machine/server)"
     ],
-    "Software::Software type": "Desktop-based application",
+    "1. Software::3. Software type": "Desktop-based application",
     "Tool ID::Additional features": "",
     "Tool ID::Code repository": "",
     "Tool ID::Developer": "Yes",
@@ -1440,77 +1440,77 @@ let tools = [     // added for anonymous submission
     "Tool ID::Short description": "Q-CAT is a tool for manual linguistic annotation of corpora, which also enables advanced queries on top of these annotations.",
     "Tool ID::Tool name": "Q-CAT",
     "Tool ID::Website": "http://hdl.handle.net/11356/1844",
-    "Annotation of Universal Dependencies::Other annotation layers": [],
-    "Annotation of Universal Dependencies::UD validation": "No",
-    "Annotation of Universal Dependencies::UD-specific annotations": [
+    "8. Universal Dependencies::Other 6. Annotation layers": [],
+    "8. Universal Dependencies::2. UD validation": "No",
+    "8. Universal Dependencies::1. UD-specific annotations": [
       "Lemmas",
       "UPOS",
       "Multi-word tokens",
       "Basic dependencies"
     ],
-    "PARSEME::Consistency check": "No",
-    "PARSEME::PARSEME-specific annotations": [],
-    "User Interface::Annotation display": [
+    "9. PARSEME::2. Consistency check": "No",
+    "9. PARSEME::1. PARSEME-specific annotations": [],
+    "4. User Interface::Annotation display": [
       "Image (e.g. a graph or coloured text)"
     ],
-    "User Interface::Annotation mode": [
+    "4. User Interface::Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)"
     ],
-    "User Interface::Keyboard annotation and shortcuts": "No",
-    "Workflow::Automatic pre-annotation": "No",
-    "Workflow::Automatic recommendation": "No",
-    "Workflow::Collaborative annotation": [
+    "4. User Interface::Keyboard annotation and shortcuts": "No",
+    "5. Workflow::Automatic pre-annotation": "No",
+    "5. Workflow::Automatic recommendation": "No",
+    "5. Workflow::Collaborative annotation": [
       "annotators working independently on their own annotations of the same data"
     ],
-    "Workflow::Project management": "No",
-    "Workflow::User roles": "No",
-    "Annotation Analysis::Agreement calculation": "No",
-    "Annotation Analysis::Comparison of annotations": "No",
-    "Annotation Analysis::Mass editing": "No",
-    "Annotation Analysis::Querying": "Yes"
+    "5. Workflow::Project management": "No",
+    "5. Workflow::User roles": "No",
+    "7. Annotation Analysis::2. Agreement calculation": "No",
+    "7. Annotation Analysis::1. Comparison of annotations": "No",
+    "7. Annotation Analysis::4. Mass editing": "No",
+    "7. Annotation Analysis::3. Querying": "Yes"
   },
   {
-    "Annotation layers::Annotation scope": [
+    "6. Annotation layers::Annotation scope": [
       "Annotation inside sentences"
     ],
-    "Annotation layers::Annotation types": [
+    "6. Annotation layers::Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)"
     ],
-    "Annotation layers::Segmentation": [
+    "6. Annotation layers::Segmentation": [
       "word-level"
     ],
-    "Annotation layers::Tagset customization": "Yes",
-    "Data support::Data export": [
+    "6. Annotation layers::Tagset customization": "Yes",
+    "2. Data support::Data export": [
       "The data can be exported"
     ],
-    "Data support::Input format": [
+    "2. Data support::Input format": [
       "CONLL-U"
     ],
-    "Data support::Integration of other resources": [],
-    "Language support::Language independence": "Yes",
-    "Language support::Multiple writing scripts": "Yes",
-    "Language support::Writing direction": [
-      "LTR"
+    "2. Data support::Integration of other resources": [],
+    "3. Language support::Language independence": "Yes",
+    "3. Language support::Multiple writing scripts": "Yes",
+    "3. Language support::Writing direction": [
+      "Left to Right"
     ],
-    "Language support::Handling of Unicode": "Yes",
-    "Language support::Language of the interface": [
+    "3. Language support::Handling of Unicode": "Yes",
+    "3. Language support::Language of the interface": [
       "English"
     ],
-    "Software::Active maintenance": "Yes",
-    "Software::License": "CC_BY",
-    "Software::Offline usage (for web-based applications)": "Yes",
-    "Software::Operating system": [
+    "1. Software::1. Active maintenance": "Yes",
+    "1. Software::2. License": "CC_BY",
+    "1. Software::5. Offline usage (for web-based applications)": "Yes",
+    "1. Software::4. Operating system": [
       "Windows",
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": [
+    "1. Software::6. Software access": [
       "The software is freely available online (without sign up option )"
     ],
-    "Software::Software type": "Web-based application",
+    "1. Software::3. Software type": "Web-based application",
     "Tool ID::Additional features": "",
     "Tool ID::Code repository": "https://github.com/parameshkrishnaa/PLURAL-conllu-annotator",
     "Tool ID::Developer": "Yes",
@@ -1526,11 +1526,11 @@ let tools = [     // added for anonymous submission
     "Tool ID::Short description": "PLURAL-conllu-annotator allows treatement of linguistic rich data",
     "Tool ID::Tool name": "PLURAL",
     "Tool ID::Website": "https://plural.iiit.ac.in/conllu-annotator",
-    "Annotation of Universal Dependencies::Other annotation layers": [
+    "8. Universal Dependencies::Other 6. Annotation layers": [
       "NIL"
     ],
-    "Annotation of Universal Dependencies::UD validation": "Yes",
-    "Annotation of Universal Dependencies::UD-specific annotations": [
+    "8. Universal Dependencies::2. UD validation": "Yes",
+    "8. Universal Dependencies::1. UD-specific annotations": [
       "Lemmas",
       "UPOS",
       "FEATS",
@@ -1541,83 +1541,83 @@ let tools = [     // added for anonymous submission
       "Empty nodes",
       "Metadata"
     ],
-    "PARSEME::Consistency check": "No",
-    "PARSEME::PARSEME-specific annotations": [],
-    "User Interface::Annotation display": [
+    "9. PARSEME::2. Consistency check": "No",
+    "9. PARSEME::1. PARSEME-specific annotations": [],
+    "4. User Interface::Annotation display": [
       "Image (e.g. a graph or coloured text)",
       "Raw format (e.g. CONLL-U)"
     ],
-    "User Interface::Annotation mode": [
+    "4. User Interface::Annotation mode": [
       "Keyboard"
     ],
-    "User Interface::Keyboard annotation and shortcuts": "Yes",
-    "Workflow::Automatic pre-annotation": "No",
-    "Workflow::Automatic recommendation": "Yes",
-    "Workflow::Collaborative annotation": [
+    "4. User Interface::Keyboard annotation and shortcuts": "Yes",
+    "5. Workflow::Automatic pre-annotation": "No",
+    "5. Workflow::Automatic recommendation": "Yes",
+    "5. Workflow::Collaborative annotation": [
       "No"
     ],
-    "Workflow::Project management": "No",
-    "Workflow::User roles": "No",
-    "Annotation Analysis::Agreement calculation": "No",
-    "Annotation Analysis::Comparison of annotations": "No",
-    "Annotation Analysis::Mass editing": "No",
-    "Annotation Analysis::Querying": "No"
+    "5. Workflow::Project management": "No",
+    "5. Workflow::User roles": "No",
+    "7. Annotation Analysis::2. Agreement calculation": "No",
+    "7. Annotation Analysis::1. Comparison of annotations": "No",
+    "7. Annotation Analysis::4. Mass editing": "No",
+    "7. Annotation Analysis::3. Querying": "No"
   },
   {
-    "Annotation layers::Annotation scope": [
+    "6. Annotation layers::Annotation scope": [
       "Annotation inside sentences"
     ],
-    "Annotation layers::Annotation types": [
+    "6. Annotation layers::Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)",
       "Chains (e.g. coreferences)"
     ],
-    "Annotation layers::Segmentation": [
+    "6. Annotation layers::Segmentation": [
       "word-level"
     ],
-    "Annotation layers::Tagset customization": "Yes",
-    "Data support::Data export": [
+    "6. Annotation layers::Tagset customization": "Yes",
+    "2. Data support::Data export": [
       "The data can be exported",
       "The data can be stored with a third party storage platform (e.g. Git repository)"
     ],
-    "Data support::Input format": [
+    "2. Data support::Input format": [
       "Raw text",
       "CONLL-U",
       "XML",
       "TSV",
       "other"
     ],
-    "Data support::Integration of other resources": [],
-    "Language support::Language independence": "Yes",
-    "Language support::Multiple writing scripts": "Yes",
-    "Language support::Writing direction": [
-      "LTR",
-      "RTL"
+    "2. Data support::Integration of other resources": [],
+    "3. Language support::Language independence": "Yes",
+    "3. Language support::Multiple writing scripts": "Yes",
+    "3. Language support::Writing direction": [
+      "Left to Right",
+      "Right to Left"
     ],
-    "Language support::Handling of Unicode": "Yes",
-    "Language support::Language of the interface": [
+    "3. Language support::Handling of Unicode": "Yes",
+    "3. Language support::Language of the interface": [
       "English"
     ],
-    "Software::Active maintenance": "Legacy",
-    "Software::License": "GPL-3.0",
-    "Software::Offline usage (for web-based applications)": "No",
-    "Software::Operating system": [
+    "1. Software::1. Active maintenance": "Legacy",
+    "1. Software::2. License": "GPL-3.0",
+    "1. Software::5. Offline usage (for web-based applications)": "No",
+    "1. Software::4. Operating system": [
       "Windows",
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": [
+    "1. Software::6. Software access": [
       "The software should be run by the user (own machine/server)"
     ],
-    "Software::Software type": "Web-based application",
+    "1. Software::3. Software type": "Web-based application",
     "Tool ID::Additional features": "",
     "Tool ID::Code repository": "https://github.com/proycon/flat",
     "Tool ID::Developer": "Yes",
     "Tool ID::Example projects": [
       {
-        "PARSEME": "https://gitlab.com/parseme"
+        "9. PARSEME": "https://gitlab.com/parseme"
       },
       {
         "Pre-Modern Slavic Texts": "https://aclanthology.org/2024.lrec-main.184/"
@@ -1632,9 +1632,9 @@ let tools = [     // added for anonymous submission
     "Tool ID::Short description": "Flat (FoLiA Linguistic Annotation Tool) is a web-based linguistic annotation environment based around the FoLiA format, a rich XML-based format for linguistic annotation.",
     "Tool ID::Tool name": "FLAT",
     "Tool ID::Website": "https://github.com/proycon/flat",
-    "Annotation of Universal Dependencies::Other annotation layers": [],
-    "Annotation of Universal Dependencies::UD validation": "No",
-    "Annotation of Universal Dependencies::UD-specific annotations": [
+    "8. Universal Dependencies::Other 6. Annotation layers": [],
+    "8. Universal Dependencies::2. UD validation": "No",
+    "8. Universal Dependencies::1. UD-specific annotations": [
       "Lemmas",
       "UPOS",
       "FEATS",
@@ -1642,76 +1642,76 @@ let tools = [     // added for anonymous submission
       "Multi-word tokens",
       "Basic dependencies"
     ],
-    "PARSEME::Consistency check": "No",
-    "PARSEME::PARSEME-specific annotations": [
+    "9. PARSEME::2. Consistency check": "No",
+    "9. PARSEME::1. PARSEME-specific annotations": [
       "Discontinuous expressions",
       "Nested expressions",
       "Overlapping expressions"
     ],
-    "User Interface::Annotation display": [],
-    "User Interface::Annotation mode": [
+    "4. User Interface::Annotation display": [],
+    "4. User Interface::Annotation mode": [
       "Mouse (e.g. drag & drop)"
     ],
-    "User Interface::Keyboard annotation and shortcuts": "No",
-    "Workflow::Automatic pre-annotation": "No",
-    "Workflow::Automatic recommendation": "No",
-    "Workflow::Collaborative annotation": [
+    "4. User Interface::Keyboard annotation and shortcuts": "No",
+    "5. Workflow::Automatic pre-annotation": "No",
+    "5. Workflow::Automatic recommendation": "No",
+    "5. Workflow::Collaborative annotation": [
       "annotators working independently on their own annotations of the same data"
     ],
-    "Workflow::Project management": "partial",
-    "Workflow::User roles": "Yes",
-    "Annotation Analysis::Agreement calculation": "No",
-    "Annotation Analysis::Comparison of annotations": "No",
-    "Annotation Analysis::Mass editing": "Yes",
-    "Annotation Analysis::Querying": "Yes"
+    "5. Workflow::Project management": "partial",
+    "5. Workflow::User roles": "Yes",
+    "7. Annotation Analysis::2. Agreement calculation": "No",
+    "7. Annotation Analysis::1. Comparison of annotations": "No",
+    "7. Annotation Analysis::4. Mass editing": "Yes",
+    "7. Annotation Analysis::3. Querying": "Yes"
   },
   {
-    "Annotation layers::Annotation scope": [
+    "6. Annotation layers::Annotation scope": [
       "Annotation inside sentences",
       "Annotation across sentences",
       "Annotation of full sentences / paragraphs / documents"
     ],
-    "Annotation layers::Annotation types": [
+    "6. Annotation layers::Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)",
       "Chains (e.g. coreferences)"
     ],
-    "Annotation layers::Segmentation": [],
-    "Annotation layers::Tagset customization": "Yes",
-    "Data support::Data export": [
+    "6. Annotation layers::Segmentation": [],
+    "6. Annotation layers::Tagset customization": "Yes",
+    "2. Data support::Data export": [
       "The data can be exported"
     ],
-    "Data support::Input format": [
+    "2. Data support::Input format": [
       "Raw text",
       ".txt+.ann"
     ],
-    "Data support::Integration of other resources": [
+    "2. Data support::Integration of other resources": [
       "External databases (e.g. dictionaries)"
     ],
-    "Language support::Language independence": "Yes",
-    "Language support::Multiple writing scripts": "Yes",
-    "Language support::Writing direction": [
-      "LTR",
-      "RTL"
+    "3. Language support::Language independence": "Yes",
+    "3. Language support::Multiple writing scripts": "Yes",
+    "3. Language support::Writing direction": [
+      "Left to Right",
+      "Right to Left"
     ],
-    "Language support::Handling of Unicode": "Yes",
-    "Language support::Language of the interface": [
+    "3. Language support::Handling of Unicode": "Yes",
+    "3. Language support::Language of the interface": [
       "English"
     ],
-    "Software::Active maintenance": "No",
-    "Software::License": "MIT",
-    "Software::Offline usage (for web-based applications)": "No",
-    "Software::Operating system": [
+    "1. Software::1. Active maintenance": "No",
+    "1. Software::2. License": "MIT",
+    "1. Software::5. Offline usage (for web-based applications)": "No",
+    "1. Software::4. Operating system": [
       "Windows",
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": [
+    "1. Software::6. Software access": [
       "The software should be run by the user (own machine/server)"
     ],
-    "Software::Software type": "Web-based application",
+    "1. Software::3. Software type": "Web-based application",
     "Tool ID::Additional features": "",
     "Tool ID::Code repository": "https://github.com/nlplab/brat",
     "Tool ID::Developer": "No",
@@ -1724,15 +1724,15 @@ let tools = [     // added for anonymous submission
     "Tool ID::Short description": "brat rapid annotation tool is a web-based tool for text annotation. brat is designed in particular for structured annotation, where the notes are not freeform text but have a fixed form that can be automatically processed and interpreted by a computer.",
     "Tool ID::Tool name": "brat",
     "Tool ID::Website": "http://brat.nlplab.org/",
-    "Annotation of Universal Dependencies::Other annotation layers": [
+    "8. Universal Dependencies::Other 6. Annotation layers": [
       "events",
       "relations",
       "chains",
       "attributes",
       "normalization"
     ],
-    "Annotation of Universal Dependencies::UD validation": "No",
-    "Annotation of Universal Dependencies::UD-specific annotations": [
+    "8. Universal Dependencies::2. UD validation": "No",
+    "8. Universal Dependencies::1. UD-specific annotations": [
       "Lemmas",
       "UPOS",
       "FEATS",
@@ -1740,99 +1740,99 @@ let tools = [     // added for anonymous submission
       "Basic dependencies",
       "Empty nodes"
     ],
-    "PARSEME::Consistency check": "No",
-    "PARSEME::PARSEME-specific annotations": [
+    "9. PARSEME::2. Consistency check": "No",
+    "9. PARSEME::1. PARSEME-specific annotations": [
       "Discontinuous expressions",
       "Nested expressions",
       "Overlapping expressions"
     ],
-    "User Interface::Annotation display": [
+    "4. User Interface::Annotation display": [
       "Image (e.g. a graph or coloured text)"
     ],
-    "User Interface::Annotation mode": [
+    "4. User Interface::Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)"
     ],
-    "User Interface::Keyboard annotation and shortcuts": "No",
-    "Workflow::Automatic pre-annotation": "Yes",
-    "Workflow::Automatic recommendation": "No",
-    "Workflow::Collaborative annotation": [
+    "4. User Interface::Keyboard annotation and shortcuts": "No",
+    "5. Workflow::Automatic pre-annotation": "Yes",
+    "5. Workflow::Automatic recommendation": "No",
+    "5. Workflow::Collaborative annotation": [
       "annotators working independently on their own annotations of the same data"
     ],
-    "Workflow::Project management": "No",
-    "Workflow::User roles": "No",
-    "Annotation Analysis::Agreement calculation": "No",
-    "Annotation Analysis::Comparison of annotations": "Yes",
-    "Annotation Analysis::Mass editing": "No",
-    "Annotation Analysis::Querying": "Yes"
+    "5. Workflow::Project management": "No",
+    "5. Workflow::User roles": "No",
+    "7. Annotation Analysis::2. Agreement calculation": "No",
+    "7. Annotation Analysis::1. Comparison of annotations": "Yes",
+    "7. Annotation Analysis::4. Mass editing": "No",
+    "7. Annotation Analysis::3. Querying": "Yes"
   },
   {
-    "Annotation layers::Annotation scope": [
+    "6. Annotation layers::Annotation scope": [
       "Annotation inside sentences",
       "Annotation across sentences",
       "Annotation of full sentences / paragraphs / documents"
     ],
-    "Annotation layers::Annotation types": [
+    "6. Annotation layers::Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)",
       "Chains (e.g. coreferences)"
     ],
-    "Annotation layers::Segmentation": [
+    "6. Annotation layers::Segmentation": [
       "word-level",
       "sentence-level"
     ],
-    "Annotation layers::Tagset customization": "Yes",
-    "Data support::Data export": [
+    "6. Annotation layers::Tagset customization": "Yes",
+    "2. Data support::Data export": [
       "The data can be exported",
       "The data can be stored with a third party storage platform (e.g. Git repository)"
     ],
-    "Data support::Input format": [
+    "2. Data support::Input format": [
       "Raw text",
       "CONLL-U",
       "XML",
       "TSV"
     ],
-    "Data support::Integration of other resources": [
+    "2. Data support::Integration of other resources": [
       "External databases (e.g. dictionaries)"
     ],
-    "Language support::Language independence": "Yes",
-    "Language support::Multiple writing scripts": "Yes",
-    "Language support::Writing direction": [
-      "LTR",
-      "RTL"
+    "3. Language support::Language independence": "Yes",
+    "3. Language support::Multiple writing scripts": "Yes",
+    "3. Language support::Writing direction": [
+      "Left to Right",
+      "Right to Left"
     ],
-    "Language support::Handling of Unicode": "Yes",
-    "Language support::Language of the interface": [
+    "3. Language support::Handling of Unicode": "Yes",
+    "3. Language support::Language of the interface": [
       "English"
     ],
-    "Software::Active maintenance": "Yes",
-    "Software::License": "Apache-2.0",
-    "Software::Offline usage (for web-based applications)": "No",
-    "Software::Operating system": [
+    "1. Software::1. Active maintenance": "Yes",
+    "1. Software::2. License": "Apache-2.0",
+    "1. Software::5. Offline usage (for web-based applications)": "No",
+    "1. Software::4. Operating system": [
       "Windows",
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": [
+    "1. Software::6. Software access": [
       "The software is available upon request (the user should ask to get an account)"
     ],
-    "Software::Software type": "Web-based application",
-    "Tool ID::Additional features": "WebAnno supports a rich set of features including customizable annotation layers, integration with external data sources, support for multiple annotators, and visualization of annotated data It also supports automatic pre-annotation and inter-annotator agreement calculation",
+    "1. Software::3. Software type": "Web-based application",
+    "Tool ID::Additional features": "WebAnno supports a rich set of features including customizable 6. Annotation layers, integration with external data sources, support for multiple annotators, and visualization of annotated data It also supports automatic pre-annotation and inter-annotator 2. Agreement calculation",
     "Tool ID::Code repository": "https://github.com/webanno/webanno",
     "Tool ID::Developer": "No",
     "Tool ID::Logo": "https://webanno.github.io/webanno/assets/img/logo.png",
     "Tool ID::Short description": "WebAnno is a web-based collaborative tool for linguistic annotation that supports various annotation tasks, including POS tagging, dependency parsing, and coreference resolution. It provides collaborative features and works well with formats like CoNLL-U.",
     "Tool ID::Tool name": "WebAnno",
     "Tool ID::Website": "https://webanno.github.io/webanno/",
-    "Annotation of Universal Dependencies::Other annotation layers": [
+    "8. Universal Dependencies::Other 6. Annotation layers": [
       "NER",
       "coreference",
       "MWE"
     ],
-    "Annotation of Universal Dependencies::UD validation": "Yes",
-    "Annotation of Universal Dependencies::UD-specific annotations": [
+    "8. Universal Dependencies::2. UD validation": "Yes",
+    "8. Universal Dependencies::1. UD-specific annotations": [
       "Lemmas",
       "UPOS",
       "FEATS",
@@ -1843,48 +1843,48 @@ let tools = [     // added for anonymous submission
       "Empty nodes",
       "Metadata"
     ],
-    "PARSEME::Consistency check": "Yes",
-    "PARSEME::PARSEME-specific annotations": [
+    "9. PARSEME::2. Consistency check": "Yes",
+    "9. PARSEME::1. PARSEME-specific annotations": [
       "Discontinuous expressions",
       "Nested expressions",
       "Overlapping expressions"
     ],
-    "User Interface::Annotation display": [
+    "4. User Interface::Annotation display": [
       "Image (e.g. a graph or coloured text)",
       "Table",
       "Raw format (e.g. CONLL-U)"
     ],
-    "User Interface::Annotation mode": [
+    "4. User Interface::Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)"
     ],
-    "User Interface::Keyboard annotation and shortcuts": "Yes",
-    "Workflow::Automatic pre-annotation": "Yes",
-    "Workflow::Automatic recommendation": "Yes",
-    "Workflow::Collaborative annotation": [
+    "4. User Interface::Keyboard annotation and shortcuts": "Yes",
+    "5. Workflow::Automatic pre-annotation": "Yes",
+    "5. Workflow::Automatic recommendation": "Yes",
+    "5. Workflow::Collaborative annotation": [
       "annotators working independently on their own annotations of the same data",
       "annotators working together on the same shared annotation of the data"
     ],
-    "Workflow::Project management": "Yes",
-    "Workflow::User roles": "Yes",
-    "Annotation Analysis::Agreement calculation": "Yes",
-    "Annotation Analysis::Comparison of annotations": "Yes",
-    "Annotation Analysis::Mass editing": "No",
-    "Annotation Analysis::Querying": "Yes"
+    "5. Workflow::Project management": "Yes",
+    "5. Workflow::User roles": "Yes",
+    "7. Annotation Analysis::2. Agreement calculation": "Yes",
+    "7. Annotation Analysis::1. Comparison of annotations": "Yes",
+    "7. Annotation Analysis::4. Mass editing": "No",
+    "7. Annotation Analysis::3. Querying": "Yes"
   },
   {
-    "Software::Active maintenance": "Yes",
-    "Software::License": "AGPL-3.0",
-    "Software::Offline usage (for web-based applications)": "No",
-    "Software::Operating system": [
+    "1. Software::1. Active maintenance": "Yes",
+    "1. Software::2. License": "AGPL-3.0",
+    "1. Software::5. Offline usage (for web-based applications)": "No",
+    "1. Software::4. Operating system": [
       "Windows",
       "Mac OS",
       "Linux"
     ],
-    "Software::Software availability": [
+    "1. Software::6. Software access": [
       "The software is freely available online (with sign up option)"
     ],
-    "Software::Software type": "Web-based application",
+    "1. Software::3. Software type": "Web-based application",
     "Tool ID::Additional features": "ArboratorGrew can be used also to teach syntax: users can create exercises with different levels of complexity and export results",
     "Tool ID::Code repository": "https://github.com/Arborator",
     "Tool ID::Developer": "Yes",
@@ -1902,30 +1902,30 @@ let tools = [     // added for anonymous submission
     "Tool ID::Short description": "A collaborative annotation tool for the treebank developement. It allows the creation of lexicons from annotated data. To ensure effective collaboration, ArboratorGrew provides a tag system.",
     "Tool ID::Tool name": "ArboratorGrew",
     "Tool ID::Website": "https://arborator.grew.fr/",
-    "Data support::Data export": [
+    "2. Data support::Data export": [
       "The data can be exported",
       "The data can be stored with a third party storage platform (e.g. Git repository)"
     ],
-    "Data support::Input format": [
+    "2. Data support::Input format": [
       "Raw text",
       "CONLL-U"
     ],
-    "Data support::Integration of other resources": [],
-    "Annotation layers::Annotation scope": [
+    "2. Data support::Integration of other resources": [],
+    "6. Annotation layers::Annotation scope": [
       "Annotation inside sentences"
     ],
-    "Annotation layers::Annotation types": [
+    "6. Annotation layers::Annotation types": [
       "Tokens (e.g. part-of-speech tags)",
       "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)"
     ],
-    "Annotation layers::Segmentation": [
+    "6. Annotation layers::Segmentation": [
       "word-level",
       "sentence-level"
     ],
-    "Annotation layers::Tagset customization": "Yes",
-    "Annotation of Universal Dependencies::UD validation": "Yes",
-    "Annotation of Universal Dependencies::UD-specific annotations": [
+    "6. Annotation layers::Tagset customization": "Yes",
+    "8. Universal Dependencies::2. UD validation": "Yes",
+    "8. Universal Dependencies::1. UD-specific annotations": [
       "Lemmas",
       "UPOS",
       "FEATS",
@@ -1934,37 +1934,37 @@ let tools = [     // added for anonymous submission
       "Basic dependencies",
       "Metadata"
     ],
-    "Annotation of Universal Dependencies::Other annotation layers": [],
-    "PARSEME::Consistency check": "No",
-    "PARSEME::PARSEME-specific annotations": [],
-    "User Interface::Annotation display": [
+    "8. Universal Dependencies::Other 6. Annotation layers": [],
+    "9. PARSEME::2. Consistency check": "No",
+    "9. PARSEME::1. PARSEME-specific annotations": [],
+    "4. User Interface::Annotation display": [
       "Image (e.g. a graph or coloured text)",
       "Table",
       "Raw format (e.g. CONLL-U)"
     ],
-    "User Interface::Annotation mode": [
+    "4. User Interface::Annotation mode": [
       "Mouse (e.g. drag & drop)"
     ],
-    "User Interface::Keyboard annotation and shortcuts": "No",
-    "Workflow::Automatic pre-annotation": "Yes",
-    "Workflow::Automatic recommendation": "Yes",
-    "Workflow::Collaborative annotation": [
+    "4. User Interface::Keyboard annotation and shortcuts": "No",
+    "5. Workflow::Automatic pre-annotation": "Yes",
+    "5. Workflow::Automatic recommendation": "Yes",
+    "5. Workflow::Collaborative annotation": [
       "annotators working independently on their own annotations of the same data"
     ],
-    "Workflow::Project management": "Yes",
-    "Workflow::User roles": "Yes",
-    "Annotation Analysis::Agreement calculation": "Yes",
-    "Annotation Analysis::Comparison of annotations": "Yes",
-    "Annotation Analysis::Mass editing": "Yes",
-    "Annotation Analysis::Querying": "Yes",
-    "Language support::Language independence": "Yes",
-    "Language support::Multiple writing scripts": "Yes",
-    "Language support::Writing direction": [
-      "LTR",
-      "RTL"
+    "5. Workflow::Project management": "Yes",
+    "5. Workflow::User roles": "Yes",
+    "7. Annotation Analysis::2. Agreement calculation": "Yes",
+    "7. Annotation Analysis::1. Comparison of annotations": "Yes",
+    "7. Annotation Analysis::4. Mass editing": "Yes",
+    "7. Annotation Analysis::3. Querying": "Yes",
+    "3. Language support::Language independence": "Yes",
+    "3. Language support::Multiple writing scripts": "Yes",
+    "3. Language support::Writing direction": [
+      "Left to Right",
+      "Right to Left"
     ],
-    "Language support::Handling of Unicode": "Yes",
-    "Language support::Language of the interface": [
+    "3. Language support::Handling of Unicode": "Yes",
+    "3. Language support::Language of the interface": [
       "English",
       "French"
     ]
@@ -1975,7 +1975,7 @@ let current_selection = {};
 let current_tool;
 let active_selection = false;
 
-let excluded_filters = ["Other annotation layers"];
+let excluded_filters = ["Other 6. Annotation layers"];
 
 function filterTools (){
 	// Find matching tools
@@ -2342,7 +2342,15 @@ function buildTools() {
 	const toolsVisualization = document.querySelector('.tools-viz');
 	toolsVisualization.innerHTML = '';
 
-	tools.forEach(tool => {
+	[...tools]
+  .sort((a, b) =>
+    (a?.["Tool ID::Tool name"] ?? "").localeCompare(
+      (b?.["Tool ID::Tool name"] ?? ""),
+      undefined,
+      { numeric: true, sensitivity: "base" } // natural, case-insensitive
+    )
+  )
+  .forEach(tool => {
 		const card = document.createElement('div');
 		card.className = 'card';
 		card.dataset.value = tool["Tool ID::Tool name"];
@@ -2499,14 +2507,22 @@ function buildSelections() {
 	const featuresTable = document.querySelector('.features-table');
 	featuresTable.innerHTML = '';
 
-	Object.entries(questionValues_counts).forEach(([feature, ValueSet])=> {
+	Object.entries(questionValues_counts)
+  .sort(([fa], [fb]) =>
+    fa.localeCompare(fb, undefined, { numeric: true, sensitivity: "base" })
+  )
+  .forEach(([feature, ValueSet]) => {
 
 		const featureSection = document.createElement('div');
 		featureSection.className = 'feature-section';
 		featureSection.classList.add('collapsed');
 		featureSection.innerHTML = `<h3>${feature || '#'} <span class="toggle-arrow">&#9662;</span></h3>`;
 
-		Object.entries(ValueSet).forEach(([question, values]) => {
+		Object.entries(ValueSet)
+    .sort(([fa], [fb]) =>
+    fa.localeCompare(fb, undefined, { numeric: true, sensitivity: "base" })
+    )
+    .forEach(([question, values]) => {
 			const featureQuestion = document.createElement('div');
 			featureQuestion.className = 'feature-question';
 			featureQuestion.innerHTML = `<h4>${question}</h4>`;

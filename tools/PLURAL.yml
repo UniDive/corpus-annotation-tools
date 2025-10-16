@@ -1,4 +1,4 @@
-Annotation layers:
+6. Annotation layers:
   Annotation scope:
   - Annotation inside sentences
   Annotation types:
@@ -8,31 +8,31 @@ Annotation layers:
   Segmentation:
   - word-level
   Tagset customization: 'Yes'
-Data support:
+2. Data support:
   Data export:
   - The data can be exported
   Input format:
   - CONLL-U
   Integration of other resources: []
-Language support:
+3. Language support:
   Language independence: 'Yes'
   Multiple writing scripts: 'Yes'
   Writing direction:
-  - LTR
+  - Left to Right
   Handling of Unicode: 'Yes'
   Language of the interface:
   - English
-Software:
-  Active maintenance: 'Yes'
-  License: CC_BY
-  Offline usage (for web-based applications): 'Yes'
-  Operating system:
+1. Software:
+  1. Active maintenance: 'Yes'
+  2. License: CC_BY
+  5. Offline usage (for web-based applications): 'Yes'
+  4. Operating system:
   - Windows
   - Mac OS
   - Linux
-  Software availability:
+  6. Software access:
   - The software is freely available online (without sign up option )
-  Software type: Web-based application
+  3. Software type: Web-based application
 Tool ID:
   Additional features: null
   Code repository: https://github.com/parameshkrishnaa/PLURAL-conllu-annotator
@@ -45,11 +45,11 @@ Tool ID:
   Short description: PLURAL-conllu-annotator allows treatement of linguistic rich data
   Tool name: PLURAL
   Website: https://plural.iiit.ac.in/conllu-annotator
-Annotation of Universal Dependencies:
+8. Universal Dependencies:
   Other annotation layers:
   - NIL
-  UD validation: 'Yes'
-  UD-specific annotations:
+  2. UD validation: 'Yes'
+  1. UD-specific annotations:
   - Lemmas
   - UPOS
   - FEATS
@@ -59,25 +59,25 @@ Annotation of Universal Dependencies:
   - Enhanced dependencies
   - Empty nodes
   - Metadata
-PARSEME:
-  Consistency check: 'No'
-  PARSEME-specific annotations: []
-User Interface:
+9. PARSEME:
+  2. Consistency check: 'No'
+  1. PARSEME-specific annotations: []
+4. User Interface:
   Annotation display:
   - Image (e.g. a graph or coloured text)
   - Raw format (e.g. CONLL-U)
   Annotation mode:
   - Keyboard
   Keyboard annotation and shortcuts: 'Yes'
-Workflow:
+5. Workflow:
   Automatic pre-annotation: 'No'
   Automatic recommendation: 'Yes'
   Collaborative annotation:
   - 'No'
   Project management: 'No'
   User roles: 'No'
-Annotation Analysis:
-  Agreement calculation: 'No'
-  Comparison of annotations: 'No'
-  Mass editing: 'No'
-  Querying: 'No'
+7. Annotation Analysis:
+  2. Agreement calculation: 'No'
+  1. Comparison of annotations: 'No'
+  4. Mass editing: 'No'
+  3. Querying: 'No'

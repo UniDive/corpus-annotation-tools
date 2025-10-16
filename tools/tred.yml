@@ -1,4 +1,4 @@
-Annotation layers:
+6. Annotation layers:
   Annotation scope:
   - Annotation inside sentences
   - Annotation across sentences
@@ -10,7 +10,7 @@ Annotation layers:
   - Chains (e.g. coreferences)
   Segmentation: []
   Tagset customization: 'Yes'
-Data support:
+2. Data support:
   Data export:
   - The data can be exported
   Input format:
@@ -19,25 +19,25 @@ Data support:
   - XML
   Integration of other resources:
   - External databases (e.g. dictionaries)
-Language support:
+3. Language support:
   Language independence: 'Yes'
   Multiple writing scripts: 'Yes'
   Writing direction:
-  - LTR
-  - RTL
+  - Left to Right
+  - Right to Left
   Handling of Unicode: 'Yes'
   Language of the interface:
   - English
-Software:
-  Active maintenance: 'Yes'
-  License: GPL-2.0
-  Offline usage (for web-based applications): 'Yes'
-  Operating system:
+1. Software:
+  1. Active maintenance: 'Yes'
+  2. License: GPL-2.0
+  5. Offline usage (for web-based applications): 'Yes'
+  4. Operating system:
   - Windows
   - Linux
-  Software availability:
+  6. Software access:
   - The software should be run by the user (own machine/server)
-  Software type: Desktop-based application
+  3. Software type: Desktop-based application
 Tool ID:
   Additional features: null
   Code repository: https://github.com/ufal/TrEd
@@ -50,10 +50,10 @@ Tool ID:
   Short description: TrEd is a fully customizable and programmable graphical editor and viewer for tree-like structures.
   Tool name: TrEd
   Website: https://ufal.mff.cuni.cz/tred
-Annotation of Universal Dependencies:
+8. Universal Dependencies:
   Other annotation layers: []
-  UD validation: 'No'
-  UD-specific annotations:
+  2. UD validation: 'No'
+  1. UD-specific annotations:
   - Lemmas
   - UPOS
   - FEATS
@@ -62,25 +62,25 @@ Annotation of Universal Dependencies:
   - Basic dependencies
   - Enhanced dependencies
   - Empty nodes
-PARSEME:
-  Consistency check: 'No'
-  PARSEME-specific annotations: []
-User Interface:
+9. PARSEME:
+  2. Consistency check: 'No'
+  1. PARSEME-specific annotations: []
+4. User Interface:
   Annotation display:
   - Graphical representation of a tree
   Annotation mode:
   - Keyboard
   - Mouse (e.g. drag & drop)
   Keyboard annotation and shortcuts: 'Yes'
-Workflow:
+5. Workflow:
   Automatic pre-annotation: 'No'
   Automatic recommendation: 'No'
   Collaborative annotation:
   - 'No'
   Project management: 'No'
   User roles: partial
-Annotation Analysis:
-  Agreement calculation: 'No'
-  Comparison of annotations: 'Yes'
-  Mass editing: 'Yes'
-  Querying: 'Yes'
+7. Annotation Analysis:
+  2. Agreement calculation: 'No'
+  1. Comparison of annotations: 'Yes'
+  4. Mass editing: 'Yes'
+  3. Querying: 'Yes'

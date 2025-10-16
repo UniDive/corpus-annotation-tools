@@ -1,4 +1,4 @@
-Annotation layers:
+6. Annotation layers:
   Annotation scope:
   - Annotation inside sentences
   Annotation types:
@@ -9,33 +9,33 @@ Annotation layers:
   Segmentation:
   - word-level
   Tagset customization: 'Yes'
-Data support:
+2. Data support:
   Data export:
   - The data can be exported
   Input format:
   - Raw text
   - CONLL-U
   Integration of other resources: []
-Language support:
+3. Language support:
   Language independence: 'Yes'
   Multiple writing scripts: 'Yes'
   Writing direction:
-  - LTR
-  - RTL
+  - Left to Right
+  - Right to Left
   Handling of Unicode: 'Yes'
   Language of the interface:
   - English
-Software:
-  Active maintenance: 'Yes'
-  License: MIT
-  Offline usage (for web-based applications): 'No'
-  Operating system:
+1. Software:
+  1. Active maintenance: 'Yes'
+  2. License: MIT
+  5. Offline usage (for web-based applications): 'No'
+  4. Operating system:
   - Windows
   - Mac OS
   - Linux
-  Software availability:
+  6. Software access:
   - The software should be run by the user (own machine/server)
-  Software type: Web-based application
+  3. Software type: Web-based application
 Tool ID:
   Additional features: null
   Code repository: https://github.com/furkanakkurt1335/boat
@@ -47,10 +47,10 @@ Tool ID:
   Short description: BoAT (Boğaziçi University Annotation Tool) is a collaborative grammatical annotation tool.
   Tool name: BoAT
   Website: https://github.com/furkanakkurt1335/boat
-Annotation of Universal Dependencies:
+8. Universal Dependencies:
   Other annotation layers: []
-  UD validation: 'Yes'
-  UD-specific annotations:
+  2. UD validation: 'Yes'
+  1. UD-specific annotations:
   - Lemmas
   - UPOS
   - FEATS
@@ -59,25 +59,25 @@ Annotation of Universal Dependencies:
   - Enhanced dependencies
   - Empty nodes
   - Metadata
-PARSEME:
-  Consistency check: 'No'
-  PARSEME-specific annotations: []
-User Interface:
+9. PARSEME:
+  2. Consistency check: 'No'
+  1. PARSEME-specific annotations: []
+4. User Interface:
   Annotation display:
   - Image (e.g. a graph or coloured text)
   - Table
   Annotation mode:
   - Keyboard
   Keyboard annotation and shortcuts: 'Yes'
-Workflow:
+5. Workflow:
   Automatic pre-annotation: tokenization
   Automatic recommendation: 'No'
   Collaborative annotation:
   - annotators working independently on their own annotations of the same data
   Project management: partial
   User roles: 'No'
-Annotation Analysis:
-  Agreement calculation: partial
-  Comparison of annotations: 'Yes'
-  Mass editing: 'No'
-  Querying: 'Yes'
+7. Annotation Analysis:
+  2. Agreement calculation: partial
+  1. Comparison of annotations: 'Yes'
+  4. Mass editing: 'No'
+  3. Querying: 'Yes'

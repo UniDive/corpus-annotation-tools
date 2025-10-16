@@ -1,4 +1,4 @@
-Annotation layers:
+6. Annotation layers:
   Annotation scope:
   - Annotation inside sentences
   - Annotation across sentences
@@ -13,7 +13,7 @@ Annotation layers:
   - word-level
   - sentence-level
   Tagset customization: 'Yes'
-Data support:
+2. Data support:
   Data export:
   - The data can be exported
   - The data can be stored with a third party storage platform (e.g. Git repository)
@@ -28,26 +28,26 @@ Data support:
   - Video
   - Image
   - PDF
-Language support:
+3. Language support:
   Language independence: 'Yes'
   Multiple writing scripts: 'Yes'
   Writing direction:
-  - LTR
-  - RTL
+  - Left to Right
+  - Right to Left
   Handling of Unicode: 'Yes'
   Language of the interface:
   - English
-Software:
-  Active maintenance: 'Yes'
-  License: Apache-2.0
-  Offline usage (for web-based applications): 'Yes'
-  Operating system:
+1. Software:
+  1. Active maintenance: 'Yes'
+  2. License: Apache-2.0
+  5. Offline usage (for web-based applications): 'Yes'
+  4. Operating system:
   - Windows
   - Mac OS
   - Linux
-  Software availability:
+  6. Software access:
   - The software should be run by the user (own machine/server)
-  Software type: Web-based application
+  3. Software type: Web-based application
 Tool ID:
   Additional features: null
   Code repository: ''
@@ -58,12 +58,12 @@ Tool ID:
   Short description: Label Studio is a data labeling tool for all data types (computer vision, natural language processing, speech, voice, and video models)
   Tool name: Label Studio
   Website: https://labelstud.io/
-Annotation of Universal Dependencies:
+8. Universal Dependencies:
   Other annotation layers:
   - Text classification
   - NER
-  UD validation: 'No'
-  UD-specific annotations:
+  2. UD validation: 'No'
+  1. UD-specific annotations:
   - Lemmas
   - UPOS
   - FEATS
@@ -71,13 +71,13 @@ Annotation of Universal Dependencies:
   - Multi-word tokens
   - Basic dependencies
   - Metadata
-PARSEME:
-  Consistency check: 'No'
-  PARSEME-specific annotations:
+9. PARSEME:
+  2. Consistency check: 'No'
+  1. PARSEME-specific annotations:
   - Discontinuous expressions
   - Nested expressions
   - Overlapping expressions
-User Interface:
+4. User Interface:
   Annotation display:
   - Image (e.g. a graph or coloured text)
   - Table
@@ -87,7 +87,7 @@ User Interface:
   - Mouse (e.g. drag & drop)
   - Touchscreen
   Keyboard annotation and shortcuts: 'Yes'
-Workflow:
+5. Workflow:
   Automatic pre-annotation: 'No'
   Automatic recommendation: 'Yes'
   Collaborative annotation:
@@ -95,8 +95,8 @@ Workflow:
   - annotators working together on the same shared annotation of the data
   Project management: 'Yes'
   User roles: 'Yes'
-Annotation Analysis:
-  Agreement calculation: 'No'
-  Comparison of annotations: 'No'
-  Mass editing: 'Yes'
-  Querying: 'Yes'
+7. Annotation Analysis:
+  2. Agreement calculation: 'No'
+  1. Comparison of annotations: 'No'
+  4. Mass editing: 'Yes'
+  3. Querying: 'Yes'

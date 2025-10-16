@@ -639,7 +639,7 @@ a:hover {
 }
 
 .value.disabled {
-    color: #999 !important;
+    color: #484848;
     background: var(--white);
     opacity: 0.7;
     cursor: pointer !important;

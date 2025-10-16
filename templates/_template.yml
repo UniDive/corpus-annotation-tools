@@ -23,22 +23,22 @@ Tool ID:
   Additional features:                   # Optional, extended description
 
 # === SOFTWARE INFORMATION ===
-Software:
-  Active maintenance: ""                 # Is the tool actively maintained? Either "Yes" or "No"
-  License: ""                            # Name of the LICENSE
-  Software type: ""                      # Either "Web-based application" or "Desktop-based application"
-  Offline usage (for web-based applications): "" # Is it possible to use the software offline? Either "Yes" or "No"
-  Operating system:                      # Remove the options that don't apply
+1. Software:
+  1. Active maintenance: ""                 # Is the tool actively maintained? Either "Yes" or "No"
+  2. License: ""                            # Name of the 2. License
+  3. Software type: ""                      # Either "Web-based application" or "Desktop-based application"
+  5. Offline usage (for web-based applications): "" # Is it possible to use the software offline? Either "Yes" or "No"
+  4. Operating system:                      # Remove the options that don't apply
   - Windows
   - Mac OS
   - Linux
-  Software availability:                 # Remove the options that don't apply
+  6. Software access:                 # Remove the options that don't apply
   - The software is freely available online (with sign up option)
   - The software should be run by the user (own machine/server)
   - The software is available upon request (the user should ask to get an account)
 
 # === DATA SUPPORT ===
-Data support:
+2. Data support:
   Input format:                           # Remove the options that don't apply, or add more
   - Raw text
   - CONLL-U
@@ -54,18 +54,18 @@ Data support:
   - Image
 
 # === DIVERSITY FEATURES ===
-Language support:
+3. Language support:
   Language independence:                  # Is the tool language independent?
   Multiple writing scripts:               # Does it support multiple writing scripts?
   Writing direction:                      # Remove the options that don't apply
-  - LTR
-  - RTL
+  - Left to Right
+  - Right to Left
   Handling of Unicode:                     # Does it support unicode and special symbols?
   Language of the interface:               # Add all languages that apply
   - English
 
 # === ANNOTATION ===
-Annotation layers:
+6. Annotation layers:
   Annotation scope:                        # Remove the options that don't apply
   - Annotation inside sentences
   - Annotation across sentences
@@ -82,11 +82,11 @@ Annotation layers:
   Tagset customization: ""
 
 # === USER EXPERIENCE ===
-User Interface:
+4. User Interface:
 
-Workflow:
+5. Workflow:
 
-Annotation Analysis:
+7. Annotation Analysis:
 
 
   Annotation mode:                          # Remove the options that don't apply, or add more
@@ -99,19 +99,19 @@ Annotation Analysis:
   - Raw format (e.g. CONLL-U)
   Automatic pre-annotation: ""              # Does the tool provide automatic pre-annotation? Either "Yes" or "No"
   Automatic recommendation: ""              # Does the tool enable automatic annotation recommendation based on active learning? Either "Yes" or "No"
-  Agreement calculation: ""                 # Does the tool calculate inter-annotator agreement scores? Either "Yes" or "No"
+  2. Agreement calculation: ""                 # Does the tool calculate inter-annotator agreement scores? Either "Yes" or "No"
   Collaborative annotation:                 # Remove the options that don't apply, or add more
   - annotators working independently on their own annotations of the same data
   - annotators working together on the same shared annotation of the data
   Project management: ""                    # Does the tool provide a project management dashboard? Either "Yes" or "No"
   User roles: ""                            # Does the tool enable the users to be differentiated by their roles? Either "Yes" or "No"
-  Comparison of annotations: ""             # Does the tool provide an interface to display the differences between annotations by different annotators? Either "Yes" or "No"
-  Querying: ""                              # Does the tool support performing corpus queries on top of annotations? Either "Yes" or "No"
-  Mass editing: ""                          # Does the tool enable to globally change several annotations at once? Either "Yes" or "No"
+  1. Comparison of annotations: ""             # Does the tool provide an interface to display the differences between annotations by different annotators? Either "Yes" or "No"
+  3. Querying: ""                              # Does the tool support performing corpus queries on top of annotations? Either "Yes" or "No"
+  4. Mass editing: ""                          # Does the tool enable to globally change several annotations at once? Either "Yes" or "No"
 
 # === UD / PARSEME SPECIFICS ===
 UD/PARSEME specifics:
-  UD-specific annotations:                   # Remove the options that don't apply
+  1. UD-specific annotations:                   # Remove the options that don't apply
   - Lemmas
   - UPOS
   - FEATS
@@ -121,12 +121,12 @@ UD/PARSEME specifics:
   - Enhanced dependencies
   - Empty nodes
   - Metadata
-  UD validation: ""                          # Does the tool support annotation validation using the official UD validation tool? Either "Yes" or "No"
-  PARSEME-specific annotations:              # Remove the options that don't apply
+  2. UD validation: ""                          # Does the tool support annotation validation using the official 2. UD validation tool? Either "Yes" or "No"
+  1. PARSEME-specific annotations:              # Remove the options that don't apply
   - Discontinuous expressions
   - Nested expressions
   - Overlapping expressions
-  Consistency check: ""                      # Does the tool enable the user to check whether the same combination of words is annotated consistently across the corpus? Either "Yes" or "No"
+  2. Consistency check: ""                      # Does the tool enable the user to check whether the same combination of words is annotated consistently across the corpus? Either "Yes" or "No"
   Other annotation layers:                   # Add anything that applies
   # - Time-aligned annotations
   # - BIO-like annotations
