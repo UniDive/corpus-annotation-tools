@@ -1,0 +1,79 @@
+.about-container{
+  max-width:900px;
+  margin: 30px auto;
+  /* margin-top: 80px; */
+  /* margin-left: auto; */
+  padding:20px;
+
+  height:calc(100vh - 100px);
+  overflow-y:auto;
+
+  line-height:1.7;
+  font-size:1.08rem;
+}
+
+.about-container h2{
+  margin-top:35px;
+  font-size:1.45rem;
+}
+
+.about-container p{
+  font-size:1.08rem;
+}
+
+.github-box{
+  border:1px solid #e5e5e5;
+  padding:20px;
+  border-radius:8px;
+  margin-top:20px;
+  background:#fafafa;
+}
+
+.github-button{
+  display:inline-block;
+  margin-top:10px;
+  padding:8px 14px;
+  border-radius:6px;
+  text-decoration:none;
+  background:#24292f;
+  color:white;
+  font-size:14px;
+}
+
+.github-button i{
+  margin-right:6px;
+}
+
+.github-button:hover{
+  background:#000;
+}
+
+.bibtex-box{
+  position:relative;
+  background:#f6f6f6;
+  padding:20px;
+  border-radius:6px;
+  margin-top:10px;
+}
+
+.bibtex-box pre{
+  margin:0;
+  font-family:monospace;
+  overflow-x:auto;
+}
+
+.copy-btn{
+  position:absolute;
+  top:10px;
+  right:10px;
+  border:none;
+  background:#e0e0e0;
+  padding:6px 10px;
+  border-radius:4px;
+  cursor:pointer;
+  font-size:12px;
+}
+
+.copy-btn:hover{
+  background:#d0d0d0;
+}

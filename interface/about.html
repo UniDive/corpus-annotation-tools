@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>About – Corpus Annotation Tools Explorer</title>
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="about.css">
+<script src="about.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div class="topbar">
+  <div class="topbar-left">
+					<h1 class="app-title">Corpus Annotation Tools Explorer</h1>
+					<h1 class="app-subtitle">Explore and compare tools for manual linguistic annotation</h1>
+				</div>
+
+  <div class="topbar-right">
+    <a href="tools.html" class="topbar-link">
+      ← Back to Explorer
+    </a>
+  </div>
+</div>
+
+
+<div class="about-container">
+
+<h2>About</h2>
+
+<p>
+This interface allows researchers to explore and compare tools for manual linguistic annotation.
+Its goal is to make it easier to identify platforms that meet the requirements of corpus annotation projects.
+Users can browse and filter tools according to a wide range of features, including supported annotation layers,
+collaboration capabilities, and export formats.
+</p>
+
+<p>
+The interface is based on a structured inventory of <strong>21 widely used annotation tools</strong> and
+<strong>more than 50 documented features</strong>. It was developed within the
+<strong>COST Action UniDive – Universality, Diversity and Idiosyncrasy in Language Technology</strong>.
+Particular attention was given to tools supporting multilingual annotation frameworks such as
+<strong>Universal Dependencies (UD)</strong> and <strong>PARSEME</strong>, while also covering tools used
+for other annotation layers across the broader linguistic annotation workflow.
+</p>
+
+
+<h2>Adding or updating tools</h2>
+
+<p>
+The survey dataset and the interactive interface are maintained in an open
+<strong>GitHub repository</strong>. The repository contains the structured descriptions of the surveyed
+annotation tools as well as the code used to generate the interface.
+</p>
+
+<p>
+To ensure that the inventory can evolve over time, the repository provides a protocol for adding new tools
+or updating existing entries. Contributors can submit new tools using the provided template and open a
+<strong>pull request</strong>, following the instructions described in the repository README.
+</p>
+
+<p>
+After review and approval by the maintainers, the submitted information is integrated into the dataset
+and automatically reflected in the interface.
+</p>
+
+
+<div class="github-box">
+
+<h3>Contribute to the project</h3>
+
+<p>
+If you would like to suggest a new tool or update an existing entry,
+you can contribute directly through the GitHub repository.
+</p>
+
+<a href="https://github.com/YOUR_REPOSITORY" target="_blank" class="github-button">
+<i class="fa-brands fa-github"></i> View repository
+</a>
+
+</div>
+
+
+<h2>How to cite</h2>
+
+<p>If you use this resource, please cite:</p>
+
+<p>
+Pannitto, L., Dobrovoljc, K., &amp; Guillaume, B. (2026).<br>
+<em>Survey of Tools for Manual Linguistic Annotation: Supporting Diversity through Interactive Exploration.</em><br>
+Proceedings of <strong>LREC-COLING 2026</strong>.
+</p>
+
+
+<p><strong>BibTeX</strong></p>
+
+<div class="bibtex-box">
+
+<button class="copy-btn" onclick="copyBibtex()">Copy</button>
+
+<pre id="bibtex">
+@inproceedings{
+  
+}
+</pre>
+
+</div>
+
+
+<h2>Acknowledgements</h2>
+
+<p>
+This survey was conducted within the <strong>COST Action UniDive – Universality, Diversity and
+Idiosyncrasy in Language Technology</strong>. We thank the maintainers of the surveyed annotation tools
+and all contributors who responded to the survey and shared information about the tools.
+Their input made this interface possible.
+</p>
+
+</div>
+
+
+</body>
+</html>
