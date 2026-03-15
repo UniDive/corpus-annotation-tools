@@ -5,31 +5,31 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Corpus Annotation Tools Explorer</title>
 		<link rel="stylesheet" href="styles.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13tzjvY6sZj4lH3g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13tzjvY6sZj4lH3g==" crossorigin="anonymous" referrerpolicy="no-referrer"/> -->
 		<script src="buildUI.js"></script>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 	</head>
 	<body>
-
 			<div class="topbar">
-				<h1 class="app-title">Corpus Annotation Tools Explorer</h1>
-				<h1 class="app-subtitle">Explore and compare tools for manual linguistic annotation</h1>
+				<div class="topbar-left">
+					<h1 class="app-title">Corpus Annotation Tools Explorer</h1>
+					<h1 class="app-subtitle">Explore and compare tools for manual linguistic annotation</h1>
+				</div>
+				<div class="topbar-right">
+					<a href="https://github.com/YOUR_REPO" class="topbar-link" target="_blank">
+					<i class="fa-brands fa-github"></i> Suggest a Tool
+					</a>
+
+					<a href="about.html" class="topbar-link">
+					<i class="fa-solid fa-circle-info"></i> About
+					</a>
+				</div>
 				<!-- <button id="collapse-instructions" aria-label="Toggle instructions">
 					<i class="fa-solid fa-circle-info" aria-hidden="true"></i>
 					<span>Instructions</span>
 				</button> -->
 			</div>
-
-		<div class="instructions collapsed" id="instructions"> -->
-			<div class="instructions-content">
-				<ul>
-					<li>You can see surveyed tools on the left of the interface, and surveyed features on the right, divided into sections. You can resize the width of the two sections by dragging the middle separation line.</li>
-					<li>When clicking on a specific features, all tools that exhibit that features will be shown on top of the list. You can combine multiple selections to extend the list of tools.</li>
-					<li>When clicking on the "plus" button on each tool card, you will see more information and its features will be highlighted in the features section (border color will change)</li>
-					<li>Use the reset button to clear all filters and start from scratch.</li>
-				</ul>
-			</div>
-		</div>
 
 
 		<div class="container">
@@ -6170,5 +6170,41 @@
 				</div>
 			</div>
 		</div>
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <div class="footer-left">
+      <img src="images/UniDive.png" alt="UniDive logo" class="footer-logo">
+    </div>
+
+    <div class="footer-section">
+      <p>
+        For questions or suggestions about the survey and the interface,
+        please open an issue.
+      </p>
+    </div>
+
+    <div class="footer-section">
+<a href="https://github.com/YOUR_REPOSITORY" target="_blank" class="github-icon">
+<i class="fa-brands fa-github"></i>
+</a>
+    </div>
+
+    <div class="footer-section">
+
+<p class="license-block">
+
+<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+<img src="https://licensebuttons.net/l/by/4.0/88x31.png"
+     alt="CC-BY 4.0"
+     class="cc-badge">
+</a>
+
+</p>
+
+</div>
+
+  </div>
+</footer>
 	</body>
 </html>

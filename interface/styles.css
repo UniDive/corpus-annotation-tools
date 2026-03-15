@@ -87,7 +87,7 @@ a:hover {
   position: fixed;
   top: 0; left: 0; right: 0;
   height: 76px;
-  /* display: flex; align-items: center; justify-content: space-between; */
+  display: flex; align-items: center; justify-content: space-between;
   padding: 0px 20px;
   background: var(--french-gray);
   border-bottom: 3px solid #44bcd7;
@@ -96,6 +96,26 @@ a:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 1001;
 }
+
+
+.topbar-right {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.topbar-link {
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--yinmn-blue);
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+.topbar-link:hover {
+  opacity: 1;
+}
+
 .app-title{
   margin: 0;
   color: var(--yinmn-blue);
@@ -203,11 +223,12 @@ h1.app-subtitle {
     position: absolute;
     display: grid;
     grid-template-columns: var(--left) var(--v-separator-size) 1fr;
-    grid-template-rows: 100vh;
+    /* grid-template-rows: 100vh; */
+    grid-template-rows: 1fr;
     /* height: 100vh; */
     overflow: hidden;
     top: 56px;
-    height: calc(100vh - 40px); /* Adjust for instructions bar height */
+    height: calc(100vh - 100px); /* Adjust for instructions bar height */
 }
 
 /* Left side contains the top/bottom split */
@@ -717,3 +738,95 @@ h1.app-subtitle {
 /* Drag cursors */
 .dragging-y, .dragging-y * { cursor: row-resize !important; }
 .dragging-x, .dragging-x * { cursor: col-resize !important; }
+
+
+/* FOOTER */
+
+.site-footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #f5f5f5;
+  border-top: 1px solid #e0e0e0;
+  padding: 10px 18px;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+.footer-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 260px 1fr 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.footer-left,
+.footer-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.footer-left{
+  /* display:flex; */
+  justify-content:center;
+  align-items:center;
+}
+
+.footer-section{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+  gap:6px;
+}
+
+.footer-logo{
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-section h4{
+  margin: 0 0 14px 0;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.footer-section p{
+  margin: 0;
+  line-height: 1.5;
+}
+
+.footer-section a{
+  text-decoration: none;
+}
+
+/* .github-link{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+} */
+.github-icon{
+  font-size:30px;
+  color:#5a2ca0;   /* same purple tone you already use */
+  text-decoration:none;
+}
+
+.github-icon:hover{
+  opacity:0.7;
+}
+
+.license-block{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.cc-badge{
+  height:28px;
+  width:auto;
+}
