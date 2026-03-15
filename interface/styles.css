@@ -86,8 +86,8 @@ a:hover {
 .topbar{
   position: fixed;
   top: 0; left: 0; right: 0;
-  height: 56px;
-  display: flex; align-items: center; justify-content: space-between;
+  height: 76px;
+  /* display: flex; align-items: center; justify-content: space-between; */
   padding: 0px 20px;
   background: var(--french-gray);
   border-bottom: 3px solid #44bcd7;
@@ -100,6 +100,15 @@ a:hover {
   margin: 0;
   color: var(--yinmn-blue);
   font-weight: 800;
+}
+
+h1.app-subtitle {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 1rem;        /* circa 32px */
+  font-weight: normal;
+  font-style: italic;
+  color: #9ca3af;
+  margin: 0;
 }
 
 
@@ -691,6 +700,18 @@ a:hover {
   margin-right: 8px;
   font-weight: 500;
   border-left: 2px solid var(--pumpkin);
+}
+
+.tool-section {
+    display: inline-block;
+    background: var(--yinmn-blue);
+    color: var(--white);
+    border-radius: 0 5px 5px 0;
+    padding: 4px 10px;
+    margin-right: 8px;
+    font-weight: 500;
+    width: 90%;
+    /* border-left: 2px solid var(--pumpkin); */
 }
 
 /* Drag cursors */

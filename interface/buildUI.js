@@ -2,38 +2,38 @@
 // let tools = [];
 let tools = [     // added for anonymous submission
   {
-    "6. Annotation layers::Annotation scope": [
+    "6. Annotation layers::2. Annotation scope": [
       "Free span annotation"
     ],
-    "6. Annotation layers::Annotation types": [
+    "6. Annotation layers::1. Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)"
     ],
-    "6. Annotation layers::Segmentation": [
+    "6. Annotation layers::3. Segmentation": [
       "word-level",
       "sentence-level"
     ],
-    "6. Annotation layers::Tagset customization": "Yes",
-    "2. Data support::Data export": [
+    "6. Annotation layers::4. Tagset customization": "Yes",
+    "2. Data support::2. Data export": [
       "The data can be exported"
     ],
-    "2. Data support::Input format": [
+    "2. Data support::1. Input format": [
       "Raw text",
       "XML",
       "TSV"
     ],
-    "2. Data support::Integration of other resources": [
+    "2. Data support::3. Integration of other resources": [
       "Audio",
       "Video",
       "Image"
     ],
-    "3. Language support::Language independence": "Yes",
-    "3. Language support::Multiple writing scripts": "Yes",
-    "3. Language support::Writing direction": [
+    "3. Language support::1. Language independence": "Yes",
+    "3. Language support::2. Multiple writing scripts": "Yes",
+    "3. Language support::4. Writing direction": [
       "Left to Right"
     ],
-    "3. Language support::Handling of Unicode": "Yes",
-    "3. Language support::Language of the interface": [
+    "3. Language support::3. Handling of Unicode": "Yes",
+    "3. Language support::5. Language of the interface": [
       "English",
       "German",
       "French",
@@ -68,65 +68,65 @@ let tools = [     // added for anonymous submission
     "8. Universal Dependencies::1. UD-specific annotations": [],
     "9. PARSEME::2. Consistency check": "No",
     "9. PARSEME::1. PARSEME-specific annotations": [],
-    "4. User Interface::Annotation display": [
+    "4. User Interface::1. Annotation display": [
       "Table",
       "Musical score visualisation"
     ],
-    "4. User Interface::Annotation mode": [
+    "4. User Interface::2. Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)"
     ],
-    "5. Workflow::Automatic pre-annotation": "No",
-    "5. Workflow::Automatic recommendation": "No",
-    "5. Workflow::Collaborative annotation": [],
-    "5. Workflow::Keyboard annotation and shortcuts": "Yes",
-    "5. Workflow::Project management": "No",
-    "5. Workflow::User roles": "No",
+    "5. Workflow::1. Automatic pre-annotation": "No",
+    "5. Workflow::2. Automatic recommendation": "No",
+    "5. Workflow::3. Collaborative annotation": [],
+    "4. User Interface::3. Keyboard annotation and shortcuts": "Yes",
+    "5. Workflow::4. Project management": "No",
+    "5. Workflow::5. User roles": "No",
     "7. Annotation Analysis::2. Agreement calculation": "No",
     "7. Annotation Analysis::1. Comparison of annotations": "No",
     "7. Annotation Analysis::4. Mass editing": "Yes",
     "7. Annotation Analysis::3. Querying": "Yes"
   },
   {
-    "6. Annotation layers::Annotation scope": [
+    "6. Annotation layers::2. Annotation scope": [
       "Annotation inside sentences",
       "Annotation across sentences",
       "Annotation of full sentences / paragraphs / documents"
     ],
-    "6. Annotation layers::Annotation types": [
+    "6. Annotation layers::1. Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)",
       "Chains (e.g. coreferences)"
     ],
-    "6. Annotation layers::Segmentation": [],
-    "6. Annotation layers::Tagset customization": "Yes",
-    "2. Data support::Data export": [
+    "6. Annotation layers::3. Segmentation": [],
+    "6. Annotation layers::4. Tagset customization": "Yes",
+    "2. Data support::2. Data export": [
       "The data can be exported"
     ],
-    "2. Data support::Input format": [
+    "2. Data support::1. Input format": [
       "Raw text",
       "PDF",
       "CONLL-U",
       "XML",
       "TSV"
     ],
-    "2. Data support::Integration of other resources": [
+    "2. Data support::3. Integration of other resources": [
       "Audio",
       "Video",
       "Image",
       "PDF",
       "External databases (e.g. dictionaries)"
     ],
-    "3. Language support::Language independence": "Yes",
-    "3. Language support::Multiple writing scripts": "Yes",
-    "3. Language support::Writing direction": [
+    "3. Language support::1. Language independence": "Yes",
+    "3. Language support::2. Multiple writing scripts": "Yes",
+    "3. Language support::4. Writing direction": [
       "Left to Right",
       "Right to Left"
     ],
-    "3. Language support::Handling of Unicode": "Yes",
-    "3. Language support::Language of the interface": [
+    "3. Language support::3. Handling of Unicode": "Yes",
+    "3. Language support::5. Language of the interface": [
       "English"
     ],
     "1. Software::1. Active maintenance": "Yes",
@@ -169,69 +169,69 @@ let tools = [     // added for anonymous submission
       "Nested expressions",
       "Overlapping expressions"
     ],
-    "4. User Interface::Annotation display": [
+    "4. User Interface::1. Annotation display": [
       "Image (e.g. a graph or coloured text)"
     ],
-    "4. User Interface::Annotation mode": [
+    "4. User Interface::2. Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)"
     ],
-    "4. User Interface::Keyboard annotation and shortcuts": "Yes",
-    "5. Workflow::Automatic pre-annotation": "partial",
-    "5. Workflow::Automatic recommendation": "partial",
-    "5. Workflow::Collaborative annotation": [
+    "4. User Interface::3. Keyboard annotation and shortcuts": "Yes",
+    "5. Workflow::1. Automatic pre-annotation": "partial",
+    "5. Workflow::2. Automatic recommendation": "partial",
+    "5. Workflow::3. Collaborative annotation": [
       "annotators working independently on their own annotations of the same data"
     ],
-    "5. Workflow::Project management": "Yes",
-    "5. Workflow::User roles": "Yes",
+    "5. Workflow::4. Project management": "Yes",
+    "5. Workflow::5. User roles": "Yes",
     "7. Annotation Analysis::2. Agreement calculation": "Yes",
     "7. Annotation Analysis::4. Mass editing": "Yes",
     "7. Annotation Analysis::3. Querying": "Yes",
     "7. Annotation Analysis::1. Comparison of annotations": "partial"
   },
   {
-    "6. Annotation layers::Annotation scope": [
+    "6. Annotation layers::2. Annotation scope": [
       "Annotation inside sentences",
       "Annotation across sentences",
       "Annotation of full sentences / paragraphs / documents"
     ],
-    "6. Annotation layers::Annotation types": [
+    "6. Annotation layers::1. Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)",
       "Chains (e.g. coreferences)"
     ],
-    "6. Annotation layers::Segmentation": [
+    "6. Annotation layers::3. Segmentation": [
       "word-level",
       "sentence-level"
     ],
-    "6. Annotation layers::Tagset customization": "Yes",
-    "2. Data support::Data export": [
+    "6. Annotation layers::4. Tagset customization": "Yes",
+    "2. Data support::2. Data export": [
       "The data can be exported",
       "The data can be stored with a third party storage platform (e.g. Git repository)"
     ],
-    "2. Data support::Input format": [
+    "2. Data support::1. Input format": [
       "Raw text",
       "PDF",
       "CONLL-U",
       "XML",
       "TSV"
     ],
-    "2. Data support::Integration of other resources": [
+    "2. Data support::3. Integration of other resources": [
       "Audio",
       "Video",
       "Image",
       "PDF"
     ],
-    "3. Language support::Language independence": "Yes",
-    "3. Language support::Multiple writing scripts": "Yes",
-    "3. Language support::Writing direction": [
+    "3. Language support::1. Language independence": "Yes",
+    "3. Language support::2. Multiple writing scripts": "Yes",
+    "3. Language support::4. Writing direction": [
       "Left to Right",
       "Right to Left"
     ],
-    "3. Language support::Handling of Unicode": "Yes",
-    "3. Language support::Language of the interface": [
+    "3. Language support::3. Handling of Unicode": "Yes",
+    "3. Language support::5. Language of the interface": [
       "English"
     ],
     "1. Software::1. Active maintenance": "Yes",
@@ -273,63 +273,63 @@ let tools = [     // added for anonymous submission
       "Nested expressions",
       "Overlapping expressions"
     ],
-    "4. User Interface::Annotation display": [
+    "4. User Interface::1. Annotation display": [
       "Image (e.g. a graph or coloured text)",
       "Table",
       "Raw format (e.g. CONLL-U)"
     ],
-    "4. User Interface::Annotation mode": [
+    "4. User Interface::2. Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)",
       "Touchscreen"
     ],
-    "4. User Interface::Keyboard annotation and shortcuts": "Yes",
-    "5. Workflow::Automatic pre-annotation": "No",
-    "5. Workflow::Automatic recommendation": "Yes",
-    "5. Workflow::Collaborative annotation": [
+    "4. User Interface::3. Keyboard annotation and shortcuts": "Yes",
+    "5. Workflow::1. Automatic pre-annotation": "No",
+    "5. Workflow::2. Automatic recommendation": "Yes",
+    "5. Workflow::3. Collaborative annotation": [
       "annotators working independently on their own annotations of the same data",
       "annotators working together on the same shared annotation of the data"
     ],
-    "5. Workflow::Project management": "Yes",
-    "5. Workflow::User roles": "Yes",
+    "5. Workflow::4. Project management": "Yes",
+    "5. Workflow::5. User roles": "Yes",
     "7. Annotation Analysis::2. Agreement calculation": "No",
     "7. Annotation Analysis::1. Comparison of annotations": "No",
     "7. Annotation Analysis::4. Mass editing": "Yes",
     "7. Annotation Analysis::3. Querying": "Yes"
   },
   {
-    "6. Annotation layers::Annotation scope": [
+    "6. Annotation layers::2. Annotation scope": [
       "Annotation inside sentences",
       "Annotation across sentences"
     ],
-    "6. Annotation layers::Annotation types": [
+    "6. Annotation layers::1. Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)",
       "Chains (e.g. coreferences)"
     ],
-    "6. Annotation layers::Segmentation": [],
-    "6. Annotation layers::Tagset customization": "Yes",
-    "2. Data support::Data export": [
+    "6. Annotation layers::3. Segmentation": [],
+    "6. Annotation layers::4. Tagset customization": "Yes",
+    "2. Data support::2. Data export": [
       "The data can be exported"
     ],
-    "2. Data support::Input format": [
+    "2. Data support::1. Input format": [
       "Raw text",
       "CONLL-U",
       "XML"
     ],
-    "2. Data support::Integration of other resources": [
+    "2. Data support::3. Integration of other resources": [
       "External databases (e.g. dictionaries)"
     ],
-    "3. Language support::Language independence": "Yes",
-    "3. Language support::Multiple writing scripts": "Yes",
-    "3. Language support::Writing direction": [
+    "3. Language support::1. Language independence": "Yes",
+    "3. Language support::2. Multiple writing scripts": "Yes",
+    "3. Language support::4. Writing direction": [
       "Left to Right",
       "Right to Left"
     ],
-    "3. Language support::Handling of Unicode": "Yes",
-    "3. Language support::Language of the interface": [
+    "3. Language support::3. Handling of Unicode": "Yes",
+    "3. Language support::5. Language of the interface": [
       "English"
     ],
     "1. Software::1. Active maintenance": "Yes",
@@ -374,53 +374,53 @@ let tools = [     // added for anonymous submission
     ],
     "9. PARSEME::2. Consistency check": "No",
     "9. PARSEME::1. PARSEME-specific annotations": [],
-    "4. User Interface::Annotation display": [
+    "4. User Interface::1. Annotation display": [
       "Graphical representation of a tree"
     ],
-    "4. User Interface::Annotation mode": [
+    "4. User Interface::2. Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)"
     ],
-    "4. User Interface::Keyboard annotation and shortcuts": "Yes",
-    "5. Workflow::Automatic pre-annotation": "No",
-    "5. Workflow::Automatic recommendation": "No",
-    "5. Workflow::Collaborative annotation": [
+    "4. User Interface::3. Keyboard annotation and shortcuts": "Yes",
+    "5. Workflow::1. Automatic pre-annotation": "No",
+    "5. Workflow::2. Automatic recommendation": "No",
+    "5. Workflow::3. Collaborative annotation": [
       "No"
     ],
-    "5. Workflow::Project management": "No",
-    "5. Workflow::User roles": "partial",
+    "5. Workflow::4. Project management": "No",
+    "5. Workflow::5. User roles": "partial",
     "7. Annotation Analysis::2. Agreement calculation": "No",
     "7. Annotation Analysis::1. Comparison of annotations": "Yes",
     "7. Annotation Analysis::4. Mass editing": "Yes",
     "7. Annotation Analysis::3. Querying": "Yes"
   },
   {
-    "6. Annotation layers::Annotation scope": [
+    "6. Annotation layers::2. Annotation scope": [
       "Annotation inside sentences"
     ],
-    "6. Annotation layers::Annotation types": [
+    "6. Annotation layers::1. Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Relations (e.g. dependencies)"
     ],
-    "6. Annotation layers::Segmentation": [
+    "6. Annotation layers::3. Segmentation": [
       "word-level"
     ],
-    "6. Annotation layers::Tagset customization": "Yes",
-    "2. Data support::Data export": [
+    "6. Annotation layers::4. Tagset customization": "Yes",
+    "2. Data support::2. Data export": [
       "The data can be exported"
     ],
-    "2. Data support::Input format": [
+    "2. Data support::1. Input format": [
       "CONLL-U"
     ],
-    "2. Data support::Integration of other resources": [],
-    "3. Language support::Language independence": "Yes",
-    "3. Language support::Multiple writing scripts": "Yes",
-    "3. Language support::Writing direction": [
+    "2. Data support::3. Integration of other resources": [],
+    "3. Language support::1. Language independence": "Yes",
+    "3. Language support::2. Multiple writing scripts": "Yes",
+    "3. Language support::4. Writing direction": [
       "Left to Right",
       "Right to Left"
     ],
-    "3. Language support::Handling of Unicode": "Yes",
-    "3. Language support::Language of the interface": [
+    "3. Language support::3. Handling of Unicode": "Yes",
+    "3. Language support::5. Language of the interface": [
       "English"
     ],
     "1. Software::1. Active maintenance": "Yes",
@@ -470,52 +470,52 @@ let tools = [     // added for anonymous submission
     ],
     "9. PARSEME::2. Consistency check": "No",
     "9. PARSEME::1. PARSEME-specific annotations": [],
-    "4. User Interface::Annotation display": [
+    "4. User Interface::1. Annotation display": [
       "Image (e.g. a graph or coloured text)",
       "Raw format (e.g. CONLL-U)"
     ],
-    "4. User Interface::Annotation mode": [
+    "4. User Interface::2. Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)"
     ],
-    "4. User Interface::Keyboard annotation and shortcuts": "Yes",
-    "5. Workflow::Automatic pre-annotation": "Yes",
-    "5. Workflow::Automatic recommendation": "No",
-    "5. Workflow::Collaborative annotation": [
+    "4. User Interface::3. Keyboard annotation and shortcuts": "Yes",
+    "5. Workflow::1. Automatic pre-annotation": "Yes",
+    "5. Workflow::2. Automatic recommendation": "No",
+    "5. Workflow::3. Collaborative annotation": [
       "No"
     ],
-    "5. Workflow::Project management": "No",
-    "5. Workflow::User roles": "No",
+    "5. Workflow::4. Project management": "No",
+    "5. Workflow::5. User roles": "No",
     "7. Annotation Analysis::2. Agreement calculation": "No",
     "7. Annotation Analysis::1. Comparison of annotations": "No",
     "7. Annotation Analysis::4. Mass editing": "No",
     "7. Annotation Analysis::3. Querying": "No"
   },
   {
-    "6. Annotation layers::Annotation scope": [
+    "6. Annotation layers::2. Annotation scope": [
       "Annotation inside sentences"
     ],
-    "6. Annotation layers::Annotation types": [
+    "6. Annotation layers::1. Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Relations (e.g. dependencies)"
     ],
-    "6. Annotation layers::Segmentation": [],
-    "6. Annotation layers::Tagset customization": "Yes",
-    "2. Data support::Data export": [
+    "6. Annotation layers::3. Segmentation": [],
+    "6. Annotation layers::4. Tagset customization": "Yes",
+    "2. Data support::2. Data export": [
       "The data can be exported"
     ],
-    "2. Data support::Input format": [
+    "2. Data support::1. Input format": [
       "XML",
       "CONLL-X"
     ],
-    "2. Data support::Integration of other resources": [],
-    "3. Language support::Language independence": "Yes",
-    "3. Language support::Multiple writing scripts": "Yes",
-    "3. Language support::Writing direction": [
+    "2. Data support::3. Integration of other resources": [],
+    "3. Language support::1. Language independence": "Yes",
+    "3. Language support::2. Multiple writing scripts": "Yes",
+    "3. Language support::4. Writing direction": [
       "Left to Right"
     ],
-    "3. Language support::Handling of Unicode": "Yes",
-    "3. Language support::Language of the interface": [
+    "3. Language support::3. Handling of Unicode": "Yes",
+    "3. Language support::5. Language of the interface": [
       "English"
     ],
     "1. Software::1. Active maintenance": "No",
@@ -546,56 +546,56 @@ let tools = [     // added for anonymous submission
     ],
     "9. PARSEME::2. Consistency check": "No",
     "9. PARSEME::1. PARSEME-specific annotations": [],
-    "4. User Interface::Annotation display": [
+    "4. User Interface::1. Annotation display": [
       "Image (e.g. a graph or coloured text)"
     ],
-    "4. User Interface::Annotation mode": [
+    "4. User Interface::2. Annotation mode": [
       "Mouse (e.g. drag & drop)"
     ],
-    "4. User Interface::Keyboard annotation and shortcuts": "No",
-    "5. Workflow::Automatic pre-annotation": "No",
-    "5. Workflow::Automatic recommendation": "No",
-    "5. Workflow::Collaborative annotation": [],
-    "5. Workflow::Project management": "No",
-    "5. Workflow::User roles": "No",
+    "4. User Interface::3. Keyboard annotation and shortcuts": "No",
+    "5. Workflow::1. Automatic pre-annotation": "No",
+    "5. Workflow::2. Automatic recommendation": "No",
+    "5. Workflow::3. Collaborative annotation": [],
+    "5. Workflow::4. Project management": "No",
+    "5. Workflow::5. User roles": "No",
     "7. Annotation Analysis::2. Agreement calculation": "No",
     "7. Annotation Analysis::1. Comparison of annotations": "No",
     "7. Annotation Analysis::4. Mass editing": "No",
     "7. Annotation Analysis::3. Querying": "No"
   },
   {
-    "6. Annotation layers::Annotation scope": [
+    "6. Annotation layers::2. Annotation scope": [
       "Annotation inside sentences",
       "Annotation across sentences",
       "Annotation of full sentences / paragraphs / documents"
     ],
-    "6. Annotation layers::Annotation types": [
+    "6. Annotation layers::1. Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Chains (e.g. coreferences)"
     ],
-    "6. Annotation layers::Segmentation": [
+    "6. Annotation layers::3. Segmentation": [
       "word-level",
       "sentence-level"
     ],
-    "6. Annotation layers::Tagset customization": "Yes",
-    "2. Data support::Data export": [
+    "6. Annotation layers::4. Tagset customization": "Yes",
+    "2. Data support::2. Data export": [
       "The data can be exported"
     ],
-    "2. Data support::Input format": [
+    "2. Data support::1. Input format": [
       "Raw text",
       "XML",
       "other"
     ],
-    "2. Data support::Integration of other resources": [],
-    "3. Language support::Language independence": "Yes",
-    "3. Language support::Multiple writing scripts": "Yes",
-    "3. Language support::Writing direction": [
+    "2. Data support::3. Integration of other resources": [],
+    "3. Language support::1. Language independence": "Yes",
+    "3. Language support::2. Multiple writing scripts": "Yes",
+    "3. Language support::4. Writing direction": [
       "Left to Right",
       "Right to Left"
     ],
-    "3. Language support::Handling of Unicode": "Yes",
-    "3. Language support::Language of the interface": [
+    "3. Language support::3. Handling of Unicode": "Yes",
+    "3. Language support::5. Language of the interface": [
       "English"
     ],
     "1. Software::1. Active maintenance": "Yes",
@@ -648,68 +648,68 @@ let tools = [     // added for anonymous submission
       "Nested expressions",
       "Overlapping expressions"
     ],
-    "4. User Interface::Annotation display": [
+    "4. User Interface::1. Annotation display": [
       "Image (e.g. a graph or coloured text)",
       "Table",
       "Raw format (e.g. CONLL-U)"
     ],
-    "4. User Interface::Annotation mode": [
+    "4. User Interface::2. Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)"
     ],
-    "4. User Interface::Keyboard annotation and shortcuts": "No",
-    "5. Workflow::Automatic pre-annotation": "Yes",
-    "5. Workflow::Automatic recommendation": "No",
-    "5. Workflow::Collaborative annotation": [
+    "4. User Interface::3. Keyboard annotation and shortcuts": "No",
+    "5. Workflow::1. Automatic pre-annotation": "Yes",
+    "5. Workflow::2. Automatic recommendation": "No",
+    "5. Workflow::3. Collaborative annotation": [
       "annotators working independently on their own annotations of the same data",
       "annotators working together on the same shared annotation of the data"
     ],
-    "5. Workflow::Project management": "Yes",
-    "5. Workflow::User roles": "Yes",
+    "5. Workflow::4. Project management": "Yes",
+    "5. Workflow::5. User roles": "Yes",
     "7. Annotation Analysis::2. Agreement calculation": "No",
     "7. Annotation Analysis::1. Comparison of annotations": "Yes",
     "7. Annotation Analysis::4. Mass editing": "No",
     "7. Annotation Analysis::3. Querying": "No"
   },
   {
-    "6. Annotation layers::Annotation scope": [
+    "6. Annotation layers::2. Annotation scope": [
       "Annotation inside sentences",
       "Annotation across sentences",
       "Annotation of full sentences / paragraphs / documents"
     ],
-    "6. Annotation layers::Annotation types": [
+    "6. Annotation layers::1. Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Multi-tokens (e.g. multi-word expressions)"
     ],
-    "6. Annotation layers::Segmentation": [
+    "6. Annotation layers::3. Segmentation": [
       "word-level",
       "sentence-level"
     ],
-    "6. Annotation layers::Tagset customization": "Yes",
-    "2. Data support::Data export": [
+    "6. Annotation layers::4. Tagset customization": "Yes",
+    "2. Data support::2. Data export": [
       "The data can be exported"
     ],
-    "2. Data support::Input format": [
+    "2. Data support::1. Input format": [
       "Raw text",
       "XML",
       "other"
     ],
-    "2. Data support::Integration of other resources": [
+    "2. Data support::3. Integration of other resources": [
       "Audio",
       "Video",
       "Image",
       "PDF",
       "External databases (e.g. dictionaries)"
     ],
-    "3. Language support::Language independence": "Yes",
-    "3. Language support::Multiple writing scripts": "Yes",
-    "3. Language support::Writing direction": [
+    "3. Language support::1. Language independence": "Yes",
+    "3. Language support::2. Multiple writing scripts": "Yes",
+    "3. Language support::4. Writing direction": [
       "Left to Right",
       "Right to Left"
     ],
-    "3. Language support::Handling of Unicode": "Yes",
-    "3. Language support::Language of the interface": [
+    "3. Language support::3. Handling of Unicode": "Yes",
+    "3. Language support::5. Language of the interface": [
       "English"
     ],
     "1. Software::1. Active maintenance": "Yes",
@@ -742,56 +742,56 @@ let tools = [     // added for anonymous submission
     ],
     "9. PARSEME::2. Consistency check": "No",
     "9. PARSEME::1. PARSEME-specific annotations": [],
-    "4. User Interface::Annotation display": [
+    "4. User Interface::1. Annotation display": [
       "Table",
       "Raw format (e.g. CONLL-U)"
     ],
-    "4. User Interface::Annotation mode": [
+    "4. User Interface::2. Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)"
     ],
-    "4. User Interface::Keyboard annotation and shortcuts": "Yes",
-    "5. Workflow::Automatic pre-annotation": "partial",
-    "5. Workflow::Automatic recommendation": "No",
-    "5. Workflow::Collaborative annotation": [],
-    "5. Workflow::Project management": "partial",
-    "5. Workflow::User roles": "No",
+    "4. User Interface::3. Keyboard annotation and shortcuts": "Yes",
+    "5. Workflow::1. Automatic pre-annotation": "partial",
+    "5. Workflow::2. Automatic recommendation": "No",
+    "5. Workflow::3. Collaborative annotation": [],
+    "5. Workflow::4. Project management": "partial",
+    "5. Workflow::5. User roles": "No",
     "7. Annotation Analysis::2. Agreement calculation": "No",
     "7. Annotation Analysis::1. Comparison of annotations": "partial",
     "7. Annotation Analysis::4. Mass editing": "Yes",
     "7. Annotation Analysis::3. Querying": "Yes"
   },
   {
-    "6. Annotation layers::Annotation scope": [
+    "6. Annotation layers::2. Annotation scope": [
       "Annotation inside sentences"
     ],
-    "6. Annotation layers::Annotation types": [
+    "6. Annotation layers::1. Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)"
     ],
-    "6. Annotation layers::Segmentation": [
+    "6. Annotation layers::3. Segmentation": [
       "word-level",
       "sentence-level"
     ],
-    "6. Annotation layers::Tagset customization": "Yes",
-    "2. Data support::Data export": [
+    "6. Annotation layers::4. Tagset customization": "Yes",
+    "2. Data support::2. Data export": [
       "The data can be exported"
     ],
-    "2. Data support::Input format": [
+    "2. Data support::1. Input format": [
       "CONLL-U",
       "CoNLL-U Plus"
     ],
-    "2. Data support::Integration of other resources": [],
-    "3. Language support::Language independence": "Yes",
-    "3. Language support::Multiple writing scripts": "Yes",
-    "3. Language support::Writing direction": [
+    "2. Data support::3. Integration of other resources": [],
+    "3. Language support::1. Language independence": "Yes",
+    "3. Language support::2. Multiple writing scripts": "Yes",
+    "3. Language support::4. Writing direction": [
       "Left to Right",
       "Right to Left"
     ],
-    "3. Language support::Handling of Unicode": "Yes",
-    "3. Language support::Language of the interface": [
+    "3. Language support::3. Handling of Unicode": "Yes",
+    "3. Language support::5. Language of the interface": [
       "English"
     ],
     "1. Software::1. Active maintenance": "Yes",
@@ -835,57 +835,57 @@ let tools = [     // added for anonymous submission
     ],
     "9. PARSEME::2. Consistency check": "No",
     "9. PARSEME::1. PARSEME-specific annotations": [],
-    "4. User Interface::Annotation display": [
+    "4. User Interface::1. Annotation display": [
       "Image (e.g. a graph or coloured text)",
       "Table",
       "Raw format (e.g. CONLL-U)",
       "SD",
       "LateX (tikz)"
     ],
-    "4. User Interface::Annotation mode": [
+    "4. User Interface::2. Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)"
     ],
-    "4. User Interface::Keyboard annotation and shortcuts": "Yes",
-    "5. Workflow::Automatic pre-annotation": "No",
-    "5. Workflow::Automatic recommendation": "No",
-    "5. Workflow::Collaborative annotation": [
+    "4. User Interface::3. Keyboard annotation and shortcuts": "Yes",
+    "5. Workflow::1. Automatic pre-annotation": "No",
+    "5. Workflow::2. Automatic recommendation": "No",
+    "5. Workflow::3. Collaborative annotation": [
       "partial support"
     ],
-    "5. Workflow::Project management": "No",
-    "5. Workflow::User roles": "No",
+    "5. Workflow::4. Project management": "No",
+    "5. Workflow::5. User roles": "No",
     "7. Annotation Analysis::2. Agreement calculation": "No",
     "7. Annotation Analysis::1. Comparison of annotations": "Yes",
     "7. Annotation Analysis::4. Mass editing": "Yes",
     "7. Annotation Analysis::3. Querying": "Yes"
   },
   {
-    "6. Annotation layers::Annotation scope": [
+    "6. Annotation layers::2. Annotation scope": [
       "Annotation of full sentences / paragraphs / documents"
     ],
-    "6. Annotation layers::Annotation types": [
+    "6. Annotation layers::1. Annotation types": [
       "Spans (e.g. names entities)"
     ],
-    "6. Annotation layers::Segmentation": [],
-    "6. Annotation layers::Tagset customization": "Yes",
-    "2. Data support::Data export": [
+    "6. Annotation layers::3. Segmentation": [],
+    "6. Annotation layers::4. Tagset customization": "Yes",
+    "2. Data support::2. Data export": [
       "The data can be exported"
     ],
-    "2. Data support::Input format": [
+    "2. Data support::1. Input format": [
       "Raw text",
       "CONLL-U",
       "XML",
       "TSV"
     ],
-    "2. Data support::Integration of other resources": [],
-    "3. Language support::Language independence": "Yes",
-    "3. Language support::Multiple writing scripts": "Yes",
-    "3. Language support::Writing direction": [
+    "2. Data support::3. Integration of other resources": [],
+    "3. Language support::1. Language independence": "Yes",
+    "3. Language support::2. Multiple writing scripts": "Yes",
+    "3. Language support::4. Writing direction": [
       "Left to Right",
       "Right to Left"
     ],
-    "3. Language support::Handling of Unicode": "Yes",
-    "3. Language support::Language of the interface": [
+    "3. Language support::3. Handling of Unicode": "Yes",
+    "3. Language support::5. Language of the interface": [
       "English"
     ],
     "1. Software::1. Active maintenance": "Yes",
@@ -919,53 +919,53 @@ let tools = [     // added for anonymous submission
     ],
     "9. PARSEME::2. Consistency check": "No",
     "9. PARSEME::1. PARSEME-specific annotations": [],
-    "4. User Interface::Annotation display": [
+    "4. User Interface::1. Annotation display": [
       "Image (e.g. a graph or coloured text)"
     ],
-    "4. User Interface::Annotation mode": [
+    "4. User Interface::2. Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)"
     ],
-    "4. User Interface::Keyboard annotation and shortcuts": "Yes",
-    "5. Workflow::Automatic pre-annotation": "No",
-    "5. Workflow::Automatic recommendation": "Yes",
-    "5. Workflow::Collaborative annotation": [
+    "4. User Interface::3. Keyboard annotation and shortcuts": "Yes",
+    "5. Workflow::1. Automatic pre-annotation": "No",
+    "5. Workflow::2. Automatic recommendation": "Yes",
+    "5. Workflow::3. Collaborative annotation": [
       "annotators working together on the same shared annotation of the data"
     ],
-    "5. Workflow::Project management": "Yes",
-    "5. Workflow::User roles": "Yes",
+    "5. Workflow::4. Project management": "Yes",
+    "5. Workflow::5. User roles": "Yes",
     "7. Annotation Analysis::2. Agreement calculation": "No",
     "7. Annotation Analysis::1. Comparison of annotations": "Yes",
     "7. Annotation Analysis::4. Mass editing": "Yes",
     "7. Annotation Analysis::3. Querying": "Yes"
   },
   {
-    "6. Annotation layers::Annotation scope": [
+    "6. Annotation layers::2. Annotation scope": [
       "Annotation inside sentences"
     ],
-    "6. Annotation layers::Annotation types": [
+    "6. Annotation layers::1. Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Multi-tokens (e.g. multi-word expressions)"
     ],
-    "6. Annotation layers::Segmentation": [],
-    "6. Annotation layers::Tagset customization": "No",
-    "2. Data support::Data export": [
+    "6. Annotation layers::3. Segmentation": [],
+    "6. Annotation layers::4. Tagset customization": "No",
+    "2. Data support::2. Data export": [
       "The data can be exported"
     ],
-    "2. Data support::Input format": [
+    "2. Data support::1. Input format": [
       "Raw text",
       "CONLL-U"
     ],
-    "2. Data support::Integration of other resources": [],
-    "3. Language support::Language independence": "Yes",
-    "3. Language support::Multiple writing scripts": "Yes",
-    "3. Language support::Writing direction": [
+    "2. Data support::3. Integration of other resources": [],
+    "3. Language support::1. Language independence": "Yes",
+    "3. Language support::2. Multiple writing scripts": "Yes",
+    "3. Language support::4. Writing direction": [
       "Left to Right",
       "Right to Left"
     ],
-    "3. Language support::Handling of Unicode": "No",
-    "3. Language support::Language of the interface": [
+    "3. Language support::3. Handling of Unicode": "No",
+    "3. Language support::5. Language of the interface": [
       "English"
     ],
     "1. Software::1. Active maintenance": "Yes",
@@ -1004,58 +1004,58 @@ let tools = [     // added for anonymous submission
     ],
     "9. PARSEME::2. Consistency check": "partial",
     "9. PARSEME::1. PARSEME-specific annotations": [],
-    "4. User Interface::Annotation display": [
+    "4. User Interface::1. Annotation display": [
       "Image (e.g. a graph or coloured text)"
     ],
-    "4. User Interface::Annotation mode": [
+    "4. User Interface::2. Annotation mode": [
       "Mouse (e.g. drag & drop)",
       "Touchscreen"
     ],
-    "4. User Interface::Keyboard annotation and shortcuts": "No",
-    "5. Workflow::Automatic pre-annotation": "Yes",
-    "5. Workflow::Automatic recommendation": "No",
-    "5. Workflow::Collaborative annotation": [
+    "4. User Interface::3. Keyboard annotation and shortcuts": "No",
+    "5. Workflow::1. Automatic pre-annotation": "Yes",
+    "5. Workflow::2. Automatic recommendation": "No",
+    "5. Workflow::3. Collaborative annotation": [
       "annotators working independently on their own annotations of the same data"
     ],
-    "5. Workflow::Project management": "No",
-    "5. Workflow::User roles": "Yes",
+    "5. Workflow::4. Project management": "No",
+    "5. Workflow::5. User roles": "Yes",
     "7. Annotation Analysis::2. Agreement calculation": "No",
     "7. Annotation Analysis::1. Comparison of annotations": "No",
     "7. Annotation Analysis::4. Mass editing": "Yes",
     "7. Annotation Analysis::3. Querying": "No"
   },
   {
-    "6. Annotation layers::Annotation scope": [
+    "6. Annotation layers::2. Annotation scope": [
       "Annotation inside sentences",
       "Annotation across sentences",
       "Annotation of full sentences / paragraphs / documents"
     ],
-    "6. Annotation layers::Annotation types": [
+    "6. Annotation layers::1. Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Multi-tokens (e.g. multi-word expressions)",
       "Interlinear glossed text annotations"
     ],
-    "6. Annotation layers::Segmentation": [
+    "6. Annotation layers::3. Segmentation": [
       "word-level",
       "sentence-level"
     ],
-    "6. Annotation layers::Tagset customization": "Yes",
-    "2. Data support::Data export": [
+    "6. Annotation layers::4. Tagset customization": "Yes",
+    "2. Data support::2. Data export": [
       "The data can be exported"
     ],
-    "2. Data support::Input format": [
+    "2. Data support::1. Input format": [
       "Raw text"
     ],
-    "2. Data support::Integration of other resources": [],
-    "3. Language support::Language independence": "Yes",
-    "3. Language support::Multiple writing scripts": "Yes",
-    "3. Language support::Writing direction": [
+    "2. Data support::3. Integration of other resources": [],
+    "3. Language support::1. Language independence": "Yes",
+    "3. Language support::2. Multiple writing scripts": "Yes",
+    "3. Language support::4. Writing direction": [
       "Left to Right",
       "Right to Left"
     ],
-    "3. Language support::Handling of Unicode": "Yes",
-    "3. Language support::Language of the interface": [
+    "3. Language support::3. Handling of Unicode": "Yes",
+    "3. Language support::5. Language of the interface": [
       "English"
     ],
     "1. Software::1. Active maintenance": "No",
@@ -1087,53 +1087,53 @@ let tools = [     // added for anonymous submission
     ],
     "9. PARSEME::2. Consistency check": "No",
     "9. PARSEME::1. PARSEME-specific annotations": [],
-    "4. User Interface::Annotation display": [
+    "4. User Interface::1. Annotation display": [
       "Table"
     ],
-    "4. User Interface::Annotation mode": [
+    "4. User Interface::2. Annotation mode": [
       "Keyboard"
     ],
-    "4. User Interface::Keyboard annotation and shortcuts": "Yes",
-    "5. Workflow::Automatic pre-annotation": "No",
-    "5. Workflow::Automatic recommendation": "No",
-    "5. Workflow::Collaborative annotation": [
+    "4. User Interface::3. Keyboard annotation and shortcuts": "Yes",
+    "5. Workflow::1. Automatic pre-annotation": "No",
+    "5. Workflow::2. Automatic recommendation": "No",
+    "5. Workflow::3. Collaborative annotation": [
       "No"
     ],
-    "5. Workflow::Project management": "No",
-    "5. Workflow::User roles": "No",
+    "5. Workflow::4. Project management": "No",
+    "5. Workflow::5. User roles": "No",
     "7. Annotation Analysis::2. Agreement calculation": "No",
     "7. Annotation Analysis::1. Comparison of annotations": "No",
     "7. Annotation Analysis::4. Mass editing": "Yes",
     "7. Annotation Analysis::3. Querying": "Yes"
   },
   {
-    "6. Annotation layers::Annotation scope": [
+    "6. Annotation layers::2. Annotation scope": [
       "Annotation inside sentences"
     ],
-    "6. Annotation layers::Annotation types": [
+    "6. Annotation layers::1. Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)"
     ],
-    "6. Annotation layers::Segmentation": [],
-    "6. Annotation layers::Tagset customization": "Yes",
-    "2. Data support::Data export": [
+    "6. Annotation layers::3. Segmentation": [],
+    "6. Annotation layers::4. Tagset customization": "Yes",
+    "2. Data support::2. Data export": [
       "The data can be exported"
     ],
-    "2. Data support::Input format": [
+    "2. Data support::1. Input format": [
       "Raw text",
       "CONLL-U",
       "other"
     ],
-    "2. Data support::Integration of other resources": [],
-    "3. Language support::Language independence": "Yes",
-    "3. Language support::Multiple writing scripts": "Yes",
-    "3. Language support::Writing direction": [
+    "2. Data support::3. Integration of other resources": [],
+    "3. Language support::1. Language independence": "Yes",
+    "3. Language support::2. Multiple writing scripts": "Yes",
+    "3. Language support::4. Writing direction": [
       "Left to Right",
       "Right to Left"
     ],
-    "3. Language support::Handling of Unicode": "Yes",
-    "3. Language support::Language of the interface": [
+    "3. Language support::3. Handling of Unicode": "Yes",
+    "3. Language support::5. Language of the interface": [
       "English"
     ],
     "1. Software::1. Active maintenance": "Yes",
@@ -1174,67 +1174,67 @@ let tools = [     // added for anonymous submission
     ],
     "9. PARSEME::2. Consistency check": "No",
     "9. PARSEME::1. PARSEME-specific annotations": [],
-    "4. User Interface::Annotation display": [
+    "4. User Interface::1. Annotation display": [
       "Image (e.g. a graph or coloured text)",
       "Table",
       "Raw format (e.g. CONLL-U)"
     ],
-    "4. User Interface::Annotation mode": [
+    "4. User Interface::2. Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)"
     ],
-    "4. User Interface::Keyboard annotation and shortcuts": "No",
-    "5. Workflow::Automatic pre-annotation": "No",
-    "5. Workflow::Automatic recommendation": "No",
-    "5. Workflow::Collaborative annotation": [
+    "4. User Interface::3. Keyboard annotation and shortcuts": "No",
+    "5. Workflow::1. Automatic pre-annotation": "No",
+    "5. Workflow::2. Automatic recommendation": "No",
+    "5. Workflow::3. Collaborative annotation": [
       "Yes"
     ],
-    "5. Workflow::Project management": "No",
-    "5. Workflow::User roles": "No",
+    "5. Workflow::4. Project management": "No",
+    "5. Workflow::5. User roles": "No",
     "7. Annotation Analysis::2. Agreement calculation": "No",
     "7. Annotation Analysis::1. Comparison of annotations": "No",
     "7. Annotation Analysis::4. Mass editing": "No",
     "7. Annotation Analysis::3. Querying": "No"
   },
   {
-    "6. Annotation layers::Annotation scope": [
+    "6. Annotation layers::2. Annotation scope": [
       "Annotation inside sentences",
       "Annotation across sentences",
       "Annotation of full sentences / paragraphs / documents"
     ],
-    "6. Annotation layers::Annotation types": [
+    "6. Annotation layers::1. Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)"
     ],
-    "6. Annotation layers::Segmentation": [
+    "6. Annotation layers::3. Segmentation": [
       "word-level",
       "sentence-level"
     ],
-    "6. Annotation layers::Tagset customization": "Yes",
-    "2. Data support::Data export": [
+    "6. Annotation layers::4. Tagset customization": "Yes",
+    "2. Data support::2. Data export": [
       "The data can be exported"
     ],
-    "2. Data support::Input format": [
+    "2. Data support::1. Input format": [
       "Raw text",
       "XML",
       "other",
       "TSV"
     ],
-    "2. Data support::Integration of other resources": [
+    "2. Data support::3. Integration of other resources": [
       "Audio",
       "Video",
       "Image"
     ],
-    "3. Language support::Language independence": "Yes",
-    "3. Language support::Multiple writing scripts": "Yes",
-    "3. Language support::Writing direction": [
+    "3. Language support::1. Language independence": "Yes",
+    "3. Language support::2. Multiple writing scripts": "Yes",
+    "3. Language support::4. Writing direction": [
       "Left to Right",
       "Right to Left"
     ],
-    "3. Language support::Handling of Unicode": "Yes",
-    "3. Language support::Language of the interface": [
+    "3. Language support::3. Handling of Unicode": "Yes",
+    "3. Language support::5. Language of the interface": [
       "English"
     ],
     "1. Software::1. Active maintenance": "Yes",
@@ -1281,59 +1281,59 @@ let tools = [     // added for anonymous submission
       "Nested expressions",
       "Overlapping expressions"
     ],
-    "4. User Interface::Annotation display": [
+    "4. User Interface::1. Annotation display": [
       "Image (e.g. a graph or coloured text)",
       "Table",
       "CSV"
     ],
-    "4. User Interface::Annotation mode": [
+    "4. User Interface::2. Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)",
       "Touchscreen"
     ],
-    "4. User Interface::Keyboard annotation and shortcuts": "Yes",
-    "5. Workflow::Automatic pre-annotation": "Yes",
-    "5. Workflow::Automatic recommendation": "No",
-    "5. Workflow::Collaborative annotation": [
+    "4. User Interface::3. Keyboard annotation and shortcuts": "Yes",
+    "5. Workflow::1. Automatic pre-annotation": "Yes",
+    "5. Workflow::2. Automatic recommendation": "No",
+    "5. Workflow::3. Collaborative annotation": [
       "annotators working independently on their own annotations of the same data"
     ],
-    "5. Workflow::Project management": "No",
-    "5. Workflow::User roles": "No",
+    "5. Workflow::4. Project management": "No",
+    "5. Workflow::5. User roles": "No",
     "7. Annotation Analysis::2. Agreement calculation": "No",
     "7. Annotation Analysis::1. Comparison of annotations": "No",
     "7. Annotation Analysis::4. Mass editing": "Yes",
     "7. Annotation Analysis::3. Querying": "Yes"
   },
   {
-    "6. Annotation layers::Annotation scope": [
+    "6. Annotation layers::2. Annotation scope": [
       "Annotation inside sentences"
     ],
-    "6. Annotation layers::Annotation types": [
+    "6. Annotation layers::1. Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Relations (e.g. dependencies)",
       "Chains (e.g. coreferences)"
     ],
-    "6. Annotation layers::Segmentation": [
+    "6. Annotation layers::3. Segmentation": [
       "word-level"
     ],
-    "6. Annotation layers::Tagset customization": "Yes",
-    "2. Data support::Data export": [
+    "6. Annotation layers::4. Tagset customization": "Yes",
+    "2. Data support::2. Data export": [
       "The data can be exported"
     ],
-    "2. Data support::Input format": [
+    "2. Data support::1. Input format": [
       "Raw text",
       "CONLL-U"
     ],
-    "2. Data support::Integration of other resources": [],
-    "3. Language support::Language independence": "Yes",
-    "3. Language support::Multiple writing scripts": "Yes",
-    "3. Language support::Writing direction": [
+    "2. Data support::3. Integration of other resources": [],
+    "3. Language support::1. Language independence": "Yes",
+    "3. Language support::2. Multiple writing scripts": "Yes",
+    "3. Language support::4. Writing direction": [
       "Left to Right",
       "Right to Left"
     ],
-    "3. Language support::Handling of Unicode": "Yes",
-    "3. Language support::Language of the interface": [
+    "3. Language support::3. Handling of Unicode": "Yes",
+    "3. Language support::5. Language of the interface": [
       "English"
     ],
     "1. Software::1. Active maintenance": "Yes",
@@ -1374,53 +1374,53 @@ let tools = [     // added for anonymous submission
     ],
     "9. PARSEME::2. Consistency check": "No",
     "9. PARSEME::1. PARSEME-specific annotations": [],
-    "4. User Interface::Annotation display": [
+    "4. User Interface::1. Annotation display": [
       "Image (e.g. a graph or coloured text)",
       "Table"
     ],
-    "4. User Interface::Annotation mode": [
+    "4. User Interface::2. Annotation mode": [
       "Keyboard"
     ],
-    "4. User Interface::Keyboard annotation and shortcuts": "Yes",
-    "5. Workflow::Automatic pre-annotation": "tokenization",
-    "5. Workflow::Automatic recommendation": "No",
-    "5. Workflow::Collaborative annotation": [
+    "4. User Interface::3. Keyboard annotation and shortcuts": "Yes",
+    "5. Workflow::1. Automatic pre-annotation": "partial",
+    "5. Workflow::2. Automatic recommendation": "No",
+    "5. Workflow::3. Collaborative annotation": [
       "annotators working independently on their own annotations of the same data"
     ],
-    "5. Workflow::Project management": "partial",
-    "5. Workflow::User roles": "No",
+    "5. Workflow::4. Project management": "partial",
+    "5. Workflow::5. User roles": "No",
     "7. Annotation Analysis::2. Agreement calculation": "partial",
     "7. Annotation Analysis::1. Comparison of annotations": "Yes",
     "7. Annotation Analysis::4. Mass editing": "No",
     "7. Annotation Analysis::3. Querying": "Yes"
   },
   {
-    "6. Annotation layers::Annotation scope": [
+    "6. Annotation layers::2. Annotation scope": [
       "Annotation inside sentences"
     ],
-    "6. Annotation layers::Annotation types": [
+    "6. Annotation layers::1. Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)"
     ],
-    "6. Annotation layers::Segmentation": [],
-    "6. Annotation layers::Tagset customization": "Yes",
-    "2. Data support::Data export": [
+    "6. Annotation layers::3. Segmentation": [],
+    "6. Annotation layers::4. Tagset customization": "Yes",
+    "2. Data support::2. Data export": [
       "The data can be exported"
     ],
-    "2. Data support::Input format": [
+    "2. Data support::1. Input format": [
       "CONLL-U",
       "XML"
     ],
-    "2. Data support::Integration of other resources": [],
-    "3. Language support::Language independence": "Yes",
-    "3. Language support::Multiple writing scripts": "Yes",
-    "3. Language support::Writing direction": [
+    "2. Data support::3. Integration of other resources": [],
+    "3. Language support::1. Language independence": "Yes",
+    "3. Language support::2. Multiple writing scripts": "Yes",
+    "3. Language support::4. Writing direction": [
       "Left to Right"
     ],
-    "3. Language support::Handling of Unicode": "Yes",
-    "3. Language support::Language of the interface": [
+    "3. Language support::3. Handling of Unicode": "Yes",
+    "3. Language support::5. Language of the interface": [
       "English"
     ],
     "1. Software::1. Active maintenance": "Yes",
@@ -1450,53 +1450,53 @@ let tools = [     // added for anonymous submission
     ],
     "9. PARSEME::2. Consistency check": "No",
     "9. PARSEME::1. PARSEME-specific annotations": [],
-    "4. User Interface::Annotation display": [
+    "4. User Interface::1. Annotation display": [
       "Image (e.g. a graph or coloured text)"
     ],
-    "4. User Interface::Annotation mode": [
+    "4. User Interface::2. Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)"
     ],
-    "4. User Interface::Keyboard annotation and shortcuts": "No",
-    "5. Workflow::Automatic pre-annotation": "No",
-    "5. Workflow::Automatic recommendation": "No",
-    "5. Workflow::Collaborative annotation": [
+    "4. User Interface::3. Keyboard annotation and shortcuts": "No",
+    "5. Workflow::1. Automatic pre-annotation": "No",
+    "5. Workflow::2. Automatic recommendation": "No",
+    "5. Workflow::3. Collaborative annotation": [
       "annotators working independently on their own annotations of the same data"
     ],
-    "5. Workflow::Project management": "No",
-    "5. Workflow::User roles": "No",
+    "5. Workflow::4. Project management": "No",
+    "5. Workflow::5. User roles": "No",
     "7. Annotation Analysis::2. Agreement calculation": "No",
     "7. Annotation Analysis::1. Comparison of annotations": "No",
     "7. Annotation Analysis::4. Mass editing": "No",
     "7. Annotation Analysis::3. Querying": "Yes"
   },
   {
-    "6. Annotation layers::Annotation scope": [
+    "6. Annotation layers::2. Annotation scope": [
       "Annotation inside sentences"
     ],
-    "6. Annotation layers::Annotation types": [
+    "6. Annotation layers::1. Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)"
     ],
-    "6. Annotation layers::Segmentation": [
+    "6. Annotation layers::3. Segmentation": [
       "word-level"
     ],
-    "6. Annotation layers::Tagset customization": "Yes",
-    "2. Data support::Data export": [
+    "6. Annotation layers::4. Tagset customization": "Yes",
+    "2. Data support::2. Data export": [
       "The data can be exported"
     ],
-    "2. Data support::Input format": [
+    "2. Data support::1. Input format": [
       "CONLL-U"
     ],
-    "2. Data support::Integration of other resources": [],
-    "3. Language support::Language independence": "Yes",
-    "3. Language support::Multiple writing scripts": "Yes",
-    "3. Language support::Writing direction": [
+    "2. Data support::3. Integration of other resources": [],
+    "3. Language support::1. Language independence": "Yes",
+    "3. Language support::2. Multiple writing scripts": "Yes",
+    "3. Language support::4. Writing direction": [
       "Left to Right"
     ],
-    "3. Language support::Handling of Unicode": "Yes",
-    "3. Language support::Language of the interface": [
+    "3. Language support::3. Handling of Unicode": "Yes",
+    "3. Language support::5. Language of the interface": [
       "English"
     ],
     "1. Software::1. Active maintenance": "Yes",
@@ -1543,61 +1543,61 @@ let tools = [     // added for anonymous submission
     ],
     "9. PARSEME::2. Consistency check": "No",
     "9. PARSEME::1. PARSEME-specific annotations": [],
-    "4. User Interface::Annotation display": [
+    "4. User Interface::1. Annotation display": [
       "Image (e.g. a graph or coloured text)",
       "Raw format (e.g. CONLL-U)"
     ],
-    "4. User Interface::Annotation mode": [
+    "4. User Interface::2. Annotation mode": [
       "Keyboard"
     ],
-    "4. User Interface::Keyboard annotation and shortcuts": "Yes",
-    "5. Workflow::Automatic pre-annotation": "No",
-    "5. Workflow::Automatic recommendation": "Yes",
-    "5. Workflow::Collaborative annotation": [
+    "4. User Interface::3. Keyboard annotation and shortcuts": "Yes",
+    "5. Workflow::1. Automatic pre-annotation": "No",
+    "5. Workflow::2. Automatic recommendation": "Yes",
+    "5. Workflow::3. Collaborative annotation": [
       "No"
     ],
-    "5. Workflow::Project management": "No",
-    "5. Workflow::User roles": "No",
+    "5. Workflow::4. Project management": "No",
+    "5. Workflow::5. User roles": "No",
     "7. Annotation Analysis::2. Agreement calculation": "No",
     "7. Annotation Analysis::1. Comparison of annotations": "No",
     "7. Annotation Analysis::4. Mass editing": "No",
     "7. Annotation Analysis::3. Querying": "No"
   },
   {
-    "6. Annotation layers::Annotation scope": [
+    "6. Annotation layers::2. Annotation scope": [
       "Annotation inside sentences"
     ],
-    "6. Annotation layers::Annotation types": [
+    "6. Annotation layers::1. Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)",
       "Chains (e.g. coreferences)"
     ],
-    "6. Annotation layers::Segmentation": [
+    "6. Annotation layers::3. Segmentation": [
       "word-level"
     ],
-    "6. Annotation layers::Tagset customization": "Yes",
-    "2. Data support::Data export": [
+    "6. Annotation layers::4. Tagset customization": "Yes",
+    "2. Data support::2. Data export": [
       "The data can be exported",
       "The data can be stored with a third party storage platform (e.g. Git repository)"
     ],
-    "2. Data support::Input format": [
+    "2. Data support::1. Input format": [
       "Raw text",
       "CONLL-U",
       "XML",
       "TSV",
       "other"
     ],
-    "2. Data support::Integration of other resources": [],
-    "3. Language support::Language independence": "Yes",
-    "3. Language support::Multiple writing scripts": "Yes",
-    "3. Language support::Writing direction": [
+    "2. Data support::3. Integration of other resources": [],
+    "3. Language support::1. Language independence": "Yes",
+    "3. Language support::2. Multiple writing scripts": "Yes",
+    "3. Language support::4. Writing direction": [
       "Left to Right",
       "Right to Left"
     ],
-    "3. Language support::Handling of Unicode": "Yes",
-    "3. Language support::Language of the interface": [
+    "3. Language support::3. Handling of Unicode": "Yes",
+    "3. Language support::5. Language of the interface": [
       "English"
     ],
     "1. Software::1. Active maintenance": "Legacy",
@@ -1648,56 +1648,56 @@ let tools = [     // added for anonymous submission
       "Nested expressions",
       "Overlapping expressions"
     ],
-    "4. User Interface::Annotation display": [],
-    "4. User Interface::Annotation mode": [
+    "4. User Interface::1. Annotation display": [],
+    "4. User Interface::2. Annotation mode": [
       "Mouse (e.g. drag & drop)"
     ],
-    "4. User Interface::Keyboard annotation and shortcuts": "No",
-    "5. Workflow::Automatic pre-annotation": "No",
-    "5. Workflow::Automatic recommendation": "No",
-    "5. Workflow::Collaborative annotation": [
+    "4. User Interface::3. Keyboard annotation and shortcuts": "No",
+    "5. Workflow::1. Automatic pre-annotation": "No",
+    "5. Workflow::2. Automatic recommendation": "No",
+    "5. Workflow::3. Collaborative annotation": [
       "annotators working independently on their own annotations of the same data"
     ],
-    "5. Workflow::Project management": "partial",
-    "5. Workflow::User roles": "Yes",
+    "5. Workflow::4. Project management": "partial",
+    "5. Workflow::5. User roles": "Yes",
     "7. Annotation Analysis::2. Agreement calculation": "No",
     "7. Annotation Analysis::1. Comparison of annotations": "No",
     "7. Annotation Analysis::4. Mass editing": "Yes",
     "7. Annotation Analysis::3. Querying": "Yes"
   },
   {
-    "6. Annotation layers::Annotation scope": [
+    "6. Annotation layers::2. Annotation scope": [
       "Annotation inside sentences",
       "Annotation across sentences",
       "Annotation of full sentences / paragraphs / documents"
     ],
-    "6. Annotation layers::Annotation types": [
+    "6. Annotation layers::1. Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)",
       "Chains (e.g. coreferences)"
     ],
-    "6. Annotation layers::Segmentation": [],
-    "6. Annotation layers::Tagset customization": "Yes",
-    "2. Data support::Data export": [
+    "6. Annotation layers::3. Segmentation": [],
+    "6. Annotation layers::4. Tagset customization": "Yes",
+    "2. Data support::2. Data export": [
       "The data can be exported"
     ],
-    "2. Data support::Input format": [
+    "2. Data support::1. Input format": [
       "Raw text",
       ".txt+.ann"
     ],
-    "2. Data support::Integration of other resources": [
+    "2. Data support::3. Integration of other resources": [
       "External databases (e.g. dictionaries)"
     ],
-    "3. Language support::Language independence": "Yes",
-    "3. Language support::Multiple writing scripts": "Yes",
-    "3. Language support::Writing direction": [
+    "3. Language support::1. Language independence": "Yes",
+    "3. Language support::2. Multiple writing scripts": "Yes",
+    "3. Language support::4. Writing direction": [
       "Left to Right",
       "Right to Left"
     ],
-    "3. Language support::Handling of Unicode": "Yes",
-    "3. Language support::Language of the interface": [
+    "3. Language support::3. Handling of Unicode": "Yes",
+    "3. Language support::5. Language of the interface": [
       "English"
     ],
     "1. Software::1. Active maintenance": "No",
@@ -1746,65 +1746,65 @@ let tools = [     // added for anonymous submission
       "Nested expressions",
       "Overlapping expressions"
     ],
-    "4. User Interface::Annotation display": [
+    "4. User Interface::1. Annotation display": [
       "Image (e.g. a graph or coloured text)"
     ],
-    "4. User Interface::Annotation mode": [
+    "4. User Interface::2. Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)"
     ],
-    "4. User Interface::Keyboard annotation and shortcuts": "No",
-    "5. Workflow::Automatic pre-annotation": "Yes",
-    "5. Workflow::Automatic recommendation": "No",
-    "5. Workflow::Collaborative annotation": [
+    "4. User Interface::3. Keyboard annotation and shortcuts": "No",
+    "5. Workflow::1. Automatic pre-annotation": "Yes",
+    "5. Workflow::2. Automatic recommendation": "No",
+    "5. Workflow::3. Collaborative annotation": [
       "annotators working independently on their own annotations of the same data"
     ],
-    "5. Workflow::Project management": "No",
-    "5. Workflow::User roles": "No",
+    "5. Workflow::4. Project management": "No",
+    "5. Workflow::5. User roles": "No",
     "7. Annotation Analysis::2. Agreement calculation": "No",
     "7. Annotation Analysis::1. Comparison of annotations": "Yes",
     "7. Annotation Analysis::4. Mass editing": "No",
     "7. Annotation Analysis::3. Querying": "Yes"
   },
   {
-    "6. Annotation layers::Annotation scope": [
+    "6. Annotation layers::2. Annotation scope": [
       "Annotation inside sentences",
       "Annotation across sentences",
       "Annotation of full sentences / paragraphs / documents"
     ],
-    "6. Annotation layers::Annotation types": [
+    "6. Annotation layers::1. Annotation types": [
       "Tokens (e.g. part-of-speech tag morphological features)",
       "Spans (e.g. names entities)",
       "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)",
       "Chains (e.g. coreferences)"
     ],
-    "6. Annotation layers::Segmentation": [
+    "6. Annotation layers::3. Segmentation": [
       "word-level",
       "sentence-level"
     ],
-    "6. Annotation layers::Tagset customization": "Yes",
-    "2. Data support::Data export": [
+    "6. Annotation layers::4. Tagset customization": "Yes",
+    "2. Data support::2. Data export": [
       "The data can be exported",
       "The data can be stored with a third party storage platform (e.g. Git repository)"
     ],
-    "2. Data support::Input format": [
+    "2. Data support::1. Input format": [
       "Raw text",
       "CONLL-U",
       "XML",
       "TSV"
     ],
-    "2. Data support::Integration of other resources": [
+    "2. Data support::3. Integration of other resources": [
       "External databases (e.g. dictionaries)"
     ],
-    "3. Language support::Language independence": "Yes",
-    "3. Language support::Multiple writing scripts": "Yes",
-    "3. Language support::Writing direction": [
+    "3. Language support::1. Language independence": "Yes",
+    "3. Language support::2. Multiple writing scripts": "Yes",
+    "3. Language support::4. Writing direction": [
       "Left to Right",
       "Right to Left"
     ],
-    "3. Language support::Handling of Unicode": "Yes",
-    "3. Language support::Language of the interface": [
+    "3. Language support::3. Handling of Unicode": "Yes",
+    "3. Language support::5. Language of the interface": [
       "English"
     ],
     "1. Software::1. Active maintenance": "Yes",
@@ -1849,24 +1849,24 @@ let tools = [     // added for anonymous submission
       "Nested expressions",
       "Overlapping expressions"
     ],
-    "4. User Interface::Annotation display": [
+    "4. User Interface::1. Annotation display": [
       "Image (e.g. a graph or coloured text)",
       "Table",
       "Raw format (e.g. CONLL-U)"
     ],
-    "4. User Interface::Annotation mode": [
+    "4. User Interface::2. Annotation mode": [
       "Keyboard",
       "Mouse (e.g. drag & drop)"
     ],
-    "4. User Interface::Keyboard annotation and shortcuts": "Yes",
-    "5. Workflow::Automatic pre-annotation": "Yes",
-    "5. Workflow::Automatic recommendation": "Yes",
-    "5. Workflow::Collaborative annotation": [
+    "4. User Interface::3. Keyboard annotation and shortcuts": "Yes",
+    "5. Workflow::1. Automatic pre-annotation": "Yes",
+    "5. Workflow::2. Automatic recommendation": "Yes",
+    "5. Workflow::3. Collaborative annotation": [
       "annotators working independently on their own annotations of the same data",
       "annotators working together on the same shared annotation of the data"
     ],
-    "5. Workflow::Project management": "Yes",
-    "5. Workflow::User roles": "Yes",
+    "5. Workflow::4. Project management": "Yes",
+    "5. Workflow::5. User roles": "Yes",
     "7. Annotation Analysis::2. Agreement calculation": "Yes",
     "7. Annotation Analysis::1. Comparison of annotations": "Yes",
     "7. Annotation Analysis::4. Mass editing": "No",
@@ -1902,28 +1902,28 @@ let tools = [     // added for anonymous submission
     "Tool ID::Short description": "A collaborative annotation tool for the treebank developement. It allows the creation of lexicons from annotated data. To ensure effective collaboration, ArboratorGrew provides a tag system.",
     "Tool ID::Tool name": "ArboratorGrew",
     "Tool ID::Website": "https://arborator.grew.fr/",
-    "2. Data support::Data export": [
+    "2. Data support::2. Data export": [
       "The data can be exported",
       "The data can be stored with a third party storage platform (e.g. Git repository)"
     ],
-    "2. Data support::Input format": [
+    "2. Data support::1. Input format": [
       "Raw text",
       "CONLL-U"
     ],
-    "2. Data support::Integration of other resources": [],
-    "6. Annotation layers::Annotation scope": [
+    "2. Data support::3. Integration of other resources": [],
+    "6. Annotation layers::2. Annotation scope": [
       "Annotation inside sentences"
     ],
-    "6. Annotation layers::Annotation types": [
+    "6. Annotation layers::1. Annotation types": [
       "Tokens (e.g. part-of-speech tags)",
       "Multi-tokens (e.g. multi-word expressions)",
       "Relations (e.g. dependencies)"
     ],
-    "6. Annotation layers::Segmentation": [
+    "6. Annotation layers::3. Segmentation": [
       "word-level",
       "sentence-level"
     ],
-    "6. Annotation layers::Tagset customization": "Yes",
+    "6. Annotation layers::4. Tagset customization": "Yes",
     "8. Universal Dependencies::2. UD validation": "Yes",
     "8. Universal Dependencies::1. UD-specific annotations": [
       "Lemmas",
@@ -1937,34 +1937,34 @@ let tools = [     // added for anonymous submission
     "8. Universal Dependencies::Other 6. Annotation layers": [],
     "9. PARSEME::2. Consistency check": "No",
     "9. PARSEME::1. PARSEME-specific annotations": [],
-    "4. User Interface::Annotation display": [
+    "4. User Interface::1. Annotation display": [
       "Image (e.g. a graph or coloured text)",
       "Table",
       "Raw format (e.g. CONLL-U)"
     ],
-    "4. User Interface::Annotation mode": [
+    "4. User Interface::2. Annotation mode": [
       "Mouse (e.g. drag & drop)"
     ],
-    "4. User Interface::Keyboard annotation and shortcuts": "No",
-    "5. Workflow::Automatic pre-annotation": "Yes",
-    "5. Workflow::Automatic recommendation": "Yes",
-    "5. Workflow::Collaborative annotation": [
+    "4. User Interface::3. Keyboard annotation and shortcuts": "No",
+    "5. Workflow::1. Automatic pre-annotation": "Yes",
+    "5. Workflow::2. Automatic recommendation": "Yes",
+    "5. Workflow::3. Collaborative annotation": [
       "annotators working independently on their own annotations of the same data"
     ],
-    "5. Workflow::Project management": "Yes",
-    "5. Workflow::User roles": "Yes",
+    "5. Workflow::4. Project management": "Yes",
+    "5. Workflow::5. User roles": "Yes",
     "7. Annotation Analysis::2. Agreement calculation": "Yes",
     "7. Annotation Analysis::1. Comparison of annotations": "Yes",
     "7. Annotation Analysis::4. Mass editing": "Yes",
     "7. Annotation Analysis::3. Querying": "Yes",
-    "3. Language support::Language independence": "Yes",
-    "3. Language support::Multiple writing scripts": "Yes",
-    "3. Language support::Writing direction": [
+    "3. Language support::1. Language independence": "Yes",
+    "3. Language support::2. Multiple writing scripts": "Yes",
+    "3. Language support::4. Writing direction": [
       "Left to Right",
       "Right to Left"
     ],
-    "3. Language support::Handling of Unicode": "Yes",
-    "3. Language support::Language of the interface": [
+    "3. Language support::3. Handling of Unicode": "Yes",
+    "3. Language support::5. Language of the interface": [
       "English",
       "French"
     ]
@@ -2190,8 +2190,6 @@ function populateViz(tool) {
 		header.appendChild(img);
 	}
 
-
-
 	toolsVisualization.appendChild(header);
 
 	const shortDesc = document.createElement("div");
@@ -2215,17 +2213,12 @@ function populateViz(tool) {
 		shortDesc.appendChild(form);
 	}
 
-
-
 	// Details
 	const details = document.createElement('div');
 	details.className = 'details';
 
 	const infoBox = document.createElement('div');
 	infoBox.className = 'info-box';
-
-
-
 
 	const add_features = document.createElement("p");
 	if (tool["Tool ID::Information provider"] == 'Developer') {
@@ -2236,8 +2229,6 @@ function populateViz(tool) {
 	infoBox.appendChild(add_features);
 
 	// Useful links
-	console.log(tool["Tool ID::Other useful links"]);
-	console.log(tool)
 	if (tool["Tool ID::Other useful links"] && Array.isArray(tool["Tool ID::Other useful links"])) {
 		const projectsSection = document.createElement('div');
 		projectsSection.className = 'example-projects';
@@ -2280,23 +2271,32 @@ function populateViz(tool) {
 		infoBox.appendChild(projectsSection);
 	}
 	details.appendChild(infoBox);
-	// toolsVisualization.appendChild(details);
 
 	// Info box with features (right side of card)
 	const featuresBox = document.createElement('div');
 	featuresBox.className = 'features-box';
-	// featuresBox.style.flexDirection = 'column';
-	// featuresBox.style.alignItems = 'flex-end';
 
-	Object.entries(tool).forEach(([key, value]) => {
+  let lastprefix = '';
+  Object.entries(tool)
+  .sort(([fa], [fb]) =>
+    fa.localeCompare(fb, undefined, { numeric: true, sensitivity: "base" })
+  )
+	.forEach(([key, value]) => {
 		if (!key.startsWith('Tool ID::')) {
 			const [prefix, question] = key.split('::');
 			if (!question) return;
+      if (prefix != lastprefix) {
+        const sectionRow = document.createElement('p');
+        sectionRow.className = 'tool-section';
+        sectionRow.textContent = prefix;
+        featuresBox.appendChild(sectionRow);
+        lastprefix = prefix;
+      }
+
 			// Create a container for value/count pairs
 			const featureRow = document.createElement('div');
 			featureRow.style.display = 'flex';
 			featureRow.style.flexWrap = 'wrap';
-	//         // featureRow.style.marginBottom = '4px';
 
 			// Handle array or single value
 			let values = Array.isArray(value) ? value : [value];
@@ -2421,39 +2421,21 @@ function buildTools() {
 			let button_minus = card.querySelector('.minus');
 			button_plus.style.display = 'inline-flex';
 			button_minus.style.display = 'none';
-
-			// let cards = document.querySelectorAll(".card");
-			// cards.forEach(other_card => {
-
-			//     if (other_card.getAttribute('data-value') !== card.getAttribute('data-value'))  {
-			//         let button_plus = other_card.querySelector('.plus');
-			//         let button_minus = other_card.querySelector('.minus');
-			//         button_plus.style.display = 'none';
-			//         button_minus.style.display = 'inline-flex';
-			//     }
-			// })
 		});
 
 		card.addEventListener('mouseover', function(e) {
-			// console.log(card);
 			e.stopPropagation();
 			let button = card.querySelector('.plus');
-			// console.log(button);
 			button.classList.add("orange-plus");
-			// console.log(button);
 		});
 
 		card.addEventListener('mouseout', function(e) {
-			// console.log(card);
 			e.stopPropagation();
 			let button = card.querySelector('.plus');
-			// console.log(button);
 			button.classList.remove("orange-plus");
-			// console.log(button);
 		});
 
 		card.appendChild(header);
-
 		toolsContainer.appendChild(card);
 	});
 }
@@ -2527,7 +2509,11 @@ function buildSelections() {
 			featureQuestion.className = 'feature-question';
 			featureQuestion.innerHTML = `<h4>${question}</h4>`;
 
-			Object.entries(values).forEach(([value, count]) => {
+			Object.entries(values)
+      .sort(([fa], [fb]) =>
+      fa.localeCompare(fb, undefined, { numeric: true, sensitivity: "base" })
+      )
+      .forEach(([value, count]) => {
 				const pairSpan = document.createElement('span');
 				pairSpan.style.display = 'inline-flex';
 				pairSpan.style.alignItems = 'center';
@@ -2687,12 +2673,12 @@ function fixResizer () {
 // ON LOAD
 document.addEventListener("DOMContentLoaded", () => {
 
-	const instructions = document.getElementById('instructions');
-    const collapseBtn = document.getElementById('collapse-instructions');
-    collapseBtn.addEventListener('click', function() {
-        instructions.classList.toggle('collapsed');
-        collapseBtn.textContent = instructions.classList.contains('collapsed') ? '+' : '−';
-    });
+	// const instructions = document.getElementById('instructions');
+  //   const collapseBtn = document.getElementById('collapse-instructions');
+  //   collapseBtn.addEventListener('click', function() {
+  //       instructions.classList.toggle('collapsed');
+  //       collapseBtn.textContent = instructions.classList.contains('collapsed') ? '+' : '−';
+  //   });
 
 	buildUI();
 
