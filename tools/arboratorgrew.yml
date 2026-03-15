@@ -22,24 +22,24 @@ Tool ID:
   Tool name: ArboratorGrew
   Website: https://arborator.grew.fr/
 2. Data support:
-  Data export:
+  2. Data export:
   - The data can be exported
   - The data can be stored with a third party storage platform (e.g. Git repository)
-  Input format:
+  1. Input format:
   - Raw text
   - CONLL-U
-  Integration of other resources: []
+  3. Integration of other resources: []
 6. Annotation layers:
-  Annotation scope:
+  2. Annotation scope:
   - Annotation inside sentences
-  Annotation types:
+  1. Annotation types:
   - Tokens (e.g. part-of-speech tags)
   - Multi-tokens (e.g. multi-word expressions)
   - Relations (e.g. dependencies)
-  Segmentation:
+  3. Segmentation:
   - word-level
   - sentence-level
-  Tagset customization: 'Yes'
+  4. Tagset customization: 'Yes'
 8. Universal Dependencies:
   2. UD validation: 'Yes'
   1. UD-specific annotations:
@@ -55,32 +55,32 @@ Tool ID:
   2. Consistency check: 'No'
   1. PARSEME-specific annotations: []
 4. User Interface:
-  Annotation display:
+  1. Annotation display:
   - Image (e.g. a graph or coloured text)
   - Table
   - Raw format (e.g. CONLL-U)
-  Annotation mode:
+  2. Annotation mode:
   - Mouse (e.g. drag & drop)
-  Keyboard annotation and shortcuts: 'No'
+  3. Keyboard annotation and shortcuts: 'No'
 5. Workflow:
-  Automatic pre-annotation: 'Yes'
-  Automatic recommendation: 'Yes'
-  Collaborative annotation:
+  1. Automatic pre-annotation: 'Yes'
+  2. Automatic recommendation: 'Yes'
+  3. Collaborative annotation:
   - annotators working independently on their own annotations of the same data
-  Project management: 'Yes'
-  User roles: 'Yes'
+  4. Project management: 'Yes'
+  5. User roles: 'Yes'
 7. Annotation Analysis:
   2. Agreement calculation: 'Yes'
   1. Comparison of annotations: 'Yes'
   4. Mass editing: 'Yes'
   3. Querying: 'Yes'
 3. Language support:
-  Language independence: 'Yes'
-  Multiple writing scripts: 'Yes'
-  Writing direction:
+  1. Language independence: 'Yes'
+  2. Multiple writing scripts: 'Yes'
+  4. Writing direction:
     - Left to Right
     - Right to Left
-  Handling of Unicode: 'Yes'
-  Language of the interface:
+  3. Handling of Unicode: 'Yes'
+  5. Language of the interface:
   - English
   - French

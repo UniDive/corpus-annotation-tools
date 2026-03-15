@@ -23,7 +23,7 @@ with open("results_230125.tsv") as csvfile:
 						key, value = element.rsplit(" ", 1)
 						out_dict[prefix][name].append({key: value})
 
-			elif name in ["Operating system", "Software availability", "Input format", "Integration of other resources", "Data export", "Diversity features", "Language of the interface", "Segmentation", "Annotation types", "Annotation scope", "Annotation mode", "Annotation display", "Collaborative annotation", "UD-specific annotations", "Other annotation layers", "PARSEME-specific annotations"]:
+			elif name in ["Operating system", "6. Software access", "1. Input format", "3. Integration of other resources", "2. Data export", "Diversity features", "5. Language of the interface", "3. Segmentation", "1. Annotation types", "2. Annotation scope", "2. Annotation mode", "1. Annotation display", "3. Collaborative annotation", "1. UD-specific annotations", "Other Annotation layers", "1. PARSEME-specific annotations"]:
 				out_dict[prefix][name] = [x.strip() for x in row[field].split(",") if x.strip()]
 
 			else:

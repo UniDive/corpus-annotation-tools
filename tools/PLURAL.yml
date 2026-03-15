@@ -1,26 +1,26 @@
 6. Annotation layers:
-  Annotation scope:
+  2. Annotation scope:
   - Annotation inside sentences
-  Annotation types:
+  1. Annotation types:
   - Tokens (e.g. part-of-speech tag morphological features)
   - Multi-tokens (e.g. multi-word expressions)
   - Relations (e.g. dependencies)
-  Segmentation:
+  3. Segmentation:
   - word-level
-  Tagset customization: 'Yes'
+  4. Tagset customization: 'Yes'
 2. Data support:
-  Data export:
+  2. Data export:
   - The data can be exported
-  Input format:
+  1. Input format:
   - CONLL-U
-  Integration of other resources: []
+  3. Integration of other resources: []
 3. Language support:
-  Language independence: 'Yes'
-  Multiple writing scripts: 'Yes'
-  Writing direction:
+  1. Language independence: 'Yes'
+  2. Multiple writing scripts: 'Yes'
+  4. Writing direction:
   - Left to Right
-  Handling of Unicode: 'Yes'
-  Language of the interface:
+  3. Handling of Unicode: 'Yes'
+  5. Language of the interface:
   - English
 1. Software:
   1. Active maintenance: 'Yes'
@@ -63,19 +63,19 @@ Tool ID:
   2. Consistency check: 'No'
   1. PARSEME-specific annotations: []
 4. User Interface:
-  Annotation display:
+  1. Annotation display:
   - Image (e.g. a graph or coloured text)
   - Raw format (e.g. CONLL-U)
-  Annotation mode:
+  2. Annotation mode:
   - Keyboard
-  Keyboard annotation and shortcuts: 'Yes'
+  3. Keyboard annotation and shortcuts: 'Yes'
 5. Workflow:
-  Automatic pre-annotation: 'No'
-  Automatic recommendation: 'Yes'
-  Collaborative annotation:
+  1. Automatic pre-annotation: 'No'
+  2. Automatic recommendation: 'Yes'
+  3. Collaborative annotation:
   - 'No'
-  Project management: 'No'
-  User roles: 'No'
+  4. Project management: 'No'
+  5. User roles: 'No'
 7. Annotation Analysis:
   2. Agreement calculation: 'No'
   1. Comparison of annotations: 'No'

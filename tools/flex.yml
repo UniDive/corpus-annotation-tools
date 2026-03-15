@@ -1,37 +1,37 @@
 6. Annotation layers:
-  Annotation scope:
+  2. Annotation scope:
   - Annotation inside sentences
   - Annotation across sentences
   - Annotation of full sentences / paragraphs / documents
-  Annotation types:
+  1. Annotation types:
   - Tokens (e.g. part-of-speech tag morphological features)
   - Spans (e.g. names entities)
   - Multi-tokens (e.g. multi-word expressions)
-  Segmentation:
+  3. Segmentation:
   - word-level
   - sentence-level
-  Tagset customization: 'Yes'
+  4. Tagset customization: 'Yes'
 2. Data support:
-  Data export:
+  2. Data export:
   - The data can be exported
-  Input format:
+  1. Input format:
   - Raw text
   - XML
   - other
-  Integration of other resources:
+  3. Integration of other resources:
   - Audio
   - Video
   - Image
   - PDF
   - External databases (e.g. dictionaries)
 3. Language support:
-  Language independence: 'Yes'
-  Multiple writing scripts: 'Yes'
-  Writing direction:
+  1. Language independence: 'Yes'
+  2. Multiple writing scripts: 'Yes'
+  4. Writing direction:
   - Left to Right
   - Right to Left
-  Handling of Unicode: 'Yes'
-  Language of the interface:
+  3. Handling of Unicode: 'Yes'
+  5. Language of the interface:
   - English
 1. Software:
   1. Active maintenance: 'Yes'
@@ -63,19 +63,19 @@ Tool ID:
   2. Consistency check: 'No'
   1. PARSEME-specific annotations: []
 4. User Interface:
-  Annotation display:
+  1. Annotation display:
   - Table
   - Raw format (e.g. CONLL-U)
-  Annotation mode:
+  2. Annotation mode:
   - Keyboard
   - Mouse (e.g. drag & drop)
-  Keyboard annotation and shortcuts: 'Yes'
+  3. Keyboard annotation and shortcuts: 'Yes'
 5. Workflow:
-  Automatic pre-annotation: partial
-  Automatic recommendation: 'No'
-  Collaborative annotation: []
-  Project management: partial
-  User roles: 'No'
+  1. Automatic pre-annotation: partial
+  2. Automatic recommendation: 'No'
+  3. Collaborative annotation: []
+  4. Project management: partial
+  5. User roles: 'No'
 7. Annotation Analysis:
   2. Agreement calculation: 'No'
   1. Comparison of annotations: partial
