@@ -1,0 +1,21 @@
+{
+  "Name": "ELAN",
+  "URL": "https://archive.mpi.nl/tla/elan",
+  "Licence": "GPL-3.0",
+  "Infrastructure": null,
+  "Publication": [],
+  "Input format": [
+    "Raw text",
+    "XML",
+    "other",
+    "TSV"
+  ],
+  "Description": "ELAN is a professional tool for the creation, annotation, and analysis of complex multimedia data, enabling time-aligned transcription and linguistic analysis.",
+  "Software type": "Desktop-based application",
+  "Annotation types": [
+    "Tokens (e.g. part-of-speech tag morphological features)",
+    "Spans (e.g. names entities)",
+    "Multi-tokens (e.g. multi-word expressions)",
+    "Relations (e.g. dependencies)"
+  ]
+}

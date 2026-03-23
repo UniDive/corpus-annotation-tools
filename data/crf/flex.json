@@ -1,0 +1,19 @@
+{
+  "Name": "FLeX",
+  "URL": "https://software.sil.org/fieldworks/",
+  "Licence": "GNU LGPL",
+  "Infrastructure": null,
+  "Publication": [],
+  "Input format": [
+    "Raw text",
+    "XML",
+    "other"
+  ],
+  "Description": "FLeX is a comprehensive linguistic software tool designed for documenting, analyzing, and managing lexical and textual data, particularly for under-documented languages.",
+  "Software type": "Desktop-based application",
+  "Annotation types": [
+    "Tokens (e.g. part-of-speech tag morphological features)",
+    "Spans (e.g. names entities)",
+    "Multi-tokens (e.g. multi-word expressions)"
+  ]
+}

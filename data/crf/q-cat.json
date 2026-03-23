@@ -1,0 +1,19 @@
+{
+  "Name": "Q-CAT",
+  "URL": "http://hdl.handle.net/11356/1844",
+  "Licence": "Apache-2.0",
+  "Infrastructure": null,
+  "Publication": [],
+  "Input format": [
+    "CONLL-U",
+    "XML"
+  ],
+  "Description": "Q-CAT is a tool for manual linguistic annotation of corpora, which also enables advanced queries on top of these annotations.",
+  "Software type": "Desktop-based application",
+  "Annotation types": [
+    "Tokens (e.g. part-of-speech tag morphological features)",
+    "Spans (e.g. names entities)",
+    "Multi-tokens (e.g. multi-word expressions)",
+    "Relations (e.g. dependencies)"
+  ]
+}

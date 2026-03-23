@@ -1,0 +1,22 @@
+{
+  "Name": "WebAnno",
+  "URL": "https://webanno.github.io/webanno/",
+  "Licence": "Apache-2.0",
+  "Infrastructure": null,
+  "Publication": [],
+  "Input format": [
+    "Raw text",
+    "CONLL-U",
+    "XML",
+    "TSV"
+  ],
+  "Description": "WebAnno is a web-based collaborative tool for linguistic annotation that supports various annotation tasks, including POS tagging, dependency parsing, and coreference resolution. It provides collaborative features and works well with formats like CoNLL-U.",
+  "Software type": "Web-based application",
+  "Annotation types": [
+    "Tokens (e.g. part-of-speech tag morphological features)",
+    "Spans (e.g. names entities)",
+    "Multi-tokens (e.g. multi-word expressions)",
+    "Relations (e.g. dependencies)",
+    "Chains (e.g. coreferences)"
+  ]
+}

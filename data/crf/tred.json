@@ -1,0 +1,21 @@
+{
+  "Name": "TrEd",
+  "URL": "https://ufal.mff.cuni.cz/tred",
+  "Licence": "GPL-2.0",
+  "Infrastructure": null,
+  "Publication": [],
+  "Input format": [
+    "Raw text",
+    "CONLL-U",
+    "XML"
+  ],
+  "Description": "TrEd is a fully customizable and programmable graphical editor and viewer for tree-like structures.",
+  "Software type": "Desktop-based application",
+  "Annotation types": [
+    "Tokens (e.g. part-of-speech tag morphological features)",
+    "Spans (e.g. names entities)",
+    "Multi-tokens (e.g. multi-word expressions)",
+    "Relations (e.g. dependencies)",
+    "Chains (e.g. coreferences)"
+  ]
+}
