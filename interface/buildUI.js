@@ -2164,174 +2164,217 @@ function collapse() {
 	});
 }
 
+const FEATURE_TOOLTIPS = {
+	'1. Software::1. Active maintenance':                    'Is the tool actively maintained and some user support is available if needed?',
+	'1. Software::2. License':                               'Please specify the license information for the tool (e.g. Apache 2.0).',
+	'1. Software::3. Software type':                         'Is the tool desktop-based or web-based?',
+	'1. Software::4. Operating system':                      'If the tool can be installed as a desktop-based application, which operating systems are supported?',
+	'1. Software::5. Offline usage (for web-based applications)': 'Can the tool be used offline with a delayed synchronisation with the server?',
+	'1. Software::6. Software access':                       'How is the software made available? (freely online / upon request / self-hosted)',
+	'2. Data support::1. Input format':                      'Please specify the list of supported formats when importing a corpus.',
+	'2. Data support::2. Data export':                       'Which options for (raw, annotated, curated) data export apply?',
+	'2. Data support::3. Integration of other resources':    'Does the tool support integration of data types other than text? (e.g. Audio, Video, Image, External databases)',
+	'3. Language support::1. Language independence':         'Is the tool generally considered to be language-independent, i.e. can it be configured to annotate data in many different languages?',
+	'3. Language support::2. Multiple writing scripts':      'Does the tool support multiple writing scripts (e.g. Latin, Cyrillic, Arabic)?',
+	'3. Language support::3. Handling of Unicode':           'Can the tool handle Unicode and special symbols?',
+	'3. Language support::4. Writing direction':             'Does the tool support right-to-left languages (e.g. Arabic, Hebrew)?',
+	'3. Language support::5. Language of the interface':     'What languages are available for the tool\'s interface?',
+	'4. User Interface::1. Annotation display':              'What kind of visualisations are available for annotated data? (Graphical / Table / Raw format such as CoNLL-U)',
+	'4. User Interface::2. Annotation mode':                 'How can annotations be entered? (Keyboard / Mouse / Touchscreen)',
+	'4. User Interface::3. Keyboard annotation and shortcuts': 'Does the tool allow for keyboard shortcuts (macros) to be defined, i.e. any shorthand action that speeds up the selection of tags?',
+	'5. Workflow::1. Automatic pre-annotation':              'Does the tool enable automatic pre-annotation of the data (e.g. automatic parsing)?',
+	'5. Workflow::2. Automatic recommendation':              'Does the tool enable automatic annotation recommendation based on active learning from the already annotated data (bootstrapping)?',
+	'5. Workflow::3. Collaborative annotation':              'Does the tool support collaborative annotation with more than one annotator working on the data?',
+	'5. Workflow::4. Project management':                    'Does the tool provide a project management dashboard (e.g. overview of assigned documents and progress)?',
+	'5. Workflow::5. User roles':                            'Does the tool enable the users to be differentiated by their roles (e.g. admin, manager, annotator, curator)?',
+	'6. Annotation layers::1. Annotation types':             'What types of annotation does the tool support? (Tokens / Spans / Multi-tokens / Relations / Chains)',
+	'6. Annotation layers::2. Annotation scope':             'What level of annotation does the tool support? (Inside sentences / Across sentences / Full documents)',
+	'6. Annotation layers::3. Segmentation':                 'Does the tool allow to change token or sentence segmentation (i.e. merge or split words or sentences)?',
+	'6. Annotation layers::4. Tagset customization':         'Does the tool enable the user to modify the list of annotation tags (labels) or define their own?',
+	'7. Annotation Analysis::1. Comparison of annotations':  'Does the tool provide an interface to display the differences between annotations by different annotators?',
+	'7. Annotation Analysis::2. Agreement calculation':      'Does the tool calculate inter-annotator agreement scores (e.g. Cohen\'s Kappa)?',
+	'7. Annotation Analysis::3. Querying':                   'Does the tool support performing corpus queries on top of annotations?',
+	'7. Annotation Analysis::4. Mass editing':               'Does the tool enable to globally change several annotations at once (e.g. with rules)?',
+	'8. Universal Dependencies::1. UD-specific annotations': 'Which UD-specific annotation types can be edited in the tool? (Lemmas, UPOS, FEATS, XPOS, Multi-word tokens, Basic/Enhanced dependencies, Empty nodes, Metadata)',
+	'8. Universal Dependencies::2. UD validation':           'Does the tool support annotation validation using the official UD validation tool?',
+	'8. Universal Dependencies::Other 6. Annotation layers': 'Other annotation layers handled by the tool beyond the standard UD features.',
+	'9. PARSEME::1. PARSEME-specific annotations':           'Which PARSEME-specific MWE annotation types does the tool support? (Discontinuous / Nested / Overlapping expressions)',
+	'9. PARSEME::2. Consistency check':                      'Does the tool enable checking whether the same combination of words is annotated consistently across the corpus (using the PARSEME consistency checker or similar)?',
+};
+
 function populateViz(tool) {
-	// console.log(tool);
 	const toolsVisualization = document.querySelector('.tools-viz');
 	toolsVisualization.innerHTML = '';
 
-	const header = document.createElement('div');
-	header.className = 'card-header';
+	// ── LEFT COLUMN: all metadata ──────────────────────────────────
+	const infoBox = document.createElement('div');
+	infoBox.className = 'info-box';
 
-	// Title
-	const h3 = document.createElement('h3');
-	const link = document.createElement('a');
-	link.href = tool["Tool ID::Website"];
-	link.target = "_blank";
-	link.textContent = tool["Tool ID::Tool name"];
-	h3.appendChild(link);
-	header.appendChild(h3);
+	// Header: logo + name + links
+	const vizHeader = document.createElement('div');
+	vizHeader.className = 'viz-header';
 
-	// Logo
 	if (tool["Tool ID::Logo"]) {
 		const img = document.createElement('img');
 		img.src = tool["Tool ID::Logo"];
 		img.alt = `${tool["Tool ID::Tool name"]} Logo`;
-		// img.style.display = 'none';
-		header.appendChild(img);
+		img.className = 'viz-logo';
+		vizHeader.appendChild(img);
 	}
 
-	toolsVisualization.appendChild(header);
+	const titleBlock = document.createElement('div');
+	titleBlock.className = 'viz-title';
 
-	const shortDesc = document.createElement("div");
-	shortDesc.className = "short-description";
+	const h3 = document.createElement('h3');
+	h3.textContent = tool["Tool ID::Tool name"];
+	titleBlock.appendChild(h3);
 
-	const description = document.createElement("p");
-	description.innerHTML = `${tool["Tool ID::Short description"] || ''}`;
-	shortDesc.appendChild(description);
-	toolsVisualization.appendChild(shortDesc);
-
-	if (tool['Tool ID::Code repository'] !== '') {
-		const form = document.createElement('form');
-		form.action = tool['Tool ID::Code repository'];
-		form.method = "get";
-		form.target = "_blank";
-		const repository = document.createElement('button');
-		repository.className = 'repo';
-		repository.setAttribute('aria-label', 'Code repository');
-		repository.textContent = "Code repository"
-		form.appendChild(repository)
-		shortDesc.appendChild(form);
+	if (tool["Tool ID::Website"]) {
+		const websiteLink = document.createElement('a');
+		websiteLink.href = tool["Tool ID::Website"];
+		websiteLink.target = '_blank';
+		websiteLink.className = 'viz-link';
+		websiteLink.innerHTML = '<i class="fa-solid fa-globe"></i> Website';
+		titleBlock.appendChild(websiteLink);
 	}
 
-	// Details
-	const details = document.createElement('div');
-	details.className = 'details';
-
-	const infoBox = document.createElement('div');
-	infoBox.className = 'info-box';
-
-	const add_features = document.createElement("p");
-	if (tool["Tool ID::Information provider"] == 'Developer') {
-		add_features.innerHTML = `${tool["Tool ID::Additional features"] || ""}. Information provided by tool developer.`;
-	} else {
-		add_features.innerHTML = `${tool["Tool ID::Additional features"] || ""}.`
+	if (tool['Tool ID::Code repository'] && tool['Tool ID::Code repository'] !== '') {
+		const repoLink = document.createElement('a');
+		repoLink.href = tool['Tool ID::Code repository'];
+		repoLink.target = '_blank';
+		repoLink.className = 'viz-link';
+		repoLink.innerHTML = '<i class="fa-brands fa-github"></i> Code repository';
+		titleBlock.appendChild(repoLink);
 	}
-	infoBox.appendChild(add_features);
 
-	// Useful links
+	vizHeader.appendChild(titleBlock);
+	infoBox.appendChild(vizHeader);
+
+	// Description (respondent-provided tagline)
+	if (tool["Tool ID::Short description"]) {
+		const desc = document.createElement('p');
+		desc.className = 'viz-description';
+		desc.innerHTML = tool["Tool ID::Short description"];
+		infoBox.appendChild(desc);
+	}
+
+	// Additional features text (if present and non-empty)
+	const additionalText = (tool["Tool ID::Additional features"] || "").trim();
+	if (additionalText) {
+		const addFeatures = document.createElement('p');
+		addFeatures.className = 'viz-additional';
+		addFeatures.innerHTML = additionalText;
+		infoBox.appendChild(addFeatures);
+	}
+
+	// Information provider note
+	if (tool["Tool ID::Information provider"] === 'Developer') {
+		const note = document.createElement('p');
+		note.className = 'viz-provider-note';
+		note.textContent = 'Information provided by tool developer.';
+		infoBox.appendChild(note);
+	}
+
+	// Other useful links
 	if (tool["Tool ID::Other useful links"] && Array.isArray(tool["Tool ID::Other useful links"])) {
-		const projectsSection = document.createElement('div');
-		projectsSection.className = 'example-projects';
-		projectsSection.innerHTML = '<h4>Other useful links</h4>';
-		const example_list = document.createElement('ul');
+		const linksSection = document.createElement('div');
+		linksSection.className = 'example-projects';
+		linksSection.innerHTML = '<h4>Other useful links</h4>';
+		const list = document.createElement('ul');
 		tool["Tool ID::Other useful links"].forEach((tool_link) => {
 			Object.entries(tool_link).forEach(([link_key, link_ref]) => {
-				// console.log(link_key, link_ref);
-				const listElem = document.createElement('li');
-				const linkElem = document.createElement('a');
-				linkElem.href = link_ref;
-				linkElem.textContent = link_key;
-				linkElem.target = '_blank';
-				listElem.appendChild(linkElem);
-				example_list.appendChild(listElem);
+				const li = document.createElement('li');
+				const a = document.createElement('a');
+				a.href = link_ref;
+				a.textContent = link_key;
+				a.target = '_blank';
+				li.appendChild(a);
+				list.appendChild(li);
 			});
 		});
-		projectsSection.appendChild(example_list);
-		infoBox.appendChild(projectsSection);
+		linksSection.appendChild(list);
+		infoBox.appendChild(linksSection);
 	}
 
+	// Example projects
 	if (tool["Tool ID::Example projects"] && Array.isArray(tool["Tool ID::Example projects"])) {
 		const projectsSection = document.createElement('div');
 		projectsSection.className = 'example-projects';
 		projectsSection.innerHTML = '<h4>Example projects</h4>';
-		const example_list = document.createElement('ul');
+		const list = document.createElement('ul');
 		tool["Tool ID::Example projects"].forEach((tool_link) => {
 			Object.entries(tool_link).forEach(([link_key, link_ref]) => {
-				// console.log(link_key, link_ref);
-				const listElem = document.createElement('li');
-				const linkElem = document.createElement('a');
-				linkElem.href = link_ref;
-				linkElem.textContent = link_key;
-				linkElem.target = '_blank';
-				listElem.appendChild(linkElem);
-				example_list.appendChild(listElem);
+				const li = document.createElement('li');
+				const a = document.createElement('a');
+				a.href = link_ref;
+				a.textContent = link_key;
+				a.target = '_blank';
+				li.appendChild(a);
+				list.appendChild(li);
 			});
 		});
-		projectsSection.appendChild(example_list);
+		projectsSection.appendChild(list);
 		infoBox.appendChild(projectsSection);
 	}
-	details.appendChild(infoBox);
 
-	// Info box with features (right side of card)
+	toolsVisualization.appendChild(infoBox);
+
+	// ── RIGHT COLUMN: feature values ──────────────────────────────
 	const featuresBox = document.createElement('div');
 	featuresBox.className = 'features-box';
 
-  let lastprefix = '';
-  Object.entries(tool)
-  .sort(([fa], [fb]) =>
-    fa.localeCompare(fb, undefined, { numeric: true, sensitivity: "base" })
-  )
+	const featuresHeading = document.createElement('h4');
+	featuresHeading.className = 'features-heading';
+	featuresHeading.textContent = 'Tool features';
+	featuresBox.appendChild(featuresHeading);
+
+	let lastprefix = '';
+	Object.entries(tool)
+	.sort(([fa], [fb]) =>
+		fa.localeCompare(fb, undefined, { numeric: true, sensitivity: "base" })
+	)
 	.forEach(([key, value]) => {
 		if (!key.startsWith('Tool ID::')) {
 			const [prefix, question] = key.split('::');
 			if (!question) return;
-      if (prefix != lastprefix) {
-        const sectionRow = document.createElement('p');
-        sectionRow.className = 'tool-section';
-        sectionRow.textContent = prefix;
-        featuresBox.appendChild(sectionRow);
-        lastprefix = prefix;
-      }
+			if (prefix !== lastprefix) {
+				const sectionRow = document.createElement('p');
+				sectionRow.className = 'tool-section';
+				sectionRow.textContent = prefix;
+				featuresBox.appendChild(sectionRow);
+				lastprefix = prefix;
+			}
 
-			// Create a container for value/count pairs
 			const featureRow = document.createElement('div');
-			featureRow.style.display = 'flex';
-			featureRow.style.flexWrap = 'wrap';
+			featureRow.className = 'feature-row';
 
-			// Handle array or single value
+			const valuesWrapper = document.createElement('div');
+			valuesWrapper.className = 'feature-values';
+
 			let values = Array.isArray(value) ? value : [value];
 			values.forEach(val => {
 				if (val && val.trim() !== "") {
-					const pairSpan = document.createElement('span');
-					pairSpan.style.display = 'inline-flex';
-					pairSpan.style.alignItems = 'center';
-
 					const valueP = document.createElement('p');
 					valueP.className = 'tool-value';
 					valueP.textContent = val;
-
-					pairSpan.appendChild(valueP);
-					featureRow.appendChild(pairSpan);
+					valuesWrapper.appendChild(valueP);
 				}
 			});
 
-			// Add question label and values
-			if (featureRow.childNodes.length > 0) {
+			if (valuesWrapper.childNodes.length > 0) {
 				const label = document.createElement('p');
-				label.classList.add("tool-question")
+				label.classList.add("tool-question");
 				label.textContent = `${question}: `;
-				// label.style.fontWeight = 'bold';
-				// label.style.marginRight = '6px';
-				featureRow.insertBefore(label, featureRow.firstChild);
+				const tooltip = FEATURE_TOOLTIPS[key];
+				if (tooltip) label.dataset.tooltip = tooltip;
+				featureRow.appendChild(label);
+				featureRow.appendChild(valuesWrapper);
 				featuresBox.appendChild(featureRow);
 			}
 		}
 	});
-	details.appendChild(featuresBox);
-	// details.appendChild(infoBox);
 
-	toolsVisualization.appendChild(details);
-
+	toolsVisualization.appendChild(featuresBox);
 }
 
 function buildTools() {
@@ -2507,7 +2550,11 @@ function buildSelections() {
     .forEach(([question, values]) => {
 			const featureQuestion = document.createElement('div');
 			featureQuestion.className = 'feature-question';
-			featureQuestion.innerHTML = `<h4>${question}</h4>`;
+			const featureH4 = document.createElement('h4');
+			featureH4.textContent = question;
+			const h4Tooltip = FEATURE_TOOLTIPS[`${feature}::${question}`];
+			if (h4Tooltip) featureH4.dataset.tooltip = h4Tooltip;
+			featureQuestion.appendChild(featureH4);
 
 			Object.entries(values)
       .sort(([fa], [fb]) =>
