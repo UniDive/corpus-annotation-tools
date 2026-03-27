@@ -1,0 +1,23 @@
+{
+  "Name": "INCEpTION",
+  "URL": "https://inception-project.github.io",
+  "Licence": "Apache-2.0",
+  "Infrastructure": null,
+  "Publication": [],
+  "Input format": [
+    "Raw text",
+    "PDF",
+    "CONLL-U",
+    "XML",
+    "TSV"
+  ],
+  "Description": "INCEpTION is a emantic annotation platform offering intelligent assistance and knowledge management. It caters to a wide range of individual users who find different aspects of the tool useful.",
+  "Software type": "Web-based application",
+  "Annotation types": [
+    "Tokens (e.g. part-of-speech tag morphological features)",
+    "Spans (e.g. names entities)",
+    "Multi-tokens (e.g. multi-word expressions)",
+    "Relations (e.g. dependencies)",
+    "Chains (e.g. coreferences)"
+  ]
+}

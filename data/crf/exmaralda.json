@@ -1,0 +1,18 @@
+{
+  "Name": "EXMARaLDA",
+  "URL": "https://www.exmaralda.org",
+  "Licence": "GPL-2.0",
+  "Infrastructure": null,
+  "Publication": [],
+  "Input format": [
+    "Raw text",
+    "XML",
+    "TSV"
+  ],
+  "Description": "EXMARaLDA is a toolset for working with spoken language corpora",
+  "Software type": "Desktop-based application",
+  "Annotation types": [
+    "Tokens (e.g. part-of-speech tag morphological features)",
+    "Spans (e.g. names entities)"
+  ]
+}
