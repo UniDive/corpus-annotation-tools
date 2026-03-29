@@ -5,7 +5,7 @@
 # If something is not applicable or unknown:
 #   - leave as "" (empty string) for text
 #   - leave as [] (empty list) for lists
-#   - keep the key but don’t delete it
+#   - keep the key but don't delete it
 # ============================================================
 
 # === TOOL IDENTIFICATION ===
@@ -24,30 +24,30 @@ Tool ID:
 
 # === SOFTWARE INFORMATION ===
 1. Software:
-  1. Active maintenance: ""                 # Is the tool actively maintained? Either "Yes" or "No"
-  2. License: ""                            # Name of the 2. License
-  3. Software type: ""                      # Either "Web-based application" or "Desktop-based application"
-  5. Offline usage (for web-based applications): "" # Is it possible to use the software offline? Either "Yes" or "No"
-  4. Operating system:                      # Remove the options that don't apply
+  1. Active maintenance: ""              # Is the tool actively maintained? Either "Yes" or "No"
+  2. License: ""                         # Name of the license
+  3. Software type: ""                   # Either "Web-based application" or "Desktop-based application"
+  4. Operating system:                   # Remove the options that don't apply
   - Windows
   - Mac OS
   - Linux
-  6. Software access:                 # Remove the options that don't apply
+  5. Offline usage (for web-based applications): ""  # Is it possible to use the software offline? Either "Yes" or "No"
+  6. Software access:                    # Remove the options that don't apply
   - The software is freely available online (with sign up option)
   - The software should be run by the user (own machine/server)
   - The software is available upon request (the user should ask to get an account)
 
 # === DATA SUPPORT ===
 2. Data support:
-  1. Input format:                           # Remove the options that don't apply, or add more
+  1. Input format:                       # Remove the options that don't apply, or add more
   - Raw text
   - CONLL-U
   - TSV/CSV
   - XML
-  2. Data export:                            # Remove the options that don't apply
+  2. Data export:                        # Remove the options that don't apply
   - The data can be exported
   - The data can be stored with a third party storage platform (e.g. Git repository)
-  3. Integration of other resources:         # Remove the options that don't apply
+  3. Integration of other resources:     # Remove the options that don't apply
   - External databases (e.g. dictionaries)
   - Audio
   - Video
@@ -55,63 +55,63 @@ Tool ID:
 
 # === DIVERSITY FEATURES ===
 3. Language support:
-  1. Language independence:                  # Is the tool language independent?
-  2. Multiple writing scripts:               # Does it support multiple writing scripts?
-  4. Writing direction:                      # Remove the options that don't apply
+  1. Language independence:              # Is the tool language independent?
+  2. Multiple writing scripts:           # Does it support multiple writing scripts?
+  3. Handling of Unicode:                # Does it support unicode and special symbols?
+  4. Writing direction:                  # Remove the options that don't apply
   - Left to Right
   - Right to Left
-  3. Handling of Unicode:                     # Does it support unicode and special symbols?
-  5. Language of the interface:               # Add all languages that apply
+  5. Language of the interface:          # Add all languages that apply
   - English
+
+# === USER INTERFACE ===
+4. User Interface:
+  1. Annotation display:                 # Remove the options that don't apply, or add more
+  - Image (e.g. a graph or coloured text)
+  - Table
+  - Raw format (e.g. CONLL-U)
+  2. Annotation mode:                    # Remove the options that don't apply, or add more
+  - Mouse (e.g. drag & drop)
+  - Keyboard
+  3. Keyboard annotation and shortcuts: ""  # Is it possible to define shortcuts? Either "Yes" or "No"
+
+# === WORKFLOW ===
+5. Workflow:
+  1. Automatic pre-annotation: ""        # Does the tool provide automatic pre-annotation? Either "Yes" or "No"
+  2. Automatic recommendation: ""        # Does the tool enable automatic annotation recommendation based on active learning? Either "Yes" or "No"
+  3. Collaborative annotation:           # Remove the options that don't apply, or add more
+  - annotators working independently on their own annotations of the same data
+  - annotators working together on the same shared annotation of the data
+  4. Project management: ""              # Does the tool provide a project management dashboard? Either "Yes" or "No"
+  5. User roles: ""                      # Does the tool enable the users to be differentiated by their roles? Either "Yes" or "No"
 
 # === ANNOTATION ===
 6. Annotation layers:
-  2. Annotation scope:                        # Remove the options that don't apply
-  - Annotation inside sentences
-  - Annotation across sentences
-  - Annotation of full sentences / paragraphs / documents
-  1. Annotation types:                        # Remove the options that don't apply
-  - Tokens (e.g. part-of-speech tag morphological features)
-  - Spans (e.g. names entities)
+  1. Annotation types:                   # Remove the options that don't apply
+  - Tokens (e.g. part-of-speech tags)
+  - Spans (e.g. named entities)
   - Multi-tokens (e.g. multi-word expressions)
   - Relations (e.g. dependencies)
   - Chains (e.g. coreferences)
-  3. Segmentation:                             # Remove the options that don't apply, or add more
+  2. Annotation scope:                   # Remove the options that don't apply
+  - Annotation inside sentences
+  - Annotation across sentences
+  - Annotation of full sentences / paragraphs / documents
+  3. Segmentation:                       # Remove the options that don't apply, or add more
   - word-level
   - sentence-level
   4. Tagset customization: ""
 
-# === USER EXPERIENCE ===
-4. User Interface:
-
-5. Workflow:
-
+# === ANNOTATION ANALYSIS ===
 7. Annotation Analysis:
+  1. Comparison of annotations: ""       # Does the tool provide an interface to display the differences between annotations by different annotators? Either "Yes" or "No"
+  2. Agreement calculation: ""           # Does the tool calculate inter-annotator agreement scores? Either "Yes" or "No"
+  3. Querying: ""                        # Does the tool support performing corpus queries on top of annotations? Either "Yes" or "No"
+  4. Mass editing: ""                    # Does the tool enable to globally change several annotations at once? Either "Yes" or "No"
 
-
-  2. Annotation mode:                          # Remove the options that don't apply, or add more
-  - Mouse (e.g. drag & drop)
-  - Keyboard
-  3. Keyboard annotation and shortcuts: ""     # Is it possible to define shortcuts? Either "Yes" or "No"
-  1. Annotation display:                       # Remove the options that don't apply, or add more
-  - Image (e.g. a graph or coloured text)
-  - Table
-  - Raw format (e.g. CONLL-U)
-  1. Automatic pre-annotation: ""              # Does the tool provide automatic pre-annotation? Either "Yes" or "No"
-  2. Automatic recommendation: ""              # Does the tool enable automatic annotation recommendation based on active learning? Either "Yes" or "No"
-  2. Agreement calculation: ""                 # Does the tool calculate inter-annotator agreement scores? Either "Yes" or "No"
-  3. Collaborative annotation:                 # Remove the options that don't apply, or add more
-  - annotators working independently on their own annotations of the same data
-  - annotators working together on the same shared annotation of the data
-  4. Project management: ""                    # Does the tool provide a project management dashboard? Either "Yes" or "No"
-  5. User roles: ""                            # Does the tool enable the users to be differentiated by their roles? Either "Yes" or "No"
-  1. Comparison of annotations: ""             # Does the tool provide an interface to display the differences between annotations by different annotators? Either "Yes" or "No"
-  3. Querying: ""                              # Does the tool support performing corpus queries on top of annotations? Either "Yes" or "No"
-  4. Mass editing: ""                          # Does the tool enable to globally change several annotations at once? Either "Yes" or "No"
-
-# === UD / PARSEME SPECIFICS ===
-UD/PARSEME specifics:
-  1. UD-specific annotations:                   # Remove the options that don't apply
+# === UD SPECIFICS ===
+8. Universal Dependencies:
+  1. UD-specific annotations:            # Remove the options that don't apply
   - Lemmas
   - UPOS
   - FEATS
@@ -121,12 +121,15 @@ UD/PARSEME specifics:
   - Enhanced dependencies
   - Empty nodes
   - Metadata
-  2. UD validation: ""                          # Does the tool support annotation validation using the official 2. UD validation tool? Either "Yes" or "No"
-  1. PARSEME-specific annotations:              # Remove the options that don't apply
+  2. UD validation: ""                   # Does the tool support annotation validation using the official UD validation tool? Either "Yes" or "No"
+  Other annotation layers:              # Add anything that applies
+  # - Time-aligned annotations
+  # - BIO-like annotations
+
+# === PARSEME SPECIFICS ===
+9. PARSEME:
+  1. PARSEME-specific annotations:       # Remove the options that don't apply
   - Discontinuous expressions
   - Nested expressions
   - Overlapping expressions
-  2. Consistency check: ""                      # Does the tool enable the user to check whether the same combination of words is annotated consistently across the corpus? Either "Yes" or "No"
-  Other annotation layers:                   # Add anything that applies
-  # - Time-aligned annotations
-  # - BIO-like annotations
+  2. Consistency check: ""               # Does the tool enable the user to check whether the same combination of words is annotated consistently across the corpus? Either "Yes" or "No"
