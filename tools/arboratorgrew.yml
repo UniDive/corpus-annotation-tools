@@ -1,14 +1,3 @@
-1. Software:
-  1. Active maintenance: 'Yes'
-  2. License: AGPL-3.0
-  5. Offline usage (for web-based applications): 'No'
-  4. Operating system:
-  - Windows
-  - Mac OS
-  - Linux
-  6. Software access:
-  - The software is freely available online (with sign up option)
-  3. Software type: Web-based application
 Tool ID:
   Additional features: 'ArboratorGrew can be used also to teach syntax: users can create exercises with different levels of complexity and export results'
   Code repository: https://github.com/Arborator
@@ -18,42 +7,39 @@ Tool ID:
   Logo: https://arborator.grew.fr/svg/arborator.grew.svg
   Other useful links:
   - Documentation: https://arborator.github.io/arborator-documentation/
-  Short description: A collaborative annotation tool for the treebank developement. It allows the creation of lexicons from annotated data. To ensure effective collaboration, ArboratorGrew provides a tag system.
+  Short description: A collaborative annotation tool for the treebank developement. It allows the creation of lexicons from annotated data. To ensure effective collaboration, ArboratorGrew provides a 
+    tag system.
   Tool name: ArboratorGrew
   Website: https://arborator.grew.fr/
+1. Software:
+  1. Active maintenance: 'Yes'
+  2. License: AGPL-3.0
+  3. Software type: Web-based application
+  4. Operating system:
+  - Windows
+  - Mac OS
+  - Linux
+  5. Offline usage (for web-based applications): 'No'
+  6. Software access:
+  - The software is freely available online (with sign up option)
 2. Data support:
-  2. Data export:
-  - The data can be exported
-  - The data can be stored with a third party storage platform (e.g. Git repository)
   1. Input format:
   - Raw text
   - CONLL-U
+  2. Data export:
+  - The data can be exported
+  - The data can be stored with a third party storage platform (e.g. Git repository)
   3. Integration of other resources: []
-6. Annotation layers:
-  2. Annotation scope:
-  - Annotation inside sentences
-  1. Annotation types:
-  - Tokens (e.g. part-of-speech tags)
-  - Multi-tokens (e.g. multi-word expressions)
-  - Relations (e.g. dependencies)
-  3. Segmentation:
-  - word-level
-  - sentence-level
-  4. Tagset customization: 'Yes'
-8. Universal Dependencies:
-  2. UD validation: 'Yes'
-  1. UD-specific annotations:
-  - Lemmas
-  - UPOS
-  - FEATS
-  - XPOS
-  - Multi-word tokens
-  - Basic dependencies
-  - Metadata
-  Other annotation layers: []
-9. PARSEME:
-  2. Consistency check: 'No'
-  1. PARSEME-specific annotations: []
+3. Language support:
+  1. Language independence: 'Yes'
+  2. Multiple writing scripts: 'Yes'
+  3. Handling of Unicode: 'Yes'
+  4. Writing direction:
+  - Left to Right
+  - Right to Left
+  5. Language of the interface:
+  - English
+  - French
 4. User Interface:
   1. Annotation display:
   - Image (e.g. a graph or coloured text)
@@ -69,18 +55,33 @@ Tool ID:
   - annotators working independently on their own annotations of the same data
   4. Project management: 'Yes'
   5. User roles: 'Yes'
+6. Annotation layers:
+  1. Annotation types:
+  - Tokens (e.g. part-of-speech tags)
+  - Multi-tokens (e.g. multi-word expressions)
+  - Relations (e.g. dependencies)
+  2. Annotation scope:
+  - Annotation inside sentences
+  3. Segmentation:
+  - word-level
+  - sentence-level
+  4. Tagset customization: 'Yes'
 7. Annotation Analysis:
-  2. Agreement calculation: 'Yes'
   1. Comparison of annotations: 'Yes'
-  4. Mass editing: 'Yes'
+  2. Agreement calculation: 'Yes'
   3. Querying: 'Yes'
-3. Language support:
-  1. Language independence: 'Yes'
-  2. Multiple writing scripts: 'Yes'
-  4. Writing direction:
-    - Left to Right
-    - Right to Left
-  3. Handling of Unicode: 'Yes'
-  5. Language of the interface:
-  - English
-  - French
+  4. Mass editing: 'Yes'
+8. Universal Dependencies:
+  1. UD-specific annotations:
+  - Lemmas
+  - UPOS
+  - FEATS
+  - XPOS
+  - Multi-word tokens
+  - Basic dependencies
+  - Metadata
+  2. UD validation: 'Yes'
+  Other annotation layers: []
+9. PARSEME:
+  1. PARSEME-specific annotations: []
+  2. Consistency check: 'No'

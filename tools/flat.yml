@@ -1,48 +1,5 @@
-6. Annotation layers:
-  2. Annotation scope:
-  - Annotation inside sentences
-  1. Annotation types:
-  - Tokens (e.g. part-of-speech tag morphological features)
-  - Spans (e.g. names entities)
-  - Multi-tokens (e.g. multi-word expressions)
-  - Relations (e.g. dependencies)
-  - Chains (e.g. coreferences)
-  3. Segmentation:
-  - word-level
-  4. Tagset customization: 'Yes'
-2. Data support:
-  2. Data export:
-  - The data can be exported
-  - The data can be stored with a third party storage platform (e.g. Git repository)
-  1. Input format:
-  - Raw text
-  - CONLL-U
-  - XML
-  - TSV
-  - other
-  3. Integration of other resources: []
-3. Language support:
-  1. Language independence: 'Yes'
-  2. Multiple writing scripts: 'Yes'
-  4. Writing direction:
-  - Left to Right
-  - Right to Left
-  3. Handling of Unicode: 'Yes'
-  5. Language of the interface:
-  - English
-1. Software:
-  1. Active maintenance: Legacy
-  2. License: GPL-3.0
-  5. Offline usage (for web-based applications): 'No'
-  4. Operating system:
-  - Windows
-  - Mac OS
-  - Linux
-  6. Software access:
-  - The software should be run by the user (own machine/server)
-  3. Software type: Web-based application
 Tool ID:
-  Additional features: null
+  Additional features:
   Code repository: https://github.com/proycon/flat
   Developer: 'Yes'
   Example projects:
@@ -54,22 +11,37 @@ Tool ID:
   Short description: Flat (FoLiA Linguistic Annotation Tool) is a web-based linguistic annotation environment based around the FoLiA format, a rich XML-based format for linguistic annotation.
   Tool name: FLAT
   Website: https://github.com/proycon/flat
-8. Universal Dependencies:
-  Other annotation layers: []
-  2. UD validation: 'No'
-  1. UD-specific annotations:
-  - Lemmas
-  - UPOS
-  - FEATS
-  - XPOS
-  - Multi-word tokens
-  - Basic dependencies
-9. PARSEME:
-  2. Consistency check: 'No'
-  1. PARSEME-specific annotations:
-  - Discontinuous expressions
-  - Nested expressions
-  - Overlapping expressions
+1. Software:
+  1. Active maintenance: Legacy
+  2. License: GPL-3.0
+  3. Software type: Web-based application
+  4. Operating system:
+  - Windows
+  - Mac OS
+  - Linux
+  5. Offline usage (for web-based applications): 'No'
+  6. Software access:
+  - The software should be run by the user (own machine/server)
+2. Data support:
+  1. Input format:
+  - Raw text
+  - CONLL-U
+  - XML
+  - TSV
+  - other
+  2. Data export:
+  - The data can be exported
+  - The data can be stored with a third party storage platform (e.g. Git repository)
+  3. Integration of other resources: []
+3. Language support:
+  1. Language independence: 'Yes'
+  2. Multiple writing scripts: 'Yes'
+  3. Handling of Unicode: 'Yes'
+  4. Writing direction:
+  - Left to Right
+  - Right to Left
+  5. Language of the interface:
+  - English
 4. User Interface:
   1. Annotation display: []
   2. Annotation mode:
@@ -82,8 +54,36 @@ Tool ID:
   - annotators working independently on their own annotations of the same data
   4. Project management: partial
   5. User roles: 'Yes'
+6. Annotation layers:
+  1. Annotation types:
+  - Tokens (e.g. part-of-speech tag morphological features)
+  - Spans (e.g. names entities)
+  - Multi-tokens (e.g. multi-word expressions)
+  - Relations (e.g. dependencies)
+  - Chains (e.g. coreferences)
+  2. Annotation scope:
+  - Annotation inside sentences
+  3. Segmentation:
+  - word-level
+  4. Tagset customization: 'Yes'
 7. Annotation Analysis:
-  2. Agreement calculation: 'No'
   1. Comparison of annotations: 'No'
-  4. Mass editing: 'Yes'
+  2. Agreement calculation: 'No'
   3. Querying: 'Yes'
+  4. Mass editing: 'Yes'
+8. Universal Dependencies:
+  1. UD-specific annotations:
+  - Lemmas
+  - UPOS
+  - FEATS
+  - XPOS
+  - Multi-word tokens
+  - Basic dependencies
+  2. UD validation: 'No'
+  Other annotation layers: []
+9. PARSEME:
+  1. PARSEME-specific annotations:
+  - Discontinuous expressions
+  - Nested expressions
+  - Overlapping expressions
+  2. Consistency check: 'No'

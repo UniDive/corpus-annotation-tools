@@ -1,46 +1,5 @@
-6. Annotation layers:
-  2. Annotation scope:
-  - Annotation inside sentences
-  - Annotation across sentences
-  - Annotation of full sentences / paragraphs / documents
-  1. Annotation types:
-  - Tokens (e.g. part-of-speech tag morphological features)
-  - Spans (e.g. names entities)
-  - Chains (e.g. coreferences)
-  3. Segmentation:
-  - word-level
-  - sentence-level
-  4. Tagset customization: 'Yes'
-2. Data support:
-  2. Data export:
-  - The data can be exported
-  1. Input format:
-  - Raw text
-  - XML
-  - other
-  3. Integration of other resources: []
-3. Language support:
-  1. Language independence: 'Yes'
-  2. Multiple writing scripts: 'Yes'
-  4. Writing direction:
-  - Left to Right
-  - Right to Left
-  3. Handling of Unicode: 'Yes'
-  5. Language of the interface:
-  - English
-1. Software:
-  1. Active maintenance: 'Yes'
-  2. License: Apache-2.0
-  5. Offline usage (for web-based applications): 'No'
-  4. Operating system:
-  - Windows
-  - Mac OS
-  - Linux
-  6. Software access:
-  - The software should be run by the user (own machine/server)
-  3. Software type: Web-based application
 Tool ID:
-  Additional features: null
+  Additional features:
   Code repository: https://github.com/gucorpling/gitdox
   Developer: 'Yes'
   Example projects:
@@ -52,23 +11,34 @@ Tool ID:
   Short description: GitDox is a version controlled annotation interace for XML and spreadsheet data, as well as nested NER
   Tool name: GitDox
   Website: https://gucorpling.org/gitdox/
-8. Universal Dependencies:
-  Other annotation layers:
-  - concurrent/conflicting span annotations
-  - nested NER
-  - entity linking
-  2. UD validation: 'No'
-  1. UD-specific annotations:
-  - Lemmas
-  - UPOS
-  - FEATS
-  - XPOS
-  - Metadata
-9. PARSEME:
-  2. Consistency check: 'No'
-  1. PARSEME-specific annotations:
-  - Nested expressions
-  - Overlapping expressions
+1. Software:
+  1. Active maintenance: 'Yes'
+  2. License: Apache-2.0
+  3. Software type: Web-based application
+  4. Operating system:
+  - Windows
+  - Mac OS
+  - Linux
+  5. Offline usage (for web-based applications): 'No'
+  6. Software access:
+  - The software should be run by the user (own machine/server)
+2. Data support:
+  1. Input format:
+  - Raw text
+  - XML
+  - other
+  2. Data export:
+  - The data can be exported
+  3. Integration of other resources: []
+3. Language support:
+  1. Language independence: 'Yes'
+  2. Multiple writing scripts: 'Yes'
+  3. Handling of Unicode: 'Yes'
+  4. Writing direction:
+  - Left to Right
+  - Right to Left
+  5. Language of the interface:
+  - English
 4. User Interface:
   1. Annotation display:
   - Image (e.g. a graph or coloured text)
@@ -86,8 +56,38 @@ Tool ID:
   - annotators working together on the same shared annotation of the data
   4. Project management: 'Yes'
   5. User roles: 'Yes'
+6. Annotation layers:
+  1. Annotation types:
+  - Tokens (e.g. part-of-speech tag morphological features)
+  - Spans (e.g. names entities)
+  - Chains (e.g. coreferences)
+  2. Annotation scope:
+  - Annotation inside sentences
+  - Annotation across sentences
+  - Annotation of full sentences / paragraphs / documents
+  3. Segmentation:
+  - word-level
+  - sentence-level
+  4. Tagset customization: 'Yes'
 7. Annotation Analysis:
-  2. Agreement calculation: 'No'
   1. Comparison of annotations: 'Yes'
-  4. Mass editing: 'No'
+  2. Agreement calculation: 'No'
   3. Querying: 'No'
+  4. Mass editing: 'No'
+8. Universal Dependencies:
+  1. UD-specific annotations:
+  - Lemmas
+  - UPOS
+  - FEATS
+  - XPOS
+  - Metadata
+  2. UD validation: 'No'
+  Other annotation layers:
+  - concurrent/conflicting span annotations
+  - nested NER
+  - entity linking
+9. PARSEME:
+  1. PARSEME-specific annotations:
+  - Nested expressions
+  - Overlapping expressions
+  2. Consistency check: 'No'
