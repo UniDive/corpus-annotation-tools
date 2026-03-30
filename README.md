@@ -12,7 +12,7 @@ The JSON (`data/latest_export.json`) is generated automatically from those YAMLs
 
 ### 1. Add a new tool
 
-1. Copy the [YAML template](tools/_template.yaml)
+1. Copy the [YAML template](tools/_template.yml)
    ```
    cp tools/_template.yml tools/<tool-slug>.yml
    ```
@@ -51,3 +51,29 @@ This will regenerate:
 - Add one YAML file (for a new tool) or edit one (to update).
 - Our CI will automatically run the build and validate your contribution.
 - Reviewers will check the generated TSV/JSON.
+
+## Reference
+
+If you use this resource, please cite:
+
+Pannitto, L., Dobrovoljc, K., & Guillaume, B. (2026).  
+*Survey of Tools for Manual Linguistic Annotation: Supporting Diversity through Interactive Exploration.*  
+Proceedings of **LREC 2026**.
+
+BibTeX:
+
+```bibtex
+@inproceedings{pannitto2026survey,
+  title = "Survey of Tools for Manual Linguistic Annotation: Supporting Diversity through Interactive Exploration",
+  author = "Pannitto, Ludovica  and
+    Dobrovoljc, Kaja  and
+    Guillaume, Bruno",
+  booktitle = "Proceedings of the Fifteenth Language Resources and Evaluation Conference",
+  year = "2026",
+  publisher = "European Language Resources Association",
+}
+```
+
+## Video
+
+Project video: [Watch on YouTube](https://youtu.be/x-q9UK7NYbU)
