@@ -56,21 +56,22 @@ This will regenerate:
 
 If you use this resource, please cite:
 
-Pannitto, L., Dobrovoljc, K., & Guillaume, B. (2026).  
-*Survey of Tools for Manual Linguistic Annotation: Supporting Diversity through Interactive Exploration.*  
-Proceedings of **LREC 2026**.
+Pannitto, L., Dobrovoljc, K., & Guillaume, B. (2026). Survey of Tools for Manual Linguistic Annotation: Supporting Diversity through Interactive Exploration. In Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026) (pp. 11562–11573). European Language Resources Association (ELRA). [https://doi.org/10.63317/4u4be6bbtj8e].
 
 BibTeX:
 
 ```bibtex
-@inproceedings{pannitto2026survey,
-  title = "Survey of Tools for Manual Linguistic Annotation: Supporting Diversity through Interactive Exploration",
-  author = "Pannitto, Ludovica  and
-    Dobrovoljc, Kaja  and
-    Guillaume, Bruno",
-  booktitle = "Proceedings of the Fifteenth Language Resources and Evaluation Conference",
-  year = "2026",
-  publisher = "European Language Resources Association",
+@inproceedings{pannitto-etal-2026-survey,
+  title = {Survey of Tools for Manual Linguistic Annotation: Supporting Diversity through Interactive Exploration},
+  author = {Pannitto, Ludovica and Dobrovoljc, Kaja and Guillaume, Bruno},
+  booktitle = {Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026)},
+  month = {May},
+  year = {2026},
+  pages = {11562--11573},
+  address = {Palma, Mallorca, Spain},
+  publisher = {European Language Resources Association (ELRA)},
+  editor = {Piperidis, Stelios and Bel, Núria and van den Heuvel, Henk and Ide, Nancy and Krek, Simon and Toral, Antonio},
+  doi = {10.63317/4u4be6bbtj8e}
 }
 ```
 
