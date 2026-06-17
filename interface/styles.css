@@ -488,6 +488,23 @@ h1.app-subtitle {
     float: left;
 }
 
+.card-legacy-marker {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.3em;
+    height: 1.3em;
+    margin-left: 0.4em;
+    border-radius: 50%;
+    background: #fff0da;
+    border: 1px solid #f4c17d;
+    color: #9a4d00;
+    font-size: 0.68em;
+    font-weight: 700;
+    line-height: 1;
+    vertical-align: middle;
+}
+
 .bottom {
   overflow: hidden;
   display: flex;
@@ -532,10 +549,32 @@ h1.app-subtitle {
   gap: 4px;
 }
 
+.viz-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 .viz-title h3 {
   margin: 0;
   font-size: 1.1rem;
   color: var(--pumpkin);
+}
+
+.legacy-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #fff0da;
+  border: 1px solid #f4c17d;
+  color: #9a4d00;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }
 
 .viz-link {

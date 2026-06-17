@@ -2225,9 +2225,22 @@ function populateViz(tool) {
 	const titleBlock = document.createElement('div');
 	titleBlock.className = 'viz-title';
 
+	const titleRow = document.createElement('div');
+	titleRow.className = 'viz-title-row';
+
 	const h3 = document.createElement('h3');
 	h3.textContent = tool["Tool ID::Tool name"];
-	titleBlock.appendChild(h3);
+	titleRow.appendChild(h3);
+
+	const activeMaintenance = (tool['1. Software::1. Active maintenance'] || '').trim().toLowerCase();
+	if (activeMaintenance === 'no' || activeMaintenance === 'legacy') {
+		const legacyBadge = document.createElement('span');
+		legacyBadge.className = 'legacy-badge';
+		legacyBadge.innerHTML = '<i class="fa-solid fa-box-archive"></i> Legacy';
+		titleRow.appendChild(legacyBadge);
+	}
+
+	titleBlock.appendChild(titleRow);
 
 	if (tool["Tool ID::Website"]) {
 		const websiteLink = document.createElement('a');
@@ -2405,6 +2418,14 @@ function buildTools() {
 		// Title
 		const h3 = document.createElement('h3');
 		h3.textContent = tool["Tool ID::Tool name"];
+		const cardMaintenance = (tool['1. Software::1. Active maintenance'] || '').trim().toLowerCase();
+		if (cardMaintenance === 'no' || cardMaintenance === 'legacy') {
+			const legacyMarker = document.createElement('span');
+			legacyMarker.className = 'card-legacy-marker';
+			legacyMarker.textContent = 'L';
+			legacyMarker.title = 'Legacy tool';
+			h3.appendChild(legacyMarker);
+		}
 		// const link = document.createElement('a');
 		// link.href = tool["Tool ID::Website"];
 		// link.target = "_blank";
