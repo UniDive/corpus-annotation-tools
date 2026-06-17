@@ -1,13 +1,12 @@
 Tool ID:
-  Additional features: INCEpTION also caters to institutional users who need to integrate the tool into their existing infrastructure by supporting e.g. single-sign-on mechanisms, docker-based 
+  Additional features: INCEpTION also caters to institutional users who need to integrate the tool into their existing infrastructure by supporting e.g. single-sign-on mechanisms, docker-based
     deployment, a remote API, etc.
   Code repository: https://github.com/inception-project/inception
   Developer: 'Yes'
   Example projects: {}
   Logo: https://inception-project.github.io/assets/img/logo.png
   Other useful links: {}
-  Short description: INCEpTION is a emantic annotation platform offering intelligent assistance and knowledge management. It caters to a wide range of individual users who find different aspects of 
-    the tool useful.
+  Short description: INCEpTION is a semantic annotation platform offering intelligent assistance and knowledge management. It caters to a wide range of individual users who find different aspects of the tool useful. It was previously developed as WebAnno.
   Tool name: INCEpTION
   Website: https://inception-project.github.io
 1. Software:
