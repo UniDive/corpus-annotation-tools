@@ -604,6 +604,14 @@ h1.app-subtitle {
   margin-bottom: 6px;
 }
 
+.viz-version-note {
+  font-size: 0.8rem;
+  color: #777;
+  font-style: italic;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
 .viz-provider-note {
   font-size: 0.8rem;
   color: #888;

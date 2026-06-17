@@ -2263,6 +2263,17 @@ function populateViz(tool) {
 	vizHeader.appendChild(titleBlock);
 	infoBox.appendChild(vizHeader);
 
+	// Surveyed version note
+	const versionValue = (tool["Tool ID::Version"] || '').trim();
+	const versionNote = document.createElement('p');
+	versionNote.className = 'viz-version-note';
+	if (!versionValue || versionValue.toUpperCase() === 'N/A') {
+		versionNote.textContent = 'No information about tool version available.';
+	} else {
+		versionNote.textContent = `The tool was surveyed in v.${versionValue}.`;
+	}
+	infoBox.appendChild(versionNote);
+
 	// Description (respondent-provided tagline)
 	if (tool["Tool ID::Short description"]) {
 		const desc = document.createElement('p');
