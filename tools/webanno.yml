@@ -1,17 +1,17 @@
 Tool ID:
-  Additional features: WebAnno supports a rich set of features including customizable annotation layers, integration with external data sources, support for multiple annotators, and visualization of 
+  Additional features: WebAnno supports a rich set of features including customizable annotation layers, integration with external data sources, support for multiple annotators, and visualization of
     annotated data It also supports automatic pre-annotation and inter-annotator 2. Agreement calculation
   Code repository: https://github.com/webanno/webanno
   Developer: 'No'
   Example projects: {}
   Logo: https://webanno.github.io/webanno/assets/img/logo.png
   Other useful links: {}
-  Short description: WebAnno is a web-based collaborative tool for linguistic annotation that supports various annotation tasks, including POS tagging, dependency parsing, and coreference resolution. 
+  Short description: WebAnno is a web-based collaborative tool for linguistic annotation that supports various annotation tasks, including POS tagging, dependency parsing, and coreference resolution.
     It provides collaborative features and works well with formats like CoNLL-U.
   Tool name: WebAnno
   Website: https://webanno.github.io/webanno/
 1. Software:
-  1. Active maintenance: 'Yes'
+  1. Active maintenance: 'No'
   2. License: Apache-2.0
   3. Software type: Web-based application
   4. Operating system:
