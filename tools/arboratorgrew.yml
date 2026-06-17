@@ -7,10 +7,11 @@ Tool ID:
   Logo: https://arborator.grew.fr/svg/arborator.grew.svg
   Other useful links:
   - Documentation: https://arborator.github.io/arborator-documentation/
-  Short description: A collaborative annotation tool for the treebank developement. It allows the creation of lexicons from annotated data. To ensure effective collaboration, ArboratorGrew provides a 
+  Short description: A collaborative annotation tool for the treebank developement. It allows the creation of lexicons from annotated data. To ensure effective collaboration, ArboratorGrew provides a
     tag system.
   Tool name: ArboratorGrew
   Website: https://arborator.grew.fr/
+  Version: N/A
 1. Software:
   1. Active maintenance: 'Yes'
   2. License: AGPL-3.0

@@ -6,10 +6,11 @@ Tool ID:
   Logo: https://github.com/jonorthwash/ud-annotatrix/blob/master/src/server/public/logo.png
   Other useful links:
   - Paper: https://aclanthology.org/W17-7604
-  Short description: UD Annotatrix is a client-side, browser-only, language-independent tool for editing dependency trees according to the guidelines established by the 8. Universal Dependencies 
+  Short description: UD Annotatrix is a client-side, browser-only, language-independent tool for editing dependency trees according to the guidelines established by the 8. Universal Dependencies
     project.
   Tool name: UD Annotatrix
   Website: https://maryszmary.github.io/ud-annotatrix/standalone/annotator.html
+  Version: N/A
 1. Software:
   1. Active maintenance: 'Yes'
   2. License: GPL-3.0

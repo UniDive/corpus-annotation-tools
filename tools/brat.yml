@@ -6,10 +6,11 @@ Tool ID:
   - Examples: https://brat.nlplab.org/examples.html
   Logo: ''
   Other useful links: {}
-  Short description: brat rapid annotation tool is a web-based tool for text annotation. brat is designed in particular for structured annotation, where the notes are not freeform text but have a 
+  Short description: brat rapid annotation tool is a web-based tool for text annotation. brat is designed in particular for structured annotation, where the notes are not freeform text but have a
     fixed form that can be automatically processed and interpreted by a computer.
   Tool name: brat
   Website: http://brat.nlplab.org/
+  Version: N/A
 1. Software:
   1. Active maintenance: 'No'
   2. License: MIT

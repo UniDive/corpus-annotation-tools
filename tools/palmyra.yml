@@ -12,6 +12,7 @@ Tool ID:
   Short description: PALMYRA is a platform-independent graphical tool for syntactic dependency annotation supporting languages that require complex morphological tokenization.
   Tool name: Palmyra
   Website: https://palmyra.camel-lab.com/
+  Version: N/A
 1. Software:
   1. Active maintenance: 'Yes'
   2. License: MIT

@@ -1,5 +1,5 @@
 Tool ID:
-  Additional features: The tool supports git and provides automatic transliteration of non-Latin scripts into Latin-script, as well as statistics (number/percentage of UPOS, deprels, etc). The tool 
+  Additional features: The tool supports git and provides automatic transliteration of non-Latin scripts into Latin-script, as well as statistics (number/percentage of UPOS, deprels, etc). The tool
     can be used as a frontend to an parser which returns the result in CoNLL-U format
   Code repository: https://github.com/Orange-Opensource/conllueditor
   Developer: 'Yes'
@@ -10,6 +10,7 @@ Tool ID:
   Short description: CoNLLU-editor is a graphical tool to annotate sentences in dependency syntax
   Tool name: CoNLLU-Editor
   Website: https://github.com/Orange-Opensource/conllueditor
+  Version: N/A
 1. Software:
   1. Active maintenance: 'Yes'
   2. License: BSD 3-Clause
