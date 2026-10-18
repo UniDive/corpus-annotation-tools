@@ -6,7 +6,7 @@ Tool ID:
   Example projects: {}
   Logo: https://inception-project.github.io/assets/img/logo.png
   Other useful links: {}
-  Short description: INCEpTION is a semantic annotation platform offering intelligent assistance and knowledge management. It caters to a wide range of individual users who find different aspects of the tool useful. It was previously developed as WebAnno.
+  Short description: INCEpTION is a web-based platform for multi-layer linguistic annotation (e.g. PoS, dependencies, multiword expressions, coreference) with freely configurable layers and tagsets, entity linking against knowledge bases, and annotation suggestions that improve as you annotate. Its TSV support is WebAnno TSV, and its XML support covers TEI, TCF and UIMA XMI. It is the successor of WebAnno and can import WebAnno projects.
   Tool name: INCEpTION
   Website: https://inception-project.github.io
 1. Software:
@@ -17,7 +17,7 @@ Tool ID:
   - Windows
   - Mac OS
   - Linux
-  5. Offline usage (for web-based applications): 'No'
+  5. Offline usage (for web-based applications): 'Yes'
   6. Software access:
   - The software should be run by the user (own machine/server)
   - some public instances available
@@ -26,8 +26,16 @@ Tool ID:
   - Raw text
   - PDF
   - CONLL-U
-  - XML
+  - CONLL-X
   - TSV
+  - WebAnno TSV
+  - XML
+  - TEI XML
+  - TCF
+  - UIMA XMI
+  - UIMA CAS JSON
+  - HTML
+  - other
   2. Data export:
   - The data can be exported
   3. Integration of other resources:
@@ -53,8 +61,8 @@ Tool ID:
   - Mouse (e.g. drag & drop)
   3. Keyboard annotation and shortcuts: 'Yes'
 5. Workflow:
-  1. Automatic pre-annotation: partial
-  2. Automatic recommendation: partial
+  1. Automatic pre-annotation: 'Yes'
+  2. Automatic recommendation: 'Yes'
   3. Collaborative annotation:
   - annotators working independently on their own annotations of the same data
   4. Project management: 'Yes'
@@ -70,7 +78,10 @@ Tool ID:
   - Annotation inside sentences
   - Annotation across sentences
   - Annotation of full sentences / paragraphs / documents
-  3. Segmentation: []
+  - Free span annotation
+  3. Segmentation:
+  - word-level
+  - sentence-level
   4. Tagset customization: 'Yes'
 7. Annotation Analysis:
   1. Comparison of annotations: partial
