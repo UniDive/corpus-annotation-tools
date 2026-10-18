@@ -8,10 +8,18 @@
     "Raw text",
     "PDF",
     "CONLL-U",
+    "CONLL-X",
+    "TSV",
+    "WebAnno TSV",
     "XML",
-    "TSV"
+    "TEI XML",
+    "TCF",
+    "UIMA XMI",
+    "UIMA CAS JSON",
+    "HTML",
+    "other"
   ],
-  "Description": "INCEpTION is a emantic annotation platform offering intelligent assistance and knowledge management. It caters to a wide range of individual users who find different aspects of the tool useful.",
+  "Description": "INCEpTION is a web-based platform for multi-layer linguistic annotation (e.g. PoS, dependencies, multiword expressions, coreference) with freely configurable layers and tagsets, entity linking against knowledge bases, and annotation suggestions that improve as you annotate. Its TSV support is WebAnno TSV, and its XML support covers TEI, TCF and UIMA XMI. It is the successor of WebAnno and can import WebAnno projects.",
   "Software type": "Web-based application",
   "Annotation types": [
     "Tokens (e.g. part-of-speech tag morphological features)",
